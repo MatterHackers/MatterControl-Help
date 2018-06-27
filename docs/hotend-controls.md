@@ -8,4 +8,5 @@ From the hotend control, you can:
 * Load and Unload Filament
 
 Hotend and Extruder Controls
+
 ![Hotend Controls](https://www.matterhackers.com/r/3QLZVv)
