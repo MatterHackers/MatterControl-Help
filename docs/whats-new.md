@@ -6,7 +6,7 @@
 
 MatterControl now incorporates the ability to 3D model with a complete set of modeling primitives that you can use to build anything you can imagine. Build up your creative designs by combining these shapes into something more. You can even use a primitive to create your own customized supports! The possibilities are endless.
 
-![](https://lh3.googleusercontent.com/ZQcmEZBSLwg5RF1UZZauC86dkQNB9dfwgvmycMHyKBe-XZvcC9iBPUAslSrtfBTJ-byGlsgWElsrvR9bFdxCXk5rN-8=w900)
+![](https://lh3.googleusercontent.com/ZQcmEZBSLwg5RF1UZZauC86dkQNB9dfwgvmycMHyKBe-XZvcC9iBPUAslSrtfBTJ-byGlsgWElsrvR9bFdxCXk5rN-8=w640)
 
 ### Design Apps
 
@@ -16,7 +16,7 @@ MatterControl is now empowered with Design Apps: sophisticated customizable desi
 
 Whether you want auto-generated supports or only specific parts of your model is your choice. Simply drag in a primitive, mark it as support, and MatterControl will treat it as supports for your model. This means you can support internal structures without supporting the entire model.
 
-![](https://lh3.googleusercontent.com/adNhE82-DcjwJOuI2XFNjQRhOaQeZp27O8qPWFOlNwD3b94et0sU-l45CnZXk1GAR84XTL4vUf8pFeatLG8PA1lZCg=w900)
+![](https://lh3.googleusercontent.com/adNhE82-DcjwJOuI2XFNjQRhOaQeZp27O8qPWFOlNwD3b94et0sU-l45CnZXk1GAR84XTL4vUf8pFeatLG8PA1lZCg=w640)
 
 ### 64-bit Processing.
 
