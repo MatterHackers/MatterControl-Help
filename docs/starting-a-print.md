@@ -8,4 +8,5 @@ From the print control, you can:
 * Start Your Print
 
 Starting a Print
-![](https://www.matterhackers.com/r/AW0bcR)
+
+![](https://www.matterhackers.com/r/hzPnqV)
