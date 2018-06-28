@@ -9,4 +9,4 @@ From the hotend control, you can:
 
 Hotend and Extruder Controls
 
-![Hotend Controls](https://www.matterhackers.com/r/3QLZVv)
+![Hotend Controls](https://lh3.googleusercontent.com/Xk53KLiAr-HkSx-CFPidXLhE5G09zrY1FSNXWAccFtCM4fb5gXK3pTKx_dFQ1jEB-XUx1Xt1F_t2_ykEsa4N35x4yw)
