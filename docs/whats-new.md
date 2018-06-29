@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: What's New
 uniqueid: whats-new
 ---
