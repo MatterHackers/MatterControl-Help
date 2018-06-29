@@ -1,4 +1,4 @@
-# Adding Parts
+# Adding Existing Part
 
 You can drag parts into the 3D view from the library side bar, or directly from the desktop.
 
