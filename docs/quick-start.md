@@ -28,9 +28,18 @@ MatterControl is an all-in-one desktop 3D printing software application created 
 
 For your first print we will add Phil-A-Ment (the MatterHackers mascot) to the bed
 
-1. You can find him in the library  
-   ![](https://lh3.googleusercontent.com/q1EWMSqVRXQJ8PrVwEP0tYBlh0yz3RSvBNkTcflyRAehn6sjx26MVncwB27C1agoCRkybWyvB2nBUxhI1Gj87bpTdI4)
-1. Calibration Parts  
-   ![](https://lh3.googleusercontent.com/3d2UXgPSneIt4I0V8cAfUw7zlI6cL8MTvtMNEl8jliqfJHVTVEpALT7YajGN18Oppp5A9mTlBeXuzjQKiazlZd589A)
-1. Then just drag him to the bed and position him where you would like him to print  
-   ![](https://lh3.googleusercontent.com/sFMuOVj7XpHMmFWXyQk-yjJGvSS-y0ehIg52mTfVfwRoAMeSUvFf18WJ-yGENPbkFY-6vOgxRxqliwFhF-6gHqYi7g)
+1. You can find him in the library under Calibration Parts 
+   ![](https://lh3.googleusercontent.com/ezo7-PcZ0c-YIf6TJ8vIY81rzA2acEdu3AqcaXp_QcQugy15jylf0uawMLD-CI1kx04n0OoXnmgzGMf6_0lWTyFSh1I)
+
+## Starting the Print
+
+1. Now that you have a part on the Bed you can click 'Print'  
+   ![](https://lh3.googleusercontent.com/AeiAfIESQFalLMGEDdQuayP2X3nhC5naYFq-siwI2aJHnaFPqNfmjGPvkAltslrpjpGmcEB7AQs2q-_TN0iomkD9)
+1. This will show the quick printing options, don't wory about these for now.
+1. Click 'Start Print'
+
+
+## You should now be up and printing. 
+
+* You can come back to the help at any time by cilcking on the 'MatterControl' menu and selecting 'Help'.  
+  ![](https://lh3.googleusercontent.com/QrO213jp2jIfd4O3OrkWjIjkhMyCSMWjtQ-OXK6PWdSkxVy9f_NKbu8-BiyR-tryrXrztcL4yJ4MNSO2i7V7fhT43zI)
