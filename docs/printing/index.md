@@ -1,1 +1,3 @@
-# Printing
+title: Printing
+---
+Printing home...

@@ -1,1 +1,2 @@
-# Frequently asked Questions
+title: Frequently asked Questions
+---
