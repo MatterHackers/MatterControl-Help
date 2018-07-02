@@ -1,5 +1,5 @@
-# Creating a New Part
-
+title: Create New Part
+---
 MatterControl allows you to create and design parts. It include everything you need to get your ideas into reality with a complete set of tools to help you realize your ideas.
 
 ## Primitives
@@ -28,5 +28,3 @@ MatterControl allows you to create and design parts. It include everything you n
   - These tools allow you to make multiple copies of a part in an ordered and predictable way
 - Transforms
   - These tools make it easy to change your parts in interesting an useful ways
-
-

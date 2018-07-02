@@ -1,5 +1,5 @@
-# Primitives
-
+title: Design Primitives
+---
 MatterControl includes all the things you need to create your ideas - out of the box!
 
 ![](https://lh3.googleusercontent.com/hayGAZOitKJH3GwTc1A740O8g3jM7YJNH6qRDIQDvIr20cgf84-ZZVhz8ocVnsP8YcsmsJVdqfVSD-9WIkyBUqSuyA)
@@ -82,4 +82,3 @@ Whis these simple primitives and the included tools you can create anything you 
   [![Image Converter](https://lh3.googleusercontent.com/85c3ecIUQklR2nRZtT_CM4VUUxeGErNTfPUOMxBMqjcb8pAplPBO0bIA8CAHtLymORPBo4QpvdDyW-9dMPmqVp1Abg)](image-converter.md)
   - Image Converter can help you build complet extrusions from images
   - You can also drag images directly to the bed and use the tools you find in the overflow menu to create all the fetures (and more) of Image Converter.
-  

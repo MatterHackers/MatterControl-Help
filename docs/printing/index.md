@@ -1,4 +1,5 @@
-# Printing
+title: Printing
+---
 
 * [Adding a New Printer](printing/adding-new-printer.md)
 * [Selecting a Printer](printing/selecting-a-printer.md)
@@ -7,4 +8,3 @@
 * [Starting a Print](printing/starting-a-print.md)
 * [Slice Settings](printing/slice-settings/index.md)
 * [Printer Controls](printing/controls/index.md)
-

@@ -1,5 +1,5 @@
-# Starting a Print
-
+title: Starting a Print
+---
 From the print control, you can:
 
 * Set Layer Height
@@ -7,6 +7,5 @@ From the print control, you can:
 * Turn on and off Support
 * Start Your Print
 
-Starting a Print
-
+# Starting a Print
 ![](https://www.matterhackers.com/r/hzPnqV)

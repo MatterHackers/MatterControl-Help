@@ -1,1 +1,2 @@
-# Slice Setting
+title: Slice Setting
+---
