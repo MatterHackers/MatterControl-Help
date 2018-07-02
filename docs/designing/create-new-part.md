@@ -3,10 +3,11 @@ title: Create New Part
 MatterControl allows you to create and design parts. It include everything you need to get your ideas into reality with a complete set of tools to help you realize your ideas.
 
 ## Primitives
-![](https://lh3.googleusercontent.com/1l3QVBzRaPDmeXMSPCyvyiNReuYCgjmdBEnH4Q04iDIGOMT-GtwEBOuTBY55IQSH5BOy1FhYhNzvBelZuE2rSGn4bw)
+![2018-07-02 10_46_48-start](https://user-images.githubusercontent.com/1158332/42188916-c7102220-7e0a-11e8-8d7b-dc1921e304c6.png)
+
 
 ## Operations Tool Bar
-![](https://lh3.googleusercontent.com/XIhh34w-muVF1UkVNDhBEA4a9kBCob7-OOMHntIqooOn7K1GSeXRcUyCa2ZOZH4FOBv6E1oVhpZdp1LMW7j3elFaFA)
+![2018-07-02 09_26_32-window](https://user-images.githubusercontent.com/1158332/42188880-a4ba13b6-7e0a-11e8-90a2-2cacf4bca484.png)
 
 - Undo and Redo
   - Many of the operations in MatterControl become part of the undo history and clicking this buttons or typing 'Ctrl + Z' and 'Ctrl + Y' will undo and redo them
