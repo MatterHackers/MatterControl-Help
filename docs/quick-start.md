@@ -1,4 +1,3 @@
-uniqueid: quick-start
 title: Quick Start
 ---
 MatterControl is an all-in-one desktop 3D printing software application created by MatterHackers, Inc. You can use it to create, organize and manage 3D prints. MatterControl features an intuitive approach to everything you need to do to be successful with 3D printing
