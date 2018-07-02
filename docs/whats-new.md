@@ -6,7 +6,7 @@ uniqueid: whats-new
 
 # What's New
 
-![mc2](https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png)
+[![mc2](https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png)](https://www.matterhackers.com/articles/mattercontrol-whats-new)
 
 ### Design Tools
 
@@ -27,3 +27,5 @@ Whether you want auto-generated supports or only specific parts of your model is
 ### 64-bit Processing.
 
 MatterControl now comes in a 64-bit version, which means if you have a 64-bit computer, MatterControl can handle larger, more complicated models, and slice faster than ever!
+
+[Find Out More](https://www.matterhackers.com/articles/mattercontrol-whats-new)

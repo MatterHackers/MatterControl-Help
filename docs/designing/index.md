@@ -8,3 +8,5 @@
   * [Text Tool](designing/design-primitives/text-tool.md)
   * [Image Converter](designing/design-primitives/image-converter.md)
   * [Braille Tool](designing/design-primitives/braille-tool.md)
+
+## [Read More On MatterHackers.com](https://www.matterhackers.com/articles/mattercontrol-design-tools)
