@@ -1,8 +1,19 @@
 title: Getting More Help
 ---
-Browse through the MatterControl Support and Information Articles:
-http://www.matterhackers.com/support
 
-Forum
-Visit the MatterControl section of the MatterHackers forum:
-http://forums.matterhackers.com/category/20/mattercontrol
+# Issue Reporting
+
+If you find a bug or a problem with MatterControl, or you wish to make a sugestiong to improve the product, please file an issue on our [GitHub](https://github.com/MatterHackers/MatterControl) page.
+
+# Forum
+
+Visit the [MatterHackers forum](https://www.matterhackers.com/community) for lots of great information about 3D printing and MatterControl:
+
+# Articles
+Browse through the MatterControl [Information Articles](https://www.matterhackers.com/topic/mattercontrol):
+
+# Support
+
+If you don't find what you need in the acticles or forums, have look at our [support page](). 
+
+Thanks for your support.
