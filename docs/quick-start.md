@@ -34,6 +34,8 @@ For your first print we will add Phil-A-Ment (the MatterHackers mascot) to the b
 
 **You should now be up and printing**
 
+# Getting Back to Help
+
 * You can come back to the help at any time by cilcking on the 'MatterControl' menu and selecting 'Help'.  
   ![](https://lh3.googleusercontent.com/QrO213jp2jIfd4O3OrkWjIjkhMyCSMWjtQ-OXK6PWdSkxVy9f_NKbu8-BiyR-tryrXrztcL4yJ4MNSO2i7V7fhT43zI)
 

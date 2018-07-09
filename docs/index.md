@@ -27,6 +27,7 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Loading and Changing Filament](printing/loading-and-changing-filament.md)
 * [Add Existing Part](designing/add-existing-part.md)
 * [Starting a Print](printing/starting-a-print.md)
+* [Exporting G-Code](printing/exporting-g-code.md)
 * [Slice Settings](printing/slice-settings/index.md)
 * [Printer Controls](printing/controls/index.md)
 
