@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Home</title>
+        <title>MatterControl Help - Braille Tool</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
 
         
     </head>
-    <body class="hold-transition wyam layout-boxed layout-top-nav ">    
+    <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
         <div class="wrapper with-container">
             <!-- Header -->
@@ -43,6 +43,10 @@
                          
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
                                         
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -54,7 +58,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/MatterControl-Help/docs">Docs</a></li>
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
  
                         </ul>       
                     </div>
@@ -65,7 +69,7 @@
             </header>
             
             <!-- Left side column. contains the logo and sidebar -->
-            <aside class="main-sidebar hidden">
+            <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
     <div id="infobar-headings"></div>
@@ -77,6 +81,53 @@
 
                     <ul class="sidebar-menu">
                         
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/create-new-part">Create New Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="selected"><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-a-part">Editing a Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/support">Supports</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/controls">Printer Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing/slice-settings">Slice Setting</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/printing/slice-settings/settings-faq">Settings FAQ</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
 
                     </ul>
                             
@@ -90,12 +141,11 @@
 
 
 	<section class="content-header">
-		<h1>Home</h1>
+		<h1>Braille Tool</h1>
 	</section>
 	<section class="content">
-		<h1>Welcome!</h1>
+		<p>Braille Tool</p>
 
-<p>You can explore the documentation by selecting sections from the navigation bar above.</p>
 	</section>
                 
             </div>           

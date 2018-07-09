@@ -1,22 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Home</title>
+        <title>MatterControl Help - Scale Controls</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -31,7 +29,7 @@
 
         
     </head>
-    <body class="hold-transition wyam layout-boxed layout-top-nav ">    
+    <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
         <div class="wrapper with-container">
             <!-- Header -->
@@ -43,6 +41,10 @@
                          
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
                                         
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -54,7 +56,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/MatterControl-Help/docs">Docs</a></li>
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
  
                         </ul>       
                     </div>
@@ -65,10 +67,12 @@
             </header>
             
             <!-- Left side column. contains the logo and sidebar -->
-            <aside class="main-sidebar hidden">
+            <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"></div>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#scaling-objects-in-the-3d-view">Scaling Objects in the 3D view</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
@@ -77,6 +81,53 @@
 
                     <ul class="sidebar-menu">
                         
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/create-new-part">Create New Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-a-part">Editing a Part</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/support">Supports</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/controls">Printer Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing/slice-settings">Slice Setting</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/printing/slice-settings/settings-faq">Settings FAQ</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
 
                     </ul>
                             
@@ -90,12 +141,13 @@
 
 
 	<section class="content-header">
-		<h1>Home</h1>
+		<h1>Scale Controls</h1>
 	</section>
 	<section class="content">
-		<h1>Welcome!</h1>
+		<p>Click on any of the scale corner controls to scale your part on the bed.</p>
+<h1 id="scaling-objects-in-the-3d-view">Scaling Objects in the 3D view</h1>
+<p><img src="https://www.matterhackers.com/r/yNqiNT" class="img-fluid" alt=""></p>
 
-<p>You can explore the documentation by selecting sections from the navigation bar above.</p>
 	</section>
                 
             </div>           
@@ -150,5 +202,5 @@
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>

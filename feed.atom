@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link rel="self" href="https://matterhackers.github.io/MatterControl-Help" />
+	<id>https://matterhackers.github.io/MatterControl-Help</id>
+	<title>MatterControl Help</title>
+	<rights>2018</rights>
+	<updated>2018-07-09T23:26:36Z</updated>
+</feed>
