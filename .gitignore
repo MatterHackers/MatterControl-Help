@@ -1,1 +1,7 @@
 .vs/
+tools/
+packages.xml
+config.wyam.hash
+config.wyam.dll
+output/
+config.wyam.packages.xml
