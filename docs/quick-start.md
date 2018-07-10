@@ -5,12 +5,13 @@ MatterControl is an all-in-one desktop 3D printing software application created 
 # Select or Create Your Printer
 
 1. First you need to select or create your printer  
-   ![Select or Create](https://lh3.googleusercontent.com/lJtDqeg8jCpQi6FPATD1KgkcZ41BKkKu_IRGTPXHZvWsqYIOCOQ-cz3Hkd4dCwQgnzwq03y_JwkQHkmSewmppbOcGw)
+![Select or Create](https://lh3.googleusercontent.com/lJtDqeg8jCpQi6FPATD1KgkcZ41BKkKu_IRGTPXHZvWsqYIOCOQ-cz3Hkd4dCwQgnzwq03y_JwkQHkmSewmppbOcGw)
 1. If you have an existing printer your will find it in the list where 'Printers...' is shown  
-   ![](https://lh3.googleusercontent.com/TYWVZWUBExKkJ634Gc8G_FWr1FVKUDg81-M0nrgnq9HhcJNaDnKC5cKvZFqlU3P3Jc8BVlArLHfrdYffgt5koqV1)
-1. You can now select an 'Empty Bed' to connect to your printer and start adding things to plate  ![](https://lh3.googleusercontent.com/jJTx0uZ1a3q7BIvKQLpV2cy5fJuqetsqPKyD7K0UItqIjPRpmiSLF5YwLv2boadPhrApwiag3TUz3RU730iusQ1YUZc)
+![](https://lh3.googleusercontent.com/TYWVZWUBExKkJ634Gc8G_FWr1FVKUDg81-M0nrgnq9HhcJNaDnKC5cKvZFqlU3P3Jc8BVlArLHfrdYffgt5koqV1)
+1. You can now select an 'Empty Bed' to connect to your printer and start adding things to plate  
+![](https://lh3.googleusercontent.com/jJTx0uZ1a3q7BIvKQLpV2cy5fJuqetsqPKyD7K0UItqIjPRpmiSLF5YwLv2boadPhrApwiag3TUz3RU730iusQ1YUZc)
 1. If you do not have an existing printer your can click the + to create a new one  
-   ![Create Printer](https://lh3.googleusercontent.com/DcR9UMCS4RogMXP4XQIitYOkddLmZIy9DJzVSFDrUuJvJuxXonTgoA2AzNlQYgr1BO3-q-gcE4F2Q_VzQMbSznsNJA)
+![Create Printer](https://lh3.googleusercontent.com/DcR9UMCS4RogMXP4XQIitYOkddLmZIy9DJzVSFDrUuJvJuxXonTgoA2AzNlQYgr1BO3-q-gcE4F2Q_VzQMbSznsNJA)
 
 # Connecting to a Printer
 
@@ -21,7 +22,7 @@ MatterControl is an all-in-one desktop 3D printing software application created 
 For your first print we will add Phil-A-Ment (the MatterHackers mascot) to the bed
 
 1. You can find him in the library under Calibration Parts  
-   ![](https://lh3.googleusercontent.com/ezo7-PcZ0c-YIf6TJ8vIY81rzA2acEdu3AqcaXp_QcQugy15jylf0uawMLD-CI1kx04n0OoXnmgzGMf6_0lWTyFSh1I)
+![](https://lh3.googleusercontent.com/ezo7-PcZ0c-YIf6TJ8vIY81rzA2acEdu3AqcaXp_QcQugy15jylf0uawMLD-CI1kx04n0OoXnmgzGMf6_0lWTyFSh1I)
 
 # Starting the Print
 
