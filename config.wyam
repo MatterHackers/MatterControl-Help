@@ -1,0 +1,131 @@
+#recipe Docs
+#n Wyam.Markdown
+#n Markdig
+
+//#a **/*
+
+using System.Text;
+using Newtonsoft.Json;
+
+// Customize your settings and add new ones here
+Settings[Keys.Host] = "matterhackers.github.io";
+Settings[DocsKeys.Title] = "MatterControl Help";
+Settings[Keys.LinksUseHttps] = true;
+Settings[Keys.LinkRoot] = "/MatterControl-Help";
+
+// Add any pipeline customizations here
+Pipelines.Add("DeployMarkdown",
+	ReadFiles("docs/**/*.md"),  // Read all markdown files
+	FrontMatter(Yaml()),  // Load any frontmatter and parse it as YAML markup,
+	new TocModule(), 
+	WriteFiles()  // Write the post file 
+);
+
+public class HelpArticle
+{
+    public string Name;
+
+    public string Path;
+
+    public string UniqueID { get; set; }
+
+    public List<HelpArticle> Children { get; set; } = new List<HelpArticle>();
+}
+
+public class TocModule : IModule
+{
+    static TocModule()
+    {
+        textInfo = new System.Globalization.CultureInfo("en-US", false).TextInfo;
+    }
+
+    public TocModule()
+    {
+    }
+
+    public IEnumerable<IDocument> Execute(IReadOnlyList<IDocument> inputs, IExecutionContext context)
+    {
+        var articles = new Dictionary<string, HelpArticle>();
+
+        foreach (var document in inputs)
+        {
+            if (document.Metadata.Get("RelativeFilePath") is FilePath filePath)
+            {
+                var path = new StringBuilder();
+
+                HelpArticle parentContext = null;
+
+                var segments = filePath.Directory.FullPath.Split('/');
+
+                foreach (var segment in segments)
+                {
+                    path.AppendFormat("{0}/", segment);
+
+                    string contextPath = path.ToString();
+
+                    if (!articles.TryGetValue(contextPath, out HelpArticle helpArticle))
+                    {
+                        helpArticle = new HelpArticle()
+                        {
+                            Name = SanitizeName(segment),
+                        };
+
+                        if (parentContext != null)
+                        {
+                            parentContext.Children.Add(helpArticle);
+                        }
+
+                        articles[contextPath] = helpArticle;
+
+                        parentContext = helpArticle;
+                    }
+                    else
+                    {
+                        parentContext = helpArticle;
+                    }
+                }
+
+                if (filePath.FileName.FullPath == "index.md")
+                {
+                    parentContext.Path = filePath.FullPath;
+                }
+                else
+                {
+                    string title = document.Metadata.Get("title") as string;
+
+                    parentContext.Children.Add(new HelpArticle()
+                    {
+                        Name = title ?? SanitizeName(filePath.FileNameWithoutExtension.FullPath),
+                        Path = filePath.FullPath,
+                        UniqueID = document.Metadata.Get("uniqueid") as string
+                    });
+                }
+            }
+        }
+
+        if (articles.TryGetValue("docs/", out HelpArticle root))
+        {
+            System.IO.File.WriteAllText(
+                System.IO.Path.Combine(context.FileSystem.RootPath.FullPath, "output", "toc.json"),
+                JsonConvert.SerializeObject(
+                    root,
+                    Formatting.Indented,
+                    new JsonSerializerSettings
+                    {
+                        Formatting = Newtonsoft.Json.Formatting.Indented,
+                        ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore,
+                        NullValueHandling = NullValueHandling.Ignore
+                    }));
+        }
+
+        return inputs;
+    }
+
+    private static System.Globalization.TextInfo textInfo;
+
+    public static string SanitizeName(string name)
+    {
+        return textInfo.ToTitleCase(name.Replace(".md", "").Replace("-", " "));
+    }
+}
+

@@ -11,10 +11,16 @@
 1. Submit a pull request for the individual change  
    <img src="https://user-images.githubusercontent.com/175113/42060055-6612f430-7ada-11e8-8796-5670c01b1d95.gif" width="600px" />
     
+1. Images should be upoaded to https://www.matterhackers.com/admin/images/. All images sholud be scaled to 640 wide to fit the expected theme.
+
+
 ## Advanced change workflow
 
-1. Clone the repository
-1. Edit content on your local filesytem in the cloned repository
+1. Log in to [GitHub](https://github.com) with your account
+1. Fork the repository to make your own copy
+1. ![image](https://user-images.githubusercontent.com/1158332/42115063-62945b2e-7ba6-11e8-8f49-c2a2304377fe.png)
+1. Download the repository to your computer using [SourceTree](https://www.sourcetreeapp.com/)
+1. Edit content on your local filesytem in the cloned repository using [Visual Studio Code](https://code.visualstudio.com/)
 1. Commit your changes locally
 1. Push to your remote fork
 1. Issue a pull request from your fork
