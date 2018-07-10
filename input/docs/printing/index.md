@@ -1,3 +1,4 @@
+---
 title: Printing
 ---
 * [Adding a New Printer](adding-new-printer.md)
