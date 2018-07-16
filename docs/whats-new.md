@@ -1,4 +1,4 @@
-[![mc2](https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png)](https://www.matterhackers.com/articles/mattercontrol-whats-new)
+[mc2](https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png)]
 
 # Design Tools
 
