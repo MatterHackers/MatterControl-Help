@@ -37,3 +37,22 @@ MatterControl 1.7 articles have been imported and converted to Markdown from htt
 1. Paste the Markdown text from the clipboard into the new document
 1. Click the `Commit New File` button to save your changes and start or continue a pull request  
    <img src="https://user-images.githubusercontent.com/175113/42062228-d178975a-7ae1-11e8-8951-d734297cd00d.png" width="500px" />
+
+## Wyam build and deploy
+
+This is the short-term procedure required for success. Long term we need to resolve the Wyam/worktree conflicts and script this as part of deploy/build cake task
+
+1. Open PowerShell
+1. Change to your MatterControl-Help repository `cd \source\mh-help`
+1. Delete the `output` directory
+1. Remove the worktree `git worktree prune`
+1. Remove the local gh-pages branch `git branch -d gh-pages`
+1. Fetch `git fetch --all`
+1. Pull the latest content from the master branch `git pull`
+1. Build Wyam `.\build.ps1 -t build`
+1. Rename the output directory `mv output output_`
+1. Map output directory to gh-pages worktree `git worktree add output gh-pages`
+1. Delete existing content in the output worktree
+1. Copy the build output into the worktree `cp output_ output`
+1. Create commit `cd output; git add --all; git commit -m "Latest docs"`
+1. Push the content to your local repo and issue a new pull request
