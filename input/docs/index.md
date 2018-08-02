@@ -8,6 +8,7 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Designing Parts](designing/index.md)
 * [Printing Parts](printing/index.md)
 * [What's New](whats-new.md)
+* [You Should Teach](John.md)
 
 # Designing Parts
 
