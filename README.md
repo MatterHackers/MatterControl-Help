@@ -55,4 +55,7 @@ This is the short-term procedure required for success. Long term we need to reso
 1. Delete existing content in the output worktree
 1. Copy the build output into the worktree `cp output_ output`
 1. Create commit `cd output; git add --all; git commit -m "Latest docs"`
-1. Push the content to your local repo and issue a new pull request
+1. Push the content to your local repo and issue a new pull request `git push`
+
+## Wyam TOC generation
+Edit config.wyam to customize TOC generation
