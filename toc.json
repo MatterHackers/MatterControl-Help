@@ -3,17 +3,12 @@
   "Path": "docs/index.md",
   "Children": [
     {
-      "Name": "Release Notes",
-      "Path": "docs/release-notes.md",
-      "Children": []
-    },
-    {
       "Name": "Designing",
       "Path": "docs/designing/index.md",
       "Children": [
         {
-          "Name": "Create New Part",
-          "Path": "docs/designing/create-new-part.md",
+          "Name": "Adding Existing Part",
+          "Path": "docs/designing/add-existing-part.md",
           "Children": []
         },
         {
@@ -31,20 +26,25 @@
               "Children": []
             },
             {
-              "Name": "Text Tool",
-              "Path": "docs/designing/design-primitives/text-tool.md",
+              "Name": "Image Converter",
+              "Path": "docs/designing/design-primitives/image-converter.md",
               "Children": []
             },
             {
-              "Name": "Image Converter",
-              "Path": "docs/designing/design-primitives/image-converter.md",
+              "Name": "Text Tool",
+              "Path": "docs/designing/design-primitives/text-tool.md",
               "Children": []
             }
           ]
         },
         {
-          "Name": "Editing a Part",
-          "Path": "docs/designing/editing-a-part.md",
+          "Name": "Create New Part",
+          "Path": "docs/designing/create-new-part.md",
+          "Children": []
+        },
+        {
+          "Name": "Design Apps",
+          "Path": "docs/designing/design-apps/index.md",
           "Children": []
         },
         {
@@ -53,34 +53,29 @@
           "Children": []
         },
         {
-          "Name": "Adding Existing Part",
-          "Path": "docs/designing/add-existing-part.md",
-          "Children": []
-        },
-        {
-          "Name": "Design Apps",
-          "Path": "docs/designing/design-apps/index.md",
+          "Name": "Editing a Part",
+          "Path": "docs/designing/editing-a-part.md",
           "Children": []
         }
       ]
+    },
+    {
+      "Name": "Frequently asked Questions",
+      "Path": "docs/frequently-asked-questions.md",
+      "Children": []
     },
     {
       "Name": "Printing",
       "Path": "docs/printing/index.md",
       "Children": [
         {
-          "Name": "Controls",
-          "Path": "docs/printing/controls/index.md",
-          "Children": []
-        },
-        {
           "Name": "Exporting G-Code",
           "Path": "docs/printing/exporting-g-code.md",
           "Children": []
         },
         {
-          "Name": "Selecting a Printer",
-          "Path": "docs/printing/selecting-a-printer.md",
+          "Name": "Loading and Changing Filament",
+          "Path": "docs/printing/loading-and-changing-filament.md",
           "Children": []
         },
         {
@@ -89,8 +84,23 @@
           "Children": []
         },
         {
-          "Name": "Loading and Changing Filament",
-          "Path": "docs/printing/loading-and-changing-filament.md",
+          "Name": "Controls",
+          "Path": "docs/printing/controls/index.md",
+          "Children": []
+        },
+        {
+          "Name": "Hotend and Extruder Controls",
+          "Path": "docs/printing/hotend-controls.md",
+          "Children": []
+        },
+        {
+          "Name": "Starting a Print",
+          "Path": "docs/printing/starting-a-print.md",
+          "Children": []
+        },
+        {
+          "Name": "Selecting a Printer",
+          "Path": "docs/printing/selecting-a-printer.md",
           "Children": []
         },
         {
@@ -103,22 +113,17 @@
               "Children": []
             }
           ]
-        },
-        {
-          "Name": "Hotend and Extruder Controls",
-          "Path": "docs/printing/hotend-controls.md",
-          "Children": []
-        },
-        {
-          "Name": "Starting a Print",
-          "Path": "docs/printing/starting-a-print.md",
-          "Children": []
         }
       ]
     },
     {
       "Name": "Getting More Help",
       "Path": "docs/get-support.md",
+      "Children": []
+    },
+    {
+      "Name": "Release Notes",
+      "Path": "docs/release-notes.md",
       "Children": []
     },
     {
@@ -129,11 +134,6 @@
     {
       "Name": "What's New",
       "Path": "docs/whats-new.md",
-      "Children": []
-    },
-    {
-      "Name": "Frequently asked Questions",
-      "Path": "docs/frequently-asked-questions.md",
       "Children": []
     }
   ]

@@ -12,6 +12,6 @@ Browse through the MatterControl [Information Articles](https://www.matterhacker
 
 # Support
 
-If you don't find what you need in the acticles or forums, have look at our [support page](). 
+If you don't find what you need in the acticles or forums, have look at our [support page]()
 
 Thanks for your support.
