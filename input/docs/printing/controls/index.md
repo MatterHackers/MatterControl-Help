@@ -60,3 +60,13 @@ Use the toggle switch to enable or disable software print leveling. Some printer
 
 ### Print Leveling Probe
 Click the gear icon to measure the offset between your printer's probe and the nozzle. This feature is not available if your printer does not have a leveling probe.
+
+
+[Macros](macros.md)
+-------------------
+
+Macros are snippets of saved G-Ccode which can be called with the click of a button instead of having to be typed repeatedly.
+
+![](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0)
+
+See the article on [Macros](macros.md) for more information.
