@@ -70,3 +70,41 @@ Macros are snippets of saved G-Ccode which can be called with the click of a but
 ![](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0)
 
 See the article on [Macros](macros.md) for more information.
+
+
+Fan
+---
+
+The fan control lets you turn the printer's layer cooling fan on and off, and also set the speed.
+
+![](https://lh3.googleusercontent.com/J_vCFI0KdgZtBfcu84pG5XggUrs4zBS4-Etd8Z3aGRJsarC8Zg8mtyFXsPguoINUd6rXKKyQFxZ6GfkpkmeVBRxaVFs=s0)
+
+You can adjust the fan speed during printing, however your adjustment will only last until the next fan speed change encountered in the G-Code.
+
+If your printer does not have a layer cooling fan then this control is not shown.
+
+
+Power Control
+-------------
+
+If the printer's controller board supports it then this section allows for direct control of the printer's PSU.
+
+![](https://lh3.googleusercontent.com/6ZfR-AEd1xkBi140AgAuPdBE6V_ceH_fcXTt3D9gKiB4jKhEF7dLWIm6iGnE2gGLaqgCAXUqeOnzxc03BiO4KjOL=s0)
+
+
+Tuning Adjustment
+-----------------
+
+Allows for on-the-fly adjustment of speed and extrusion during a print.
+
+![](https://lh3.googleusercontent.com/JeJSmRR2bVuTg7AQGpeBUjWFielnyhuC4R9MwxGIkwg-ZuaM-FM2jGgVsMyxTwPYi-s_Ys-u4PqXOwPankLv8um-EA=s0)
+
+These settings are reset to 1.0 after each print is completed.
+
+### Speed Multiplier
+The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.
+
+### Extrusion Multiplier
+During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amounnt of plastic layed down.
+
+This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).
