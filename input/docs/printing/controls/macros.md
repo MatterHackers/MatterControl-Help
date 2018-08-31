@@ -11,7 +11,7 @@ To learn more about G-Code and its utility in 3D printing, check out
 this resource:
 <http://reprap.org/wiki/G-code>
 
-![Macros-example.png](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc)
+![Macros-example.png](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0)
 
 
 Macro Editor
@@ -22,10 +22,10 @@ To access the Macro Editor, click the pencil icon
 **Macros**. This will open the Macro Presets window.
 
 ### Macros Manager
-![](https://lh3.googleusercontent.com/uC22aF0BB3YZRiDdAcA_iXwkbUToMd75PUvf8GHrylzaSSdtJMwZncCRFP6WkdHWdhPa-feWopKxc-OA41az_TYOSQ)
+![](https://lh3.googleusercontent.com/uC22aF0BB3YZRiDdAcA_iXwkbUToMd75PUvf8GHrylzaSSdtJMwZncCRFP6WkdHWdhPa-feWopKxc-OA41az_TYOSQ=s0)
 
 ### Macro Editor
-![](https://lh3.googleusercontent.com/rvcDIcSdFx1hDaZ4IWc1KrtcZ1GVQHIqXuiDHTwZTtkR6nPELlDfo8YxLNUCNCyBSSqNn0W2xX7jdOKI6WtjPRVQ)
+![](https://lh3.googleusercontent.com/rvcDIcSdFx1hDaZ4IWc1KrtcZ1GVQHIqXuiDHTwZTtkR6nPELlDfo8YxLNUCNCyBSSqNn0W2xX7jdOKI6WtjPRVQ=s0)
 
 #### Macro Name
 
