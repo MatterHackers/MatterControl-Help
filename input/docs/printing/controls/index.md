@@ -1,5 +1,10 @@
+---
 title: Printer Controls
 ---
+
+Printer Controls
+================
+
 MatterControl has a rich set of controls that you can use to manually control your printer's function and make adjustments during printing
 
 You can find the manual controls on the far right after selecting and opening a printer.
@@ -13,7 +18,7 @@ The Movement section of the Controls pane allows the user to manually move the p
 
 ![](https://lh3.googleusercontent.com/2Yx1l2KUr7bzGr2FSES6be652ei6bVWOIx6dhjt7LC6Ia_PIB0fcv2Vltd0yFyR-EOWqQmzDrKoTUfioDHa2S3_qFQ=s0)
 
-The homing controls allow you to home one or all axes (move it to the starting position). The Release button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png
+The homing controls allow you to home one or all axes (move it to the starting position). The **Release** button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png
 "Pencil-edit.png").
 
 ### Live Adjustment While Printing
@@ -99,7 +104,7 @@ Allows for on-the-fly adjustment of speed and extrusion during a print.
 
 ![](https://lh3.googleusercontent.com/JeJSmRR2bVuTg7AQGpeBUjWFielnyhuC4R9MwxGIkwg-ZuaM-FM2jGgVsMyxTwPYi-s_Ys-u4PqXOwPankLv8um-EA=s0)
 
-These settings are reset to 1.0 after each print is completed.
+These settings are reset to 1.0 whenever MatterControl is restarted.
 
 ### Speed Multiplier
 The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.
@@ -108,3 +113,19 @@ The speed multiplier can be used to speed up or slow down a print. The speed mul
 During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amounnt of plastic layed down.
 
 This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).
+
+
+Firmware Updates
+----------------
+
+If your printer has an Arduino Mega 2560 based microcontroller, you can use the firmware updater to upload new firmware to it.
+
+![](https://lh3.googleusercontent.com/3C166BaJZFQUNHtfeMaQprsOCN7RGvSs4xacVWpz-N8E0JnA26kBEc--egSQf1OOYudlYcGAKLrg3-BxTKUyQXEAPw=s0)
+
+If your printer is officially supported by MatterHackers (for instance the Pulse), the firmware updater will automatically check your firmware version and alert you if an update is available. Click the **Update** button to do an automatic update.
+
+You can also update the firmware on other printers but you will need to aquire a firmware image from the printer's manufacturer. The firmware image must be a compiled `.hex` file. Click the **Change** button to select a firmware image file.
+
+The firmware updater will automatically make a backup of your printer's old firmware before uploading the new firmware. If the new firmware has problems, you can click the **Revert** button to flash the backed up firmware.
+
+The firmware updater does *not* require MatterControl to succesfully connect to your printer in order to function. This allows you to upload new firmware to a printer which currently has corrupted firmware or no firmware at all.
