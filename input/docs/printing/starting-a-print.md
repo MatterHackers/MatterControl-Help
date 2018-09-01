@@ -1,3 +1,4 @@
+---
 title: Starting a Print
 ---
 From the print control, you can:

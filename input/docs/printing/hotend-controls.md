@@ -1,3 +1,4 @@
+---
 title: Hotend and Extruder Controls
 ---
 From the hotend control, you can:

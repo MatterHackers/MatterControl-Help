@@ -1,3 +1,4 @@
+---
 title: Printer Controls
 ---
 MatterControl has a rich set of manual controls that you can use to:

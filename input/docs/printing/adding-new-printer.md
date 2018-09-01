@@ -1,3 +1,4 @@
+---
 title: Adding a new Printer
 ---
 Follow these steps to get your new printer up and running in no time.
