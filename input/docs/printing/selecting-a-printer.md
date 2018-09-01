@@ -1,3 +1,4 @@
+---
 title: Selecting a Printer
 ---
 If you have multiple printers that you are controlling with MatterControl it is very easy to switch between them.

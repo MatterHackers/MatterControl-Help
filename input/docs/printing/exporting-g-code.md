@@ -1,3 +1,4 @@
+---
 title: Exporting G-Code
 ---
 After [Selecting a Printer](selecting-a-printer.md) you can easily export G-Code to be printed from an SD card or savef for printing at a later time.
