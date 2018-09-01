@@ -1,3 +1,4 @@
+---
 title: Docs
 ---
 Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.

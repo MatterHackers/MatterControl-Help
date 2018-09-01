@@ -1,3 +1,4 @@
+---
 title: Scale Controls
 ---
 Click on any of the scale corner controls to scale your part on the bed.

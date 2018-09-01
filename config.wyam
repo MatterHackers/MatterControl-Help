@@ -23,11 +23,11 @@ Pipelines.Add("DeployMarkdown",
 
 public class HelpArticle
 {
-    public string Name;
+    public string Name { get; set; }
 
-    public string Path;
+    public string Path { get; set; }
 
-    public string UniqueID { get; set; }
+    public string ArticleKey { get; set; }
 
     public List<HelpArticle> Children { get; set; } = new List<HelpArticle>();
 }
@@ -97,7 +97,7 @@ public class TocModule : IModule
                     {
                         Name = title ?? SanitizeName(filePath.FileNameWithoutExtension.FullPath),
                         Path = filePath.FullPath,
-                        UniqueID = document.Metadata.Get("uniqueid") as string
+                        ArticleKey = document.Metadata.Get("articleKey") as string
                     });
                 }
             }
