@@ -1,16 +1,20 @@
 ---
 title: Docs
 ---
+
+Welcome
+=======
+
 Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.
 
-# Quick Links
+## Quick Links
 
 * [Quick Start](quick-start.md)
 * [Designing Parts](designing/index.md)
 * [Printing Parts](printing/index.md)
 * [What's New](whats-new.md)
 
-# Designing Parts
+## Designing Parts
 
 * [Creating a New Part](designing/create-new-part.md)
 * [Add Existing Part](designing/add-existing-part.md)
@@ -21,7 +25,7 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
   * [Image Converter](designing/design-primitives/image-converter.md)
   * [Braille Tool](designing/design-primitives/braille-tool.md)
 
-# Printing Parts
+## Printing Parts
 
 * [Adding a New Printer](printing/adding-new-printer.md)
 * [Selecting a Printer](printing/selecting-a-printer.md)
@@ -32,7 +36,12 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Slice Settings](printing/slice-settings/index.md)
 * [Printer Controls](printing/controls/index.md)
 
-# Troubleshooting
+## Printer Controls
+
+* [Controls Pane](printer-controls/index.md)
+* [Hot End Controls](printer-controls/hotend-controls.md)
+
+## Troubleshooting
 
 * [Frequently Asked Questions](frequently-asked-questions.md)
 * [Settings FAQ](printing/slice-settings/settings-faq.md)
