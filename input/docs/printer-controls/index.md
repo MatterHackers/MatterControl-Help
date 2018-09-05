@@ -70,7 +70,7 @@ Click the gear icon to measure the offset between your printer's probe and the n
 [Macros](macros.md)
 -------------------
 
-Macros are snippets of saved G-Ccode which can be called with the click of a button instead of having to be typed repeatedly.
+Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.
 
 ![](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0)
 
@@ -110,7 +110,7 @@ These settings are reset to 1.0 whenever MatterControl is restarted.
 The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.
 
 ### Extrusion Multiplier
-During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amounnt of plastic layed down.
+During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amount of plastic layed down.
 
 This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).
 
@@ -124,8 +124,8 @@ If your printer has an Arduino Mega 2560 based microcontroller, you can use the 
 
 If your printer is officially supported by MatterHackers (for instance the Pulse), the firmware updater will automatically check your firmware version and alert you if an update is available. Click the **Update** button to do an automatic update.
 
-You can also update the firmware on other printers but you will need to aquire a firmware image from the printer's manufacturer. The firmware image must be a compiled `.hex` file. Click the **Change** button to select a firmware image file.
+You can also update the firmware on other printers but you will need to acquire a firmware image from the printer's manufacturer. The firmware image must be a compiled `.hex` file. Click the **Change** button to select a firmware image file.
 
 The firmware updater will automatically make a backup of your printer's old firmware before uploading the new firmware. If the new firmware has problems, you can click the **Revert** button to flash the backed up firmware.
 
-The firmware updater does *not* require MatterControl to succesfully connect to your printer in order to function. This allows you to upload new firmware to a printer which currently has corrupted firmware or no firmware at all.
+The firmware updater does *not* require MatterControl to successfully connect to your printer in order to function. This allows you to upload new firmware to a printer which currently has corrupted firmware or no firmware at all.

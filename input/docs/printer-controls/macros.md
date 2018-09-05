@@ -5,7 +5,7 @@ title: Macros
 Macros
 ======
 
-Macros are snippets of saved G-Ccode which can be called with
+Macros are snippets of saved G-Code which can be called with
 the click of a button instead of having to be typed repeatedly.
 
 The Macros section of the [Controls pane](controls/index.md) is where the user creates and
@@ -80,7 +80,7 @@ Shows the specified message. This command takes the following parameters.
 | markdown | The contents of the message in Markdown formatted text. May contain images from the internet. Use <br> for line breaks | <code>markdown:"Trim the end of the filament to ensure a good load.<br>\!\[\]\(https://www.matterhackers.com/r/c3zLyf\)<br>Make sure you trim it at a slight angle."</code> |
 | wait_ok | Script execution will wait for the user to click 'Continue' | `wait_ok:"true"` |
 | repeat_gcode | G-Code to repeat until expire time reached. Lines can be separated with a `\|`. | `repeat_gcode:"G1 E.1 F150\|G4 P10"` |
-| expire | The max amount of time to run repeate_gcode or show this message (seconds) | `expire:"300"` |
+| expire | The max amount of time to run repeat_gcode or show this message (seconds) | `expire:"300"` |
 | count_down | Show a timer counting down from this time | `count_down:"28"` |
 
 #### choose_material()
