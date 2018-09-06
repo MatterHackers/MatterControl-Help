@@ -95,6 +95,8 @@ Infill Type
 
 The geometric pattern used for the infill. Triangle infill uses the most efficient path, which makes it the fastest to print. It is also generally the strongest pattern. However some of the other patterns (like the hexagon) are more aesthetically pleasing. You might choose these if your infill will be visible, for instance if you are using a translucent filament. Lines or concentric infill are also better when using exceptionally high fill densities (> 50%).
 
+This article has more information on [MatterControl's optimized hexagonal infill](https://www.matterhackers.com/news/mattercontrol-delivers-optimized-hexagon-infill).
+
 **Recommended Baseline:** TRIANGLES
 
 | Options    |
