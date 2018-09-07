@@ -32,6 +32,9 @@ While your printing is running you can use the Z+ and Z- buttons to adjust the h
 Clicking the keyboard icon ![Keyboard\_icon.png](http://wiki.mattercontrol.com/images/d/d7/Keyboard_icon.png
 "Keyboard_icon.png") allows you to move the printer with your keyboard.
 
+![](https://lh3.googleusercontent.com/reuHxkm3XOjiX5aO0Yr0GeZqh_ZuCbv37420r7boQ_ADRl-mxcJcl0lTBzWFJa2_17sxamPu8JTtnlYC_b64oyK-Yw=s0)
+
+<!---
 | Function | Key       |
 | -------- | --------- |
 | Home All | Home      |
@@ -46,6 +49,7 @@ Clicking the keyboard icon ![Keyboard\_icon.png](http://wiki.mattercontrol.com/i
 | Z-       | Page Down |
 | E+       | E         |
 | E-       | R         |
+--->
 
 
 Calibration

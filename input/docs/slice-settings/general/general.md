@@ -40,7 +40,7 @@ Perimeters
 
 Perimeters are the loops that form the outer walls of your print. These are sometimes also referred to as shells. This cube has 3 perimeters.
 
-![](https://lh3.googleusercontent.com/iHmXp0HTWA-DL_OryLlZ5LPpJpHsL9Sc4aKM2RJVeyG1oUoyj8khNoVhQsAXtV_dv1PLmzpgE2p48sYRTBIyHeFC=s0)
+![](https://lh3.googleusercontent.com/iHmXp0HTWA-DL_OryLlZ5LPpJpHsL9Sc4aKM2RJVeyG1oUoyj8khNoVhQsAXtV_dv1PLmzpgE2p48sYRTBIyHeFC=w250)
 
 Perimeters bear most of the load that an object is under. Adding more perimeters will make a print stronger than increasing the fill density.
 
@@ -97,12 +97,10 @@ The geometric pattern used for the infill. Triangle infill uses the most efficie
 
 This article has more information on [MatterControl's optimized hexagonal infill](https://www.matterhackers.com/news/mattercontrol-delivers-optimized-hexagon-infill).
 
-**Recommended Baseline:** TRIANGLES
-
-| Options    |
-| ---------- |
-| Grid       |
-| Triangles  |
-| Hexagon    |
-| Lines      |
-| Concentric |
+**Recommended Baseline:** Triangles  
+**Options:**
+* Grid
+* Triangles
+* Hexagon
+* Lines
+* Concentric

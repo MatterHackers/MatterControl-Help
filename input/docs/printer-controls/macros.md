@@ -74,6 +74,8 @@ Play a bell sound.
 
 Shows the specified message. This command takes the following parameters.
 
+![](https://lh3.googleusercontent.com/_Cx5A5XszvfufveoCGc5WTrEoRYCQ7oGpFjORNN8Wgosj3jqfgT9vIfC-0GMvRFrygSJ5HcC5jHRaA_SYE4rnyce=s0)
+<!---
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
 | title | Main text to show | `title:"Trim Filament"` |
@@ -82,14 +84,18 @@ Shows the specified message. This command takes the following parameters.
 | repeat_gcode | G-Code to repeat until expire time reached. Lines can be separated with a `\|`. | `repeat_gcode:"G1 E.1 F150\|G4 P10"` |
 | expire | The max amount of time to run repeat_gcode or show this message (seconds) | `expire:"300"` |
 | count_down | Show a timer counting down from this time | `count_down:"28"` |
+--->
 
 #### choose_material()
 
 Shows the choose material window. This command takes the following parameters.
 
+![](https://lh3.googleusercontent.com/G5W_Z3vUUURJLOhuva45olYK-om7aLpHUJWy84xzitHaev9aYmSgGZjFr56yenqwgGhcoodG_nTTiBXY088JI2b7B50=s0)
+<!---
 | Parameter | Description       | Example                 |
 | --------- | ----------------- | ----------------------- |
 | title     | Main text to show | `title:"Trim Filament"` |
+--->
 
 
 ### Example Script
