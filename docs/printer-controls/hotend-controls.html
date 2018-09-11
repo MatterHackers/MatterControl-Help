@@ -1,22 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Printer Controls</title>
+        <title>MatterControl Help - Hotend and Extruder Controls</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -72,7 +70,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"></div>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#hot-end-controls">Hot End Controls</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
@@ -105,28 +105,43 @@
                 <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="selected"><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
-                <li><a href="/MatterControl-Help/docs/printing/hotend-controls">Hotend and Extruder Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/printing/controls">Printer Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
-                <li class="treeview">
-                    <a href="/MatterControl-Help/docs/printing/slice-settings">Slice Setting</a> <a href="#" class="expand"></a>
-                    <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/printing/slice-settings/settings-faq">Settings FAQ</a></li>
-
-                    </ul>
-                </li>
                 <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
 
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
 
                     </ul>
                             
@@ -140,18 +155,19 @@
 
 
 	<section class="content-header">
-		<h1>Printer Controls</h1>
+		<h1>Hotend and Extruder Controls</h1>
 	</section>
 	<section class="content">
-		<p>MatterControl has a rich set of manual controls that you can use to:</p>
+		<h1 id="hot-end-controls">Hot End Controls</h1>
+<p>From the hotend control, you can:</p>
 <ul>
-<li>Move you printer around</li>
-<li>Heat your printer up</li>
-<li>Re-calibrate your leveling</li>
-<li>And more</li>
+<li>Select Material</li>
+<li>Set Temperature</li>
+<li>Move Print Head</li>
+<li>Load and Unload Filament</li>
 </ul>
-<p>You can find the manual controls on the far right after selecting and opening a printer.</p>
-<p><img src="https://www.matterhackers.com/r/vXKvzY" class="img-fluid" alt="" /></p>
+<p>Hotend and Extruder Controls</p>
+<p><img src="https://lh3.googleusercontent.com/Xk53KLiAr-HkSx-CFPidXLhE5G09zrY1FSNXWAccFtCM4fb5gXK3pTKx_dFQ1jEB-XUx1Xt1F_t2_ykEsa4N35x4yw" class="img-fluid" alt="Hotend Controls"></p>
 
 	</section>
                 
@@ -207,5 +223,5 @@
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>

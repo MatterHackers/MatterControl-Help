@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Frequently asked Questions</title>
+        <title>MatterControl Help - Layers / Surface</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,9 +70,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</a></p>
-<p><a href="#why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</a></p>
-<p><a href="#how-do-i-clear-the-application-data">How do I clear the application data?</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#layers-surface">Layers / Surface</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -104,7 +102,7 @@
 
                     </ul>
                 </li>
-                <li class="selected"><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
@@ -127,14 +125,14 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li class="treeview">
+                                        <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
@@ -157,44 +155,35 @@
 
 
 	<section class="content-header">
-		<h1>Frequently asked Questions</h1>
+		<h1>Layers / Surface</h1>
 	</section>
 	<section class="content">
-		<h1 id="is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</h1>
-<ul>
-<li><p>This mainly depends on the language your printer speaks. Currently, MatterControl supports two languages for communicating with the printer; G-Code and S3G/X3G. G-Code is the standard language used by RepRaps and most other printers. S3G is a condensed language used by Makerbot and Flashforge. Most consumer 3D printers speak G-Code.</p>
-</li>
-<li><p>In addition, you will need appropriate slice settings for your printer. MatterControl has built in profiles for many printers. A link to the complete list can be found below. If your printer is not on the list, don't worry. You will just need to fill in the settings yourself. Obtain specifications from the manufacturer and input them into MatterControl under <code>Settings &amp; Controls -&gt; Settings -&gt; Printer</code> as well as a few under <code>Settings &amp; Controls -&gt; Settings -&gt; Filament</code>.</p>
-</li>
-<li><p>Some newer G-Code printers are using intermediary boards to run web servers in order to control the prints. These printers, while they do speak G-Code, are not able to be controlled directly by MatterControl. G-Code generated in MatterControl can still be sent to the printer using its web-based interface.</p>
-</li>
-<li><p>LINK: <a href="http://www.mattercontrol.com/#jumpSupportedModels">Known compatible printers list.</a></p>
-</li>
-</ul>
-<h1 id="why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</h1>
-<ul>
-<li><p>STL files do not store any information about what units their dimensions are in. MatterControl (and all other 3D printing software) expects the dimensions in STL files to be given in mm. Most CAD software, though, will export STL files with whatever units they were designed in (usually inches). Thus, when you bring your designs into MatterControl they will be the wrong scale.</p>
-</li>
-<li><p>The best solutions is to figure out how to get your design software to export STL files in millimeters. In SolidWorks, for instance, the Save As dialog has an Options button, that allows you to set many parameters for exporting an STL.</p>
-</li>
-<li><p>If you cannot get your design software to do this, though, you can still rescale the part once you have it in MatterControl. View the part in 3D View, then enter Edit mode and choose SCALE from the bar on the right. A drop down menu offers many common conversion factors, or, axis dimension specifications can be entered directly in the appropriate fields.</p>
-</li>
-</ul>
-<h1 id="how-do-i-clear-the-application-data">How do I clear the application data?</h1>
-<ul>
-<li><p>If you are having a problem with MatterControl that is not fixed by re-installing, you may need to delete some of the data that MatterControl saves on your computer. This data will persist, even if MatterControl is uninstalled so remove that folder if you want to completely reset MatterControl to a clean slate. You can also temporarily rename the SQLite database file (MatterControl.db) to see if your settings are the cause of a problem.</p>
-</li>
-<li><p>Windows</p>
-<ul>
-<li>MatterControl keeps the user's library and settings in C:\Users{user}\AppData\Local\MatterControl.</li>
-</ul>
-</li>
-<li><p>Mac/Linux</p>
-<ul>
-<li>The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.</li>
-</ul>
-</li>
-</ul>
+		<h1 id="layers-surface">Layers / Surface</h1>
+<h2 id="avoid-crossing-perimeters">Avoid Crossing Perimeters</h2>
+<p>Prevents the nozzle from crossing outside of the perimeters when it is traveling from one place to another. This can significantly improve the surface finish of your part by reducing stringing and other extrusion artifacts.</p>
+<p>This shows a ring sliced with Avoid Crossing Perimeters off and on. The green lines are travel moves which would likely form strings in the final print.</p>
+<p><img src="https://lh3.googleusercontent.com/VTz46RplN90OCFVf1umAhsSE4aMaKxq4IRlcg0dvj3D9nVuUUaLslXINEaD7u_SMO8QC93kwBPjB6zm40hRi2pwkcw=w200" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/HtQiIndTEF1gBvHX0ooDVapGUP4GvOIm9pZDU0tbpZKVtCZ8gTuiCzcUSGCy6eGjPObA4OvozKV9t5eS_5g1jYUt=w200" class="img-fluid" alt=""></p>
+<p>For especially complicated shapes it may be difficult for the slicer to find an efficient path. In those cases you might consider turning this option off.</p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h2 id="external-perimeters-first">External Perimeters First</h2>
+<p>By default, the inner perimeters are printed first and the outermost perimeter loop is printed last. This ensures that the nozzle is fully primed when printing the outer loop, reducing surface artifacts.</p>
+<p>This option will instead print the outer loop first, then the inner loops. In some cases this can improve dimensional accuracy, however it increases the risk of artifacts on the outer surface.</p>
+<p><strong>Recommended Baseline:</strong> Off</p>
+<h2 id="start-end-overlap">Start End Overlap</h2>
+<p>This is the amount of overlap between the start and end of the perimeter loops. It is expressed as a percentage of the nozzle diameter. These pictures show 0%, 50%, and 100% overlap.</p>
+<p><img src="https://lh3.googleusercontent.com/SFn3xY3CKIH4fS0b7eJ6kIQ6QjLcKQAjmYzcbsO7omzmkcRynjLE-0gShWQOGgm-LTL6WVKUHHGhIG7RoUXTMhmbQQ=w180" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/I9-TE0IbDwTlUxeGr_9_0KIKj0N3bkd87CQnNdySa7FoBMXCfkwcd71ChOOaGLc3YE9kMwDmZ7z1HlFZEtWDbPU8Xg=w180" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/tcjZtf-aGiyKMB29gpHsaM3yYMD4ot_oBlGrB1jsoo1hjq4l8tFjcP1777b6cqt5HFeYpKCrzg2VK-Uv1sql0BNb8Q=w180" class="img-fluid" alt=""></p>
+<p>You can tune this setting in order to minimize the visibility of the perimeter seam. No overlap means there will be a slight gap between the start and end of the loop. Too much overlap and there will be a small bump instead of a gap.</p>
+<p><strong>Recommended Baseline:</strong> 75%<br>
+<strong>Units:</strong> % of nozzle diameter</p>
+<h2 id="merge-overlapping-lines">Merge Overlapping Lines</h2>
+<p>In very thin sections of a model it is possible for the perimeter loops to cross over each other. This results in a line of plastic being layed down twice in the same spot. The Merge Overlapping Lines feature detects when perimeter loops cross over each other, and replaces them with a single fatter line. These pictures show a thin section of a print with Merge Overlapping Lines turned off and turned on.</p>
+<p><img src="https://lh3.googleusercontent.com/HpvzkkRpdE11ZAne2xP9iJQrWsr99chgWzXH4p9dBlVhcHBSvxZH_oY57YvTIKXjeY7GmeDFmM-4pQgQc3d-PWDOtQ=s0" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/ghbigi4iA9nvTlFXfBjnZu9ZkYk1JYT0cow_BYzlHU0S0kH3o5kAuoV7kC4Q4_1YQm9kev-Emggv0rLN6Mciqo2F=s0" class="img-fluid" alt=""></p>
+<p>In order to preserve the quality of the outer surface, Merge Overlapping Lines only applies to inner perimeter loops, not the outer loops.</p>
+<h2 id="expand-thin-walls">Expand Thin Walls</h2>
+<p>3D printers cannot print anything thinner than the nozzle diameter (0.4 mm on most printers). This means that some models with intricate details may not print correctly since they have features smaller than the nozzle. Expand Thin Walls identifies these parts of the model and expands them in order to make them printable.</p>
+<p>This problem is often encountered when trying to print text. Here is how some text in a cursive font will print with Expand Thin Walls turned off and on.</p>
+<p><img src="https://lh3.googleusercontent.com/kqWPJb88yHyQ1Fk4ZQa3Z-6-Q5GqdxPrRm_y-c4Po6bZFQJ1Voq-oaJO-sqIZgg3B-6w-3W7lTz_0D-RsseUMsmjJsc=w200" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/bVOcsyyVyGwqncQWmw-CEtlHEFrXRgCVJWcWUdH2VO7HiMUMFK33iLigTtXXkq59njYFDFJ1CBg2s64VkbKzkqshfA=w200" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
 
 	</section>
                 

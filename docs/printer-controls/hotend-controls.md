@@ -1,3 +1,7 @@
+
+Hot End Controls
+================
+
 From the hotend control, you can:
 
 * Select Material

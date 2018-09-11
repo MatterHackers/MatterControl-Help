@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Frequently asked Questions</title>
+        <title>MatterControl Help - Settings FAQ</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,9 +70,12 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</a></p>
-<p><a href="#why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</a></p>
-<p><a href="#how-do-i-clear-the-application-data">How do I clear the application data?</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#what-is-the-optimal-layer-height">What is the optimal layer height?</a></p>
+<p><a href="#how-much-infill-should-i-use">How much infill should I use?</a></p>
+<p><a href="#how-do-i-stop-the-fan-from-coming-on-during-printing">How do I stop the fan from coming on during printing?</a></p>
+<p><a href="#what-does-support-material-do">What does support material do?</a></p>
+<p><a href="#what-is-the-the-optimal-temperature-for-printing">What is the the optimal temperature for printing?</a></p>
+<p><a href="#what-is-the-optimal-temperature-for-the-heated-bed">What is the optimal temperature for the heated bed?</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -104,7 +107,7 @@
 
                     </ul>
                 </li>
-                <li class="selected"><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
@@ -127,7 +130,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -139,7 +142,7 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
 
                     </ul>
                 </li>
@@ -157,44 +160,39 @@
 
 
 	<section class="content-header">
-		<h1>Frequently asked Questions</h1>
+		<h1>Settings FAQ</h1>
 	</section>
 	<section class="content">
-		<h1 id="is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</h1>
+		<h1 id="what-is-the-optimal-layer-height">What is the optimal layer height?</h1>
+<p>In reality, there is no “perfect” layer height. It all depends on what kind of print you are going for. If you want a print with a smooth finish and very fine details, you want a layer height of 0.1 - 0.2. If you want something a little rougher, perhaps a part in a bigger assembly, a layer height of .21 - 0.3 is more suited to your needs. You can of course have a larger layer height, but you cannot make a layer higher than the diameter of the nozzle.</p>
+<h1 id="how-much-infill-should-i-use">How much infill should I use?</h1>
+<p>The amount of infill in your part directly relates to how solid it is. Would you like a completely solid part? 100% infill is what you need. Something hollow? 0% infill will leave you with nothing but the outside layers. Usually to have a strong part, you only need about 35% infill. Most parts will be fully functional with about 15% percent infill. For really big parts, a smaller percentage is recommended, as increasing it unnecessarily can waste materials and increase print time.</p>
+<h1 id="how-do-i-stop-the-fan-from-coming-on-during-printing">How do I stop the fan from coming on during printing?</h1>
+<p>Set both the Minimum Fan Speed and Maximum Fan Speed to 0.</p>
+<h1 id="what-does-support-material-do">What does support material do?</h1>
+<p>When you check the Generate Support Material box, your print will contain support material. This is used to provide support in areas of a design that are otherwise suspended in the air, such as a bridge or a ledge. The properties will change depending on which slice engine you use.</p>
+<h1 id="what-is-the-the-optimal-temperature-for-printing">What is the the optimal temperature for printing?</h1>
+<p>That all depends on the type of filament you are using. The right temperature can also be affected by the filament dye, and manufacturer. Here is the recommended starting point for each filament:</p>
 <ul>
-<li><p>This mainly depends on the language your printer speaks. Currently, MatterControl supports two languages for communicating with the printer; G-Code and S3G/X3G. G-Code is the standard language used by RepRaps and most other printers. S3G is a condensed language used by Makerbot and Flashforge. Most consumer 3D printers speak G-Code.</p>
-</li>
-<li><p>In addition, you will need appropriate slice settings for your printer. MatterControl has built in profiles for many printers. A link to the complete list can be found below. If your printer is not on the list, don't worry. You will just need to fill in the settings yourself. Obtain specifications from the manufacturer and input them into MatterControl under <code>Settings &amp; Controls -&gt; Settings -&gt; Printer</code> as well as a few under <code>Settings &amp; Controls -&gt; Settings -&gt; Filament</code>.</p>
-</li>
-<li><p>Some newer G-Code printers are using intermediary boards to run web servers in order to control the prints. These printers, while they do speak G-Code, are not able to be controlled directly by MatterControl. G-Code generated in MatterControl can still be sent to the printer using its web-based interface.</p>
-</li>
-<li><p>LINK: <a href="http://www.mattercontrol.com/#jumpSupportedModels">Known compatible printers list.</a></p>
-</li>
+<li><strong>PLA</strong>		190-210°C</li>
+<li><strong>ABS</strong>		220-240°C</li>
+<li><strong>PET</strong>		240-250°C</li>
+<li><strong>NYLON</strong>		240-250°C</li>
+<li><strong>LAYWOOD</strong>		175-250°C</li>
+<li><strong>LAYBRICK</strong>		165-210°C</li>
+<li><strong>SOFT PLA/BENDLAY/TPE</strong>		220-235°C</li>
+<li><strong>GLOW IN THE DARK PLA</strong>		185-205°C</li>
+<li><strong>PVA</strong>		170-190°C</li>
 </ul>
-<h1 id="why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</h1>
+<p>Using these guidelines, you can find a temperature that works for your particular filament. You can also use these to configure your temperature presets.</p>
+<h1 id="what-is-the-optimal-temperature-for-the-heated-bed">What is the optimal temperature for the heated bed?</h1>
+<p>Again, this depends on the filament that you’re using. Here are the recommended starting points.</p>
 <ul>
-<li><p>STL files do not store any information about what units their dimensions are in. MatterControl (and all other 3D printing software) expects the dimensions in STL files to be given in mm. Most CAD software, though, will export STL files with whatever units they were designed in (usually inches). Thus, when you bring your designs into MatterControl they will be the wrong scale.</p>
-</li>
-<li><p>The best solutions is to figure out how to get your design software to export STL files in millimeters. In SolidWorks, for instance, the Save As dialog has an Options button, that allows you to set many parameters for exporting an STL.</p>
-</li>
-<li><p>If you cannot get your design software to do this, though, you can still rescale the part once you have it in MatterControl. View the part in 3D View, then enter Edit mode and choose SCALE from the bar on the right. A drop down menu offers many common conversion factors, or, axis dimension specifications can be entered directly in the appropriate fields.</p>
-</li>
+<li><strong>PLA</strong>		70-80°C</li>
+<li><strong>ABS/NYLON</strong>		100-120°C</li>
+<li><strong>SOFT PLA/BENDLAY/TPE</strong>		65-85°C</li>
 </ul>
-<h1 id="how-do-i-clear-the-application-data">How do I clear the application data?</h1>
-<ul>
-<li><p>If you are having a problem with MatterControl that is not fixed by re-installing, you may need to delete some of the data that MatterControl saves on your computer. This data will persist, even if MatterControl is uninstalled so remove that folder if you want to completely reset MatterControl to a clean slate. You can also temporarily rename the SQLite database file (MatterControl.db) to see if your settings are the cause of a problem.</p>
-</li>
-<li><p>Windows</p>
-<ul>
-<li>MatterControl keeps the user's library and settings in C:\Users{user}\AppData\Local\MatterControl.</li>
-</ul>
-</li>
-<li><p>Mac/Linux</p>
-<ul>
-<li>The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.</li>
-</ul>
-</li>
-</ul>
+<p>Using these guidelines, you can find a temperature that works for your particular filament. You can also use these to configure your temperature presets.</p>
 
 	</section>
                 
