@@ -38,7 +38,7 @@ This is the amount of overlap between the start and end of the perimeter loops. 
 You can tune this setting in order to minimize the visibility of the perimeter seam. No overlap means there will be a slight gap between the start and end of the loop. Too much overlap and there will be a small bump instead of a gap.
 
 **Recommended Baseline:** 75%  
-**Units:** % of nozzle diameter
+**Units:** percent of nozzle diameter (%)
 
 Merge Overlapping Lines
 -----------------------

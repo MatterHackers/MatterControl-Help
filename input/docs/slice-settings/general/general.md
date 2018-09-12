@@ -32,7 +32,7 @@ First Layer Thickness
 The thickness of the first layer of the print. A first layer thicker than the default layer height can ensure good adhesion to the build plate, since it means more material will be extruded and more material provides more bed adhesion. A thicker first layer also allows for more variation in the height of the bed.
 
 **Recommended Baseline:** 0.3 mm  
-**Units:** millimeters (mm) or % of normal Layer Thickness
+**Units:** millimeters (mm) or percent of normal Layer Thickness (%)
 
 
 Perimeters
