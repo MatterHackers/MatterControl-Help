@@ -18,8 +18,7 @@ The Movement section of the Controls pane allows the user to manually move the p
 
 ![](https://lh3.googleusercontent.com/2Yx1l2KUr7bzGr2FSES6be652ei6bVWOIx6dhjt7LC6Ia_PIB0fcv2Vltd0yFyR-EOWqQmzDrKoTUfioDHa2S3_qFQ=s0)
 
-The homing controls allow you to home one or all axes (move it to the starting position). The **Release** button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png
-"Pencil-edit.png").
+The homing controls allow you to home one or all axes (move it to the starting position). The **Release** button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png).
 
 ### Live Adjustment While Printing
 
