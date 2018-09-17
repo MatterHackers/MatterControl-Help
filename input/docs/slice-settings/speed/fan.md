@@ -24,7 +24,7 @@ Turn On If Below
 This is the maximum layer time where the layer cooling fan will be activated. The fan will run at the [minimum speed](#minimum-speed) if a layer takes this long to print. In the example above this setting is 180 seconds.
 
 **Recommended Baseline for PLA:** 180 s  
-**Units:** Seconds (s)
+**Units:** seconds (s)
 
 Run Max If Below
 ----------------
@@ -32,7 +32,7 @@ Run Max If Below
 This is the maximum layer time where the layer cooling fan will run at [maximum speed](#macimum-speed). If a layer takes longer than this to print, the fan will still run but it will be throttled down. In the example above this setting is 60 seconds.
 
 **Recommended Baseline for PLA:** 60 s  
-**Units:** Seconds (s)
+**Units:** seconds (s)
 
 Minimum Speed
 -------------
@@ -42,7 +42,7 @@ This is the lowest speed the fan will go when it is turned on. If not enough pow
 In the example above the minimum fan speed is 30%.
 
 **Recommended Baseline:** 30%  
-**Units:** Percent (%)  
+**Units:** percent (%)  
 **G-Code Replacement Variable:** `min_fan_speed`
 
 Maximum Speed
@@ -51,7 +51,7 @@ Maximum Speed
 This is the fastest speed the fan will go when it is turned on. This should be set to 100% unless you have an extremely powerful fan.
 
 **Recommended Baseline**: 100%  
-**Units:** Percent (%)  
+**Units:** percent (%)  
 **G-Code Replacement Variable:** `max_fan_speed`
 
 Bridging Fan Speed
@@ -60,7 +60,7 @@ Bridging Fan Speed
 This is the fan speed that will be used during [bridging](speed#bridges). This overrides the other fan speed settings. In most cases you will want to use as much cooling as possible during bridging in order to make sure that the lines harden as soon as possible. This draws them tight (due to thermal contraction) and prevents them from drooping.
 
 **Recommended Baseline:** 100%  
-**Units:** Percent (%)  
+**Units:** percent (%)  
 **G-Code Replacement Variable:** `bridge_fan_speed`
 
 Disable Fan For The First
@@ -69,4 +69,4 @@ Disable Fan For The First
 The number of layers at the start of the print where the fan will not be turned on. Generally, for materials that require layer cooling, it’s a good idea to disable for the first layer in order to ensure good bed adhesion.
 
 **Recommended Baseline:** 1  
-**Units:** Count
+**Units:** count
