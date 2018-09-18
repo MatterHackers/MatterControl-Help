@@ -2,11 +2,8 @@
 title: General
 ---
 
-General Slice Settings
-======================
-
 Layer Thickness
----------------
+===============
 
 The height of each layer of the print, except the first. A smaller number will create more layers and more vertical accuracy but also a slower print.
 
@@ -27,7 +24,7 @@ It’s important to note that low layer heights (< .15mm) require excellent bed 
 
 
 First Layer Thickness
----------------------
+=====================
 
 The thickness of the first layer of the print. A first layer thicker than the default layer height can ensure good adhesion to the build plate, since it means more material will be extruded and more material provides more bed adhesion. A thicker first layer also allows for more variation in the height of the bed.
 
@@ -36,7 +33,7 @@ The thickness of the first layer of the print. A first layer thicker than the de
 
 
 Perimeters
-----------
+==========
 
 Perimeters are the loops that form the outer walls of your print. These are sometimes also referred to as shells. This cube has 3 perimeters.
 
@@ -53,7 +50,7 @@ This can be specified as count or as thickness in millimeters (mm). For instance
 
 
 Top Solid Layers
-----------------
+================
 
 These are the layers that form a solid surface on the top of the print. 
 
@@ -64,7 +61,7 @@ If you are using thinner layers then more top layers will be required to form a 
 
 
 Bottom Solid Layers
--------------------
+===================
 
 These are the layers that form a solid surface on the bottom of the print. Generally fewer bottom layers are required than top layers, since the bottom layers do not have to bridge over the infill.
 
@@ -73,7 +70,7 @@ These are the layers that form a solid surface on the bottom of the print. Gener
 
 
 Fill Density
-------------
+============
 
 3D prints are hardly ever done completely solid. Instead, they are partially hollow with a pattern on the inside. This inside area is called the infill. You can choose the density of the infill pattern, from 0% (completely hollow) to 100% (completely solid).
 
@@ -91,7 +88,7 @@ If you wish to make your print completely solid, we do not advise going above 85
 
 
 Infill Type
------------
+===========
 
 The geometric pattern used for the infill. Triangle infill uses the most efficient path, which makes it the fastest to print. It is also generally the strongest pattern. However some of the other patterns (like the hexagon) are more aesthetically pleasing. You might choose these if your infill will be visible, for instance if you are using a translucent filament. Lines or concentric infill are also better when using exceptionally high fill densities (> 50%).
 

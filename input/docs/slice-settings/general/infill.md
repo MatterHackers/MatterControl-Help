@@ -2,9 +2,6 @@
 title: Infill
 ---
 
-Infill
-======
-
 Infill is the area of a print inside the perimeters. The main infill settings are in the [General](general) section.
 
 * [Fill Density](general#fill-density)
@@ -13,7 +10,7 @@ Infill is the area of a print inside the perimeters. The main infill settings ar
 This section includes advanced infill settings.
 
 Starting Angle
---------------
+==============
 
 The angle of the infill pattern relative to the X axis. This applies to sparse infill (the pattern on the inside of the print) and dense infill (used for the solid top/bottom layers). Every other solid layer will be offset by 90°. This angle is not used when bridging.
 
@@ -21,7 +18,7 @@ The angle of the infill pattern relative to the X axis. This applies to sparse i
 **Units:** degrees CCW from the X axis (°)
 
 Infill Overlap
---------------
+==============
 
 The amount the infill lines will push into the perimeter. Helps ensure that there are no gaps between the fill and the perimeters. Too much of an overlap can cause blobs or other artifacts on the surface of your print.
 
@@ -29,7 +26,7 @@ The amount the infill lines will push into the perimeter. Helps ensure that ther
 **Units:** millimeters (mm) or percent of nozzle diameter (%)
 
 Fill Thin Gaps
---------------
+==============
 
 When the space between perimeters is very small (less than one nozzle diameter wide), it is not possible to fill it with normal infill. The Fill Thin Gaps feature will attempt to fill these areas with an underextruded line.
 

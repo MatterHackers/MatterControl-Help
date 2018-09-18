@@ -2,9 +2,6 @@
 title: Raft
 ---
 
-Raft
-====
-
 A raft is a removable layer printed underneath your object.
 
 ![](https://lh3.googleusercontent.com/zFUGCRoafVe-xGgdjYVp06gb1Wjyh3zaNnb3QPYYTpCpDRqnui6HCgjZXIDLlxWdcQeWoiYZNsdLhTHsCTxwBN6g=s0)
@@ -20,7 +17,7 @@ In both of these cases the raft should be considered a last resort. Rafts take a
 The best solution for bed adhesion is to [find a bed surface that works better](https://www.matterhackers.com/news/choosing-the-right-3d-print-bed-surface) with the material you are printing. For leveling problems, you should try using MatterControl's software print leveling first.
 
 Expand Distance
----------------
+===============
 
 This is how far the raft will extend beyond the edge of your print. Making a larger raft will provide more adhesion and help prevent warping.
 
@@ -28,7 +25,7 @@ This is how far the raft will extend beyond the edge of your print. Making a lar
 **Units:** millimeters (mm)
 
 Air Gap
--------
+=======
 
 The distance between the top of the raft and the first layer of your print. The ideal raft provides good bed adhesion while printing and then easily peels off once finished. The Air Gap determines how easy it is to peel the raft off your part. Too much of a gap and your part may not stick well to the raft. Too little, and the raft will be very difficult to remove. Material, nozzle diameter, and layer height all affect the results. A good starting point is ½ your nozzle diameter. So, if you have a .4mm nozzle, start with a 0.2mm Air Gap. In general, materials with excellent interlayer adhesion – like nylon and Ninjaflex – require a larger air gap.
 

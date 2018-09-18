@@ -2,9 +2,6 @@
 title: Fan
 ---
 
-Fan
-===
-
 *This section is only available if your printer has a layer cooling fan*
 
 Adequate cooling is very important for achieving high quality prints. A layer cooling fan is used to cool off the plastic as soon as it comes out of the nozzle. This ensures that it hardens quickly and holds it's shape. If a layer above is being printed while the layer below is still soft, it will deform.
@@ -19,7 +16,7 @@ This graph shows an example fan speed profile.
 
 
 Turn On If Below
-----------------
+================
 
 This is the maximum layer time where the layer cooling fan will be activated. The fan will run at the [minimum speed](#minimum-speed) if a layer takes this long to print. In the example above this setting is 180 seconds.
 
@@ -27,7 +24,7 @@ This is the maximum layer time where the layer cooling fan will be activated. Th
 **Units:** seconds (s)
 
 Run Max If Below
-----------------
+================
 
 This is the maximum layer time where the layer cooling fan will run at [maximum speed](#macimum-speed). If a layer takes longer than this to print, the fan will still run but it will be throttled down. In the example above this setting is 60 seconds.
 
@@ -35,7 +32,7 @@ This is the maximum layer time where the layer cooling fan will run at [maximum 
 **Units:** seconds (s)
 
 Minimum Speed
--------------
+=============
 
 This is the lowest speed the fan will go when it is turned on. If not enough power is applied to the fan, it will not turn on at all. For this reason, most printers are not capable of running their fan at very low speeds. This should be set to the minimum speed that you know your fan will work at. If you are unsure, you may try experimenting with different fan speeds using the [manual controls](../../printer-controls#fan) to see how high you have to go before the fan starts spinning.
 
@@ -46,7 +43,7 @@ In the example above the minimum fan speed is 30%.
 **G-Code Replacement Variable:** `min_fan_speed`
 
 Maximum Speed
--------------
+=============
 
 This is the fastest speed the fan will go when it is turned on. This should be set to 100% unless you have an extremely powerful fan.
 
@@ -55,7 +52,7 @@ This is the fastest speed the fan will go when it is turned on. This should be s
 **G-Code Replacement Variable:** `max_fan_speed`
 
 Bridging Fan Speed
-------------------
+==================
 
 This is the fan speed that will be used during [bridging](speed#bridges). This overrides the other fan speed settings. In most cases you will want to use as much cooling as possible during bridging in order to make sure that the lines harden as soon as possible. This draws them tight (due to thermal contraction) and prevents them from drooping.
 
@@ -64,7 +61,7 @@ This is the fan speed that will be used during [bridging](speed#bridges). This o
 **G-Code Replacement Variable:** `bridge_fan_speed`
 
 Disable Fan For The First
--------------------------
+=========================
 
 The number of layers at the start of the print where the fan will not be turned on. Generally, for materials that require layer cooling, it’s a good idea to disable for the first layer in order to ensure good bed adhesion.
 

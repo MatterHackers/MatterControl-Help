@@ -2,11 +2,8 @@
 title: Speed
 ---
 
-Speed
-=====
-
 Initial Layer Speed
--------------------
+===================
 
 The speed at which the nozzle will move when printing the first layer. The first layer typically requires slower than normal print speeds for best bed adhesion. This affects the first layer of the print as well as the first layer of the raft, if there is one.
 
@@ -17,7 +14,7 @@ For SLA printers this speed can be applied to more than just the first layer. Se
 **G-Code Replacement Variable:** `first_layer_speed`
 
 Infill
-------
+======
 
 The speed at which [infill](../general/infill) will print. Infill can be printed faster than any other part of the print. Most other speeds can be specified as a percentage of the infill speed. Generally when people refer to a print being done at a certain speed, they are referring to the infill speed.
 
@@ -26,7 +23,7 @@ The speed at which [infill](../general/infill) will print. Infill can be printed
 **G-Code Replacement Variable:** `infill_speed`
 
 Top Solid Infill
-----------------
+================
 
 This is the speed used for the infill on the last of the [top solid layers](../general/general#top-solid-layers). This can be done slower than the regular infill in order to improve the quality of the surface finish.
 
@@ -34,7 +31,7 @@ This is the speed used for the infill on the last of the [top solid layers](../g
 **Units:** millimeters per second (mm/s) or percent of [infill speed](#infill-speed) (%)
 
 Raft
-----
+====
 
 The speed used for printing a [raft](../adhesion/raft), if you are using one. The first layer of the raft will still be printed at the [initial layer speed](#initial-layer-speed). This setting only applies to the other layers.
 
@@ -42,7 +39,7 @@ The speed used for printing a [raft](../adhesion/raft), if you are using one. Th
 **Units:** millimeters per second (mm/s) or percent of [infill speed](#infill-speed) (%)
 
 Inside Perimeters
------------------
+=================
 
 The speed of the inner [perimeter loops](../general/general#perimeters), if you have more than one perimeter. These are not visible when the print is finished. They can generally be printed faster than the outer perimeter, but should probably be slightly slower than infill.
 
@@ -51,7 +48,7 @@ The speed of the inner [perimeter loops](../general/general#perimeters), if you 
 **G-Code Replacement Variable:** `perimeter_speed`
 
 Outside Perimeter
------------------
+=================
 
 Perhaps the most important speed setting. This is the speed for the outermost perimeter loop, which is what you see and feel when a print is complete. We recommend printing slow in order to ensure the best quality. It doesn’t add much print time to print slow outside perimeters, but can significantly improve print quality and surface finish.
 
@@ -60,7 +57,7 @@ Perhaps the most important speed setting. This is the speed for the outermost pe
 **G-Code Replacement Variable:** `external_perimeter_speed`
 
 Support Material
-----------------
+================
 
 The speed at which [support material](../support/support) structures will print. You may wish to print this slower than the infill speed in order to ensure that the support structures are sturdy and do not break or fall over during printing.
 
@@ -69,7 +66,7 @@ The speed at which [support material](../support/support) structures will print.
 **G-Code Replacement Variable:** `support_material_speed`
 
 Bridges
--------
+=======
 
 Bridges are sections of a print which have nothing underneath them, but are supported on either side.
 
@@ -85,7 +82,7 @@ Bridging is tricky. In order for it to work the bridge needs to be printed at th
 **See Also:** [Bridging Fan Speed](fan#bridging-fan-speed), [Bridge Over Infill](#bridge-over-infill)
 
 Travel
-------
+======
 
 The speed the nozzle will go when moving from one part of the print to another, without extruding material. The travel speed is one of the most important settings for reducing stringing and oozing. This should be set as fast as your printer can go. 80 mm/s is safe for most printers, however many printers (such as deltas or others with bowden extruders) can go as high as 200 mm/s.
 
@@ -96,7 +93,7 @@ Since travel moves are the fastest moves the printer makes, they are the most li
 **G-Code Replacement Variable:** `travel_speed`
 
 Bridge Over Infill
-------------------
+==================
 
 When this setting is on, [bridging speed](#bridges) and [fan](fan#bridging-fan-speed) settings will be used when printing the first solid top layer over infill. This setting will reduce the number of [top solid layers](../general/general#top-solid-layers) you need in order to have a smooth top surface with no gaps. This is especially true if you have a low [fill density](../general/general#fill-density), so there are large spaces in the infill pattern.
 

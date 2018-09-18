@@ -2,11 +2,8 @@
 title: Cooling
 ---
 
-Cooling
-=======
-
 Slow Down If Layer Print Time Is Below
---------------------------------------
+======================================
 
 The minimum amount of time a layer must take to print. If a layer takes less time than this, then all printing speeds will be slowed down until the layer takes at least this much time.
 
@@ -18,7 +15,7 @@ This setting is heavily material dependant. Some materials need lots of time to 
 **Units:** seconds (s)
 
 Minimum Print Speed
--------------------
+===================
 
 The minimum speed that the printer can go when the layer is slowed down for cooling. The slicer will try to slow the printer so that each layer takes the minimum layer time (above), but it will not slow any print speeds lower than this.
 
