@@ -4,7 +4,7 @@ title: Macros
 
 Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.
 
-The Macros section of the [Controls pane](controls/index.md) is where the user creates and
+The Macros section of the [Controls pane](index.md) is where the user creates and
 stores these macros.
 
 To learn more about G-Code and its utility in 3D printing, check out this resource: <http://reprap.org/wiki/G-code>
