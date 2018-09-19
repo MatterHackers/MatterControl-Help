@@ -2,40 +2,35 @@
 title: Macros
 ---
 
-Macros
-======
-
-Macros are snippets of saved G-Code which can be called with
-the click of a button instead of having to be typed repeatedly.
+Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.
 
 The Macros section of the [Controls pane](index.md) is where the user creates and
 stores these macros.
 
-To learn more about G-Code and its utility in 3D printing, check out
-this resource:
-<http://reprap.org/wiki/G-code>
+To learn more about G-Code and its utility in 3D printing, check out this resource: <http://reprap.org/wiki/G-code>
 
 ![Macros-example.png](https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0)
 
 
 Macro Editor
-------------
+============
 
 To access the Macro Editor, click the pencil icon
-(![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png "Pencil-edit.png")) next to the word
-**Macros**. This will open the Macro Presets window.
+(![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png "Pencil-edit.png")) next to the word **Macros**. This will open the Macro Presets window.
 
-### Macros Manager
+Macros Manager
+--------------
 ![](https://lh3.googleusercontent.com/uC22aF0BB3YZRiDdAcA_iXwkbUToMd75PUvf8GHrylzaSSdtJMwZncCRFP6WkdHWdhPa-feWopKxc-OA41az_TYOSQ=s0)
 
-### Macro Editor
+Macro Editor
+------------
 ![](https://lh3.googleusercontent.com/rvcDIcSdFx1hDaZ4IWc1KrtcZ1GVQHIqXuiDHTwZTtkR6nPELlDfo8YxLNUCNCyBSSqNn0W2xX7jdOKI6WtjPRVQ=s0)
 
-#### Macro Name
+### Macro Name
 
 Enter a unique name for the macro. This will be the label on the button shown in the Controls pane.
 
-#### Macro Commands
+### Macro Commands
 
 Enter [G-Code](http://reprap.org/wiki/G-code) command(s) in this field. The G-Code commands will be sent to the printer. In addition to standard G-Code, macros support these other features
 
@@ -45,11 +40,12 @@ Enter [G-Code](http://reprap.org/wiki/G-code) command(s) in this field. The G-Co
 
 
 Macro Scripting
----------------
+===============
 
 In addition to the G-Code commands sent to the printer, macros allow you to script events on the host side, within MatterControl itself. This allows you to display messages or ask for input from the user. These functions are called by using commands within the G-Code comments.
 
-### Syntax
+Syntax
+------
 
 To use a macro scripting command, begin the line with the following statement:
 
@@ -64,13 +60,14 @@ The result should look something like this:
 `; host.show_message(title:"Waiting for extruder to heat to
 [temperature].")`
 
-### Commands
+Commands
+--------
 
-#### ding()
+### ding()
 
 Play a bell sound.
 
-#### show_message()
+### show_message()
 
 Shows the specified message. This command takes the following parameters.
 
@@ -86,7 +83,7 @@ Shows the specified message. This command takes the following parameters.
 | count_down | Show a timer counting down from this time | `count_down:"28"` |
 --->
 
-#### choose_material()
+### choose_material()
 
 Shows the choose material window. This command takes the following parameters.
 
@@ -98,7 +95,8 @@ Shows the choose material window. This command takes the following parameters.
 --->
 
 
-### Example Script
+Example Script
+--------------
 
 The following is an example of a script used for loading filament:
 
