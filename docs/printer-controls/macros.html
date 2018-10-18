@@ -70,7 +70,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#macros">Macros</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#macro-editor">Macro Editor</a></p>
+<p><a href="#macro-scripting">Macro Scripting</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -129,15 +130,35 @@
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </li>
@@ -158,45 +179,40 @@
 		<h1>Macros</h1>
 	</section>
 	<section class="content">
-		<h1 id="macros">Macros</h1>
-<p>Macros are snippets of saved G-Code which can be called with
-the click of a button instead of having to be typed repeatedly.</p>
-<p>The Macros section of the <a href="controls/index.md">Controls pane</a> is where the user creates and
+		<p>Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.</p>
+<p>The Macros section of the <a href="index.md">Controls pane</a> is where the user creates and
 stores these macros.</p>
-<p>To learn more about G-Code and its utility in 3D printing, check out
-this resource:
-<a href="http://reprap.org/wiki/G-code">http://reprap.org/wiki/G-code</a></p>
+<p>To learn more about G-Code and its utility in 3D printing, check out this resource: <a href="http://reprap.org/wiki/G-code">http://reprap.org/wiki/G-code</a></p>
 <p><img src="https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0" class="img-fluid" alt="Macros-example.png"></p>
-<h2 id="macro-editor">Macro Editor</h2>
+<h1 id="macro-editor">Macro Editor</h1>
 <p>To access the Macro Editor, click the pencil icon
-(<img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png">) next to the word
-<strong>Macros</strong>. This will open the Macro Presets window.</p>
-<h3 id="macros-manager">Macros Manager</h3>
+(<img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png">) next to the word <strong>Macros</strong>. This will open the Macro Presets window.</p>
+<h2 id="macros-manager">Macros Manager</h2>
 <p><img src="https://lh3.googleusercontent.com/uC22aF0BB3YZRiDdAcA_iXwkbUToMd75PUvf8GHrylzaSSdtJMwZncCRFP6WkdHWdhPa-feWopKxc-OA41az_TYOSQ=s0" class="img-fluid" alt=""></p>
-<h3 id="macro-editor-1">Macro Editor</h3>
+<h2 id="macro-editor-1">Macro Editor</h2>
 <p><img src="https://lh3.googleusercontent.com/rvcDIcSdFx1hDaZ4IWc1KrtcZ1GVQHIqXuiDHTwZTtkR6nPELlDfo8YxLNUCNCyBSSqNn0W2xX7jdOKI6WtjPRVQ=s0" class="img-fluid" alt=""></p>
-<h4 id="macro-name">Macro Name</h4>
+<h3 id="macro-name">Macro Name</h3>
 <p>Enter a unique name for the macro. This will be the label on the button shown in the Controls pane.</p>
-<h4 id="macro-commands">Macro Commands</h4>
+<h3 id="macro-commands">Macro Commands</h3>
 <p>Enter <a href="http://reprap.org/wiki/G-code">G-Code</a> command(s) in this field. The G-Code commands will be sent to the printer. In addition to standard G-Code, macros support these other features</p>
 <ul>
 <li>You can add comments to the code using a semicolon <code>;</code>. Comments will not be sent to the printer.</li>
 <li>You can use brackets <code>[]</code> to insert G-Code replacement variables.</li>
 <li>You can use <code>; host.</code> commands to script events in MatterControl. This is described below.</li>
 </ul>
-<h2 id="macro-scripting">Macro Scripting</h2>
+<h1 id="macro-scripting">Macro Scripting</h1>
 <p>In addition to the G-Code commands sent to the printer, macros allow you to script events on the host side, within MatterControl itself. This allows you to display messages or ask for input from the user. These functions are called by using commands within the G-Code comments.</p>
-<h3 id="syntax">Syntax</h3>
+<h2 id="syntax">Syntax</h2>
 <p>To use a macro scripting command, begin the line with the following statement:</p>
 <p><code>; host.</code></p>
 <p>Then add a command and any applicable parameters.</p>
 <p><code>command(parameter:"value")"</code></p>
 <p>The result should look something like this:</p>
 <p><code>; host.show_message(title:"Waiting for extruder to heat to [temperature].")</code></p>
-<h3 id="commands">Commands</h3>
-<h4 id="ding">ding()</h4>
+<h2 id="commands">Commands</h2>
+<h3 id="ding">ding()</h3>
 <p>Play a bell sound.</p>
-<h4 id="show_message">show_message()</h4>
+<h3 id="show_message">show_message()</h3>
 <p>Shows the specified message. This command takes the following parameters.</p>
 <p><img src="https://lh3.googleusercontent.com/_Cx5A5XszvfufveoCGc5WTrEoRYCQ7oGpFjORNN8Wgosj3jqfgT9vIfC-0GMvRFrygSJ5HcC5jHRaA_SYE4rnyce=s0" class="img-fluid" alt=""></p>
 <!---
@@ -209,7 +225,7 @@ this resource:
 | expire | The max amount of time to run repeat_gcode or show this message (seconds) | `expire:"300"` |
 | count_down | Show a timer counting down from this time | `count_down:"28"` |
 --->
-<h4 id="choose_material">choose_material()</h4>
+<h3 id="choose_material">choose_material()</h3>
 <p>Shows the choose material window. This command takes the following parameters.</p>
 <p><img src="https://lh3.googleusercontent.com/G5W_Z3vUUURJLOhuva45olYK-om7aLpHUJWy84xzitHaev9aYmSgGZjFr56yenqwgGhcoodG_nTTiBXY088JI2b7B50=s0" class="img-fluid" alt=""></p>
 <!---
@@ -217,7 +233,7 @@ this resource:
 | --------- | ----------------- | ----------------------- |
 | title     | Main text to show | `title:"Trim Filament"` |
 --->
-<h3 id="example-script">Example Script</h3>
+<h2 id="example-script">Example Script</h2>
 <p>The following is an example of a script used for loading filament:</p>
 <pre><code>; host.choose_material(title:"Choose the material that you are loading.")
 

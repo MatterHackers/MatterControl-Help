@@ -1,7 +1,4 @@
 
-Slice Settings
-==============
-
 When you have a printer open you can find the 'Slice Settings' near the top far right of MatterControl. 
 
 Clicking this will open up the settings panel where you can edit all of the settings about your printer.
@@ -10,7 +7,7 @@ Clicking this will open up the settings panel where you can edit all of the sett
 
 
 Quality and Material Presets
-----------------------------
+============================
 
 MatterControl lets you choose from preset settings for print quality and material.
 
@@ -22,20 +19,21 @@ When a preset is enabled, the affected settings are highlighted. Quality setting
 
 
 Search
-------
+======
+
 MatterControl includes a search feature so you can easily find the settings you are looking for.
 
 ![](https://lh3.googleusercontent.com/L4d841reikEdUG9lJlwuC69Wf4KVDdiGs117AXy0yMpjzbotwAC8ZWr56gjZmE8ojf8HOKpIRFTTZoufQxYGJU0N=s0)
 
 
 Cloud Synchronization
----------------------
+=====================
 
 If you have signed in to your MatterControl Cloud account, then your slice settings are automatically synchronized with the Cloud. If you change a slice setting in MatterControl, then that change will immediately be sent to any other computers you have running MatterControl, which are logged in to the same account.
 
 
 History
--------
+=======
 
 MatterControl saves backups of all of your slice settings on a regular basis, and uploads these backups to the MatterControl Cloud. This is useful if you are experimenting with slice settings and decide that things have gone wrong and you need to change them back to how they were before. The **Restore Settings** option in the overflow menu (![](https://lh3.googleusercontent.com/B0iPKfPTIEs8X9qR5xZYj5aarp5PcLy3-cLjr3DYIRxZnyWLFe3-UMBYmfafoU8CjfD1dDUMmjMpcqZsJuAUsg8k-A)) will allow you to choose settings from a previous date to restore to.
 
@@ -44,27 +42,33 @@ MatterControl saves backups of all of your slice settings on a regular basis, an
 In addition, you can reset all settings to the factory defaults by choosing **Reset to Defaults**.
 
 Settings Layers
----------------
+===============
 
 MatterControl's slice settings work on a system of layers. Each layer can override the settings in the layers below it. The settings view shows you which layer each setting is coming from based on the color it is highlighted.
 
 At the bottom is the base layer. These are the default settings provided by your printer's manufacturer. All settings are included in the base layer. In the settings view, if a particular setting is not highlighted with any color (orange, yellow, blue, etc.) then that means the baseline setting is being used. The baseline settings are never changed, which means that you can always revert back to your manufacturer's defaults if something goes wrong.
 
-### Quality Presets
+Quality Presets
+---------------
+
 The next layer is the Quality layer. If a setting from this layer is being used, it is highlighted in yellow in the settings view.
 
 ![](https://lh3.googleusercontent.com/_tUvOzZPwKxfZSCXox3RVkkmSLX3vL3WWAXIun2EOPQFES9iKYdCS529__0yCyTaXWtTX5wEkmzXqxCB19Vg1IF9tQ=s0)
 
 Your printer profile comes with a few Quality presets to choose from, but you can also edit them and make your own. This typically contains settings related to layer thickness and speed. However, you are free to use your discretion about what belongs here. Any setting can be added. For instance, if I wanted to make a quality setting for high strength prints, I could name it "Strong" and then add settings like the infill density and number of perimeters.
 
-### Material Presets
+Material Presets
+----------------
+
 Next is the Material layer. These settings are highlighted orange. 
 
 ![](https://lh3.googleusercontent.com/06EDlnXpQTegBTN270jbPaRUMl7vi0QJ2qcH-YlHxB0wvB4GpgwRLv6gYYxWgdpyHRRnjKarxfmm3Uw-M5fgxMYBYw=s0)
 
 Typically the materials presets contain your temperature settings, however you are free to include any other setting in this layer as well. For instance, if I am printing a flexible material I might want to slow down the speed and disable retraction. These kinds of settings would not normally be included in a preset for PLA or ABS.
 
-### Other Changes
+Other Changes
+-------------
+
 The last layer contains any other changes that you have made in the settings view. They override everything else. They are highlighted in blue.
 
 ![](https://lh3.googleusercontent.com/1B34J9zubBl7liHY-0Pz3MD1PaV7LghN-59x4JkQ47d6izSdFmnDqmrfBKHGzF3t4FNj5zaT8TM5JcpyUtQuCxf_=s0)

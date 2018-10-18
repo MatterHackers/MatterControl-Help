@@ -1,7 +1,4 @@
 
-Printer Controls
-================
-
 MatterControl has a rich set of controls that you can use to manually control your printer's function and make adjustments during printing
 
 You can find the manual controls on the far right after selecting and opening a printer.
@@ -9,7 +6,7 @@ You can find the manual controls on the far right after selecting and opening a 
 ![](https://www.matterhackers.com/r/vXKvzY)
 
 Movement
---------
+========
 
 The Movement section of the Controls pane allows the user to manually move the printer nozzle(s), and extrude and retract filament when no print is active. This section also serves as fine movement adjustment during an active print.
 
@@ -18,13 +15,15 @@ The Movement section of the Controls pane allows the user to manually move the p
 The homing controls allow you to home one or all axes (move it to the starting position). The **Release** button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png
 "Pencil-edit.png").
 
-### Live Adjustment While Printing
+Live Adjustment While Printing
+------------------------------
 
 While your printing is running you can use the Z+ and Z- buttons to adjust the height of the nozzle. This allows you to tune the height for a good first layer without having to restart the print. The current Z Offset is shown at the top of the Movement section. This is remembered for future prints. After printing, you can clear the Z offset by clicking the X.
 
 ![](https://lh3.googleusercontent.com/dpAFnIaaEEF3s9WHq_c94opjlwHfuQh3bPt9rWy6_V3nzhWctcDLXzDovMz4uK67EQcEm1qCW3Rmn1ygy-leX8Q1ng=w512)
 
-### Keyboard Controls
+Keyboard Controls
+-----------------
 
 Clicking the keyboard icon ![Keyboard\_icon.png](http://wiki.mattercontrol.com/images/d/d7/Keyboard_icon.png
 "Keyboard_icon.png") allows you to move the printer with your keyboard.
@@ -50,7 +49,7 @@ Clicking the keyboard icon ![Keyboard\_icon.png](http://wiki.mattercontrol.com/i
 
 
 Calibration
------------
+===========
 
 The calibration section of the controls allows you to manage MatterControl's software print leveling feature. Software print leveling is only available on printers which do not use their own form of automatic print leveling.
 
@@ -59,17 +58,21 @@ The calibration section of the controls allows you to manage MatterControl's sof
 Click the pencil icon ![Pencil-edit.png](http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png
 "Pencil-edit.png") to view or edit the print leveling data.
 
-### Print Leveling Plane
+Bed Leveling
+------------
+
 Click the gear icon to open the Print Leveling Wizard. It will guide you through taking measurements of the height of the bed at various points.
 
 Use the toggle switch to enable or disable software print leveling. Some printers are not capable of manual leveling. In this case, software print leveling cannot be disabled.
 
-### Print Leveling Probe
+Calibrate Probe Offset
+----------------------
+
 Click the gear icon to measure the offset between your printer's probe and the nozzle. This feature is not available if your printer does not have a leveling probe.
 
 
 [Macros](macros.md)
--------------------
+===================
 
 Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.
 
@@ -79,7 +82,7 @@ See the article on [Macros](macros.md) for more information.
 
 
 Fan
----
+===
 
 The fan control lets you turn the printer's layer cooling fan on and off, and also set the speed.
 
@@ -91,7 +94,7 @@ If your printer does not have a layer cooling fan then this control is not shown
 
 
 Power Control
--------------
+=============
 
 If the printer's controller board supports it then this section allows for direct control of the printer's PSU.
 
@@ -99,7 +102,7 @@ If the printer's controller board supports it then this section allows for direc
 
 
 Tuning Adjustment
------------------
+=================
 
 Allows for on-the-fly adjustment of speed and extrusion during a print.
 
@@ -107,17 +110,21 @@ Allows for on-the-fly adjustment of speed and extrusion during a print.
 
 These settings are reset to 1.0 whenever MatterControl is restarted.
 
-### Speed Multiplier
+Speed Multiplier
+----------------
+
 The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.
 
-### Extrusion Multiplier
+Extrusion Multiplier
+--------------------
+
 During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amount of plastic layed down.
 
 This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).
 
 
 Firmware Updates
-----------------
+================
 
 If your printer has an Arduino Mega 2560 based microcontroller, you can use the firmware updater to upload new firmware to it.
 

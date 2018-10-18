@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Docs</title>
+        <title>MatterControl Help - Skirt</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,7 +70,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#welcome">Welcome</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#distance-or-loops">Distance or Loops</a></p>
+<p><a href="#distance-from-object">Distance From Object</a></p>
+<p><a href="#minimum-extrusion-length">Minimum Extrusion Length</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -125,15 +127,15 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li class="treeview">
+                                        <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
 
                     </ul>
                 </li>
@@ -175,54 +177,25 @@
 
 
 	<section class="content-header">
-		<h1>Docs</h1>
+		<h1>Skirt</h1>
 	</section>
 	<section class="content">
-		<h1 id="welcome">Welcome</h1>
-<p>Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.</p>
-<h2 id="quick-links">Quick Links</h2>
-<ul>
-<li><a href="quick-start.md">Quick Start</a></li>
-<li><a href="designing/index.md">Designing Parts</a></li>
-<li><a href="printing/index.md">Printing Parts</a></li>
-<li><a href="whats-new.md">What's New</a></li>
-</ul>
-<h2 id="designing-parts">Designing Parts</h2>
-<ul>
-<li><a href="designing/create-new-part.md">Creating a New Part</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="designing/editing-a-part.md">Editing a Part</a></li>
-<li><a href="designing/design-apps/index.md">Design Apps</a>
-<ul>
-<li><a href="designing/design-primitives/index.md">Design Primitives</a></li>
-<li><a href="designing/design-primitives/text-tool.md">Text Tool</a></li>
-<li><a href="designing/design-primitives/image-converter.md">Image Converter</a></li>
-<li><a href="designing/design-primitives/braille-tool.md">Braille Tool</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="printing-parts">Printing Parts</h2>
-<ul>
-<li><a href="printing/adding-new-printer.md">Adding a New Printer</a></li>
-<li><a href="printing/selecting-a-printer.md">Selecting a Printer</a></li>
-<li><a href="printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="printing/starting-a-print.md">Starting a Print</a></li>
-<li><a href="printing/exporting-g-code.md">Exporting G-Code</a></li>
-<li><a href="slice-settings/index.md">Slice Settings</a></li>
-<li><a href="printing/controls/index.md">Printer Controls</a></li>
-</ul>
-<h2 id="printer-controls">Printer Controls</h2>
-<ul>
-<li><a href="printer-controls/index.md">Controls Pane</a></li>
-<li><a href="printer-controls/hotend-controls.md">Hot End Controls</a></li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li><a href="frequently-asked-questions.md">Frequently Asked Questions</a></li>
-<li><a href="printing/slice-settings/settings-faq.md">Settings FAQ</a></li>
-<li><a href="get-support.md">Geting More Help</a></li>
-</ul>
+		<p>A skirt is a couple of loops drawn around the outside of the first layer of a print. There are sometimes also referred to as priming loops.</p>
+<p><img src="https://lh3.googleusercontent.com/GGH5d8Po_EtGHVhGLxrT2aaZWrm2ootlP28L99H1712gHVhWJmd5znjlBeyODiNZ6V00Rk6iyldNfujViwn_ThwrqLI=s0" class="img-fluid" alt=""></p>
+<p>This is the very first thing that is printed. It is used to prime the nozzle and also allows you to check your leveling and nozzle height before the actual print begins. When the skirt is printing, it is a good time to adjust your nozzle height using <a href="../../printer-controls#movement">baybstepping</a>.</p>
+<h1 id="distance-or-loops">Distance or Loops</h1>
+<p>The number of skirt loops to draw. Alternatively, you can also specify the thickness of the skirt in millimeters.</p>
+<p><strong>Recommended Baseline:</strong> 3<br>
+<strong>Units:</strong> count or millimeters (mm)</p>
+<h1 id="distance-from-object">Distance From Object</h1>
+<p>The gap between the skirt and the print.</p>
+<p><strong>Recommended Baseline:</strong> 3 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="minimum-extrusion-length">Minimum Extrusion Length</h1>
+<p>The minimum length of filament to use to draw the skirt. Enough loops will be drawn to use this amount of filament. This takes precedence over the number of loops. This is the measurement of the filament going into the extruder, not the length of the loops being extruded. We recommend setting this to the length of your hot end's hot zone.</p>
+<p>We recommend using a high minimum extrusion length and few loops. This ensures that you do not waste too much time printing skirt loops on large prints, but also get enough priming on small prints.</p>
+<p><strong>Recommended Baseline:</strong> 5 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
 
 	</section>
                 

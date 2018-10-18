@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Docs</title>
+        <title>MatterControl Help - Cooling</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,7 +70,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#welcome">Welcome</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</a></p>
+<p><a href="#minimum-print-speed">Minimum Print Speed</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -125,7 +126,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -148,10 +149,10 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                                        <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
@@ -175,54 +176,21 @@
 
 
 	<section class="content-header">
-		<h1>Docs</h1>
+		<h1>Cooling</h1>
 	</section>
 	<section class="content">
-		<h1 id="welcome">Welcome</h1>
-<p>Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.</p>
-<h2 id="quick-links">Quick Links</h2>
-<ul>
-<li><a href="quick-start.md">Quick Start</a></li>
-<li><a href="designing/index.md">Designing Parts</a></li>
-<li><a href="printing/index.md">Printing Parts</a></li>
-<li><a href="whats-new.md">What's New</a></li>
-</ul>
-<h2 id="designing-parts">Designing Parts</h2>
-<ul>
-<li><a href="designing/create-new-part.md">Creating a New Part</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="designing/editing-a-part.md">Editing a Part</a></li>
-<li><a href="designing/design-apps/index.md">Design Apps</a>
-<ul>
-<li><a href="designing/design-primitives/index.md">Design Primitives</a></li>
-<li><a href="designing/design-primitives/text-tool.md">Text Tool</a></li>
-<li><a href="designing/design-primitives/image-converter.md">Image Converter</a></li>
-<li><a href="designing/design-primitives/braille-tool.md">Braille Tool</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="printing-parts">Printing Parts</h2>
-<ul>
-<li><a href="printing/adding-new-printer.md">Adding a New Printer</a></li>
-<li><a href="printing/selecting-a-printer.md">Selecting a Printer</a></li>
-<li><a href="printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="printing/starting-a-print.md">Starting a Print</a></li>
-<li><a href="printing/exporting-g-code.md">Exporting G-Code</a></li>
-<li><a href="slice-settings/index.md">Slice Settings</a></li>
-<li><a href="printing/controls/index.md">Printer Controls</a></li>
-</ul>
-<h2 id="printer-controls">Printer Controls</h2>
-<ul>
-<li><a href="printer-controls/index.md">Controls Pane</a></li>
-<li><a href="printer-controls/hotend-controls.md">Hot End Controls</a></li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li><a href="frequently-asked-questions.md">Frequently Asked Questions</a></li>
-<li><a href="printing/slice-settings/settings-faq.md">Settings FAQ</a></li>
-<li><a href="get-support.md">Geting More Help</a></li>
-</ul>
+		<h1 id="slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</h1>
+<p>The minimum amount of time a layer must take to print. If a layer takes less time than this, then all printing speeds will be slowed down until the layer takes at least this much time.</p>
+<p>Cooling is very important for print quality. If a layer does not have enough time to cool and harden before the one above it starts printing, then it will deform. This setting is used to slow down a layer to ensure that it has enough time to harden.</p>
+<p>This setting is heavily material dependant. Some materials need lots of time to cool while others do not need any.</p>
+<p><strong>Recommended Baseline for PLA:</strong> 30 s<br>
+<strong>Units:</strong> seconds (s)</p>
+<h1 id="minimum-print-speed">Minimum Print Speed</h1>
+<p>The minimum speed that the printer can go when the layer is slowed down for cooling. The slicer will try to slow the printer so that each layer takes the minimum layer time (above), but it will not slow any print speeds lower than this.</p>
+<p>This prevents the printer from going so slow that the plastic is not extruded consistently.</p>
+<p><strong>Recommended Baseline:</strong> 15 mm/s<br>
+<strong>Units:</strong> millimeters per second (mm/s)<br>
+<strong>G-Code Replacement Variable:</strong> <code>min_print_speed</code></p>
 
 	</section>
                 

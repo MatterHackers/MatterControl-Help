@@ -70,7 +70,13 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#printer-controls">Printer Controls</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#movement">Movement</a></p>
+<p><a href="#calibration">Calibration</a></p>
+<p><a href="#macros"></a><a href="macros.md">Macros</a></p>
+<p><a href="#fan">Fan</a></p>
+<p><a href="#power-control">Power Control</a></p>
+<p><a href="#tuning-adjustment">Tuning Adjustment</a></p>
+<p><a href="#firmware-updates">Firmware Updates</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -129,15 +135,35 @@
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </li>
@@ -158,18 +184,17 @@
 		<h1>Printer Controls</h1>
 	</section>
 	<section class="content">
-		<h1 id="printer-controls">Printer Controls</h1>
-<p>MatterControl has a rich set of controls that you can use to manually control your printer's function and make adjustments during printing</p>
+		<p>MatterControl has a rich set of controls that you can use to manually control your printer's function and make adjustments during printing</p>
 <p>You can find the manual controls on the far right after selecting and opening a printer.</p>
 <p><img src="https://www.matterhackers.com/r/vXKvzY" class="img-fluid" alt=""></p>
-<h2 id="movement">Movement</h2>
+<h1 id="movement">Movement</h1>
 <p>The Movement section of the Controls pane allows the user to manually move the printer nozzle(s), and extrude and retract filament when no print is active. This section also serves as fine movement adjustment during an active print.</p>
 <p><img src="https://lh3.googleusercontent.com/2Yx1l2KUr7bzGr2FSES6be652ei6bVWOIx6dhjt7LC6Ia_PIB0fcv2Vltd0yFyR-EOWqQmzDrKoTUfioDHa2S3_qFQ=s0" class="img-fluid" alt=""></p>
 <p>The homing controls allow you to home one or all axes (move it to the starting position). The <strong>Release</strong> button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon <img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png">.</p>
-<h3 id="live-adjustment-while-printing">Live Adjustment While Printing</h3>
+<h2 id="live-adjustment-while-printing">Live Adjustment While Printing</h2>
 <p>While your printing is running you can use the Z+ and Z- buttons to adjust the height of the nozzle. This allows you to tune the height for a good first layer without having to restart the print. The current Z Offset is shown at the top of the Movement section. This is remembered for future prints. After printing, you can clear the Z offset by clicking the X.</p>
 <p><img src="https://lh3.googleusercontent.com/dpAFnIaaEEF3s9WHq_c94opjlwHfuQh3bPt9rWy6_V3nzhWctcDLXzDovMz4uK67EQcEm1qCW3Rmn1ygy-leX8Q1ng=w512" class="img-fluid" alt=""></p>
-<h3 id="keyboard-controls">Keyboard Controls</h3>
+<h2 id="keyboard-controls">Keyboard Controls</h2>
 <p>Clicking the keyboard icon <img src="http://wiki.mattercontrol.com/images/d/d7/Keyboard_icon.png" class="img-fluid" alt="Keyboard_icon.png" title="Keyboard_icon.png"> allows you to move the printer with your keyboard.</p>
 <p><img src="https://lh3.googleusercontent.com/reuHxkm3XOjiX5aO0Yr0GeZqh_ZuCbv37420r7boQ_ADRl-mxcJcl0lTBzWFJa2_17sxamPu8JTtnlYC_b64oyK-Yw=s0" class="img-fluid" alt=""></p>
 <!---
@@ -188,37 +213,37 @@
 | E+       | E         |
 | E-       | R         |
 --->
-<h2 id="calibration">Calibration</h2>
+<h1 id="calibration">Calibration</h1>
 <p>The calibration section of the controls allows you to manage MatterControl's software print leveling feature. Software print leveling is only available on printers which do not use their own form of automatic print leveling.</p>
 <p><img src="https://lh3.googleusercontent.com/NApNV_GfomZEwBKAP9ltyD5cejLwktWy8-fklAErv8iytHe1HYUKbvMbBCtbhfIVP-7eyH2Olgc4KnanZY-sipzS=s0" class="img-fluid" alt=""></p>
 <p>Click the pencil icon <img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png"> to view or edit the print leveling data.</p>
-<h3 id="print-leveling-plane">Print Leveling Plane</h3>
+<h2 id="bed-leveling">Bed Leveling</h2>
 <p>Click the gear icon to open the Print Leveling Wizard. It will guide you through taking measurements of the height of the bed at various points.</p>
 <p>Use the toggle switch to enable or disable software print leveling. Some printers are not capable of manual leveling. In this case, software print leveling cannot be disabled.</p>
-<h3 id="print-leveling-probe">Print Leveling Probe</h3>
+<h2 id="calibrate-probe-offset">Calibrate Probe Offset</h2>
 <p>Click the gear icon to measure the offset between your printer's probe and the nozzle. This feature is not available if your printer does not have a leveling probe.</p>
-<h2 id="macros"><a href="macros.md">Macros</a></h2>
+<h1 id="macros"><a href="macros.md">Macros</a></h1>
 <p>Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.</p>
 <p><img src="https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0" class="img-fluid" alt=""></p>
 <p>See the article on <a href="macros.md">Macros</a> for more information.</p>
-<h2 id="fan">Fan</h2>
+<h1 id="fan">Fan</h1>
 <p>The fan control lets you turn the printer's layer cooling fan on and off, and also set the speed.</p>
 <p><img src="https://lh3.googleusercontent.com/J_vCFI0KdgZtBfcu84pG5XggUrs4zBS4-Etd8Z3aGRJsarC8Zg8mtyFXsPguoINUd6rXKKyQFxZ6GfkpkmeVBRxaVFs=s0" class="img-fluid" alt=""></p>
 <p>You can adjust the fan speed during printing, however your adjustment will only last until the next fan speed change encountered in the G-Code.</p>
 <p>If your printer does not have a layer cooling fan then this control is not shown.</p>
-<h2 id="power-control">Power Control</h2>
+<h1 id="power-control">Power Control</h1>
 <p>If the printer's controller board supports it then this section allows for direct control of the printer's PSU.</p>
 <p><img src="https://lh3.googleusercontent.com/6ZfR-AEd1xkBi140AgAuPdBE6V_ceH_fcXTt3D9gKiB4jKhEF7dLWIm6iGnE2gGLaqgCAXUqeOnzxc03BiO4KjOL=s0" class="img-fluid" alt=""></p>
-<h2 id="tuning-adjustment">Tuning Adjustment</h2>
+<h1 id="tuning-adjustment">Tuning Adjustment</h1>
 <p>Allows for on-the-fly adjustment of speed and extrusion during a print.</p>
 <p><img src="https://lh3.googleusercontent.com/JeJSmRR2bVuTg7AQGpeBUjWFielnyhuC4R9MwxGIkwg-ZuaM-FM2jGgVsMyxTwPYi-s_Ys-u4PqXOwPankLv8um-EA=s0" class="img-fluid" alt=""></p>
 <p>These settings are reset to 1.0 whenever MatterControl is restarted.</p>
-<h3 id="speed-multiplier">Speed Multiplier</h3>
+<h2 id="speed-multiplier">Speed Multiplier</h2>
 <p>The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.</p>
-<h3 id="extrusion-multiplier">Extrusion Multiplier</h3>
+<h2 id="extrusion-multiplier">Extrusion Multiplier</h2>
 <p>During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amount of plastic layed down.</p>
 <p>This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).</p>
-<h2 id="firmware-updates">Firmware Updates</h2>
+<h1 id="firmware-updates">Firmware Updates</h1>
 <p>If your printer has an Arduino Mega 2560 based microcontroller, you can use the firmware updater to upload new firmware to it.</p>
 <p><img src="https://lh3.googleusercontent.com/3C166BaJZFQUNHtfeMaQprsOCN7RGvSs4xacVWpz-N8E0JnA26kBEc--egSQf1OOYudlYcGAKLrg3-BxTKUyQXEAPw=s0" class="img-fluid" alt=""></p>
 <p>If your printer is officially supported by MatterHackers (for instance the Pulse), the firmware updater will automatically check your firmware version and alert you if an update is available. Click the <strong>Update</strong> button to do an automatic update.</p>

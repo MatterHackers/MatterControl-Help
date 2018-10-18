@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Docs</title>
+        <title>MatterControl Help - SLA Printer Speeds</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,7 +70,11 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#welcome">Welcome</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#speed-at-0.025-height">Speed at 0.025 Height</a></p>
+<p><a href="#speed-at-0.1-height">Speed at 0.1 Height</a></p>
+<p><a href="#initial-layer-speed"></a><a href="speed#initial-layer-speed">Initial Layer Speed</a></p>
+<p><a href="#travel"></a><a href="speed#travel">Travel</a></p>
+<p><a href="#initial-layers">Initial Layers</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -125,7 +129,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -148,12 +152,12 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
 
                     </ul>
@@ -175,54 +179,26 @@
 
 
 	<section class="content-header">
-		<h1>Docs</h1>
+		<h1>SLA Printer Speeds</h1>
 	</section>
 	<section class="content">
-		<h1 id="welcome">Welcome</h1>
-<p>Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.</p>
-<h2 id="quick-links">Quick Links</h2>
-<ul>
-<li><a href="quick-start.md">Quick Start</a></li>
-<li><a href="designing/index.md">Designing Parts</a></li>
-<li><a href="printing/index.md">Printing Parts</a></li>
-<li><a href="whats-new.md">What's New</a></li>
-</ul>
-<h2 id="designing-parts">Designing Parts</h2>
-<ul>
-<li><a href="designing/create-new-part.md">Creating a New Part</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="designing/editing-a-part.md">Editing a Part</a></li>
-<li><a href="designing/design-apps/index.md">Design Apps</a>
-<ul>
-<li><a href="designing/design-primitives/index.md">Design Primitives</a></li>
-<li><a href="designing/design-primitives/text-tool.md">Text Tool</a></li>
-<li><a href="designing/design-primitives/image-converter.md">Image Converter</a></li>
-<li><a href="designing/design-primitives/braille-tool.md">Braille Tool</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="printing-parts">Printing Parts</h2>
-<ul>
-<li><a href="printing/adding-new-printer.md">Adding a New Printer</a></li>
-<li><a href="printing/selecting-a-printer.md">Selecting a Printer</a></li>
-<li><a href="printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="printing/starting-a-print.md">Starting a Print</a></li>
-<li><a href="printing/exporting-g-code.md">Exporting G-Code</a></li>
-<li><a href="slice-settings/index.md">Slice Settings</a></li>
-<li><a href="printing/controls/index.md">Printer Controls</a></li>
-</ul>
-<h2 id="printer-controls">Printer Controls</h2>
-<ul>
-<li><a href="printer-controls/index.md">Controls Pane</a></li>
-<li><a href="printer-controls/hotend-controls.md">Hot End Controls</a></li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li><a href="frequently-asked-questions.md">Frequently Asked Questions</a></li>
-<li><a href="printing/slice-settings/settings-faq.md">Settings FAQ</a></li>
-<li><a href="get-support.md">Geting More Help</a></li>
-</ul>
+		<p>The following settings are only available if you are using a laser powered SLA (stereolithography) printer.</p>
+<p>With laser SLA printers, the printing speed and the laser power are both used to control how much light the resin is exposed to. Different types of resin require different amounts of light in order to cure.</p>
+<p>Thinner layers can be printed faster, since they have less material to cure. Thicker layers must be printed slower.</p>
+<p>MatterControl chooses the correct speed based on your layer height. The settings let you specify the speed that works best for your resin at two common layer heights (25 microns and 100 micros). If your layer height is different from these two, the speed is interpolated between them.</p>
+<h1 id="speed-at-0.025-height">Speed at 0.025 Height</h1>
+<p>This is the speed the laser point will travel when the layer thickness is 0.025 mm (25 microns).</p>
+<p>The actual speed will be calculated based on your layer thickness, by interpolating between this and the speed at 0.1 mm.</p>
+<p><strong>Units:</strong> mm/s</p>
+<h1 id="speed-at-0.1-height">Speed at 0.1 Height</h1>
+<p>This is the speed the laser point will travel when the layer thickness is 0.100 mm (100 microns).</p>
+<p>The actual speed will be calculated based on your layer thickness, by interpolating between this and the speed at 0.025 mm.</p>
+<p><strong>Units:</strong> mm/s</p>
+<h1 id="initial-layer-speed"><a href="speed#initial-layer-speed">Initial Layer Speed</a></h1>
+<h1 id="travel"><a href="speed#travel">Travel</a></h1>
+<h1 id="initial-layers">Initial Layers</h1>
+<p>The number of layers at the beginning of the print which will be printed slower than the others.</p>
+<p><strong>Units:</strong> count or millimeters (mm)</p>
 
 	</section>
                 

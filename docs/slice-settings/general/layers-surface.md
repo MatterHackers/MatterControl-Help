@@ -1,9 +1,6 @@
 
-Layers / Surface
-================
-
 Avoid Crossing Perimeters
--------------------------
+=========================
 
 Prevents the nozzle from crossing outside of the perimeters when it is traveling from one place to another. This can significantly improve the surface finish of your part by reducing stringing and other extrusion artifacts.
 
@@ -17,7 +14,7 @@ For especially complicated shapes it may be difficult for the slicer to find an 
 
 
 External Perimeters First
--------------------------
+=========================
 
 By default, the inner perimeters are printed first and the outermost perimeter loop is printed last. This ensures that the nozzle is fully primed when printing the outer loop, reducing surface artifacts.
 
@@ -26,7 +23,7 @@ This option will instead print the outer loop first, then the inner loops. In so
 **Recommended Baseline:** Off
 
 Start End Overlap
------------------
+=================
 
 This is the amount of overlap between the start and end of the perimeter loops. It is expressed as a percentage of the nozzle diameter. These pictures show 0%, 50%, and 100% overlap.
 
@@ -35,10 +32,10 @@ This is the amount of overlap between the start and end of the perimeter loops. 
 You can tune this setting in order to minimize the visibility of the perimeter seam. No overlap means there will be a slight gap between the start and end of the loop. Too much overlap and there will be a small bump instead of a gap.
 
 **Recommended Baseline:** 75%  
-**Units:** % of nozzle diameter
+**Units:** percent of nozzle diameter (%)
 
 Merge Overlapping Lines
------------------------
+=======================
 
 In very thin sections of a model it is possible for the perimeter loops to cross over each other. This results in a line of plastic being layed down twice in the same spot. The Merge Overlapping Lines feature detects when perimeter loops cross over each other, and replaces them with a single fatter line. These pictures show a thin section of a print with Merge Overlapping Lines turned off and turned on.
 
@@ -47,7 +44,7 @@ In very thin sections of a model it is possible for the perimeter loops to cross
 In order to preserve the quality of the outer surface, Merge Overlapping Lines only applies to inner perimeter loops, not the outer loops.
 
 Expand Thin Walls
------------------
+=================
 
 3D printers cannot print anything thinner than the nozzle diameter (0.4 mm on most printers). This means that some models with intricate details may not print correctly since they have features smaller than the nozzle. Expand Thin Walls identifies these parts of the model and expands them in order to make them printable.
 

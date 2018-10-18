@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Importing and Exporting</title>
+        <title>MatterControl Help - Importing and Exporting Settings</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,7 +70,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#importing-and-exporting-settings">Importing and Exporting Settings</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#exporting-a-printer-profile">Exporting a printer profile</a></p>
+<p><a href="#importing-a-printer-profile">Importing a printer profile</a></p>
+<p><a href="#importing-presets">Importing presets</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -129,15 +131,35 @@
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
-                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </li>
@@ -155,11 +177,10 @@
 
 
 	<section class="content-header">
-		<h1>Importing and Exporting</h1>
+		<h1>Importing and Exporting Settings</h1>
 	</section>
 	<section class="content">
-		<h1 id="importing-and-exporting-settings">Importing and Exporting Settings</h1>
-<h2 id="exporting-a-printer-profile">Exporting a printer profile</h2>
+		<h1 id="exporting-a-printer-profile">Exporting a printer profile</h1>
 <p>In the <a href="index">slice settings pane</a>, choose <strong>Export</strong> from the overflow menu (<img src="https://lh3.googleusercontent.com/B0iPKfPTIEs8X9qR5xZYj5aarp5PcLy3-cLjr3DYIRxZnyWLFe3-UMBYmfafoU8CjfD1dDUMmjMpcqZsJuAUsg8k-A" class="img-fluid" alt="">). Your complete printer profile will be saved as a <code>.printer</code> file. This includes all of the following information.</p>
 <ul>
 <li>Slice settings</li>
@@ -169,10 +190,10 @@
 <li>G-Code Macros</li>
 <li>Calibration data</li>
 </ul>
-<h2 id="importing-a-printer-profile">Importing a printer profile</h2>
+<h1 id="importing-a-printer-profile">Importing a printer profile</h1>
 <p>Go to the <strong>Start</strong> tab and click on the import printer button next to the printer list. Choose a <code>.printer</code> file.</p>
 <p><img src="https://lh3.googleusercontent.com/AZ5azO_H54r-S7-oDtIEOawXP6xZcxS81g0-re5eeq88m2b-wy1G6bEZEywsGgzfm1CATwhXk3nYzNfaMayqLINPkg=s0" class="img-fluid" alt=""></p>
-<h2 id="importing-presets">Importing presets</h2>
+<h1 id="importing-presets">Importing presets</h1>
 <p>Presets are not saved on their own, but they can be imported from a printer profile. In the <a href="index">slice settings pane</a>, choose <strong>Import Presets</strong> from the overflow menu (<img src="https://lh3.googleusercontent.com/B0iPKfPTIEs8X9qR5xZYj5aarp5PcLy3-cLjr3DYIRxZnyWLFe3-UMBYmfafoU8CjfD1dDUMmjMpcqZsJuAUsg8k-A" class="img-fluid" alt="">). Then choose a <code>.printer</code> file. You will be given the option to select one of the quality or material presets from that printer profile.</p>
 <p><img src="https://lh3.googleusercontent.com/qN1jKdlVZ1qgXnD2NyO_NQAl7LVBllryBwNMmm1wNogMWurLzv_c7SJiZqjBFejwsloODxObe7er0-W8rkvMgKlv=s0" class="img-fluid" alt=""></p>
 

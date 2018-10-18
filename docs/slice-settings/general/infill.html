@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Docs</title>
+        <title>MatterControl Help - Infill</title>
         <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -70,7 +70,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#welcome">Welcome</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#starting-angle">Starting Angle</a></p>
+<p><a href="#infill-overlap">Infill Overlap</a></p>
+<p><a href="#fill-thin-gaps">Fill Thin Gaps</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -125,7 +127,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -137,11 +139,11 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
@@ -175,54 +177,29 @@
 
 
 	<section class="content-header">
-		<h1>Docs</h1>
+		<h1>Infill</h1>
 	</section>
 	<section class="content">
-		<h1 id="welcome">Welcome</h1>
-<p>Welcome to the MatterControl help system. Below you can find quick links to get you started with everything you need to know to get you up and printing. You will learn to add existing parts, create new parts and, connect and control your 3D printer.</p>
-<h2 id="quick-links">Quick Links</h2>
+		<p>Infill is the area of a print inside the perimeters. The main infill settings are in the <a href="general">General</a> section.</p>
 <ul>
-<li><a href="quick-start.md">Quick Start</a></li>
-<li><a href="designing/index.md">Designing Parts</a></li>
-<li><a href="printing/index.md">Printing Parts</a></li>
-<li><a href="whats-new.md">What's New</a></li>
+<li><a href="general#fill-density">Fill Density</a></li>
+<li><a href="general#infill-type">Infill Type</a></li>
 </ul>
-<h2 id="designing-parts">Designing Parts</h2>
-<ul>
-<li><a href="designing/create-new-part.md">Creating a New Part</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="designing/editing-a-part.md">Editing a Part</a></li>
-<li><a href="designing/design-apps/index.md">Design Apps</a>
-<ul>
-<li><a href="designing/design-primitives/index.md">Design Primitives</a></li>
-<li><a href="designing/design-primitives/text-tool.md">Text Tool</a></li>
-<li><a href="designing/design-primitives/image-converter.md">Image Converter</a></li>
-<li><a href="designing/design-primitives/braille-tool.md">Braille Tool</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="printing-parts">Printing Parts</h2>
-<ul>
-<li><a href="printing/adding-new-printer.md">Adding a New Printer</a></li>
-<li><a href="printing/selecting-a-printer.md">Selecting a Printer</a></li>
-<li><a href="printing/loading-and-changing-filament.md">Loading and Changing Filament</a></li>
-<li><a href="designing/add-existing-part.md">Add Existing Part</a></li>
-<li><a href="printing/starting-a-print.md">Starting a Print</a></li>
-<li><a href="printing/exporting-g-code.md">Exporting G-Code</a></li>
-<li><a href="slice-settings/index.md">Slice Settings</a></li>
-<li><a href="printing/controls/index.md">Printer Controls</a></li>
-</ul>
-<h2 id="printer-controls">Printer Controls</h2>
-<ul>
-<li><a href="printer-controls/index.md">Controls Pane</a></li>
-<li><a href="printer-controls/hotend-controls.md">Hot End Controls</a></li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li><a href="frequently-asked-questions.md">Frequently Asked Questions</a></li>
-<li><a href="printing/slice-settings/settings-faq.md">Settings FAQ</a></li>
-<li><a href="get-support.md">Geting More Help</a></li>
-</ul>
+<p>This section includes advanced infill settings.</p>
+<h1 id="starting-angle">Starting Angle</h1>
+<p>The angle of the infill pattern relative to the X axis. This applies to sparse infill (the pattern on the inside of the print) and dense infill (used for the solid top/bottom layers). Every other solid layer will be offset by 90°. This angle is not used when bridging.</p>
+<p><strong>Recommended Baseline:</strong> 45°<br>
+<strong>Units:</strong> degrees CCW from the X axis (°)</p>
+<h1 id="infill-overlap">Infill Overlap</h1>
+<p>The amount the infill lines will push into the perimeter. Helps ensure that there are no gaps between the fill and the perimeters. Too much of an overlap can cause blobs or other artifacts on the surface of your print.</p>
+<p><strong>Recommended Baseline:</strong> 50%<br>
+<strong>Units:</strong> millimeters (mm) or percent of nozzle diameter (%)</p>
+<h1 id="fill-thin-gaps">Fill Thin Gaps</h1>
+<p>When the space between perimeters is very small (less than one nozzle diameter wide), it is not possible to fill it with normal infill. The Fill Thin Gaps feature will attempt to fill these areas with an underextruded line.</p>
+<p>These pictures show a thin rectangle printed with Fill Thin Gaps off and on.</p>
+<p><img src="https://lh3.googleusercontent.com/WDWwNQ2Alc4aAkDmO2m6KziFfX9Hw47rcSUKO_RMRdwWm0YtZXWqqn-hzrafoq0pzE9RLEpt7PNH8pOpueuYpuY3UA=w400" class="img-fluid" alt="">
+<img src="https://lh3.googleusercontent.com/VBW3fJnwyfdhb7WXptamufdnHx90xxx4gS5v6JcoOctQUBEmEQEZ5Ibu0vZUHhbgfTTwjc5_bc1mlId-LRFsCJK1NQ=w400" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
 
 	</section>
                 

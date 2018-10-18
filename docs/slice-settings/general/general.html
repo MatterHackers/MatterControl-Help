@@ -70,7 +70,13 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#general-slice-settings">General Slice Settings</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#layer-thickness">Layer Thickness</a></p>
+<p><a href="#first-layer-thickness">First Layer Thickness</a></p>
+<p><a href="#perimeters">Perimeters</a></p>
+<p><a href="#top-solid-layers">Top Solid Layers</a></p>
+<p><a href="#bottom-solid-layers">Bottom Solid Layers</a></p>
+<p><a href="#fill-density">Fill Density</a></p>
+<p><a href="#infill-type">Infill Type</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -128,16 +134,36 @@
                 <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li class="treeview active">
+                                        <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </li>
@@ -158,8 +184,7 @@
 		<h1>General</h1>
 	</section>
 	<section class="content">
-		<h1 id="general-slice-settings">General Slice Settings</h1>
-<h2 id="layer-thickness">Layer Thickness</h2>
+		<h1 id="layer-thickness">Layer Thickness</h1>
 <p>The height of each layer of the print, except the first. A smaller number will create more layers and more vertical accuracy but also a slower print.</p>
 <p>The Layer Thickness is exactly that – the height of each individual layer of plastic that will be printed. Most FFF style 3D printers offer layer heights between .1mm - .4mm. Don’t know what height you should print at? This picture shows the difference between various layer heights.</p>
 <p><img src="https://lh3.googleusercontent.com/RM8-abWZ8pDZERBg9HpmvViw9Hjr6NqI8IWAQbmQ9RSk-W8juDSAuQrZsyPQYYiHAY-FZnBNskJCFK6vUh-0O5yN0Q=s0" class="img-fluid" alt=""></p>
@@ -169,11 +194,11 @@
 <p><strong>Recommended Baseline:</strong> 0.2 mm<br>
 <strong>Units:</strong> millimeters (mm)</p>
 <p><strong>Warning:</strong> The layer thickness cannot exceed the diameter of your nozzle.</p>
-<h2 id="first-layer-thickness">First Layer Thickness</h2>
+<h1 id="first-layer-thickness">First Layer Thickness</h1>
 <p>The thickness of the first layer of the print. A first layer thicker than the default layer height can ensure good adhesion to the build plate, since it means more material will be extruded and more material provides more bed adhesion. A thicker first layer also allows for more variation in the height of the bed.</p>
 <p><strong>Recommended Baseline:</strong> 0.3 mm<br>
-<strong>Units:</strong> millimeters (mm) or % of normal Layer Thickness</p>
-<h2 id="perimeters">Perimeters</h2>
+<strong>Units:</strong> millimeters (mm) or percent of normal Layer Thickness (%)</p>
+<h1 id="perimeters">Perimeters</h1>
 <p>Perimeters are the loops that form the outer walls of your print. These are sometimes also referred to as shells. This cube has 3 perimeters.</p>
 <p><img src="https://lh3.googleusercontent.com/iHmXp0HTWA-DL_OryLlZ5LPpJpHsL9Sc4aKM2RJVeyG1oUoyj8khNoVhQsAXtV_dv1PLmzpgE2p48sYRTBIyHeFC=w250" class="img-fluid" alt=""></p>
 <p>Perimeters bear most of the load that an object is under. Adding more perimeters will make a print stronger than increasing the fill density.</p>
@@ -181,16 +206,16 @@
 <p>This can be specified as count or as thickness in millimeters (mm). For instance, if you set the perimeters to 1.0 mm, then enough loops will be created to make the walls 1 mm thick.</p>
 <p><strong>Recommended Baseline:</strong> 3<br>
 <strong>Units:</strong> count or millimeters (mm)</p>
-<h2 id="top-solid-layers">Top Solid Layers</h2>
+<h1 id="top-solid-layers">Top Solid Layers</h1>
 <p>These are the layers that form a solid surface on the top of the print.</p>
 <p>If you are using thinner layers then more top layers will be required to form a solid surface with no gaps. For this reason, we recommend specifying a thickness in millimeters (mm) instead of a number of layers.</p>
 <p><strong>Recommended Baseline:</strong> 0.8 mm<br>
 <strong>Units:</strong> count or millimeters (mm)</p>
-<h2 id="bottom-solid-layers">Bottom Solid Layers</h2>
+<h1 id="bottom-solid-layers">Bottom Solid Layers</h1>
 <p>These are the layers that form a solid surface on the bottom of the print. Generally fewer bottom layers are required than top layers, since the bottom layers do not have to bridge over the infill.</p>
 <p><strong>Recommended Baseline:</strong> 0.6 mm<br>
 <strong>Units:</strong> count or millimeters (mm)</p>
-<h2 id="fill-density">Fill Density</h2>
+<h1 id="fill-density">Fill Density</h1>
 <p>3D prints are hardly ever done completely solid. Instead, they are partially hollow with a pattern on the inside. This inside area is called the infill. You can choose the density of the infill pattern, from 0% (completely hollow) to 100% (completely solid).</p>
 <p><img src="https://lh3.googleusercontent.com/dsfLpykwPboH8yf9pWXPaaT0CuJ_JjaJCk6-9R9ZgXap1lVyBo8Ggsz1vDnv_LzHzZuT3e6MHbl6k1obToNOsJwe=s0" class="img-fluid" alt="">
 <img src="https://lh3.googleusercontent.com/BZFi0mgNMHrjtYB4SmRUL3CcxCSgV10uX8Xb4s-Thsf9zZv1gkgRFujsfmRoqpmEoX1KRg66sm1WXHpVTGbmTlW3iw=s0" class="img-fluid" alt=""></p>
@@ -199,7 +224,7 @@
 <p>If you wish to make your print completely solid, we do not advise going above 85 - 90% infill. Beyond this we have noticed a tendency for prints to be overfilled. A better method for making completely solid prints is to use a very large number of perimeter loops.</p>
 <p><strong>Recommended Baseline:</strong> 20%<br>
 <strong>Units:</strong> percentage (ex. 20%) or decimal (ex. 0.20)</p>
-<h2 id="infill-type">Infill Type</h2>
+<h1 id="infill-type">Infill Type</h1>
 <p>The geometric pattern used for the infill. Triangle infill uses the most efficient path, which makes it the fastest to print. It is also generally the strongest pattern. However some of the other patterns (like the hexagon) are more aesthetically pleasing. You might choose these if your infill will be visible, for instance if you are using a translucent filament. Lines or concentric infill are also better when using exceptionally high fill densities (&gt; 50%).</p>
 <p>This article has more information on <a href="https://www.matterhackers.com/news/mattercontrol-delivers-optimized-hexagon-infill">MatterControl's optimized hexagonal infill</a>.</p>
 <p><strong>Recommended Baseline:</strong> Triangles<br>
