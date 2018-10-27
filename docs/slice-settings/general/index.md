@@ -1,5 +1,5 @@
 
-* [General](general)
-* [Layers / Surface](layers-surface)
-* [Infill](infill)
-* [Extruder Change](extruder-change)
+* [General](general.md)
+* [Layers / Surface](layers-surface.md)
+* [Infill](infill.md)
+* [Extruder Change](extruder-change.md)

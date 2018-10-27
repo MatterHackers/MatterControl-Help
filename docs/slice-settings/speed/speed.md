@@ -13,7 +13,7 @@ For SLA printers this speed can be applied to more than just the first layer. Se
 Infill
 ======
 
-The speed at which [infill](../general/infill) will print. Infill can be printed faster than any other part of the print. Most other speeds can be specified as a percentage of the infill speed. Generally when people refer to a print being done at a certain speed, they are referring to the infill speed.
+The speed at which [infill](../general/infill.md) will print. Infill can be printed faster than any other part of the print. Most other speeds can be specified as a percentage of the infill speed. Generally when people refer to a print being done at a certain speed, they are referring to the infill speed.
 
 **Recommended Baseline:** 60 mm/s  
 **Units:** millimeters per second (mm/s)  
@@ -30,7 +30,7 @@ This is the speed used for the infill on the last of the [top solid layers](../g
 Raft
 ====
 
-The speed used for printing a [raft](../adhesion/raft), if you are using one. The first layer of the raft will still be printed at the [initial layer speed](#initial-layer-speed). This setting only applies to the other layers.
+The speed used for printing a [raft](../adhesion/raft.md), if you are using one. The first layer of the raft will still be printed at the [initial layer speed](#initial-layer-speed). This setting only applies to the other layers.
 
 **Recommended Baseline:** 30 mm/s  
 **Units:** millimeters per second (mm/s) or percent of [infill speed](#infill-speed) (%)
@@ -56,7 +56,7 @@ Perhaps the most important speed setting. This is the speed for the outermost pe
 Support Material
 ================
 
-The speed at which [support material](../support/support) structures will print. You may wish to print this slower than the infill speed in order to ensure that the support structures are sturdy and do not break or fall over during printing.
+The speed at which [support material](../support/support.md) structures will print. You may wish to print this slower than the infill speed in order to ensure that the support structures are sturdy and do not break or fall over during printing.
 
 **Recommended Baseline:** 40 mm/s  
 **Units:** millimeters per second (mm/s)  

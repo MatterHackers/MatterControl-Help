@@ -1,5 +1,5 @@
 
-Infill is the area of a print inside the perimeters. The main infill settings are in the [General](general) section.
+Infill is the area of a print inside the perimeters. The main infill settings are in the [General](general.md) section.
 
 * [Fill Density](general#fill-density)
 * [Infill Type](general#infill-type)

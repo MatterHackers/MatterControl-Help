@@ -1,3 +1,3 @@
 
-* [Support](support)
-* [Advanced](advanced)
+* [Support](support.md)
+* [Advanced](advanced.md)
