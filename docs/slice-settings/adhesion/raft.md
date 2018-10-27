@@ -29,3 +29,14 @@ The distance between the top of the raft and the first layer of your print. The 
 **Recommended Baseline:** 0.2 mm  
 **Units:** millimeters (mm)  
 **See Also:** [Support Air Gap](../support/advanced#air-gap)
+
+Raft Extruder
+=============
+
+*This option is only available if your printer has multiple extruders*
+
+The extruder to use for printing your raft. This allows you to choose which material your raft will be made of. Generally it is best to make the raft with dissolvable support material, if you have it. Extruders are numbered starting with `1`. If you set this option to `0` then it will automatically use your [support material extruder](../support/advanced#support-material-extruder).
+
+**Recommended Baseline:** 0  
+**Units:** extruder index  
+**See Also:** [Support Material Extruder](../support/advanced#support-material-extruder)

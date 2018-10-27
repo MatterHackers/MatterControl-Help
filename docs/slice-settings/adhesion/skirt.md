@@ -1,5 +1,5 @@
 
-A skirt is a couple of loops drawn around the outside of the first layer of a print. There are sometimes also referred to as priming loops.
+A skirt is a couple of loops drawn around the outside of the first layer of a print. They are sometimes also referred to as priming loops.
 
 ![](https://lh3.googleusercontent.com/GGH5d8Po_EtGHVhGLxrT2aaZWrm2ootlP28L99H1712gHVhWJmd5znjlBeyODiNZ6V00Rk6iyldNfujViwn_ThwrqLI=s0)
 

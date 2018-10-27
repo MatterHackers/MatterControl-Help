@@ -72,8 +72,8 @@
                     	
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#speed-at-0.025-height">Speed at 0.025 Height</a></p>
 <p><a href="#speed-at-0.1-height">Speed at 0.1 Height</a></p>
-<p><a href="#initial-layer-speed"></a><a href="speed#initial-layer-speed">Initial Layer Speed</a></p>
-<p><a href="#travel"></a><a href="speed#travel">Travel</a></p>
+<p><a href="#initial-layer-speed">Initial Layer Speed</a></p>
+<p><a href="#travel">Travel</a></p>
 <p><a href="#initial-layers">Initial Layers</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -144,7 +144,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
@@ -159,6 +160,13 @@
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
                 <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
 
                     </ul>
                 </li>
@@ -182,7 +190,7 @@
 		<h1>SLA Printer Speeds</h1>
 	</section>
 	<section class="content">
-		<p>The following settings are only available if you are using a laser powered SLA (stereolithography) printer.</p>
+		<p><em>The following settings are only available if you are using a laser powered SLA (stereolithography) printer.</em></p>
 <p>With laser SLA printers, the printing speed and the laser power are both used to control how much light the resin is exposed to. Different types of resin require different amounts of light in order to cure.</p>
 <p>Thinner layers can be printed faster, since they have less material to cure. Thicker layers must be printed slower.</p>
 <p>MatterControl chooses the correct speed based on your layer height. The settings let you specify the speed that works best for your resin at two common layer heights (25 microns and 100 micros). If your layer height is different from these two, the speed is interpolated between them.</p>
@@ -194,8 +202,10 @@
 <p>This is the speed the laser point will travel when the layer thickness is 0.100 mm (100 microns).</p>
 <p>The actual speed will be calculated based on your layer thickness, by interpolating between this and the speed at 0.025 mm.</p>
 <p><strong>Units:</strong> mm/s</p>
-<h1 id="initial-layer-speed"><a href="speed#initial-layer-speed">Initial Layer Speed</a></h1>
-<h1 id="travel"><a href="speed#travel">Travel</a></h1>
+<h1 id="initial-layer-speed">Initial Layer Speed</h1>
+<p>See <a href="speed#initial-layer-speed">Initial Layer Speed</a>.</p>
+<h1 id="travel">Travel</h1>
+<p>See <a href="speed#travel">Travel</a>.</p>
 <h1 id="initial-layers">Initial Layers</h1>
 <p>The number of layers at the beginning of the print which will be printed slower than the others.</p>
 <p><strong>Units:</strong> count or millimeters (mm)</p>

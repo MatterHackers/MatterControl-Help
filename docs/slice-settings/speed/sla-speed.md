@@ -1,5 +1,5 @@
 
-The following settings are only available if you are using a laser powered SLA (stereolithography) printer.
+*The following settings are only available if you are using a laser powered SLA (stereolithography) printer.*
 
 With laser SLA printers, the printing speed and the laser power are both used to control how much light the resin is exposed to. Different types of resin require different amounts of light in order to cure.
 
@@ -25,11 +25,13 @@ The actual speed will be calculated based on your layer thickness, by interpolat
 
 **Units:** mm/s
 
-[Initial Layer Speed](speed#initial-layer-speed)
-================================================
+Initial Layer Speed
+===================
+See [Initial Layer Speed](speed#initial-layer-speed).
 
-[Travel](speed#travel)
-======================
+Travel
+======
+See [Travel](speed#travel).
 
 Initial Layers
 ==============

@@ -72,6 +72,7 @@
                     	
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#expand-distance">Expand Distance</a></p>
 <p><a href="#air-gap">Air Gap</a></p>
+<p><a href="#raft-extruder">Raft Extruder</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -141,7 +142,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
@@ -156,6 +158,13 @@
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
 
                     </ul>
                 </li>
@@ -199,6 +208,12 @@
 <p><strong>Recommended Baseline:</strong> 0.2 mm<br>
 <strong>Units:</strong> millimeters (mm)<br>
 <strong>See Also:</strong> <a href="../support/advanced#air-gap">Support Air Gap</a></p>
+<h1 id="raft-extruder">Raft Extruder</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>The extruder to use for printing your raft. This allows you to choose which material your raft will be made of. Generally it is best to make the raft with dissolvable support material, if you have it. Extruders are numbered starting with <code>1</code>. If you set this option to <code>0</code> then it will automatically use your <a href="../support/advanced#support-material-extruder">support material extruder</a>.</p>
+<p><strong>Recommended Baseline:</strong> 0<br>
+<strong>Units:</strong> extruder index<br>
+<strong>See Also:</strong> <a href="../support/advanced#support-material-extruder">Support Material Extruder</a></p>
 
 	</section>
                 
