@@ -48,8 +48,8 @@ This is the short-term procedure required for success. Long term we need to reso
 1. Remove the worktree `git worktree prune`
 1. Remove the local gh-pages branch `git branch -d gh-pages`
 1. Fetch `git fetch --all`
-1. Pull the latest content from the master branch `git pull`
-1. Build Wyam `.\build.ps1 -t build`
+1. Pull the latest content from the master branch `git pull upstream master`
+1. Build Wyam `.\build.ps1 -t build` or `.\tools\Wyam.1.4.1\tools\net462\Wyam.exe build`
 1. Rename the output directory `mv output output_`
 1. Map output directory to gh-pages worktree `git worktree add output gh-pages`
 1. Delete existing content in the output worktree
