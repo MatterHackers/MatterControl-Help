@@ -2,6 +2,6 @@
 title: Adhesion
 ---
 
-* [Skirt](skirt)
-* [Raft](raft)
-* [Brim](brim)
+* [Skirt](skirt.md)
+* [Raft](raft.md)
+* [Brim](brim.md)
