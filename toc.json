@@ -3,6 +3,11 @@
   "Path": "docs/index.md",
   "Children": [
     {
+      "Name": "Getting More Help",
+      "Path": "docs/get-support.md",
+      "Children": []
+    },
+    {
       "Name": "Designing",
       "Path": "docs/designing/index.md",
       "Children": [
@@ -10,6 +15,33 @@
           "Name": "Create New Part",
           "Path": "docs/designing/create-new-part.md",
           "Children": []
+        },
+        {
+          "Name": "Scale Controls",
+          "Path": "docs/designing/scale-controls.md",
+          "Children": []
+        },
+        {
+          "Name": "Design Primitives",
+          "Path": "docs/designing/design-primitives/index.md",
+          "Children": [
+            {
+              "Name": "Braille Tool",
+              "Path": "docs/designing/design-primitives/braille-tool.md",
+              "Children": []
+            },
+            {
+              "Name": "Image Converter",
+              "Path": "docs/designing/design-primitives/image-converter.md",
+              "ArticleKey": "4D9BD8DB-C544-4294-9C08-4195A409217A",
+              "Children": []
+            },
+            {
+              "Name": "Text Tool",
+              "Path": "docs/designing/design-primitives/text-tool.md",
+              "Children": []
+            }
+          ]
         },
         {
           "Name": "Adding Existing Part",
@@ -22,61 +54,29 @@
           "Children": []
         },
         {
-          "Name": "Scale Controls",
-          "Path": "docs/designing/scale-controls.md",
+          "Name": "Rotate Controls",
+          "Path": "docs/designing/rotate-controls.md",
           "Children": []
         },
         {
           "Name": "Design Apps",
           "Path": "docs/designing/design-apps/index.md",
           "Children": []
-        },
-        {
-          "Name": "Design Primitives",
-          "Path": "docs/designing/design-primitives/index.md",
-          "Children": [
-            {
-              "Name": "Image Converter",
-              "Path": "docs/designing/design-primitives/image-converter.md",
-              "ArticleKey": "4D9BD8DB-C544-4294-9C08-4195A409217A",
-              "Children": []
-            },
-            {
-              "Name": "Text Tool",
-              "Path": "docs/designing/design-primitives/text-tool.md",
-              "Children": []
-            },
-            {
-              "Name": "Braille Tool",
-              "Path": "docs/designing/design-primitives/braille-tool.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "Rotate Controls",
-          "Path": "docs/designing/rotate-controls.md",
-          "Children": []
         }
       ]
-    },
-    {
-      "Name": "What's New",
-      "Path": "docs/whats-new.md",
-      "Children": []
     },
     {
       "Name": "Printer Controls",
       "Path": "docs/printer-controls/index.md",
       "Children": [
         {
-          "Name": "Macros",
-          "Path": "docs/printer-controls/macros.md",
+          "Name": "Hotend and Extruder Controls",
+          "Path": "docs/printer-controls/hotend-controls.md",
           "Children": []
         },
         {
-          "Name": "Hotend and Extruder Controls",
-          "Path": "docs/printer-controls/hotend-controls.md",
+          "Name": "Macros",
+          "Path": "docs/printer-controls/macros.md",
           "Children": []
         }
       ]
@@ -117,9 +117,30 @@
       "Path": "docs/slice-settings/index.md",
       "Children": [
         {
-          "Name": "Importing and Exporting Settings",
-          "Path": "docs/slice-settings/import-and-export.md",
-          "Children": []
+          "Name": "Speed",
+          "Path": "docs/slice-settings/speed/index.md",
+          "Children": [
+            {
+              "Name": "Cooling",
+              "Path": "docs/slice-settings/speed/cooling.md",
+              "Children": []
+            },
+            {
+              "Name": "Fan",
+              "Path": "docs/slice-settings/speed/fan.md",
+              "Children": []
+            },
+            {
+              "Name": "SLA Printer Speeds",
+              "Path": "docs/slice-settings/speed/sla-speed.md",
+              "Children": []
+            },
+            {
+              "Name": "Speed",
+              "Path": "docs/slice-settings/speed/speed.md",
+              "Children": []
+            }
+          ]
         },
         {
           "Name": "Settings FAQ",
@@ -127,38 +148,17 @@
           "Children": []
         },
         {
-          "Name": "Adhesion",
-          "Path": "docs/slice-settings/adhesion/index.md",
-          "Children": [
-            {
-              "Name": "Brim",
-              "Path": "docs/slice-settings/adhesion/brim.md",
-              "Children": []
-            },
-            {
-              "Name": "Skirt",
-              "Path": "docs/slice-settings/adhesion/skirt.md",
-              "Children": []
-            },
-            {
-              "Name": "Raft",
-              "Path": "docs/slice-settings/adhesion/raft.md",
-              "Children": []
-            }
-          ]
-        },
-        {
           "Name": "General",
           "Path": "docs/slice-settings/general/index.md",
           "Children": [
             {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
               "Children": []
             },
             {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
               "Children": []
             },
             {
@@ -174,27 +174,27 @@
           ]
         },
         {
-          "Name": "Speed",
-          "Path": "docs/slice-settings/speed/index.md",
+          "Name": "Importing and Exporting Settings",
+          "Path": "docs/slice-settings/import-and-export.md",
+          "Children": []
+        },
+        {
+          "Name": "Adhesion",
+          "Path": "docs/slice-settings/adhesion/index.md",
           "Children": [
             {
-              "Name": "Cooling",
-              "Path": "docs/slice-settings/speed/cooling.md",
+              "Name": "Raft",
+              "Path": "docs/slice-settings/adhesion/raft.md",
               "Children": []
             },
             {
-              "Name": "SLA Printer Speeds",
-              "Path": "docs/slice-settings/speed/sla-speed.md",
+              "Name": "Brim",
+              "Path": "docs/slice-settings/adhesion/brim.md",
               "Children": []
             },
             {
-              "Name": "Fan",
-              "Path": "docs/slice-settings/speed/fan.md",
-              "Children": []
-            },
-            {
-              "Name": "Speed",
-              "Path": "docs/slice-settings/speed/speed.md",
+              "Name": "Skirt",
+              "Path": "docs/slice-settings/adhesion/skirt.md",
               "Children": []
             }
           ]
@@ -223,13 +223,13 @@
       "Children": []
     },
     {
-      "Name": "Getting More Help",
-      "Path": "docs/get-support.md",
+      "Name": "Quick Start",
+      "Path": "docs/quick-start.md",
       "Children": []
     },
     {
-      "Name": "Quick Start",
-      "Path": "docs/quick-start.md",
+      "Name": "What's New",
+      "Path": "docs/whats-new.md",
       "Children": []
     }
   ]
