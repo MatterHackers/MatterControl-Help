@@ -40,6 +40,10 @@
     "Description": "Create custom supports. Turn any object on the bed into support material."
   },
   {
+    "WidgetName": "Toggle Support Button",
+    "Description": "Create custom supports. Turn any object on the bed into support material."
+  },
+  {
     "WidgetName": "MatterControl BrandMenuButton",
     "Description": "Here you can find application settings, help docs, updates and more."
   },
