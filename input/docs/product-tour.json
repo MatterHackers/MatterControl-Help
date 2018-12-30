@@ -12,7 +12,7 @@
   {
     "Title": "Library",
     "WidgetName": "Add Content Menu",
-    "Description": "Add content from MatterHackers and beyond"
+    "Description": "Add content from MatterHackers and more"
   },
   {
     "Title": "Print",
@@ -32,7 +32,7 @@
   {
     "Title": "Slice Settings",
     "WidgetName": "Slice Settings Sidebar",
-    "Description": "Have compete control of your printer with the ability to adjust individual print settings."
+    "Description": "Have complete control of your printer with the ability to adjust individual print settings."
   },
   {
     "Title": "View Options",
@@ -43,11 +43,6 @@
     "Title": "Tumble Cube",
     "WidgetName": "Tumble Cube Control",
     "Description": "Adjust the position of your view. You can also snap to specific views by clicking the cube."
-  },
-  {
-    "Title": "Convert to Support",
-    "WidgetName": "Make Support Button",
-    "Description": "Create custom supports. Turn any object on the bed into support material."
   },
   {
     "Title": "Custom Supports",
