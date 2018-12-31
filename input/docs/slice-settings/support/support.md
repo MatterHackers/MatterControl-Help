@@ -32,11 +32,11 @@ The support percent threshold controls how little overlap there can be between l
 
 ![](https://lh3.googleusercontent.com/0oWaiPwhV4FB-QKEZ0G59UzUnw42C8sZHJXPhHpE8UiHO1RzBrBuH-Nw41KZYvUnv7ghz3uskMCqZ_26LbaPOhNw)
 
-`0%` means that support will only be created in areas where the lines do not overlap the layer below. Note that even though the setting is 0, support will still be created.
+**0%** means that support will only be created in areas where the lines do not overlap the layer below. Note that even though the setting is 0, support will still be created.
 
-`50%` means that support will be created in areas where the lines have 50% or less overlap with the layer below.
+**50%** means that support will be created in areas where the lines have 50% or less overlap with the layer below.
 
-`100%` means that support will be created everywhere no matter how much overlap there is.
+**100%** means that support will be created everywhere no matter how much overlap there is.
 
 **Recommended Baseline:** 30%  
 **Units:** percent of extrusion width
