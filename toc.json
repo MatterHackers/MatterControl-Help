@@ -3,11 +3,6 @@
   "Path": "docs/index.md",
   "Children": [
     {
-      "Name": "What's New",
-      "Path": "docs/whats-new.md",
-      "Children": []
-    },
-    {
       "Name": "Designing",
       "Path": "docs/designing/index.md",
       "Children": [
@@ -22,6 +17,11 @@
           "Children": []
         },
         {
+          "Name": "Design Apps",
+          "Path": "docs/designing/design-apps/index.md",
+          "Children": []
+        },
+        {
           "Name": "Scale Controls",
           "Path": "docs/designing/scale-controls.md",
           "Children": []
@@ -31,9 +31,8 @@
           "Path": "docs/designing/design-primitives/index.md",
           "Children": [
             {
-              "Name": "Image Converter",
-              "Path": "docs/designing/design-primitives/image-converter.md",
-              "ArticleKey": "4D9BD8DB-C544-4294-9C08-4195A409217A",
+              "Name": "Text Tool",
+              "Path": "docs/designing/design-primitives/text-tool.md",
               "Children": []
             },
             {
@@ -42,8 +41,9 @@
               "Children": []
             },
             {
-              "Name": "Text Tool",
-              "Path": "docs/designing/design-primitives/text-tool.md",
+              "Name": "Image Converter",
+              "Path": "docs/designing/design-primitives/image-converter.md",
+              "ArticleKey": "4D9BD8DB-C544-4294-9C08-4195A409217A",
               "Children": []
             }
           ]
@@ -57,66 +57,51 @@
           "Name": "Rotate Controls",
           "Path": "docs/designing/rotate-controls.md",
           "Children": []
-        },
-        {
-          "Name": "Design Apps",
-          "Path": "docs/designing/design-apps/index.md",
-          "Children": []
         }
       ]
     },
     {
-      "Name": "Printing",
-      "Path": "docs/printing/index.md",
-      "Children": [
-        {
-          "Name": "Starting a Print",
-          "Path": "docs/printing/starting-a-print.md",
-          "Children": []
-        },
-        {
-          "Name": "Exporting G-Code",
-          "Path": "docs/printing/exporting-g-code.md",
-          "Children": []
-        },
-        {
-          "Name": "Loading and Changing Filament",
-          "Path": "docs/printing/loading-and-changing-filament.md",
-          "Children": []
-        },
-        {
-          "Name": "Adding a new Printer",
-          "Path": "docs/printing/adding-new-printer.md",
-          "Children": []
-        },
-        {
-          "Name": "Selecting a Printer",
-          "Path": "docs/printing/selecting-a-printer.md",
-          "Children": []
-        }
-      ]
+      "Name": "What's New",
+      "Path": "docs/whats-new.md",
+      "Children": []
     },
     {
       "Name": "Slice Settings",
       "Path": "docs/slice-settings/index.md",
       "Children": [
         {
-          "Name": "Adhesion",
-          "Path": "docs/slice-settings/adhesion/index.md",
+          "Name": "Filament",
+          "Path": "docs/slice-settings/filament/index.md",
           "Children": [
             {
-              "Name": "Brim",
-              "Path": "docs/slice-settings/adhesion/brim.md",
+              "Name": "Filament",
+              "Path": "docs/slice-settings/filament/filament.md",
+              "Children": []
+            }
+          ]
+        },
+        {
+          "Name": "General",
+          "Path": "docs/slice-settings/general/index.md",
+          "Children": [
+            {
+              "Name": "Layers / Surface",
+              "Path": "docs/slice-settings/general/layers-surface.md",
               "Children": []
             },
             {
-              "Name": "Skirt",
-              "Path": "docs/slice-settings/adhesion/skirt.md",
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
               "Children": []
             },
             {
-              "Name": "Raft",
-              "Path": "docs/slice-settings/adhesion/raft.md",
+              "Name": "Infill",
+              "Path": "docs/slice-settings/general/infill.md",
+              "Children": []
+            },
+            {
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
               "Children": []
             }
           ]
@@ -125,6 +110,11 @@
           "Name": "Speed",
           "Path": "docs/slice-settings/speed/index.md",
           "Children": [
+            {
+              "Name": "Cooling",
+              "Path": "docs/slice-settings/speed/cooling.md",
+              "Children": []
+            },
             {
               "Name": "SLA Printer Speeds",
               "Path": "docs/slice-settings/speed/sla-speed.md",
@@ -136,39 +126,8 @@
               "Children": []
             },
             {
-              "Name": "Cooling",
-              "Path": "docs/slice-settings/speed/cooling.md",
-              "Children": []
-            },
-            {
               "Name": "Speed",
               "Path": "docs/slice-settings/speed/speed.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "General",
-          "Path": "docs/slice-settings/general/index.md",
-          "Children": [
-            {
-              "Name": "Infill",
-              "Path": "docs/slice-settings/general/infill.md",
-              "Children": []
-            },
-            {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
-              "Children": []
-            },
-            {
-              "Name": "Layers / Surface",
-              "Path": "docs/slice-settings/general/layers-surface.md",
-              "Children": []
-            },
-            {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
               "Children": []
             }
           ]
@@ -178,8 +137,34 @@
           "Path": "docs/slice-settings/support/index.md",
           "Children": [
             {
+              "Name": "Advanced",
+              "Path": "docs/slice-settings/support/advanced.md",
+              "Children": []
+            },
+            {
               "Name": "Support",
               "Path": "docs/slice-settings/support/support.md",
+              "Children": []
+            }
+          ]
+        },
+        {
+          "Name": "Adhesion",
+          "Path": "docs/slice-settings/adhesion/index.md",
+          "Children": [
+            {
+              "Name": "Raft",
+              "Path": "docs/slice-settings/adhesion/raft.md",
+              "Children": []
+            },
+            {
+              "Name": "Skirt",
+              "Path": "docs/slice-settings/adhesion/skirt.md",
+              "Children": []
+            },
+            {
+              "Name": "Brim",
+              "Path": "docs/slice-settings/adhesion/brim.md",
               "Children": []
             }
           ]
@@ -195,11 +180,6 @@
           "Children": []
         }
       ]
-    },
-    {
-      "Name": "Quick Start",
-      "Path": "docs/quick-start.md",
-      "Children": []
     },
     {
       "Name": "Printer Controls",
@@ -218,6 +198,47 @@
       ]
     },
     {
+      "Name": "Printing",
+      "Path": "docs/printing/index.md",
+      "Children": [
+        {
+          "Name": "Loading and Changing Filament",
+          "Path": "docs/printing/loading-and-changing-filament.md",
+          "Children": []
+        },
+        {
+          "Name": "Adding a new Printer",
+          "Path": "docs/printing/adding-new-printer.md",
+          "Children": []
+        },
+        {
+          "Name": "Selecting a Printer",
+          "Path": "docs/printing/selecting-a-printer.md",
+          "Children": []
+        },
+        {
+          "Name": "Exporting G-Code",
+          "Path": "docs/printing/exporting-g-code.md",
+          "Children": []
+        },
+        {
+          "Name": "Starting a Print",
+          "Path": "docs/printing/starting-a-print.md",
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Name": "Quick Start",
+      "Path": "docs/quick-start.md",
+      "Children": []
+    },
+    {
+      "Name": "Frequently asked Questions",
+      "Path": "docs/frequently-asked-questions.md",
+      "Children": []
+    },
+    {
       "Name": "Getting More Help",
       "Path": "docs/get-support.md",
       "Children": []
@@ -225,11 +246,6 @@
     {
       "Name": "Release Notes",
       "Path": "docs/release-notes.md",
-      "Children": []
-    },
-    {
-      "Name": "Frequently asked Questions",
-      "Path": "docs/frequently-asked-questions.md",
       "Children": []
     }
   ]
