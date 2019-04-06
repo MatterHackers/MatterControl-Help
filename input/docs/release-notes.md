@@ -1,24 +1,39 @@
 ---
 title: Release Notes
 ---
-![mc2](https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png)
 
-# Design Tools
+# MatterControl 2.19.2 (February, 6, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM)
 
-MatterControl now incorporates the ability to 3D model with a complete set of modeling primitives that you can use to build anything you can imagine. Build up your creative designs by combining these shapes into something more. You can even use a primitive to create your own customized supports! The possibilities are endless.
+## Changes
 
-![](https://lh3.googleusercontent.com/ZQcmEZBSLwg5RF1UZZauC86dkQNB9dfwgvmycMHyKBe-XZvcC9iBPUAslSrtfBTJ-byGlsgWElsrvR9bFdxCXk5rN-8=w640)
+* Fixed bugs with exporting G-Code
+* Improved flatten
+* Improved Undo support
+* Improved design history
 
-# Design Apps
+# MatterControl 2.19.1 (January, 2, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM)
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM)
 
-MatterControl is now empowered with Design Apps: sophisticated customizable designs that allow you to make designs your own. From instantly putting your name on a business card holder to creating a custom light switch with your favorite superhero logo, Design Apps make the process fast, fun, and easy for every Maker.
+## Changes
+* Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.
+* Multi-printer control
+* A single instance of MatterControl can now run multiple printers simultaneously
+* New State-of-the-art Subtract, Combine and Intersection (Window only)
+* We now start up with a 'Feature Tour' to help new users find their way
 
-# Customizable Supports
+# MatterControl 2.0.0 (November, 19, 2018)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM)
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM)
 
-Whether you want auto-generated supports or only specific parts of your model is your choice. Simply drag in a primitive, mark it as support, and MatterControl will treat it as supports for your model. This means you can support internal structures without supporting the entire model.
+## Changes
+* Design Tools - The ability to 3D model with a complete set of modeling primitives
+* Use a primitive to create your own customized supports
+* Design Apps - Design Apps: sophisticated customizable designs
+* 64-bit Processing
 
-![](https://lh3.googleusercontent.com/adNhE82-DcjwJOuI2XFNjQRhOaQeZp27O8qPWFOlNwD3b94et0sU-l45CnZXk1GAR84XTL4vUf8pFeatLG8PA1lZCg=w640)
+# MatterControl 1.7.5 (August, 14, 2017)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM)
 
-# 64-bit Processing.
-
-MatterControl now comes in a 64-bit version, which means if you have a 64-bit computer, MatterControl can handle larger, more complicated models, and slice faster than ever!
+If you are looking for the older interface to MatterControl, this is the last stable version without design tools.

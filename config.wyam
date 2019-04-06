@@ -1,9 +1,9 @@
 #recipe Docs
 #n Wyam.Markdown
 #n Markdig
-
 //#a **/*
 
+using System.IO;
 using System.Text;
 using Newtonsoft.Json;
 
@@ -13,6 +13,9 @@ Settings[DocsKeys.Title] = "MatterControl Help";
 Settings[Keys.LinksUseHttps] = true;
 Settings[Keys.LinkRoot] = "/MatterControl-Help";
 
+// Ignore /input/settings in the standard Docs recipe processing
+Settings[DocsKeys.IgnoreFolders] = "settings";
+
 // Add any pipeline customizations here
 Pipelines.Add("DeployMarkdown",
 	ReadFiles("docs/**/*.md"),  // Read all markdown files
@@ -21,15 +24,32 @@ Pipelines.Add("DeployMarkdown",
 	WriteFiles()  // Write the post file 
 );
 
+// Add custom pipeline for new slice/printer settings documents
+Pipelines.Add("CompileSettings",
+	ReadFiles("settings/**/*.md"),  // Read all markdown files
+	FrontMatter(Yaml()),  // Load any frontmatter and parse it as YAML markup,
+	new SettingsModule(),
+	WriteFiles(".md")
+);
+
 public class HelpArticle
 {
     public string Name { get; set; }
 
-    public string Path { get; set; }
+    public virtual string Path { get; set; }
 
     public string ArticleKey { get; set; }
 
     public List<HelpArticle> Children { get; set; } = new List<HelpArticle>();
+}
+
+public class SettingsArticle : HelpArticle
+{
+    public string Content { get; set; }
+    public string CanonicalName { get; set; }
+
+    [JsonIgnore]
+    public override string Path { get; set; }
 }
 
 public class TocModule : IModule
@@ -129,3 +149,141 @@ public class TocModule : IModule
     }
 }
 
+public class SettingsModule : IModule
+{
+    public IEnumerable<IDocument> Execute(IReadOnlyList<IDocument> inputs, IExecutionContext context)
+    {
+        var articles = new Dictionary<string, SettingsArticle>();
+
+        foreach (var document in inputs)
+        {
+            if (document.Metadata.Get("RelativeFilePath") is FilePath filePath)
+            {
+                var path = new StringBuilder();
+
+                SettingsArticle parentContext = null;
+
+                var segments = filePath.Directory.FullPath.Split('/');
+
+                foreach (var segment in segments)
+                {
+                    path.AppendFormat("{0}/", segment);
+
+                    string contextPath = path.ToString();
+
+                    if (!articles.TryGetValue(contextPath, out SettingsArticle helpArticle))
+                    {
+                        helpArticle = new SettingsArticle()
+                        {
+                            Name = segment,
+                        };
+
+                        if (parentContext != null)
+                        {
+                            parentContext.Children.Add(helpArticle);
+                        }
+
+                        articles[contextPath] = helpArticle;
+
+                        parentContext = helpArticle;
+                    }
+                    else
+                    {
+                        parentContext = helpArticle;
+                    }
+                }
+
+                if (filePath.FileName.FullPath != "index.md")
+                {
+                    parentContext.Children.Add(new SettingsArticle()
+                    {
+                        Name = document.Metadata.Get("title") as string,
+                        Path = filePath.FullPath,
+                        Content = document.Content.Trim(),
+                        CanonicalName = document.Metadata.Get("canonicalName") as string,
+                        ArticleKey = document.Metadata.Get("articleKey") as string
+                    });
+                }
+            }
+        }
+
+        var allResults = new List<IDocument>();
+
+        if (articles.TryGetValue("settings/", out SettingsArticle root))
+        {
+            string outputPath = Path.Combine(context.FileSystem.RootPath.FullPath, "output");
+
+            CreateRollupsForChildren(context, root, allResults, outputPath);
+
+            System.IO.File.WriteAllText(
+                System.IO.Path.Combine(outputPath, "all-settings.json"),
+                JsonConvert.SerializeObject(
+                    root,
+                    Formatting.Indented,
+                    new JsonSerializerSettings
+                    {
+                        Formatting = Newtonsoft.Json.Formatting.Indented,
+                        ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore,
+                        NullValueHandling = NullValueHandling.Ignore
+                    }));
+        }
+
+        // Enable to troubleshoot complications in WriteFiles module (when running under Visual Studio)
+        // System.Diagnostics.Debugger.Break();
+
+        // Empty list unless populated in CreateRollupsForChildren()
+        return allResults;
+    }
+
+    // Create a document for each root level child, processing descendants into the document body
+    private void CreateRollupsForChildren(IExecutionContext context, SettingsArticle root, List<IDocument> allResults, string outputPath)
+    {
+        string docsPath = Path.Combine(outputPath, "docs");
+        string settingsPath = Path.Combine(docsPath, "settings");
+
+        foreach(var section in root.Children)
+        {
+            // Create a file for each child in the section
+            foreach(var child in section.Children)
+            {
+                var sb = new StringBuilder();
+                
+                DumpChildren(child, sb, 1);
+
+                var relativePath = $"docs/settings/{section.Name}/{child.Name}.md";
+
+                var testDocument = context.GetDocument(
+                    context.FileSystem.GetInputFile(new FilePath(relativePath)).Path,
+                    new MemoryStream(Encoding.UTF8.GetBytes(sb.ToString())),
+                    new MetadataItems { { Keys.RelativeFilePath, new FilePath(relativePath) }});
+
+                allResults.Add(testDocument);
+            }
+        }
+    }
+
+    // Recursively walk descendants dumping into StringBuilder and ultimately the document body
+    private void DumpChildren(HelpArticle node, StringBuilder sb, int level)
+    {
+        if (node.Children.Any())
+        {
+            // Add heading
+            sb.AppendFormat("{0} {1}\r\n", new string('#', level), node.Name);
+
+            // Write table definition if the first child is a leaf node
+            if (!node.Children.First().Children.Any())
+            {
+                sb.AppendFormat("Setting | Details\r\n--- | ---\r\n");
+            }
+
+            foreach(var child in node.Children)
+            {
+                DumpChildren(child, sb, level + 1);
+            }
+        }
+        else if (node is SettingsArticle document)
+        {
+            sb.AppendFormat("**{0}** | {1}\r\n", document.Name, document.Content);
+        }
+    }
+}
