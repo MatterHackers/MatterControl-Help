@@ -79,7 +79,7 @@ Bridging is tricky. In order for it to work the bridge needs to be printed at th
 **Recommended Baseline for PLA:** 25 mm/s  
 **Units:** millimeters per second (mm/s)  
 **G-Code Replacement Variable:** `bridge_speed`  
-**See Also:** [Bridging Fan Speed](fan#bridging-fan-speed), [Bridge Over Infill](#bridge-over-infill)
+**See Also:** [Bridging Fan Speed](../filament/fan#bridging-fan-speed), [Bridge Over Infill](#bridge-over-infill)
 
 Travel
 ======
@@ -95,6 +95,6 @@ Since travel moves are the fastest moves the printer makes, they are the most li
 Bridge Over Infill
 ==================
 
-When this setting is on, [bridging speed](#bridges) and [fan](fan#bridging-fan-speed) settings will be used when printing the first solid top layer over infill. This setting will reduce the number of [top solid layers](../general/general#top-solid-layers) you need in order to have a smooth top surface with no gaps. This is especially true if you have a low [fill density](../general/general#fill-density), so there are large spaces in the infill pattern.
+When this setting is on, [bridging speed](#bridges) and [fan](../filament/fan#bridging-fan-speed) settings will be used when printing the first solid top layer over infill. This setting will reduce the number of [top solid layers](../general/general#top-solid-layers) you need in order to have a smooth top surface with no gaps. This is especially true if you have a low [fill density](../general/general#fill-density), so there are large spaces in the infill pattern.
 
 **Recommended Baseline:** On
