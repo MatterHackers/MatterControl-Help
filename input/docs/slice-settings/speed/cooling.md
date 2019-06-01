@@ -6,7 +6,7 @@ Cooling is very important for print quality. If a layer does not have enough tim
 
 If you have inadequate cooling it will be most apparent on overhangs and sharp corners. Overhangs will tend to curl up and become very messy underneath. Sharp corners will become rounded and blunt.
 
-These settings control when layers are slowed down and by how much. In addition to the cooling slowdown, you should also use a [layer cooling fan](fan) if your printer is equipped with one.
+These settings control when layers are slowed down and by how much. In addition to the cooling slowdown, you should also use a [layer cooling fan](../filament/fan) if your printer is equipped with one.
 
 Note: The slicer will not change the speeds by more than 10% from one layer to another. This is to prevent a velocity painting effect. Abrupt changes in speed can make layers look different from each other. This is why you may notice it takes a couple of layers for the speed to ramp up or down.
 
