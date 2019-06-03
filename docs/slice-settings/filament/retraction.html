@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Cooling</title>
+        <title>MatterControl Help - Retraction</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,8 +70,16 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</a></p>
-<p><a href="#minimum-print-speed">Minimum Print Speed</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#retract-length">Retract Length</a></p>
+<p><a href="#extra-length-on-restart">Extra Length On Restart</a></p>
+<p><a href="#time-for-extra-length">Time For Extra Length</a></p>
+<p><a href="#speed">Speed</a></p>
+<p><a href="#z-lift">Z Lift</a></p>
+<p><a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a></p>
+<p><a href="#retract-when-changing-islands">Retract When Changing Islands</a></p>
+<p><a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a></p>
+<p><a href="#length-on-tool-change">Length on Tool Change</a></p>
+<p><a href="#extra-length-after-tool-change">Extra Length After Tool Change</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -145,14 +153,14 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
 
                     </ul>
                 </li>
@@ -169,11 +177,11 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
 
@@ -205,24 +213,67 @@
 
 
 		<section class="content-header">
-			<h1>Cooling</h1>
+			<h1>Retraction</h1>
 		</section>
 	<section class="content">
-		<p>Cooling is very important for print quality. If a layer does not have enough time to cool and harden before the next one starts printing, then it will deform. In order to prevent this, MatterControl can slow down the printing speed of layers which would normally take very little time to print. This gives the layer more time to harden. It increases the time it takes to print small objects but it can also substantially improve print quality.</p>
-<p>If you have inadequate cooling it will be most apparent on overhangs and sharp corners. Overhangs will tend to curl up and become very messy underneath. Sharp corners will become rounded and blunt.</p>
-<p>These settings control when layers are slowed down and by how much. In addition to the cooling slowdown, you should also use a <a href="../filament/fan">layer cooling fan</a> if your printer is equipped with one.</p>
-<p>Note: The slicer will not change the speeds by more than 10% from one layer to another. This is to prevent a velocity painting effect. Abrupt changes in speed can make layers look different from each other. This is why you may notice it takes a couple of layers for the speed to ramp up or down.</p>
-<h1 id="slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</h1>
-<p>The minimum amount of time a layer must take to print. If a layer takes less time than this, then all printing speeds will be slowed down until the layer takes at least this much time.</p>
-<p>This setting is heavily material dependant. Some materials need lots of time to cool while others do not need any.</p>
-<p><strong>Recommended Baseline for PLA:</strong> 30 s<br>
+		<p>Retraction is a technique used to prevent plastic from leaking out of the nozzle when the printer is making a <a href="../speed/speed#travel">travel move</a>. By pulling the filament back slightly, the chamber pressure in the melt zone of the hot end is relieved. This prevents oozing and stringing, however it cannot eliminate it completely. See this article on <a href="https://www.matterhackers.com/articles/retraction-just-say-no-to-oozing">how to tune your retraction settings</a>.</p>
+<p>Retractions are visible in the layer view. Red circles indicate a retraction and blue circles indicate an unretraction. The size of the circle is proportional to the length of the retraction.</p>
+<p><img src="https://lh3.googleusercontent.com/IyuZct3UGe2KMd7PmSorEFRzld7DffeV4SkrCWLd3gr-aMx2MkchH1GN98L-VC-cHoZnSqLVvngdFQzvCBbU6RqKMQ" class="img-fluid" alt=""></p>
+<h1 id="retract-length">Retract Length</h1>
+<p>The distance the filament will be pulled back. The ideal distance varies from one hot end to another. The longer the retraction, the more the oozing will be reduced, but only up to a point. Beyond that you will see diminishing returns and increased risk of jamming. This is because retracting too far will pull molten plastic into the cold zone, where it can solidify.</p>
+<p>Generally, bowden extruder will need more retraction than direct feed extruders due to the backlash in the tube.</p>
+<p><strong>Recommended Baseline:</strong> 3 mm<br>
+<strong>Units:</strong> millimeters (mm)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_length</code></p>
+<h1 id="extra-length-on-restart">Extra Length On Restart</h1>
+<p>After the travel move, the filament will be unretracted (pushed back to the same place it was before). However, during the travel it is still likely that a small amount of plastic will have leaked from the nozzle. This means that the nozzle may not be fully primed when it starts extruding again. This can cause some gaps or unevenness in your print. The Extra Length On Restart option compensates for this by extruding a small amount of extra material in addition to the normal unretract, thus making up for whatever material may have leaked.</p>
+<p>This setting will depend on the material you are printing, since some materials are runnier than others (less viscous) and will leak more.</p>
+<p><strong>Recommended Baseline:</strong><br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="time-for-extra-length">Time For Extra Length</h1>
+<p>During a travel move, the plastic does not leak from the nozzle all at once. It happens over time. There will be more leakage during a long travel move than a short one. Therefor, more extra extrusion will need to be done after a long move in order to reprime the nozzle.</p>
+<p>This setting allows you to control how much extra extrusion is done on restart based on how long the travel move took. This setting is the amount of time it take for the nozzle to fully drain. Any moves that take less than this time will get proportionally less Extra Length On Restart. If zero, the full length will always be used.</p>
+<p><strong>Recommended Baseline:</strong><br>
 <strong>Units:</strong> seconds (s)</p>
-<h1 id="minimum-print-speed">Minimum Print Speed</h1>
-<p>The minimum speed that the printer can go when the layer is slowed down for cooling. The slicer will try to slow the printer so that each layer takes the minimum layer time (above), but it will not slow any print speeds lower than this speed.</p>
-<p>This prevents the printer from going so slow that the plastic is not extruded consistently.</p>
-<p><strong>Recommended Baseline:</strong> 15 mm/s<br>
-<strong>Units:</strong> millimeters per second (mm/s)<br>
-<strong>G-Code Replacement Variable:</strong> <code>min_print_speed</code></p>
+<h1 id="speed">Speed</h1>
+<p>The speed the extruder will move to retract the filament.</p>
+<p>This should be the maximum speed your extruder is capable of. This should be fast so that the pressure is relieved as fast as possible and so that the nozzle does not linger in one spot too long while the retraction is happening. This can leave a blob.</p>
+<p>However, going to fast will cause the motor to skip steps.</p>
+<p><strong>Recommended Baseline:</strong> 35 mm/s<br>
+<strong>Units:</strong> millimeters per seconds (mm/s)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_speed</code></p>
+<h1 id="z-lift">Z Lift</h1>
+<p>This function lifts the nozzle during retraction, which ensures that the nozzle will not be dragged across the top of the print during travel moves.</p>
+<p>Generally Z Lift should not be used, however sometimes it may be beneficial to set it to 1 or 2 layer thicknesses (0.2 - 0.4 mm). This reduces the likelihood of the nozzle colliding with any buildups of plastic while traveling, which can cause layer shifting. It will also stop the clunk-clunk-clunk noise as the nozzle crosses over the infill.</p>
+<p><strong>Recommended Baseline:</strong> 0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</h1>
+<p>This is one of several settings that control when retractions will be performed. This setting prevents retractions from being done on short travel moves. It sets the minimum travel distance where a retraction will definitely be performed. However, retractions may still be done for shorter travel moves depending on the conditions. <a href="#retract-when-changing-islands">Retract When Changing Islands</a> takes precedence over this setting.</p>
+<p>Generally you should have <a href="#retract-when-changing-islands">Retract When Changing Islands</a> and <a href="../general/layers-surface#avoid-crossing-perimeters">Avoid Crossing Perimeters</a> turned on. In this case, this setting will mainly only have an effect when moving from one part of the infill to the other. Stringing will not be visible, but retractions are still beneficial here since they will ensure that the nozzle is primed when it starts printing the next infill line.</p>
+<p>This should normally be set to a large distance, since otherwise it may lead to too frequent retraction which can cause jamming.</p>
+<p><strong>Recommended Baseline:</strong> 20 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="retract-when-changing-islands">Retract When Changing Islands</h1>
+<p>Islands are two areas of a layer which are not connected. If this option is on, then a retraction will be performed when the nozzle is traveling from one island to another. This setting takes precedence over <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> but not <a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a>.</p>
+<p>Stringing primarily occurs when traveling between islands, so it is recommended to always have this option turned on.</p>
+<p>This picture shows a layer with two islands. The red and blue circles indicate retraction and unretraction happening as the nozzle travels between them.</p>
+<p><img src="https://lh3.googleusercontent.com/E65EfrFDhhe71Tgb9jUNGiaZ--ywuCAiUgFxyEgjoeismEZvsU_JJcdQTmEZm1N1T6dTEwOdD7Sq1HbrVbL1PjEwh_A" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h1 id="minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</h1>
+<p>This setting is used to control how frequently retractions are allowed to occur. Performing retractions too frequently can cause underextrusion (due to the nozzle not being fully primed) or jamming. This setting ensures that a certain amount of filament gets extruded before the next retraction is allowed to occur. This setting takes precedence over both <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> and <a href="#retract-when-changing-islands">Retract When Changing Islands</a>.</p>
+<p>This setting should be set to the smallest length possible. If you have confidence in your hot end and extruder, then you can set it to 0. However if you notice your printer has trouble keeping when retractions happen frequently, then you should try increasing this setting in increments of 0.01 mm.</p>
+<p><strong>Recommended Baseline:</strong> 0.05 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="length-on-tool-change">Length on Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>This is the distance that the filament will be retracted when switching from one extruder to another. You may want this to be longer than your normal retraction distance so that the filament is completely removed from the melt zone.</p>
+<p><strong>Recommended Baseline:</strong> 6.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="extra-length-after-tool-change">Extra Length After Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>Similar to <a href="#extra-length-on-restart">Extra Length on Restart</a>, this option allows you to extrude extra material after a tool change has occurred. This allows you to compensate for any leakage that may have occurred while the nozzle was inactive. It is recommended to use this option in combination with a <a href="../general/extruder-change">wipe tower or wipe shield</a> to prevent it from depositing a blob on your print.</p>
+<p><strong>Recommended Baseline:</strong> 2.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
 
 	</section>
                 

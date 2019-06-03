@@ -9,7 +9,6 @@
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <title>MatterControl Help - Image Converter</title>
-        <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -24,6 +23,7 @@
         <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
         <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
         <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
         <!--[if lt IE 9]>
         <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
         <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
@@ -81,16 +81,19 @@
 
                     <ul class="sidebar-menu">
                         
+
                 <li class="treeview active">
                     <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/create-new-part">Create New Part</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
                 <li class="treeview active">
                     <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
                 <li class="selected"><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
 
@@ -107,7 +110,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
 
                     </ul>
@@ -115,7 +119,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
@@ -128,10 +133,12 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li class="treeview">
+                        
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
 
@@ -140,14 +147,19 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
 
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
@@ -159,8 +171,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
 
@@ -169,7 +181,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
 
                     </ul>
@@ -190,9 +203,9 @@
 
 
 
-	<section class="content-header">
-		<h1>Image Converter</h1>
-	</section>
+		<section class="content-header">
+			<h1>Image Converter</h1>
+		</section>
 	<section class="content">
 		<p>Image Converter can help you easily build parts from images</p>
 <h3 id="add-image-converter">Add Image Converter</h3>
@@ -244,22 +257,53 @@
                 $(document.body).removeClass('sidebar-open');
             });
             
-            $(document).load(function() {
+            $(document).ready(function() {
                 mermaid.initialize(
                 {
                     flowchart:
                     {
-                        htmlLabels: false,
-                        useMaxWidth:false
-                    }
-                });  
-                mermaid.init(undefined, ".mermaid")
-                $('svg').addClass('img-responsive');
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
                 
                 $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });  
             });
+
             hljs.initHighlightingOnLoad();
 
             // Back to top

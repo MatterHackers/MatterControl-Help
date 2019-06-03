@@ -7,7 +7,6 @@
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <title>MatterControl Help - Release Notes</title>
-        <link href="/MatterControl-Help/assets/css/mermaid.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -22,6 +21,7 @@
         <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
         <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
         <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
         <!--[if lt IE 9]>
         <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
         <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
@@ -70,10 +70,11 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#design-tools">Design Tools</a></p>
-<p><a href="#design-apps">Design Apps</a></p>
-<p><a href="#customizable-supports">Customizable Supports</a></p>
-<p><a href="#bit-processing">64-bit Processing.</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
+<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
+<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
+<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
+<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -84,16 +85,19 @@
 
                     <ul class="sidebar-menu">
                         
+
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-part">Adding Existing Part</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/create-new-part">Create New Part</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
 
@@ -110,7 +114,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
 
                     </ul>
@@ -118,7 +123,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
@@ -131,10 +137,12 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li class="treeview">
+                        
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
 
@@ -143,14 +151,19 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
 
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
@@ -162,8 +175,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/speed/fan">Fan</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
 
@@ -172,7 +185,8 @@
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
 
                     </ul>
@@ -193,21 +207,81 @@
 
 
 
-	<section class="content-header">
-		<h1>Release Notes</h1>
-	</section>
+		<section class="content-header">
+			<h1>Release Notes</h1>
+		</section>
 	<section class="content">
-		<p><img src="https://user-images.githubusercontent.com/1158332/42059960-0c8c84bc-7ada-11e8-8fb9-0b59daccf008.png" class="img-fluid" alt="mc2"></p>
-<h1 id="design-tools">Design Tools</h1>
-<p>MatterControl now incorporates the ability to 3D model with a complete set of modeling primitives that you can use to build anything you can imagine. Build up your creative designs by combining these shapes into something more. You can even use a primitive to create your own customized supports! The possibilities are endless.</p>
-<p><img src="https://lh3.googleusercontent.com/ZQcmEZBSLwg5RF1UZZauC86dkQNB9dfwgvmycMHyKBe-XZvcC9iBPUAslSrtfBTJ-byGlsgWElsrvR9bFdxCXk5rN-8=w640" class="img-fluid" alt=""></p>
-<h1 id="design-apps">Design Apps</h1>
-<p>MatterControl is now empowered with Design Apps: sophisticated customizable designs that allow you to make designs your own. From instantly putting your name on a business card holder to creating a custom light switch with your favorite superhero logo, Design Apps make the process fast, fun, and easy for every Maker.</p>
-<h1 id="customizable-supports">Customizable Supports</h1>
-<p>Whether you want auto-generated supports or only specific parts of your model is your choice. Simply drag in a primitive, mark it as support, and MatterControl will treat it as supports for your model. This means you can support internal structures without supporting the entire model.</p>
-<p><img src="https://lh3.googleusercontent.com/adNhE82-DcjwJOuI2XFNjQRhOaQeZp27O8qPWFOlNwD3b94et0sU-l45CnZXk1GAR84XTL4vUf8pFeatLG8PA1lZCg=w640" class="img-fluid" alt=""></p>
-<h1 id="bit-processing">64-bit Processing.</h1>
-<p>MatterControl now comes in a 64-bit version, which means if you have a 64-bit computer, MatterControl can handle larger, more complicated models, and slice faster than ever!</p>
+		<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Printer setup dramatically improved with new unified experience
+<ul>
+<li>Show outstanding tasks and progress</li>
+<li>Leveling visualization</li>
+</ul>
+</li>
+<li>Dual extrusion improvements
+<ul>
+<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
+<li>Support for custom wipe tower shapes</li>
+<li>Improved support material detection</li>
+</ul>
+</li>
+<li>UI improvements
+<ul>
+<li>Faster updates in Cloud Library folders</li>
+<li>Restore UI on re-open</li>
+<li>Better Keyboard navigation support</li>
+</ul>
+</li>
+<li>New error detection and warning system
+<ul>
+<li>More hardware errors handled</li>
+</ul>
+</li>
+<li>Design tools improvements and optimizations
+<ul>
+<li>New Twist tools</li>
+<li>Improved Curve tool</li>
+<li>Improved Align</li>
+</ul>
+</li>
+<li>Many bug fixes and optimizations</li>
+</ul>
+<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
+<h2 id="changes-1">Changes</h2>
+<ul>
+<li>Fixed bugs with exporting G-Code</li>
+<li>Improved flatten</li>
+<li>Improved Undo support</li>
+<li>Improved design history</li>
+</ul>
+<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a>
+<a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
+<h2 id="changes-2">Changes</h2>
+<ul>
+<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
+<li>Multi-printer control</li>
+<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
+<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
+<li>We now start up with a 'Feature Tour' to help new users find their way</li>
+</ul>
+<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a>
+<a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
+<h2 id="changes-3">Changes</h2>
+<ul>
+<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
+<li>Use a primitive to create your own customized supports</li>
+<li>Design Apps - Design Apps: sophisticated customizable designs</li>
+<li>64-bit Processing</li>
+</ul>
+<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
+<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
 
 	</section>
                 
@@ -231,22 +305,53 @@
                 $(document.body).removeClass('sidebar-open');
             });
             
-            $(document).load(function() {
+            $(document).ready(function() {
                 mermaid.initialize(
                 {
                     flowchart:
                     {
-                        htmlLabels: false,
-                        useMaxWidth:false
-                    }
-                });  
-                mermaid.init(undefined, ".mermaid")
-                $('svg').addClass('img-responsive');
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
                 
                 $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });  
             });
+
             hljs.initHighlightingOnLoad();
 
             // Back to top

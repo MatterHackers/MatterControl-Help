@@ -76,5 +76,7 @@ Heating, along with a proper bed surface, is essential for ensuring that your pr
 
 The ideal bed temperature is different for each type of filament. See our [Filament Comparison Guide](https://www.matterhackers.com/3d-printer-filament-compare) for recommended settings for different materials. It is important to remember that these recommendations are just a starting point, and you may have to experiment to find the best temperature for your particular filament and printer. Generally, the bed temperature should be close to the material's glass transition temperature.
 
+If this setting is set to 0 then bed heating will not be used.
+
 **Units:** °C  
 **G-Code Replacement Variable:** `bed_temperature`
