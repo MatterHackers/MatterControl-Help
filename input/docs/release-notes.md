@@ -2,6 +2,31 @@
 title: Release Notes
 ---
 
+# MatterControl 2.19.6 (June, 10, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM)
+
+## Changes
+
+* Printer setup dramatically improved with new unified experience
+    * Show outstanding tasks and progress
+    * Leveling visualization
+* Dual extrusion improvements
+    * New Nozzle Calibration Wizard (for calibrating dual extrusion printers)
+    * Support for custom wipe tower shapes
+    * Improved support material detection
+* UI improvements
+    * Faster updates in Cloud Library folders
+    * Restore UI on re-open
+    * Better Keyboard navigation support
+* New error detection and warning system
+    * More hardware errors handled
+* Design tools improvements and optimizations
+    * New Twist tools 
+    * Improved Curve tool
+    * Improved Align
+* Many bug fixes and optimizations
+
+
 # MatterControl 2.19.2 (February, 6, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM)
 
