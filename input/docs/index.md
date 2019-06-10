@@ -14,18 +14,18 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Printing Parts](printing/index.md)
 * [What's New](whats-new.md)
 
-## Designing Parts
+## Designing
 
-* [Creating a New Part](designing/create-new-part.md)
-* [Add Existing Part](designing/add-existing-part.md)
-* [Editing a Part](designing/editing-a-part.md)
-* [Design Apps](designing/design-apps/index.md)
-  * [Design Primitives](designing/design-primitives/index.md)
-  * [Text Tool](designing/design-primitives/text-tool.md)
-  * [Image Converter](designing/design-primitives/image-converter.md)
-  * [Braille Tool](designing/design-primitives/braille-tool.md)
+* [Creating New Objects](creating-new-objects.md)
+* [Adding Existing Objects](add-existing-objects.md)
+* [Editing a Objects](editing-objects.md)
+* [Design Apps](design-apps/index.md)
+  * [Design Primitives](design-primitives/index.md)
+  * [Text Tool](design-primitives/text-tool.md)
+  * [Image Converter](design-primitives/image-converter.md)
+  * [Braille Tool](design-primitives/braille-tool.md)
 
-## Printing Parts
+## Printing
 
 * [Adding a New Printer](printing/adding-new-printer.md)
 * [Selecting a Printer](printing/selecting-a-printer.md)

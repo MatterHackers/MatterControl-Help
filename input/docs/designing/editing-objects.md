@@ -1,5 +1,5 @@
 ---
-title: Editing a Part
+title: Editing Objects
 ---
 MatterControl includes many tools to help you create parts, it also has intuitive controls build right into the 3D view to help you edit parts directly.
 
