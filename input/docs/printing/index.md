@@ -8,3 +8,4 @@ title: Printing
 * [Add Existing Part](designing/add-existing-part.md)
 * [Starting a Print](starting-a-print.md)
 * [Slice Settings](../slice-settings/index.md)
+* [Printing Multi-Extrusion Models](multi-color-stls.md)
