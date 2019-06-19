@@ -2,6 +2,8 @@
 # MatterControl 2.19.6 (June, 10, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM)
 
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM)
+
 ## Changes
 
 * Printer setup dramatically improved with new unified experience
@@ -36,6 +38,7 @@
 
 # MatterControl 2.19.1 (January, 2, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM)
+
 [Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM)
 
 ## Changes
@@ -47,6 +50,7 @@
 
 # MatterControl 2.0.0 (November, 19, 2018)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM)
+
 [Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM)
 
 ## Changes
