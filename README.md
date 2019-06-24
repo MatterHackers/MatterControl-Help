@@ -25,19 +25,6 @@
 1. Push to your remote fork
 1. Issue a pull request from your fork
 
-## Migrating Content
-MatterControl 1.7 articles have been imported and converted to Markdown from http://wiki.mattercontrol.com. You can find the converted documents at https://github.com/jlewin/mc-docs/tree/master/docs. There are many ways to import a given article but we'll choose the web workflow to start:
-
-1. Open an article from [jlewin/mc-docs](https://github.com/jlewin/mc-docs/tree/master/docs)
-1. Click the Edit icon as depicted in the instructions above
-1. Copy the Markdown text to the clipboard
-1. Return to this repository and create a new document for the content  
-   <img src="https://user-images.githubusercontent.com/175113/42061840-58646de0-7ae0-11e8-88ad-035243393c59.png" width="500px" />
-1. Type the full path to the location where the new file will be. Missing path steps will get new folders created for them.
-1. Paste the Markdown text from the clipboard into the new document
-1. Click the `Commit New File` button to save your changes and start or continue a pull request  
-   <img src="https://user-images.githubusercontent.com/175113/42062228-d178975a-7ae1-11e8-8951-d734297cd00d.png" width="500px" />
-
 ## Wyam build and deploy
 
 This is the short-term procedure required for success. Long term we need to resolve the Wyam/worktree conflicts and script this as part of deploy/build cake task
@@ -49,7 +36,7 @@ This is the short-term procedure required for success. Long term we need to reso
 1. Remove the local gh-pages branch `git branch -d gh-pages`
 1. Fetch `git fetch --all`
 1. Pull the latest content from the master branch `git pull upstream master`
-1. Build Wyam `.\build.ps1 -t build` or `.\tools\Wyam.1.4.1\tools\net462\Wyam.exe build`
+1. Build Wyam `wyam build`
 1. Rename the output directory `mv output output_`
 1. Map output directory to gh-pages worktree `git worktree add output gh-pages`
 1. Delete existing content in the output worktree
