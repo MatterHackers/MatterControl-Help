@@ -2,6 +2,26 @@
 title: Release Notes
 ---
 
+# MatterControl 2.19.7 (July, 15, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM)
+
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM)
+
+## Changes
+
+* Added search bar for application
+    * ![Search](https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n)
+* Improved design tool bar
+    * Added grouping to some itmes
+    * Added dual align button
+    * Added Arange All button
+* Nudge items on the bed with arrow keys
+    * New Nozzle Calibration Wizard (for calibrating dual extrusion printers)
+* Downloads folder is sorted by date
+* Sped up dual extrusion calibration prints
+* Many bug fixes and optimizations
+
+
 # MatterControl 2.19.6 (June, 10, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM)
 
