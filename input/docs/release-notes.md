@@ -18,8 +18,6 @@ title: Release Notes
 * Nudge items on the bed with arrow keys
 * Downloads folder is sorted by date
 * Sped up dual extrusion calibration prints
-* Many bug fixes and optimizations
-
 
 # MatterControl 2.19.6 (June, 10, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM)
