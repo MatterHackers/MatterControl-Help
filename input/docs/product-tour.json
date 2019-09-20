@@ -5,6 +5,11 @@
     "Description": "Add local parts from your hard drive to the bed."
   },
   {
+    "Title": "Search MatterControl",
+    "WidgetName": "App Search Button",
+    "Description": "Enter a query to search MatterControl."
+  },
+  {
     "Title": "Primitive Shapes",
     "WidgetName": "LibraryView",
     "Description": "Drag primitives to the bed to create your own designs."

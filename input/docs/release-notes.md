@@ -2,6 +2,48 @@
 title: Release Notes
 ---
 
+# MatterControl 2.19.7 (July, 15, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM)
+
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM)
+
+## Changes
+
+* Added search bar for application
+    * ![Search](https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n)
+* Improved design tool bar
+    * Added grouping to some items
+    * Added dual align button
+    * Added Arrange All button
+* Nudge items on the bed with arrow keys
+* Downloads folder is sorted by date
+* Sped up dual extrusion calibration prints
+
+# MatterControl 2.19.6 (June, 10, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM)
+
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM)
+
+## Changes
+
+* Printer setup dramatically improved with new unified experience
+    * Show outstanding tasks and progress
+    * Leveling visualization
+* Dual extrusion improvements 
+    * New Nozzle Calibration Wizard (for calibrating dual extrusion printers)
+    * Support for custom wipe tower shapes
+    * Improved support material detection
+* UI improvements
+    * Faster updates in Cloud Library folders
+    * Restore UI on re-open
+    * Better Keyboard navigation support
+* New error detection and warning system
+    * More hardware errors handled
+* Design tools improvements and optimizations
+    * New Twist tools 
+    * Improved Curve tool
+    * Improved Align
+
 # MatterControl 2.19.2 (February, 6, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM)
 
@@ -14,6 +56,7 @@ title: Release Notes
 
 # MatterControl 2.19.1 (January, 2, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM)
+
 [Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM)
 
 ## Changes
@@ -25,6 +68,7 @@ title: Release Notes
 
 # MatterControl 2.0.0 (November, 19, 2018)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM)
+
 [Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM)
 
 ## Changes
