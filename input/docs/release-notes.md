@@ -2,6 +2,25 @@
 title: Release Notes
 ---
 
+# MatterControl 2.19.10 (September, 27, 2019)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM)
+
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM)
+
+## Changes
+
+* Dual Extrusion Improvements
+    * Made the default wipe tower round
+    * Made un-retract after tool change able to be negative
+    * Made custom wipe towers follow the geometry defined by the user
+* Improved ungrouping of mesh (splitting into multiple meshes)
+    * Discard degenerate faces
+    * Discard microscopic discrete features
+* Fixed Bugs
+    * Export STL when no printer has been created
+    * Export STL on Mac
+    * Arrange all when no printer has been created and the bed is empty
+
 # MatterControl 2.19.7 (July, 15, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM)
 
