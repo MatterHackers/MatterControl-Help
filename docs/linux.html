@@ -1,21 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - General</title>
+        <title>MatterControl Help - MatterControl on Linux</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -72,7 +70,12 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"></div>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#installation">Installation</a></p>
+<p><a href="#raspberry-pi">Raspberry Pi</a></p>
+<p><a href="#assigning-serial-ports">Assigning Serial Ports</a></p>
+<p><a href="#known-issues">Known Issues</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
@@ -107,7 +110,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
-                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -132,7 +135,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
                 <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -157,7 +160,7 @@
 
                     </ul>
                 </li>
-                <li class="treeview active selected">
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -192,7 +195,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
 
                     </ul>
                             
@@ -206,15 +209,63 @@
 
 
 		<section class="content-header">
-			<h1>General</h1>
+			<h1>MatterControl on Linux</h1>
 		</section>
 	<section class="content">
-		<ul>
-<li><a href="general.md">General</a></li>
-<li><a href="layers-surface.md">Layers / Surface</a></li>
-<li><a href="infill.md">Infill</a></li>
-<li><a href="extruder-change.md">Extruder Change</a></li>
-</ul>
+		<h1 id="installation">Installation</h1>
+<p>MatterControl is available for Ubuntu/Debian or Arch based distros.</p>
+<h2 id="ubuntu-debian">Ubuntu / Debian</h2>
+<p>MatterControl officially supports Ubuntu Linux and other Debian based distributions, such as Mint. The latest stable release is always available as a .deb package. It is available here or at <a href="mattercontrol.com">MatterControl.com</a>.</p>
+<p><a href="https://mattercontrol.appspot.com/downloads/mattercontrol-linux/release">Download MatterControl for Ubuntu</a></p>
+<h3 id="installing-mono">Installing Mono</h3>
+<p>MatterControl requires the latest version of Mono in order to work. Although Mono is available in Ubuntu, the version provided is usually severely outdated. On Ubuntu 18.04, follow these steps to add the official Xamarin package repository and update to the latest version of Mono.</p>
+<pre><code>$ sudo apt install gnupg ca-certificates
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+$echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+$ sudo apt update
+
+</code></pre>
+<p>There are also instructions for other distributions on the <a href="https://www.mono-project.com/download/stable/">Mono website</a>.</p>
+<h3 id="serial-port-permissions">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Debian or Fedora based distros, add yourself to the <code>dialout</code> group.</p>
+<pre><code>$ gpasswd -a $USER dialout
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h2 id="arch">Arch</h2>
+<p>An unofficial package is <a href="https://aur.archlinux.org/packages/mattercontrol/">available in the AUR</a>. Install it manually or using your favorite AUR helper.</p>
+<pre><code>$ yay -S mattercontrol
+</code></pre>
+<h3 id="serial-port-permissions-1">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Arch you must add yourself to the <code>uucp</code> and <code>lock</code> groups.</p>
+<pre><code>$ gpasswd -a $USER uucp
+$ gpasswd -a $USER lock
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h1 id="raspberry-pi">Raspberry Pi</h1>
+<p>Because MatterControl is written in C#, it can run on any processor architecture. The regular Linux version of MatterControl will run the Raspberry Pi. However, you must have the <a href="https://www.raspberrypi.org/blog/another-new-raspbian-release/">experimental OpenGL drivers</a> installed and enabled. To do this, run <code>raspi-config</code> and go to Advanced Options &gt; GL Driver.</p>
+<p>If you have the Raspberry Pi touchscreen, remember that you can switch MatterControl into Touchscreen Mode through the application settings.</p>
+<h1 id="assigning-serial-ports">Assigning Serial Ports</h1>
+<p>On Linux, serial port assignments can change whenever a printer is connected or disconnected. MatterControl cannot tell which printer is connected to which serial port. You can setup a udev rule to permanently assign a unique port to your printer.</p>
+<p>Do <code>ls /dev/tty*</code> before and after connecting your printer to find out which port it is assigned to. Printers will show up as either <code>/dev/ttyACM#</code> or <code>/dev/ttyUSB#</code>.</p>
+<p>Use <code>udevadm</code> to get the serial number (UUID) of the USB device. This is a unique 20 digit hexadecimal value.</p>
+<pre><code>$ udevadm info --attribute-walk -n /dev/ttyACM0 | grep "serial"
+</code></pre>
+<p>Some printers will not report a serial number. In this case, you will have to use other attributes to identify it such as the vendor ID (idVendor) and the product ID (idProduct).</p>
+<p>Create a file <code>/etc/udev/rules.d/97-3dprinters.rules</code>. Here is an example with rules for two printers.</p>
+<pre><code>SUBSYSTEM=="tty", ATTRS{serial}=="6403237383335190E0F1", GROUP="uucp", MODE="0660", SYMLINK+="tty-taz"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="076b", GROUP="uucp", MODE="0660", SYMLINK+="tty-pulse"
+</code></pre>
+<p>Fill in either the serial number or vender and product IDs based on the information you obtained earlier. Make sure <code>GROUP</code> is set to the same group ownership as the rest of your serial ports. This is usually <code>dialout</code> on Debian or <code>uucp</code> on Arch. You can check by doing <code>ls -l /dev/ttyACM*</code>. Lastly, give your printer a unique name for the <code>SYMLINK</code>. This name must start with <code>tty</code> or it will not show up in the list in MatterControl.</p>
+<p>The next time you connect the printer, a symlink will automatically be created that points to the correct serial device. You can now configure the printer in MatterControl to use the symlinked port.</p>
+<h1 id="known-issues">Known Issues</h1>
+<h2 id="upgrading-from-1.7-to-2.x">Upgrading from 1.7 to 2.x</h2>
+<p>There is a problem with 1.7 that will cause the automatic update to fail. It will download the update package, but it will have the wrong file extension. This prevents the package from opening and being installed correctly.</p>
+<p>To get around this, download and install the MatterControl 2.X package manually.</p>
+<h2 id="does-not-start-on-systems-with-low-end-gpus">Does not start on systems with low end GPUs</h2>
+<p>MatterControl uses anti-aliasing features which may not be available on extremely low end GPUs (for instance, virtual machines or embedded systems). In these situations, MatterControl will not be able to start. To launch MatterControl you will need to disable anti-aliasing. Edit the file <code>/usr/lib/mattercontrol/appsettings.json</code> and change <code>FSAASamples</code> from <code>8</code> to <code>0</code>.</p>
+<pre><code>"FSAASamples": 0
+</code></pre>
+<p>Even on systems that support antialiasing, disabling it can greatly improve performance.</p>
 
 	</section>
                 
@@ -301,5 +352,5 @@
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>
