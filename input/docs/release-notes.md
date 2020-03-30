@@ -2,6 +2,21 @@
 title: Release Notes
 ---
 
+# MatterControl 2.20.4 (April, 4, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDitZ7GCgwLEgZVcGxvYWQYgIDQzuiikAgM)
+
+[Mac Download]()
+
+## Changes
+
+* Added Hollow Feature 
+ ![Hollow Menu](https://lh3.googleusercontent.com/IxEFj4wtsdixmZ2hX3WDs2pZ4kd1P1CYby9JfHXZT94EoIcht49vIw-TkZbLRSGFmrZGz1es7XHYwcq9FtEZHacfBBI=w120) ![Hollow Example](https://lh3.googleusercontent.com/-ImcYYK1I3P7tvxJXLRYDitBkc2xfXD0mElN3tiX8mZk1-Qe0Gxm5TtXXzC-Er756XajqOPpu7HFEuflNCnbZZqEzg=w220)
+* Added Polygon Reduce 
+ ![Reduce Menu](https://lh3.googleusercontent.com/7fYHPr3wbvvTsPIpDGvwbXDShsLW-I3ZSRbsxz6nJUD2oABtHZPxE4TNReaCkIpHs4JNMZ9u9ytp68iX2KPc8EDSqc4=w120) ![Reduce Options](https://lh3.googleusercontent.com/h6opzhbdA352u9JFtIcqPnrnJC4JjcoVehdFstGZHe1gu7qiupQ8KAYrngTORjSyUerGlxhX48sGHLlwF2AoPjG0ifw=w220)
+* Put in fully automatic support (legacy support) as an opption in additon to new manual support option
+* Added Support for gsSlicer (Experimental new slicing engine)
+* Fixed bugs
+
 # MatterControl 2.19.10 (September, 27, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM)
 
