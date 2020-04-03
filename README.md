@@ -39,7 +39,7 @@ This is the short-term procedure required for success. Long term we need to reso
 1. Build Wyam `wyam build`
 1. Rename the output directory `mv output output_`
 1. Map output directory to gh-pages worktree `git worktree add output gh-pages`
-1. Delete existing content (except for the `.git` file) in the `output` worktree
+1. Delete existing content **(except for the `.git` file)** in the `output` worktree
 1. Copy the build output into the worktree `cp output_ output`
 1. Create commit `cd output; git add --all; git commit -m "Latest docs"`
 1. Push the content to your local repo and issue a new pull request `git push`
