@@ -33,7 +33,7 @@ This is the short-term procedure required for success. Long term we need to reso
 1. Change to your MatterControl-Help repository `cd \source\mh-help`
 1. Delete the `output` directory
 1. Remove the worktree `git worktree prune`
-1. Remove the local gh-pages branch `git branch -d gh-pages`
+1. Remove the local gh-pages branch `git branch -D gh-pages`
 1. Fetch `git fetch --all`
 1. Pull the latest content from the master branch `git pull upstream master`
 1. Build Wyam `wyam build`
