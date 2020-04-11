@@ -3,9 +3,9 @@ title: Release Notes
 ---
 
 # MatterControl 2.20.4 (April, 4, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDitZ7GCgwLEgZVcGxvYWQYgIDQzuiikAgM)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDitZ7GCgwLEgZVcGxvYWQYgIDQromy-AoM)
 
-[Mac Download]()
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgNDI4MDrCwwLEgZVcGxvYWQYgIDQzuy_-QsM)
 
 ## Changes
 
