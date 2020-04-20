@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Frequently asked Questions</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</a></p>
+<p><a href="#why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</a></p>
+<p><a href="#how-do-i-clear-the-application-data">How do I clear the application data?</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -111,7 +107,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
                 <li class="treeview">
@@ -137,7 +133,7 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -212,127 +208,44 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Frequently asked Questions</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
+		<h1 id="is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</h1>
 <ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
+<li><p>This mainly depends on the language your printer speaks. Currently, MatterControl supports two languages for communicating with the printer; G-Code and S3G/X3G. G-Code is the standard language used by RepRaps and most other printers. S3G is a condensed language used by Makerbot and Flashforge. Most consumer 3D printers speak G-Code.</p>
 </li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
+<li><p>In addition, you will need appropriate slice settings for your printer. MatterControl has built in profiles for many printers. A link to the complete list can be found below. If your printer is not on the list, don't worry. You will just need to fill in the settings yourself. Obtain specifications from the manufacturer and input them into MatterControl under <code>Settings &amp; Controls -&gt; Settings -&gt; Printer</code> as well as a few under <code>Settings &amp; Controls -&gt; Settings -&gt; Filament</code>.</p>
 </li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
+<li><p>Some newer G-Code printers are using intermediary boards to run web servers in order to control the prints. These printers, while they do speak G-Code, are not able to be controlled directly by MatterControl. G-Code generated in MatterControl can still be sent to the printer using its web-based interface.</p>
+</li>
+<li><p>LINK: <a href="http://www.mattercontrol.com/#jumpSupportedModels">Known compatible printers list.</a></p>
 </li>
 </ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
+<h1 id="why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</h1>
 <ul>
-<li>Added search bar for application
+<li><p>STL files do not store any information about what units their dimensions are in. MatterControl (and all other 3D printing software) expects the dimensions in STL files to be given in mm. Most CAD software, though, will export STL files with whatever units they were designed in (usually inches). Thus, when you bring your designs into MatterControl they will be the wrong scale.</p>
+</li>
+<li><p>The best solutions is to figure out how to get your design software to export STL files in millimeters. In SolidWorks, for instance, the Save As dialog has an Options button, that allows you to set many parameters for exporting an STL.</p>
+</li>
+<li><p>If you cannot get your design software to do this, though, you can still rescale the part once you have it in MatterControl. View the part in 3D View, then enter Edit mode and choose SCALE from the bar on the right. A drop down menu offers many common conversion factors, or, axis dimension specifications can be entered directly in the appropriate fields.</p>
+</li>
+</ul>
+<h1 id="how-do-i-clear-the-application-data">How do I clear the application data?</h1>
 <ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
+<li><p>If you are having a problem with MatterControl that is not fixed by re-installing, you may need to delete some of the data that MatterControl saves on your computer. This data will persist, even if MatterControl is uninstalled so remove that folder if you want to completely reset MatterControl to a clean slate. You can also temporarily rename the SQLite database file (MatterControl.db) to see if your settings are the cause of a problem.</p>
+</li>
+<li><p>Windows</p>
+<ul>
+<li>MatterControl keeps the user's library and settings in C:\Users{user}\AppData\Local\MatterControl.</li>
 </ul>
 </li>
-<li>Improved design tool bar
+<li><p>Mac/Linux</p>
 <ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
+<li>The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.</li>
 </ul>
 </li>
 </ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
 
 	</section>
                 

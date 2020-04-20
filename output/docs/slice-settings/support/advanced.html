@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Advanced</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,15 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#create-perimeter">Create Perimeter</a></p>
+<p><a href="#interface-layers">Interface Layers</a></p>
+<p><a href="#x-and-y-distance">X and Y Distance</a></p>
+<p><a href="#air-gap">Air Gap</a></p>
+<p><a href="#support-type">Support Type</a></p>
+<p><a href="#pattern-spacing">Pattern Spacing</a></p>
+<p><a href="#infill-angle">Infill Angle</a></p>
+<p><a href="#support-material-extruder">Support Material Extruder</a></p>
+<p><a href="#support-interface-extruder">Support Interface Extruder</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +139,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -186,11 +188,11 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
 
                     </ul>
@@ -212,127 +214,63 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Advanced</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
+		<h1 id="create-perimeter">Create Perimeter</h1>
+<p>Generates a shell around the supports. This gives the support more structure and makes it stronger. Depending on your print, this can make the supports easier or harder to remove.</p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h1 id="interface-layers">Interface Layers</h1>
+<p>Interface layers go at the top of the supports. They are solid layers that provide a flat surface for the object to be printed on top of. Using interface layers will give you a smoother bottom surface on your print, but may make the supports more difficult to remove, especially in tight areas.</p>
+<p>This setting controls how many interface layers are used (if any). You can specify it in a number of layers or as a thickness in millimeters.</p>
+<p>If using interface layers, it is especially important to have a well tuned <a href="#air-gap">air gap</a>, otherwise you will not be able to remove the interface layers from your print.</p>
+<p>If you have a multi extrusion printer, you can use the <a href="#support-interface-extruder">support interface extruder</a> setting to choose which material the interface layers are printed with.</p>
+<p><strong>Recommended Baseline:</strong> 2<br>
+<strong>Units:</strong> count or millimeters (mm)<br>
+<strong>See Also:</strong> <a href="support-interface-extruder">Support Interface Extruder</a></p>
+<h1 id="x-and-y-distance">X and Y Distance</h1>
+<p>The space between the side of the support structures and the side of the print. This should be large enough that the sides of the supports are not touching and bonding with the object. This ensures that only the top of the support structures are touching the print, ensuring that they are easy to remove.</p>
+<p><strong>Recommended Baseline:</strong> 2 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="air-gap">Air Gap</h1>
+<p>The air gap is the space between the top of the support material and the bottom of the print. Air gap is the most critical support material setting, since it controls how well the support structures will stick to your print.</p>
+<p>The larger the air gap, the easier it will be to remove the support material. However, it will also make the bottom surface of your print messier. A smaller air gap will give a smoother, higher quality bottom surface, but also make the support material harder to remove.</p>
+<p>Choosing the right air gap requires a lot of experimentation, and it is heavily dependant on the material you are printing. Materials that typically haver stronger interlayer adhesion, like PLA, will require a larger air gap.</p>
+<p>Unlike other slicers, which simply skip layers, MatterControl takes a unique approach to the air gap. For the first layer of the print above the support material, the nozzle is lifted by the air gap distance. Since the nozzle is higher than it normally would be for that layer, the plastic falls a short distance onto the support material below, and cools a little while it is falling. By adjusting the air gap, you can precisely control how much the plastic cools while it falls and thus how well it sticks to the support material below.</p>
+<p>For subsequent layers, the nozzle drops back down to the height it would be at otherwise. The air gap only affects the part of the first layer that is directly above the support material. Other parts of the layer will be printed at the normal height.</p>
+<p>This animation shows the air gap in action. Remember that even though the first layer of the print appears to be in the middle of a higher layer, in reality the plastic will just fall down onto the support below.</p>
+<p><img src="https://lh3.googleusercontent.com/Ray4qnvUbPSbeJBPTqENVsVT4ecJSUN4EaK42bzGSySa6N87Cpxf9rbcfOQdIrZTYS5A4surELn1lnMW6_tK6GBvSA" class="img-fluid" alt=""></p>
+<p>If you are using dissolvable support material, then the air gap should be 0. This ensures that the supports will be bonded properly and you will get the smoothest surface finish after they are dissolved.</p>
+<p><strong>Recommended Baseline for PLA:</strong> 0.6 mm<br>
+<strong>Recommended Baseline for ABS:</strong> 0.4 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="support-type">Support Type</h1>
+<p>The geometric pattern to use for the support structures. Lines is the most common pattern and makes the support easier to remove, however Grid provides more structure.</p>
+<p><strong>Recommended Baseline:</strong> Lines<br>
+<strong>Options:</strong></p>
 <ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
+<li>Lines</li>
+<li>Grid</li>
 </ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+<h1 id="pattern-spacing">Pattern Spacing</h1>
+<p>The space between the lines of the support pattern. A smaller spacing will make the support pattern more dense. Generally you want this to be as large as possible so that it is easier to break apart the supports. Making the support structures less dense will also reduce the amount of material wasted and make the print take less time. However, it will also cause more sagging on the bottom of the print. This should be close to your printer's maximum <a href="../speed/speed#bridges">bridging</a> distance.</p>
+<p><strong>Recommended Baseline:</strong> 8 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="infill-angle">Infill Angle</h1>
+<p>The angle at which the support material lines will be drawn, relative to the X axis.</p>
+<p><strong>Recommended Baseline:</strong> 45°<br>
+<strong>Units:</strong> degrees CCW from the X axis (°)</p>
+<h1 id="support-material-extruder">Support Material Extruder</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>Allows you to choose which material is used for printing the support structures. This allows you to use dissolvable support material in multi-extrusion printers.</p>
+<p>Dissolvable support materials (like PVA and HIPS) are preferable because they are easier to remove and leave behind a completely smooth surface. They also allow you print more complex and intricate shapes, because the material can be dissolved out of areas that you would not be able to break it out of by hand.</p>
+<p>Extruders are numbered starting with 1.</p>
+<p><strong>Units:</strong> extruder index</p>
+<h1 id="support-interface-extruder">Support Interface Extruder</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>Allows you to choose which material is used for printing the <a href="#interface-layers">interface layers</a>. This allows you to conserve dissolvable support material by using it only for the interface layers instead of for the entire support structure.</p>
+<p>Extruders are numbered starting with 1.</p>
+<p><strong>Units:</strong> extruder index</p>
 
 	</section>
                 

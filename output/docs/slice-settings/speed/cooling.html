@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Cooling</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</a></p>
+<p><a href="#minimum-print-speed">Minimum Print Speed</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +132,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -176,11 +171,11 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
 
@@ -212,127 +207,24 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Cooling</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<p>Cooling is very important for print quality. If a layer does not have enough time to cool and harden before the next one starts printing, then it will deform. In order to prevent this, MatterControl can slow down the printing speed of layers which would normally take very little time to print. This gives the layer more time to harden. It increases the time it takes to print small objects but it can also substantially improve print quality.</p>
+<p>If you have inadequate cooling it will be most apparent on overhangs and sharp corners. Overhangs will tend to curl up and become very messy underneath. Sharp corners will become rounded and blunt.</p>
+<p>These settings control when layers are slowed down and by how much. In addition to the cooling slowdown, you should also use a <a href="../filament/fan">layer cooling fan</a> if your printer is equipped with one.</p>
+<p>Note: The slicer will not change the speeds by more than 10% from one layer to another. This is to prevent a velocity painting effect. Abrupt changes in speed can make layers look different from each other. This is why you may notice it takes a couple of layers for the speed to ramp up or down.</p>
+<h1 id="slow-down-if-layer-print-time-is-below">Slow Down If Layer Print Time Is Below</h1>
+<p>The minimum amount of time a layer must take to print. If a layer takes less time than this, then all printing speeds will be slowed down until the layer takes at least this much time.</p>
+<p>This setting is heavily material dependant. Some materials need lots of time to cool while others do not need any.</p>
+<p><strong>Recommended Baseline for PLA:</strong> 30 s<br>
+<strong>Units:</strong> seconds (s)</p>
+<h1 id="minimum-print-speed">Minimum Print Speed</h1>
+<p>The minimum speed that the printer can go when the layer is slowed down for cooling. The slicer will try to slow the printer so that each layer takes the minimum layer time (above), but it will not slow any print speeds lower than this speed.</p>
+<p>This prevents the printer from going so slow that the plastic is not extruded consistently.</p>
+<p><strong>Recommended Baseline:</strong> 15 mm/s<br>
+<strong>Units:</strong> millimeters per second (mm/s)<br>
+<strong>G-Code Replacement Variable:</strong> <code>min_print_speed</code></p>
 
 	</section>
                 

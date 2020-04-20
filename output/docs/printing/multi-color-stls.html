@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Printing Multi-Color STLs</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,10 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#add-the-models">Add the models</a></p>
+<p><a href="#choose-materials-colors">Choose Materials &amp; Colors</a></p>
+<p><a href="#align-the-models">Align the Models</a></p>
+<p><a href="#tips-tricks">Tips &amp; Tricks</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -123,21 +120,21 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
-                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
 
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -212,127 +209,34 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Printing Multi-Color STLs</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<p>This guide will walk you through printing multi-color or multi-material models on dual extrusion printer.</p>
+<h1 id="add-the-models">Add the models</h1>
+<p>Multi-color models are typically distributed as a set of separate STL files. Each STL represents the part of a model that is a certain color. Start by <a href="../designing/add-existing-objects.md">adding each of the models to your scene</a>. In this guide we will be using the dual extrusion version of <a href="https://www.matterhackers.com/store/l/matterhackers-mascot-phil-a-ment/sk/M6DV4FS2">Phil A. Ment</a> as an example. You can download the files for him at MatterHackers.com. Phil's body will be one color, but his face, shoes, logo, etc. will be another color.</p>
+<p><img src="https://lh3.googleusercontent.com/GA8TPvMe4_l3KAkV-3pCLibjGFrW2q80HUHTb2uPq2zPgT8JzTfIJB5u9xrp-U-YcEkWVR8haU1f6zmrCsWAutaQuQ" class="img-fluid" alt=""></p>
+<h1 id="choose-materials-colors">Choose Materials &amp; Colors</h1>
+<p>Select one of the models and a pane will appear on the right side where you can choose the material and color.</p>
+<p>The material selection lets you choose which extruder will be used for printing that model. The default is extruder 1.</p>
+<p><img src="https://lh3.googleusercontent.com/EsizqnatADRbwCmlzQmZUk7d3gb5N0X4QKWtEADqMjHwwloDz-Jaz_MThO4Zcw0PYSbGCeOdxl2_rYu2E_Y0ngGwqg" class="img-fluid" alt=""></p>
+<p>The color selection is purely for aesthetics. It only changes how the model appears in MatterControl and has no bearing on how the model will be printed. Nevertheless, you can use it to get a better sense of what your final print will look like.</p>
+<p><img src="https://lh3.googleusercontent.com/onY2gZniO3I_My5oUt6YeEald9FMnadNWq9ydI4V2fys4ZOixSQ9-sVlj4hpSyGqMAqyk5Iv8YP5z3eVUvZ_wx0pqxU" class="img-fluid" alt=""></p>
+<p>The View Style menu will let you switch between the materials view and the colors view.</p>
+<p><img src="https://lh3.googleusercontent.com/M_R60B62hNhiMJj5YbI283AK1VXvRw__0rAIqAdp2zbRjEpb1iPIxwJOSnbYzkhgG73eP6lUR_gcI14Tgy_3oMalRA" class="img-fluid" alt=""></p>
+<h1 id="align-the-models">Align the Models</h1>
+<p>Now you must merge the models together into one object. To do this, we will use the Align tool.</p>
+<p><img src="https://lh3.googleusercontent.com/8RWZjN0DctgyRzYiiiFiJKMnpxVVHU8OCwP3DMfQoGCSel-GrTbKzKpGLO8WXOBB8cHhSk4h9fWyGPUFmWmLnCIW_Q" class="img-fluid" alt=""></p>
+<p>Select both models and then click Align button in the toolbar. Properly designed multi-extrusion models will share the same origin. In the tool panel, choose origin for all three axes.</p>
+<p><img src="https://lh3.googleusercontent.com/SNbayPrQBplRcy-hCGGSzLGyagxcwIPi2-QElxCIcmob90uAEuXwqyPrPSGKK0OMjbcszPwhOUZJoch1oP7LdFvV" class="img-fluid" alt=""></p>
+<h1 id="tips-tricks">Tips &amp; Tricks</h1>
+<h2 id="print-area">Print Area</h2>
+<p>You may have noticed that when a multi-extrusion model is selected, part of the print bed becomes grayed out. This is because, on many printers, the full build area is not available for use by both extruders. When an object is selected, MatterControl shows you which extruders are needed to print that object and grays out the parts of the bed that are not reachable by all of them.</p>
+<p><img src="https://lh3.googleusercontent.com/38bI_iKQXaU7ZYwWVl0mzxV6p2lY8LMGwcS8WFjc9HpoUSgnnYJ_Mt5tO4NwxzEHDd6MArDJU-DvGk4m3RxR7ddwJhk" class="img-fluid" alt=""></p>
+<h2 id="making-changes">Making Changes</h2>
+<p>After alignment, the models are combined. Changing the color or material will affect the object as a whole. However, it is still possible to make changes to the individual components if you wish.</p>
+<p>To do this, click the arrow next to the newly created "Align" object in the design tree. This will show it's components (the original models). From here you can choose a model and give it a different color or material.</p>
+<p><img src="https://lh3.googleusercontent.com/ogbQNE5Cn6rt2ez16fa2MSHA2P9lt2UE0HcHXZv4kQrxuYaVOZ9Nx5ESUy5T2w3WXVdQpQkl5WkEsi_wgh8MCJqt" class="img-fluid" alt=""></p>
 
 	</section>
                 

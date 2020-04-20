@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Printer Controls</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,13 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#movement">Movement</a></p>
+<p><a href="#calibration">Calibration</a></p>
+<p><a href="#macros"></a><a href="macros.md">Macros</a></p>
+<p><a href="#fan">Fan</a></p>
+<p><a href="#power-control">Power Control</a></p>
+<p><a href="#tuning-adjustment">Tuning Adjustment</a></p>
+<p><a href="#firmware-updates">Firmware Updates</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -114,7 +114,7 @@
                 <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
-                <li class="treeview">
+                <li class="treeview active selected">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -137,7 +137,7 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -212,127 +212,75 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Printer Controls</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<p>MatterControl has a rich set of controls that you can use to manually control your printer's function and make adjustments during printing</p>
+<p>You can find the manual controls on the far right after selecting and opening a printer.</p>
+<p><img src="https://www.matterhackers.com/r/vXKvzY" class="img-fluid" alt=""></p>
+<h1 id="movement">Movement</h1>
+<p>The Movement section of the Controls pane allows the user to manually move the printer nozzle(s), and extrude and retract filament when no print is active. This section also serves as fine movement adjustment during an active print.</p>
+<p><img src="https://lh3.googleusercontent.com/2Yx1l2KUr7bzGr2FSES6be652ei6bVWOIx6dhjt7LC6Ia_PIB0fcv2Vltd0yFyR-EOWqQmzDrKoTUfioDHa2S3_qFQ=s0" class="img-fluid" alt=""></p>
+<p>The homing controls allow you to home one or all axes (move it to the starting position). The <strong>Release</strong> button disables power to the motors, allowing you to move the printer by hand. You can select how far you want the printer to move. The printers current coordinates are shown on the bottom. You can adjust the speeds that the printer will move at by clicking the pencil icon <img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png">.</p>
+<h2 id="live-adjustment-while-printing">Live Adjustment While Printing</h2>
+<p>While your printing is running you can use the Z+ and Z- buttons to adjust the height of the nozzle. This allows you to tune the height for a good first layer without having to restart the print. The current Z Offset is shown at the top of the Movement section. This is remembered for future prints. After printing, you can clear the Z offset by clicking the X.</p>
+<p><img src="https://lh3.googleusercontent.com/dpAFnIaaEEF3s9WHq_c94opjlwHfuQh3bPt9rWy6_V3nzhWctcDLXzDovMz4uK67EQcEm1qCW3Rmn1ygy-leX8Q1ng=w512" class="img-fluid" alt=""></p>
+<h2 id="keyboard-controls">Keyboard Controls</h2>
+<p>Clicking the keyboard icon <img src="http://wiki.mattercontrol.com/images/d/d7/Keyboard_icon.png" class="img-fluid" alt="Keyboard_icon.png" title="Keyboard_icon.png"> allows you to move the printer with your keyboard.</p>
+<p><img src="https://lh3.googleusercontent.com/reuHxkm3XOjiX5aO0Yr0GeZqh_ZuCbv37420r7boQ_ADRl-mxcJcl0lTBzWFJa2_17sxamPu8JTtnlYC_b64oyK-Yw=s0" class="img-fluid" alt=""></p>
+<!---
+| Function | Key       |
+| -------- | --------- |
+| Home All | Home      |
+| Home X   | X         |
+| Home Y   | Y         |
+| Home Z   | Z         |
+| X+       | ←         |
+| X-       | →         |
+| Y+       | ↑         |
+| Y-       | ↓         |
+| Z+       | Page Up   |
+| Z-       | Page Down |
+| E+       | E         |
+| E-       | R         |
+--->
+<h1 id="calibration">Calibration</h1>
+<p>The calibration section of the controls allows you to manage MatterControl's software print leveling feature. Software print leveling is only available on printers which do not use their own form of automatic print leveling.</p>
+<p><img src="https://lh3.googleusercontent.com/NApNV_GfomZEwBKAP9ltyD5cejLwktWy8-fklAErv8iytHe1HYUKbvMbBCtbhfIVP-7eyH2Olgc4KnanZY-sipzS=s0" class="img-fluid" alt=""></p>
+<p>Click the pencil icon <img src="http://wiki.mattercontrol.com/images/b/b0/Pencil-edit.png" class="img-fluid" alt="Pencil-edit.png" title="Pencil-edit.png"> to view or edit the print leveling data.</p>
+<h2 id="bed-leveling">Bed Leveling</h2>
+<p>Click the gear icon to open the Print Leveling Wizard. It will guide you through taking measurements of the height of the bed at various points.</p>
+<p>Use the toggle switch to enable or disable software print leveling. Some printers are not capable of manual leveling. In this case, software print leveling cannot be disabled.</p>
+<h2 id="calibrate-probe-offset">Calibrate Probe Offset</h2>
+<p>Click the gear icon to measure the offset between your printer's probe and the nozzle. This feature is not available if your printer does not have a leveling probe.</p>
+<h1 id="macros"><a href="macros.md">Macros</a></h1>
+<p>Macros are snippets of saved G-Code which can be called with the click of a button instead of having to be typed repeatedly.</p>
+<p><img src="https://lh3.googleusercontent.com/0t9m7MoB4MJ8ezB5jWAmJ1cn6nHSs1egRjLKX3LZY3GKxLXFQOIErVv_LQ2PZEFnBneWG-ktf4-JJpJ1snTTSvmrCdc=s0" class="img-fluid" alt=""></p>
+<p>See the article on <a href="macros.md">Macros</a> for more information.</p>
+<h1 id="fan">Fan</h1>
+<p>The fan control lets you turn the printer's layer cooling fan on and off, and also set the speed.</p>
+<p><img src="https://lh3.googleusercontent.com/J_vCFI0KdgZtBfcu84pG5XggUrs4zBS4-Etd8Z3aGRJsarC8Zg8mtyFXsPguoINUd6rXKKyQFxZ6GfkpkmeVBRxaVFs=s0" class="img-fluid" alt=""></p>
+<p>You can adjust the fan speed during printing, however your adjustment will only last until the next fan speed change encountered in the G-Code.</p>
+<p>If your printer does not have a layer cooling fan then this control is not shown.</p>
+<h1 id="power-control">Power Control</h1>
+<p>If the printer's controller board supports it then this section allows for direct control of the printer's PSU.</p>
+<p><img src="https://lh3.googleusercontent.com/6ZfR-AEd1xkBi140AgAuPdBE6V_ceH_fcXTt3D9gKiB4jKhEF7dLWIm6iGnE2gGLaqgCAXUqeOnzxc03BiO4KjOL=s0" class="img-fluid" alt=""></p>
+<h1 id="tuning-adjustment">Tuning Adjustment</h1>
+<p>Allows for on-the-fly adjustment of speed and extrusion during a print.</p>
+<p><img src="https://lh3.googleusercontent.com/JeJSmRR2bVuTg7AQGpeBUjWFielnyhuC4R9MwxGIkwg-ZuaM-FM2jGgVsMyxTwPYi-s_Ys-u4PqXOwPankLv8um-EA=s0" class="img-fluid" alt=""></p>
+<p>These settings are reset to 1.0 whenever MatterControl is restarted.</p>
+<h2 id="speed-multiplier">Speed Multiplier</h2>
+<p>The speed multiplier can be used to speed up or slow down a print. The speed multiplier applies to all types of moves. The lowest possible setting is 0.25 and the highest possible is 3.0.</p>
+<h2 id="extrusion-multiplier">Extrusion Multiplier</h2>
+<p>During an active print, the extrusion multiplier modifies the extrusion flow rate, allowing you to increase or decrease the amount of plastic layed down.</p>
+<p>This variable is different from that of the Extrusion Multiplier slice setting and will work in conjunction with it. For example, if the slicer setting is set at 1.06 and then the slider in Controls is used during the print and set to 1.08, the total result will be a multiplier of 1.1448 (1.06 * 1.08).</p>
+<h1 id="firmware-updates">Firmware Updates</h1>
+<p>If your printer has an Arduino Mega 2560 based microcontroller, you can use the firmware updater to upload new firmware to it.</p>
+<p><img src="https://lh3.googleusercontent.com/3C166BaJZFQUNHtfeMaQprsOCN7RGvSs4xacVWpz-N8E0JnA26kBEc--egSQf1OOYudlYcGAKLrg3-BxTKUyQXEAPw=s0" class="img-fluid" alt=""></p>
+<p>If your printer is officially supported by MatterHackers (for instance the Pulse), the firmware updater will automatically check your firmware version and alert you if an update is available. Click the <strong>Update</strong> button to do an automatic update.</p>
+<p>You can also update the firmware on other printers but you will need to acquire a firmware image from the printer's manufacturer. The firmware image must be a compiled <code>.hex</code> file. Click the <strong>Change</strong> button to select a firmware image file.</p>
+<p>The firmware updater will automatically make a backup of your printer's old firmware before uploading the new firmware. If the new firmware has problems, you can click the <strong>Revert</strong> button to flash the backed up firmware.</p>
+<p>The firmware updater does <em>not</em> require MatterControl to successfully connect to your printer in order to function. This allows you to upload new firmware to a printer which currently has corrupted firmware or no firmware at all.</p>
 
 	</section>
                 

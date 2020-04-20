@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Slice Settings</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,11 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#quality-and-material-presets">Quality and Material Presets</a></p>
+<p><a href="#search">Search</a></p>
+<p><a href="#cloud-synchronization">Cloud Synchronization</a></p>
+<p><a href="#history">History</a></p>
+<p><a href="#settings-layers">Settings Layers</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +135,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active selected">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -212,127 +210,42 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Slice Settings</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<p>When you have a printer open you can find the 'Slice Settings' near the top far right of MatterControl.</p>
+<p>Clicking this will open up the settings panel where you can edit all of the settings about your printer.</p>
+<p><img src="https://lh3.googleusercontent.com/4QYHXu6CNmSgJ9oOsegjn5igMyKgkxi3gtomSUDfRtqgG6WIHom34CQpmwr1pVuLZ-hqnnAf59nbkYoAUDPPrvvjZw=s0" class="img-fluid" alt=""></p>
+<h1 id="quality-and-material-presets">Quality and Material Presets</h1>
+<p>MatterControl lets you choose from preset settings for print quality and material.</p>
+<p><img src="https://lh3.googleusercontent.com/QL7qE2bTBi6pXBqeLK1mQ5ZvmyetcrPg9vaUL-J3BdJRDI0A-7PfBsHxXfzhzHMziaf3KRx7VK0OM9huWloPmBX2qQU=s0" class="img-fluid" alt=""></p>
+<p>The materials presets include a range of filaments which have been tested to work with your particular machine. Your printer profile comes with a few quality and material options to choose from, but you can also edit them and make your own. Click the pencil icon to change the particular settings affected by a preset.</p>
+<p>When a preset is enabled, the affected settings are highlighted. Quality settings are highlighted in yellow and material settings are highlighted in orange. Learn more about <a href="#settings-layers">how the presets are used</a> below.</p>
+<h1 id="search">Search</h1>
+<p>MatterControl includes a search feature so you can easily find the settings you are looking for.</p>
+<p><img src="https://lh3.googleusercontent.com/L4d841reikEdUG9lJlwuC69Wf4KVDdiGs117AXy0yMpjzbotwAC8ZWr56gjZmE8ojf8HOKpIRFTTZoufQxYGJU0N=s0" class="img-fluid" alt=""></p>
+<h1 id="cloud-synchronization">Cloud Synchronization</h1>
+<p>If you have signed in to your MatterControl Cloud account, then your slice settings are automatically synchronized with the Cloud. If you change a slice setting in MatterControl, then that change will immediately be sent to any other computers you have running MatterControl, which are logged in to the same account.</p>
+<h1 id="history">History</h1>
+<p>MatterControl saves backups of all of your slice settings on a regular basis, and uploads these backups to the MatterControl Cloud. This is useful if you are experimenting with slice settings and decide that things have gone wrong and you need to change them back to how they were before. The <strong>Restore Settings</strong> option in the overflow menu (<img src="https://lh3.googleusercontent.com/B0iPKfPTIEs8X9qR5xZYj5aarp5PcLy3-cLjr3DYIRxZnyWLFe3-UMBYmfafoU8CjfD1dDUMmjMpcqZsJuAUsg8k-A" class="img-fluid" alt="">) will allow you to choose settings from a previous date to restore to.</p>
+<p><img src="https://lh3.googleusercontent.com/lvKJ0Zs95KYiROFa2erpw4eVN55rf5yfuKizWRFcPBh-tkjStZx8tO7quFxe7SBRyARotGj0C40aUuZQUUSVU32T" class="img-fluid" alt=""></p>
+<p>In addition, you can reset all settings to the factory defaults by choosing <strong>Reset to Defaults</strong>.</p>
+<h1 id="settings-layers">Settings Layers</h1>
+<p>MatterControl's slice settings work on a system of layers. Each layer can override the settings in the layers below it. The settings view shows you which layer each setting is coming from based on the color it is highlighted.</p>
+<p>At the bottom is the base layer. These are the default settings provided by your printer's manufacturer. All settings are included in the base layer. In the settings view, if a particular setting is not highlighted with any color (orange, yellow, blue, etc.) then that means the baseline setting is being used. The baseline settings are never changed, which means that you can always revert back to your manufacturer's defaults if something goes wrong.</p>
+<h2 id="quality-presets">Quality Presets</h2>
+<p>The next layer is the Quality layer. If a setting from this layer is being used, it is highlighted in yellow in the settings view.</p>
+<p><img src="https://lh3.googleusercontent.com/_tUvOzZPwKxfZSCXox3RVkkmSLX3vL3WWAXIun2EOPQFES9iKYdCS529__0yCyTaXWtTX5wEkmzXqxCB19Vg1IF9tQ=s0" class="img-fluid" alt=""></p>
+<p>Your printer profile comes with a few Quality presets to choose from, but you can also edit them and make your own. This typically contains settings related to layer thickness and speed. However, you are free to use your discretion about what belongs here. Any setting can be added. For instance, if I wanted to make a quality setting for high strength prints, I could name it "Strong" and then add settings like the infill density and number of perimeters.</p>
+<h2 id="material-presets">Material Presets</h2>
+<p>Next is the Material layer. These settings are highlighted orange.</p>
+<p><img src="https://lh3.googleusercontent.com/06EDlnXpQTegBTN270jbPaRUMl7vi0QJ2qcH-YlHxB0wvB4GpgwRLv6gYYxWgdpyHRRnjKarxfmm3Uw-M5fgxMYBYw=s0" class="img-fluid" alt=""></p>
+<p>Typically the materials presets contain your temperature settings, however you are free to include any other setting in this layer as well. For instance, if I am printing a flexible material I might want to slow down the speed and disable retraction. These kinds of settings would not normally be included in a preset for PLA or ABS.</p>
+<h2 id="other-changes">Other Changes</h2>
+<p>The last layer contains any other changes that you have made in the settings view. They override everything else. They are highlighted in blue.</p>
+<p><img src="https://lh3.googleusercontent.com/1B34J9zubBl7liHY-0Pz3MD1PaV7LghN-59x4JkQ47d6izSdFmnDqmrfBKHGzF3t4FNj5zaT8TM5JcpyUtQuCxf_=s0" class="img-fluid" alt=""></p>
+<p>To clear a change and revert to the baseline setting, click the X to the right of that setting. This is where you should make changes that are not related to either quality or material. For instance, if you want to use hexagonal infill instead of triangles, that has nothing to do with wither the print quality or the material being used.</p>
+<p>This system is very powerful, but it is up to you to use it in whatever way you see fit. The labels "Quality" and "Material" are really just guidelines. You can actually use them for whatever you like.</p>
 
 	</section>
                 

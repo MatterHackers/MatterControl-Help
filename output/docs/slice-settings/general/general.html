@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - General</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,13 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#layer-thickness">Layer Thickness</a></p>
+<p><a href="#first-layer-thickness">First Layer Thickness</a></p>
+<p><a href="#perimeters">Perimeters</a></p>
+<p><a href="#top-solid-layers">Top Solid Layers</a></p>
+<p><a href="#bottom-solid-layers">Bottom Solid Layers</a></p>
+<p><a href="#fill-density">Fill Density</a></p>
+<p><a href="#infill-type">Infill Type</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +137,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -163,12 +163,12 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
@@ -212,127 +212,61 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>General</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
+		<h1 id="layer-thickness">Layer Thickness</h1>
+<p>The height of each layer of the print, except the first. A smaller number will create more layers and more vertical accuracy but also a slower print.</p>
+<p>The Layer Thickness is exactly that – the height of each individual layer of plastic that will be printed. Most FFF style 3D printers offer layer heights between .1mm - .4mm. Don’t know what height you should print at? This picture shows the difference between various layer heights.</p>
+<p><img src="https://lh3.googleusercontent.com/RM8-abWZ8pDZERBg9HpmvViw9Hjr6NqI8IWAQbmQ9RSk-W8juDSAuQrZsyPQYYiHAY-FZnBNskJCFK6vUh-0O5yN0Q=s0" class="img-fluid" alt=""></p>
+<p>It’s difficult to see layer lines at .1mm whereas the layer lines are plainly visible at .35mm. With these frogs, the .35mm frog took approximately 40 minutes to print. The .1mm frog took 3.5 hours. The first thing you need to decide is what surface quality do you want. If you want a high quality, smooth finish, you will need to print small layer heights. If surface finish isn’t important and you want to print quickly, larger layer heights work great.</p>
+<p>If you’re unsure of what height to start with, .20mm offers a good combination of surface finish and print time for most prints.</p>
+<p>It’s important to note that low layer heights (&lt; .15mm) require excellent bed leveling and machine calibration in order to successfully print.</p>
+<p><strong>Recommended Baseline:</strong> 0.2 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<p><strong>Warning:</strong> The layer thickness cannot exceed the diameter of your nozzle.</p>
+<h1 id="first-layer-thickness">First Layer Thickness</h1>
+<p>The thickness of the first layer of the print. A first layer thicker than the default layer height can ensure good adhesion to the build plate, since it means more material will be extruded and more material provides more bed adhesion. A thicker first layer also allows for more variation in the height of the bed.</p>
+<p><strong>Recommended Baseline:</strong> 0.3 mm<br>
+<strong>Units:</strong> millimeters (mm) or percent of normal Layer Thickness (%)</p>
+<h1 id="perimeters">Perimeters</h1>
+<p>Perimeters are the loops that form the outer walls of your print. These are sometimes also referred to as shells. This cube has 3 perimeters.</p>
+<p><img src="https://lh3.googleusercontent.com/iHmXp0HTWA-DL_OryLlZ5LPpJpHsL9Sc4aKM2RJVeyG1oUoyj8khNoVhQsAXtV_dv1PLmzpgE2p48sYRTBIyHeFC=w250" class="img-fluid" alt=""></p>
+<p>Perimeters bear most of the load that an object is under. Adding more perimeters will make a print stronger than increasing the fill density.</p>
+<p>Perimeters are generally printed at a slower speed than infill. Often, most of your print time will be spent doing perimeters. You may consider using fewer perimeters to speed up the print.</p>
+<p>This can be specified as count or as thickness in millimeters (mm). For instance, if you set the perimeters to 1.0 mm, then enough loops will be created to make the walls 1 mm thick.</p>
+<p><strong>Recommended Baseline:</strong> 3<br>
+<strong>Units:</strong> count or millimeters (mm)</p>
+<h1 id="top-solid-layers">Top Solid Layers</h1>
+<p>These are the layers that form a solid surface on the top of the print.</p>
+<p>If you are using thinner layers then more top layers will be required to form a solid surface with no gaps. For this reason, we recommend specifying a thickness in millimeters (mm) instead of a number of layers.</p>
+<p><strong>Recommended Baseline:</strong> 0.8 mm<br>
+<strong>Units:</strong> count or millimeters (mm)</p>
+<h1 id="bottom-solid-layers">Bottom Solid Layers</h1>
+<p>These are the layers that form a solid surface on the bottom of the print. Generally fewer bottom layers are required than top layers, since the bottom layers do not have to bridge over the infill.</p>
+<p><strong>Recommended Baseline:</strong> 0.6 mm<br>
+<strong>Units:</strong> count or millimeters (mm)</p>
+<h1 id="fill-density">Fill Density</h1>
+<p>3D prints are hardly ever done completely solid. Instead, they are partially hollow with a pattern on the inside. This inside area is called the infill. You can choose the density of the infill pattern, from 0% (completely hollow) to 100% (completely solid).</p>
+<p><img src="https://lh3.googleusercontent.com/dsfLpykwPboH8yf9pWXPaaT0CuJ_JjaJCk6-9R9ZgXap1lVyBo8Ggsz1vDnv_LzHzZuT3e6MHbl6k1obToNOsJwe=s0" class="img-fluid" alt="">
+<img src="https://lh3.googleusercontent.com/BZFi0mgNMHrjtYB4SmRUL3CcxCSgV10uX8Xb4s-Thsf9zZv1gkgRFujsfmRoqpmEoX1KRg66sm1WXHpVTGbmTlW3iw=s0" class="img-fluid" alt=""></p>
+<p>More infill will make a print stronger, but it will also use more material and take longer to print. Generally it is advised to use as little infill as possible. Most parts will be fully functional with about 10 - 15% percent infill. For very large prints you should try to go even lower than that.</p>
+<p>Usually to have a strong part, you only need about 35% infill. In general, there isn’t much strength benefit beyond 50%.</p>
+<p>If you wish to make your print completely solid, we do not advise going above 85 - 90% infill. Beyond this we have noticed a tendency for prints to be overfilled. A better method for making completely solid prints is to use a very large number of perimeter loops.</p>
+<p><strong>Recommended Baseline:</strong> 20%<br>
+<strong>Units:</strong> percentage (ex. 20%) or decimal (ex. 0.20)</p>
+<h1 id="infill-type">Infill Type</h1>
+<p>The geometric pattern used for the infill. Triangle infill uses the most efficient path, which makes it the fastest to print. It is also generally the strongest pattern. However some of the other patterns (like the hexagon) are more aesthetically pleasing. You might choose these if your infill will be visible, for instance if you are using a translucent filament. Lines or concentric infill are also better when using exceptionally high fill densities (&gt; 50%).</p>
+<p>This article has more information on <a href="https://www.matterhackers.com/news/mattercontrol-delivers-optimized-hexagon-infill">MatterControl's optimized hexagonal infill</a>.</p>
+<p><strong>Recommended Baseline:</strong> Triangles<br>
+<strong>Options:</strong></p>
 <ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
+<li>Grid</li>
+<li>Triangles</li>
+<li>Hexagon</li>
+<li>Lines</li>
+<li>Concentric</li>
 </ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
 
 	</section>
                 

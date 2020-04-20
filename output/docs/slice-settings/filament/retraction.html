@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Retraction</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,16 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#retract-length">Retract Length</a></p>
+<p><a href="#extra-length-on-restart">Extra Length On Restart</a></p>
+<p><a href="#time-for-extra-length">Time For Extra Length</a></p>
+<p><a href="#speed">Speed</a></p>
+<p><a href="#z-lift">Z Lift</a></p>
+<p><a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a></p>
+<p><a href="#retract-when-changing-islands">Retract When Changing Islands</a></p>
+<p><a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a></p>
+<p><a href="#length-on-tool-change">Length on Tool Change</a></p>
+<p><a href="#extra-length-after-tool-change">Extra Length After Tool Change</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +140,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -152,14 +155,14 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
 
                     </ul>
                 </li>
@@ -212,127 +215,67 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Retraction</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<p>Retraction is a technique used to prevent plastic from leaking out of the nozzle when the printer is making a <a href="../speed/speed#travel">travel move</a>. By pulling the filament back slightly, the chamber pressure in the melt zone of the hot end is relieved. This prevents oozing and stringing, however it cannot eliminate it completely. See this article on <a href="https://www.matterhackers.com/articles/retraction-just-say-no-to-oozing">how to tune your retraction settings</a>.</p>
+<p>Retractions are visible in the layer view. Red circles indicate a retraction and blue circles indicate an unretraction. The size of the circle is proportional to the length of the retraction.</p>
+<p><img src="https://lh3.googleusercontent.com/IyuZct3UGe2KMd7PmSorEFRzld7DffeV4SkrCWLd3gr-aMx2MkchH1GN98L-VC-cHoZnSqLVvngdFQzvCBbU6RqKMQ" class="img-fluid" alt=""></p>
+<h1 id="retract-length">Retract Length</h1>
+<p>The distance the filament will be pulled back. The ideal distance varies from one hot end to another. The longer the retraction, the more the oozing will be reduced, but only up to a point. Beyond that you will see diminishing returns and increased risk of jamming. This is because retracting too far will pull molten plastic into the cold zone, where it can solidify.</p>
+<p>Generally, bowden extruder will need more retraction than direct feed extruders due to the backlash in the tube.</p>
+<p><strong>Recommended Baseline:</strong> 3 mm<br>
+<strong>Units:</strong> millimeters (mm)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_length</code></p>
+<h1 id="extra-length-on-restart">Extra Length On Restart</h1>
+<p>After the travel move, the filament will be unretracted (pushed back to the same place it was before). However, during the travel it is still likely that a small amount of plastic will have leaked from the nozzle. This means that the nozzle may not be fully primed when it starts extruding again. This can cause some gaps or unevenness in your print. The Extra Length On Restart option compensates for this by extruding a small amount of extra material in addition to the normal unretract, thus making up for whatever material may have leaked.</p>
+<p>This setting will depend on the material you are printing, since some materials are runnier than others (less viscous) and will leak more.</p>
+<p><strong>Recommended Baseline:</strong><br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="time-for-extra-length">Time For Extra Length</h1>
+<p>During a travel move, the plastic does not leak from the nozzle all at once. It happens over time. There will be more leakage during a long travel move than a short one. Therefor, more extra extrusion will need to be done after a long move in order to reprime the nozzle.</p>
+<p>This setting allows you to control how much extra extrusion is done on restart based on how long the travel move took. This setting is the amount of time it take for the nozzle to fully drain. Any moves that take less than this time will get proportionally less Extra Length On Restart. If zero, the full length will always be used.</p>
+<p><strong>Recommended Baseline:</strong><br>
+<strong>Units:</strong> seconds (s)</p>
+<h1 id="speed">Speed</h1>
+<p>The speed the extruder will move to retract the filament.</p>
+<p>This should be the maximum speed your extruder is capable of. This should be fast so that the pressure is relieved as fast as possible and so that the nozzle does not linger in one spot too long while the retraction is happening. This can leave a blob.</p>
+<p>However, going to fast will cause the motor to skip steps.</p>
+<p><strong>Recommended Baseline:</strong> 35 mm/s<br>
+<strong>Units:</strong> millimeters per seconds (mm/s)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_speed</code></p>
+<h1 id="z-lift">Z Lift</h1>
+<p>This function lifts the nozzle during retraction, which ensures that the nozzle will not be dragged across the top of the print during travel moves.</p>
+<p>Generally Z Lift should not be used, however sometimes it may be beneficial to set it to 1 or 2 layer thicknesses (0.2 - 0.4 mm). This reduces the likelihood of the nozzle colliding with any buildups of plastic while traveling, which can cause layer shifting. It will also stop the clunk-clunk-clunk noise as the nozzle crosses over the infill.</p>
+<p><strong>Recommended Baseline:</strong> 0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</h1>
+<p>This is one of several settings that control when retractions will be performed. This setting prevents retractions from being done on short travel moves. It sets the minimum travel distance where a retraction will definitely be performed. However, retractions may still be done for shorter travel moves depending on the conditions. <a href="#retract-when-changing-islands">Retract When Changing Islands</a> takes precedence over this setting.</p>
+<p>Generally you should have <a href="#retract-when-changing-islands">Retract When Changing Islands</a> and <a href="../general/layers-surface#avoid-crossing-perimeters">Avoid Crossing Perimeters</a> turned on. In this case, this setting will mainly only have an effect when moving from one part of the infill to the other. Stringing will not be visible, but retractions are still beneficial here since they will ensure that the nozzle is primed when it starts printing the next infill line.</p>
+<p>This should normally be set to a large distance, since otherwise it may lead to too frequent retraction which can cause jamming.</p>
+<p><strong>Recommended Baseline:</strong> 20 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="retract-when-changing-islands">Retract When Changing Islands</h1>
+<p>Islands are two areas of a layer which are not connected. If this option is on, then a retraction will be performed when the nozzle is traveling from one island to another. This setting takes precedence over <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> but not <a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a>.</p>
+<p>Stringing primarily occurs when traveling between islands, so it is recommended to always have this option turned on.</p>
+<p>This picture shows a layer with two islands. The red and blue circles indicate retraction and unretraction happening as the nozzle travels between them.</p>
+<p><img src="https://lh3.googleusercontent.com/E65EfrFDhhe71Tgb9jUNGiaZ--ywuCAiUgFxyEgjoeismEZvsU_JJcdQTmEZm1N1T6dTEwOdD7Sq1HbrVbL1PjEwh_A" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h1 id="minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</h1>
+<p>This setting is used to control how frequently retractions are allowed to occur. Performing retractions too frequently can cause underextrusion (due to the nozzle not being fully primed) or jamming. This setting ensures that a certain amount of filament gets extruded before the next retraction is allowed to occur. This setting takes precedence over both <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> and <a href="#retract-when-changing-islands">Retract When Changing Islands</a>.</p>
+<p>This setting should be set to the smallest length possible. If you have confidence in your hot end and extruder, then you can set it to 0. However if you notice your printer has trouble keeping when retractions happen frequently, then you should try increasing this setting in increments of 0.01 mm.</p>
+<p><strong>Recommended Baseline:</strong> 0.05 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="length-on-tool-change">Length on Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>This is the distance that the filament will be retracted when switching from one extruder to another. You may want this to be longer than your normal retraction distance so that the filament is completely removed from the melt zone.</p>
+<p><strong>Recommended Baseline:</strong> 6.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="extra-length-after-tool-change">Extra Length After Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>Similar to <a href="#extra-length-on-restart">Extra Length on Restart</a>, this option allows you to extrude extra material after a tool change has occurred. This allows you to compensate for any leakage that may have occurred while the nozzle was inactive. It is recommended to use this option in combination with a <a href="../general/extruder-change">wipe tower or wipe shield</a> to prevent it from depositing a blob on your print.</p>
+<p><strong>Recommended Baseline:</strong> 2.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
 
 	</section>
                 

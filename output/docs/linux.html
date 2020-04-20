@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - MatterControl on Linux</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,10 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#installation">Installation</a></p>
+<p><a href="#raspberry-pi">Raspberry Pi</a></p>
+<p><a href="#assigning-serial-ports">Assigning Serial Ports</a></p>
+<p><a href="#known-issues">Known Issues</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -113,7 +110,7 @@
                 </li>
                 <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
-                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -137,7 +134,7 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
                 <li class="treeview">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -212,127 +209,63 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>MatterControl on Linux</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<h1 id="installation">Installation</h1>
+<p>MatterControl is available for Ubuntu/Debian or Arch based distros.</p>
+<h2 id="ubuntu-debian">Ubuntu / Debian</h2>
+<p>MatterControl officially supports Ubuntu Linux and other Debian based distributions, such as Mint. The latest stable release is always available as a .deb package. It is available here or at <a href="mattercontrol.com">MatterControl.com</a>.</p>
+<p><a href="https://mattercontrol.appspot.com/downloads/mattercontrol-linux/release">Download MatterControl for Ubuntu</a></p>
+<h3 id="installing-mono">Installing Mono</h3>
+<p>MatterControl requires the latest version of Mono in order to work. Although Mono is available in Ubuntu, the version provided is usually severely outdated. On Ubuntu 18.04, follow these steps to add the official Xamarin package repository and update to the latest version of Mono.</p>
+<pre><code>$ sudo apt install gnupg ca-certificates
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+$echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+$ sudo apt update
+
+</code></pre>
+<p>There are also instructions for other distributions on the <a href="https://www.mono-project.com/download/stable/">Mono website</a>.</p>
+<h3 id="serial-port-permissions">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Debian or Fedora based distros, add yourself to the <code>dialout</code> group.</p>
+<pre><code>$ gpasswd -a $USER dialout
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h2 id="arch">Arch</h2>
+<p>An unofficial package is <a href="https://aur.archlinux.org/packages/mattercontrol/">available in the AUR</a>. Install it manually or using your favorite AUR helper.</p>
+<pre><code>$ yay -S mattercontrol
+</code></pre>
+<h3 id="serial-port-permissions-1">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Arch you must add yourself to the <code>uucp</code> and <code>lock</code> groups.</p>
+<pre><code>$ gpasswd -a $USER uucp
+$ gpasswd -a $USER lock
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h1 id="raspberry-pi">Raspberry Pi</h1>
+<p>Because MatterControl is written in C#, it can run on any processor architecture. The regular Linux version of MatterControl will run the Raspberry Pi. However, you must have the <a href="https://www.raspberrypi.org/blog/another-new-raspbian-release/">experimental OpenGL drivers</a> installed and enabled. To do this, run <code>raspi-config</code> and go to Advanced Options &gt; GL Driver.</p>
+<p>If you have the Raspberry Pi touchscreen, remember that you can switch MatterControl into Touchscreen Mode through the application settings.</p>
+<h1 id="assigning-serial-ports">Assigning Serial Ports</h1>
+<p>On Linux, serial port assignments can change whenever a printer is connected or disconnected. MatterControl cannot tell which printer is connected to which serial port. You can setup a udev rule to permanently assign a unique port to your printer.</p>
+<p>Do <code>ls /dev/tty*</code> before and after connecting your printer to find out which port it is assigned to. Printers will show up as either <code>/dev/ttyACM#</code> or <code>/dev/ttyUSB#</code>.</p>
+<p>Use <code>udevadm</code> to get the serial number (UUID) of the USB device. This is a unique 20 digit hexadecimal value.</p>
+<pre><code>$ udevadm info --attribute-walk -n /dev/ttyACM0 | grep "serial"
+</code></pre>
+<p>Some printers will not report a serial number. In this case, you will have to use other attributes to identify it such as the vendor ID (idVendor) and the product ID (idProduct).</p>
+<p>Create a file <code>/etc/udev/rules.d/97-3dprinters.rules</code>. Here is an example with rules for two printers.</p>
+<pre><code>SUBSYSTEM=="tty", ATTRS{serial}=="6403237383335190E0F1", GROUP="uucp", MODE="0660", SYMLINK+="tty-taz"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="076b", GROUP="uucp", MODE="0660", SYMLINK+="tty-pulse"
+</code></pre>
+<p>Fill in either the serial number or vender and product IDs based on the information you obtained earlier. Make sure <code>GROUP</code> is set to the same group ownership as the rest of your serial ports. This is usually <code>dialout</code> on Debian or <code>uucp</code> on Arch. You can check by doing <code>ls -l /dev/ttyACM*</code>. Lastly, give your printer a unique name for the <code>SYMLINK</code>. This name must start with <code>tty</code> or it will not show up in the list in MatterControl.</p>
+<p>The next time you connect the printer, a symlink will automatically be created that points to the correct serial device. You can now configure the printer in MatterControl to use the symlinked port.</p>
+<h1 id="known-issues">Known Issues</h1>
+<h2 id="upgrading-from-1.7-to-2.x">Upgrading from 1.7 to 2.x</h2>
+<p>There is a problem with 1.7 that will cause the automatic update to fail. It will download the update package, but it will have the wrong file extension. This prevents the package from opening and being installed correctly.</p>
+<p>To get around this, download and install the MatterControl 2.X package manually.</p>
+<h2 id="does-not-start-on-systems-with-low-end-gpus">Does not start on systems with low end GPUs</h2>
+<p>MatterControl uses anti-aliasing features which may not be available on extremely low end GPUs (for instance, virtual machines or embedded systems). In these situations, MatterControl will not be able to start. To launch MatterControl you will need to disable anti-aliasing. Edit the file <code>/usr/lib/mattercontrol/appsettings.json</code> and change <code>FSAASamples</code> from <code>8</code> to <code>0</code>.</p>
+<pre><code>"FSAASamples": 0
+</code></pre>
+<p>Even on systems that support antialiasing, disabling it can greatly improve performance.</p>
 
 	</section>
                 

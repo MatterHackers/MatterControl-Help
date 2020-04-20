@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Release Notes</title>
+        <title>MatterControl Help - Layers / Surface</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,13 +70,11 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</a></p>
-<p><a href="#mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</a></p>
-<p><a href="#mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</a></p>
-<p><a href="#mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#avoid-crossing-perimeters">Avoid Crossing Perimeters</a></p>
+<p><a href="#external-perimeters-first">External Perimeters First</a></p>
+<p><a href="#start-end-overlap">Start End Overlap</a></p>
+<p><a href="#merge-overlapping-lines">Merge Overlapping Lines</a></p>
+<p><a href="#expand-thin-walls">Expand Thin Walls</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,8 +135,8 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
-                <li class="selected"><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
-                <li class="treeview">
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -163,14 +161,14 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
                 <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
-                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
 
                     </ul>
                 </li>
@@ -212,127 +210,34 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Layers / Surface</h1>
 		</section>
 	<section class="content">
-		<h1 id="mattercontrol-2.19.10-september-27-2019">MatterControl 2.19.10 (September, 27, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJDnoZqsCwwLEgZVcGxvYWQYgIDQiLCwtAgM">Mac Download</a></p>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Dual Extrusion Improvements
-<ul>
-<li>Made the default wipe tower round</li>
-<li>Made un-retract after tool change able to be negative</li>
-<li>Made custom wipe towers follow the geometry defined by the user</li>
-</ul>
-</li>
-<li>Improved ungrouping of mesh (splitting into multiple meshes)
-<ul>
-<li>Discard degenerate faces</li>
-<li>Discard microscopic discrete features</li>
-</ul>
-</li>
-<li>Fixed Bugs
-<ul>
-<li>Export STL when no printer has been created</li>
-<li>Export STL on Mac</li>
-<li>Arrange all when no printer has been created and the bed is empty</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.7-july-15-2019">MatterControl 2.19.7 (July, 15, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDb5NzbCAwLEgZVcGxvYWQYgICQp9-hnAgM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgJCbheGPCgwLEgZVcGxvYWQYgICQp7mfqgsM">Mac Download</a></p>
-<h2 id="changes-1">Changes</h2>
-<ul>
-<li>Added search bar for application
-<ul>
-<li><img src="https://lh3.googleusercontent.com/pAN6dqaGJJZs0cVZZDtkY40IlLXeoHNFmoovzivkGdhzCwN65wuqQdYvguoVo7SewCNl33mbLMd__OVw6BJhhV1n" class="img-fluid" alt="Search"></li>
-</ul>
-</li>
-<li>Improved design tool bar
-<ul>
-<li>Added grouping to some items</li>
-<li>Added dual align button</li>
-<li>Added Arrange All button</li>
-</ul>
-</li>
-<li>Nudge items on the bed with arrow keys</li>
-<li>Downloads folder is sorted by date</li>
-<li>Sped up dual extrusion calibration prints</li>
-</ul>
-<h1 id="mattercontrol-2.19.6-june-10-2019">MatterControl 2.19.6 (June, 10, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICj88eNCQwLEgZVcGxvYWQYgICQ6-PE6woM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgIDYrveUCgwLEgZVcGxvYWQYgICQq76l2AkM">Mac Download</a></p>
-<h2 id="changes-2">Changes</h2>
-<ul>
-<li>Printer setup dramatically improved with new unified experience
-<ul>
-<li>Show outstanding tasks and progress</li>
-<li>Leveling visualization</li>
-</ul>
-</li>
-<li>Dual extrusion improvements
-<ul>
-<li>New Nozzle Calibration Wizard (for calibrating dual extrusion printers)</li>
-<li>Support for custom wipe tower shapes</li>
-<li>Improved support material detection</li>
-</ul>
-</li>
-<li>UI improvements
-<ul>
-<li>Faster updates in Cloud Library folders</li>
-<li>Restore UI on re-open</li>
-<li>Better Keyboard navigation support</li>
-</ul>
-</li>
-<li>New error detection and warning system
-<ul>
-<li>More hardware errors handled</li>
-</ul>
-</li>
-<li>Design tools improvements and optimizations
-<ul>
-<li>New Twist tools</li>
-<li>Improved Curve tool</li>
-<li>Improved Align</li>
-</ul>
-</li>
-</ul>
-<h1 id="mattercontrol-2.19.2-february-6-2019">MatterControl 2.19.2 (February, 6, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICt8ISVCgwLEgZVcGxvYWQYgICA_ZPAggoM">Windows Download</a></p>
-<h2 id="changes-3">Changes</h2>
-<ul>
-<li>Fixed bugs with exporting G-Code</li>
-<li>Improved flatten</li>
-<li>Improved Undo support</li>
-<li>Improved design history</li>
-</ul>
-<h1 id="mattercontrol-2.19.1-january-2-2019">MatterControl 2.19.1 (January, 2, 2019)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC17KWBCgwLEgZVcGxvYWQYgICAzeeZlQoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY9dKCCgwLEgZVcGxvYWQYgICA2Oq1kAoM">Mac Download</a></p>
-<h2 id="changes-4">Changes</h2>
-<ul>
-<li>Versioning: Moving to a (version).(year).(month) version number. Easier to read and more informative.</li>
-<li>Multi-printer control</li>
-<li>A single instance of MatterControl can now run multiple printers simultaneously</li>
-<li>New State-of-the-art Subtract, Combine and Intersection (Window only)</li>
-<li>We now start up with a 'Feature Tour' to help new users find their way</li>
-</ul>
-<h1 id="mattercontrol-2.0.0-november-19-2018">MatterControl 2.0.0 (November, 19, 2018)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgIC1rPiMCgwLEgZVcGxvYWQYgICAtezqjgoM">Windows Download</a></p>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgICY3u-ICgwLEgZVcGxvYWQYgICAmPmLnAoM">Mac Download</a></p>
-<h2 id="changes-5">Changes</h2>
-<ul>
-<li>Design Tools - The ability to 3D model with a complete set of modeling primitives</li>
-<li>Use a primitive to create your own customized supports</li>
-<li>Design Apps - Design Apps: sophisticated customizable designs</li>
-<li>64-bit Processing</li>
-</ul>
-<h1 id="mattercontrol-1.7.5-august-14-2017">MatterControl 1.7.5 (August, 14, 2017)</h1>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgICGgYiLCgwLEgZVcGxvYWQYgICAps6mhwoM">Windows Download</a></p>
-<p>If you are looking for the older interface to MatterControl, this is the last stable version without design tools.</p>
+		<h1 id="avoid-crossing-perimeters">Avoid Crossing Perimeters</h1>
+<p>Prevents the nozzle from crossing outside of the perimeters when it is traveling from one place to another. This can significantly improve the surface finish of your part by reducing stringing and other extrusion artifacts.</p>
+<p>This shows a ring sliced with Avoid Crossing Perimeters off and on. The green lines are travel moves which would likely form strings in the final print.</p>
+<p><img src="https://lh3.googleusercontent.com/VTz46RplN90OCFVf1umAhsSE4aMaKxq4IRlcg0dvj3D9nVuUUaLslXINEaD7u_SMO8QC93kwBPjB6zm40hRi2pwkcw=w200" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/HtQiIndTEF1gBvHX0ooDVapGUP4GvOIm9pZDU0tbpZKVtCZ8gTuiCzcUSGCy6eGjPObA4OvozKV9t5eS_5g1jYUt=w200" class="img-fluid" alt=""></p>
+<p>For especially complicated shapes it may be difficult for the slicer to find an efficient path. In those cases you might consider turning this option off.</p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h1 id="external-perimeters-first">External Perimeters First</h1>
+<p>By default, the inner perimeters are printed first and the outermost perimeter loop is printed last. This ensures that the nozzle is fully primed when printing the outer loop, reducing surface artifacts.</p>
+<p>This option will instead print the outer loop first, then the inner loops. In some cases this can improve dimensional accuracy, however it increases the risk of artifacts on the outer surface.</p>
+<p><strong>Recommended Baseline:</strong> Off</p>
+<h1 id="start-end-overlap">Start End Overlap</h1>
+<p>This is the amount of overlap between the start and end of the perimeter loops. It is expressed as a percentage of the nozzle diameter. These pictures show 0%, 50%, and 100% overlap.</p>
+<p><img src="https://lh3.googleusercontent.com/SFn3xY3CKIH4fS0b7eJ6kIQ6QjLcKQAjmYzcbsO7omzmkcRynjLE-0gShWQOGgm-LTL6WVKUHHGhIG7RoUXTMhmbQQ=w180" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/I9-TE0IbDwTlUxeGr_9_0KIKj0N3bkd87CQnNdySa7FoBMXCfkwcd71ChOOaGLc3YE9kMwDmZ7z1HlFZEtWDbPU8Xg=w180" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/tcjZtf-aGiyKMB29gpHsaM3yYMD4ot_oBlGrB1jsoo1hjq4l8tFjcP1777b6cqt5HFeYpKCrzg2VK-Uv1sql0BNb8Q=w180" class="img-fluid" alt=""></p>
+<p>You can tune this setting in order to minimize the visibility of the perimeter seam. No overlap means there will be a slight gap between the start and end of the loop. Too much overlap and there will be a small bump instead of a gap.</p>
+<p><strong>Recommended Baseline:</strong> 75%<br>
+<strong>Units:</strong> percent of nozzle diameter (%)</p>
+<h1 id="merge-overlapping-lines">Merge Overlapping Lines</h1>
+<p>In very thin sections of a model it is possible for the perimeter loops to cross over each other. This results in a line of plastic being layed down twice in the same spot. The Merge Overlapping Lines feature detects when perimeter loops cross over each other, and replaces them with a single fatter line. These pictures show a thin section of a print with Merge Overlapping Lines turned off and turned on.</p>
+<p><img src="https://lh3.googleusercontent.com/HpvzkkRpdE11ZAne2xP9iJQrWsr99chgWzXH4p9dBlVhcHBSvxZH_oY57YvTIKXjeY7GmeDFmM-4pQgQc3d-PWDOtQ=s0" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/ghbigi4iA9nvTlFXfBjnZu9ZkYk1JYT0cow_BYzlHU0S0kH3o5kAuoV7kC4Q4_1YQm9kev-Emggv0rLN6Mciqo2F=s0" class="img-fluid" alt=""></p>
+<p>In order to preserve the quality of the outer surface, Merge Overlapping Lines only applies to inner perimeter loops, not the outer loops.</p>
+<h1 id="expand-thin-walls">Expand Thin Walls</h1>
+<p>3D printers cannot print anything thinner than the nozzle diameter (0.4 mm on most printers). This means that some models with intricate details may not print correctly since they have features smaller than the nozzle. Expand Thin Walls identifies these parts of the model and expands them in order to make them printable.</p>
+<p>This problem is often encountered when trying to print text. Here is how some text in a cursive font will print with Expand Thin Walls turned off and on.</p>
+<p><img src="https://lh3.googleusercontent.com/kqWPJb88yHyQ1Fk4ZQa3Z-6-Q5GqdxPrRm_y-c4Po6bZFQJ1Voq-oaJO-sqIZgg3B-6w-3W7lTz_0D-RsseUMsmjJsc=w200" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/bVOcsyyVyGwqncQWmw-CEtlHEFrXRgCVJWcWUdH2VO7HiMUMFK33iLigTtXXkq59njYFDFJ1CBg2s64VkbKzkqshfA=w200" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
 
 	</section>
                 
