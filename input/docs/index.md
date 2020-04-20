@@ -16,21 +16,21 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 
 ## Designing
 
-* [Creating New Objects](creating-new-objects.md)
-* [Adding Existing Objects](add-existing-objects.md)
-* [Editing a Objects](editing-objects.md)
-* [Design Apps](design-apps/index.md)
-  * [Design Primitives](design-primitives/index.md)
-  * [Text Tool](design-primitives/text-tool.md)
-  * [Image Converter](design-primitives/image-converter.md)
-  * [Braille Tool](design-primitives/braille-tool.md)
+* [Creating New Objects](designing/creating-new-objects.md)
+* [Adding Existing Objects](designing/add-existing-objects.md)
+* [Editing a Objects](designing/editing-objects.md)
+* [Design Apps](designing/design-apps/index.md)
+  * [Design Primitives](designing/design-primitives/index.md)
+  * [Text Tool](designing/design-primitives/text-tool.md)
+  * [Image Converter](designing/design-primitives/image-converter.md)
+  * [Braille Tool](designing/design-primitives/braille-tool.md)
 
 ## Printing
 
 * [Adding a New Printer](printing/adding-new-printer.md)
 * [Selecting a Printer](printing/selecting-a-printer.md)
 * [Loading and Changing Filament](printing/loading-and-changing-filament.md)
-* [Add Existing Part](designing/add-existing-part.md)
+* [Add Existing Objects](designing/add-existing-objects.md)
 * [Starting a Print](printing/starting-a-print.md)
 * [Exporting G-Code](printing/exporting-g-code.md)
 * [Slice Settings](slice-settings/index.md)
@@ -44,5 +44,5 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 ## Troubleshooting
 
 * [Frequently Asked Questions](frequently-asked-questions.md)
-* [Settings FAQ](printing/slice-settings/settings-faq.md)
+* [Settings FAQ](slice-settings/settings-faq.md)
 * [Geting More Help](get-support.md)
