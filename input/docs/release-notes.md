@@ -2,6 +2,27 @@
 title: Release Notes
 ---
 
+# MatterControl 2.20.6 (June, 10, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDuwJ_jCAwLEgZVcGxvYWQYgIDQmbSugwsM)
+
+Mac Download - Coming Soon
+
+## Changes
+
+- Added  Chinese and Japanese translations
+- Better handling of self intersecting and bad winding in parts
+- Improved bridging detection and handling
+- UI improvements
+  - Toolbar icon contrast and design
+  -	Design tab sizing
+  - Layout of properties panel
+  - TreeView keyboard navigation
+  - Image Converter weighted centering
+- Bugs
+  - Don’t move to origin at start of print
+  -	Disable Print button while printing
+  -	Heating T1 when only printing support
+
 # MatterControl 2.20.4 (April, 4, 2020)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDitZ7GCgwLEgZVcGxvYWQYgIDQromy-AoM)
 
