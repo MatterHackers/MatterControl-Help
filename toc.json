@@ -3,8 +3,28 @@
   "Path": "docs/index.md",
   "Children": [
     {
+      "Name": "Getting More Help",
+      "Path": "docs/get-support.md",
+      "Children": []
+    },
+    {
+      "Name": "Frequently asked Questions",
+      "Path": "docs/frequently-asked-questions.md",
+      "Children": []
+    },
+    {
+      "Name": "MatterControl on Linux",
+      "Path": "docs/linux.md",
+      "Children": []
+    },
+    {
       "Name": "Release Notes",
       "Path": "docs/release-notes.md",
+      "Children": []
+    },
+    {
+      "Name": "What's New",
+      "Path": "docs/whats-new.md",
       "Children": []
     },
     {
@@ -12,8 +32,13 @@
       "Path": "docs/designing/index.md",
       "Children": [
         {
-          "Name": "Editing Objects",
-          "Path": "docs/designing/editing-objects.md",
+          "Name": "Creating New Objects",
+          "Path": "docs/designing/creating-new-objects.md",
+          "Children": []
+        },
+        {
+          "Name": "Adding Existing Objects",
+          "Path": "docs/designing/add-existing-objects.md",
           "Children": []
         },
         {
@@ -22,14 +47,14 @@
           "Children": []
         },
         {
-          "Name": "Scale Controls",
-          "Path": "docs/designing/scale-controls.md",
-          "Children": []
-        },
-        {
           "Name": "Design Primitives",
           "Path": "docs/designing/design-primitives/index.md",
           "Children": [
+            {
+              "Name": "Braille Tool",
+              "Path": "docs/designing/design-primitives/braille-tool.md",
+              "Children": []
+            },
             {
               "Name": "Image Converter",
               "Path": "docs/designing/design-primitives/image-converter.md",
@@ -40,27 +65,22 @@
               "Name": "Text Tool",
               "Path": "docs/designing/design-primitives/text-tool.md",
               "Children": []
-            },
-            {
-              "Name": "Braille Tool",
-              "Path": "docs/designing/design-primitives/braille-tool.md",
-              "Children": []
             }
           ]
         },
         {
-          "Name": "Creating New Objects",
-          "Path": "docs/designing/creating-new-objects.md",
+          "Name": "Scale Controls",
+          "Path": "docs/designing/scale-controls.md",
+          "Children": []
+        },
+        {
+          "Name": "Editing Objects",
+          "Path": "docs/designing/editing-objects.md",
           "Children": []
         },
         {
           "Name": "Design Apps",
           "Path": "docs/designing/design-apps/index.md",
-          "Children": []
-        },
-        {
-          "Name": "Adding Existing Objects",
-          "Path": "docs/designing/add-existing-objects.md",
           "Children": []
         }
       ]
@@ -86,8 +106,8 @@
       "Path": "docs/printing/index.md",
       "Children": [
         {
-          "Name": "Adding a new Printer",
-          "Path": "docs/printing/adding-new-printer.md",
+          "Name": "Loading and Changing Filament",
+          "Path": "docs/printing/loading-and-changing-filament.md",
           "Children": []
         },
         {
@@ -101,13 +121,13 @@
           "Children": []
         },
         {
-          "Name": "Loading and Changing Filament",
-          "Path": "docs/printing/loading-and-changing-filament.md",
+          "Name": "Selecting a Printer",
+          "Path": "docs/printing/selecting-a-printer.md",
           "Children": []
         },
         {
-          "Name": "Selecting a Printer",
-          "Path": "docs/printing/selecting-a-printer.md",
+          "Name": "Adding a new Printer",
+          "Path": "docs/printing/adding-new-printer.md",
           "Children": []
         },
         {
@@ -122,6 +142,11 @@
       "Path": "docs/slice-settings/index.md",
       "Children": [
         {
+          "Name": "Importing and Exporting Settings",
+          "Path": "docs/slice-settings/import-and-export.md",
+          "Children": []
+        },
+        {
           "Name": "Settings FAQ",
           "Path": "docs/slice-settings/settings-faq.md",
           "Children": []
@@ -131,13 +156,13 @@
           "Path": "docs/slice-settings/adhesion/index.md",
           "Children": [
             {
-              "Name": "Brim",
-              "Path": "docs/slice-settings/adhesion/brim.md",
+              "Name": "Raft",
+              "Path": "docs/slice-settings/adhesion/raft.md",
               "Children": []
             },
             {
-              "Name": "Raft",
-              "Path": "docs/slice-settings/adhesion/raft.md",
+              "Name": "Brim",
+              "Path": "docs/slice-settings/adhesion/brim.md",
               "Children": []
             },
             {
@@ -169,32 +194,6 @@
             {
               "Name": "Advanced",
               "Path": "docs/slice-settings/filament/advanced.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "General",
-          "Path": "docs/slice-settings/general/index.md",
-          "Children": [
-            {
-              "Name": "Infill",
-              "Path": "docs/slice-settings/general/infill.md",
-              "Children": []
-            },
-            {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
-              "Children": []
-            },
-            {
-              "Name": "Layers / Surface",
-              "Path": "docs/slice-settings/general/layers-surface.md",
-              "Children": []
-            },
-            {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
               "Children": []
             }
           ]
@@ -237,35 +236,36 @@
           ]
         },
         {
-          "Name": "Importing and Exporting Settings",
-          "Path": "docs/slice-settings/import-and-export.md",
-          "Children": []
+          "Name": "General",
+          "Path": "docs/slice-settings/general/index.md",
+          "Children": [
+            {
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
+              "Children": []
+            },
+            {
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
+              "Children": []
+            },
+            {
+              "Name": "Layers / Surface",
+              "Path": "docs/slice-settings/general/layers-surface.md",
+              "Children": []
+            },
+            {
+              "Name": "Infill",
+              "Path": "docs/slice-settings/general/infill.md",
+              "Children": []
+            }
+          ]
         }
       ]
     },
     {
-      "Name": "Frequently asked Questions",
-      "Path": "docs/frequently-asked-questions.md",
-      "Children": []
-    },
-    {
       "Name": "Quick Start",
       "Path": "docs/quick-start.md",
-      "Children": []
-    },
-    {
-      "Name": "What's New",
-      "Path": "docs/whats-new.md",
-      "Children": []
-    },
-    {
-      "Name": "Getting More Help",
-      "Path": "docs/get-support.md",
-      "Children": []
-    },
-    {
-      "Name": "MatterControl on Linux",
-      "Path": "docs/linux.md",
       "Children": []
     }
   ]
