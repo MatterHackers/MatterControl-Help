@@ -9,6 +9,11 @@ Mac Download - Coming Soon
 
 ## Changes
 
+- Added [MatterControl Pro Edition](https://www.matterhackers.com/store/l/mattercontrol-pro-edition) upgrade option
+  - Get MatterHackers Professional Support
+  - Help support the MatterControl community
+  - Access to pro only tools
+  - Unlimited cloud storage
 - Added  Chinese and Japanese translations
 - Better handling of self intersecting and bad winding in parts
 - Improved bridging detection and handling
