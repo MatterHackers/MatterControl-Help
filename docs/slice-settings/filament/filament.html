@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <title>MatterControl Help - Filament</title>
+        <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
+        <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
+        <script src="/MatterControl-Help/assets/js/highlight.pack.js"></script>   
+        <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/MatterControl-Help/" class="logo">
+                            <span>MatterControl Help</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#diameter">Diameter</a></p>
+<p><a href="#density">Density</a></p>
+<p><a href="#cost">Cost</a></p>
+<p><a href="#extruder-temperature">Extruder Temperature</a></p>
+<p><a href="#bed-temperature">Bed Temperature</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-objects">Adding Existing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/creating-new-objects">Creating New Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Filament</h1>
+		</section>
+	<section class="content">
+		<h1 id="diameter">Diameter</h1>
+<p>The diameter of the filament you are printing with. This is normally either 1.75 mm or 2.85 mm.</p>
+<p>Even though the filament is made to be a certain diameter, in reality it can vary by ±0.1 mm. Any variation in the diameter of the filament will cause slight overextrusion or underextrusion. This can have a major impact on the dimensional accuracy of the objects you are printing. Because of this, we recommend actually measuring the filament you are using with a set of calipers.</p>
+<p>The diameter of the filament can also vary along the length of a single spool, so it is best to measure the filament in several different spots and take an average.</p>
+<p><strong>Recommended Baseline:</strong> 1.75 mm or 2.85 mm<br>
+<strong>Units:</strong> millimeters (mm)<br>
+<strong>G-Code Replacement Variable:</strong> <code>filament_diameter</code></p>
+<h1 id="density">Density</h1>
+<p>The density of the material you are printing, in g/cm³. This setting has no effect on slicing. It is only used to estimate the mass and cost of the material used for a print. These estimates are shown in the layer view.</p>
+<p>Densities for common materials are listed here. If you have a specialty material, you should be able to get the density from the manufacturer's technical specifications.</p>
+<p><img src="https://lh3.googleusercontent.com/TfSrsIuV876dy5AsgZNsGRzIodccewBY6pmvPh2JsKBKdUe1n5QNJBi-CpgcJDRAwsO1FAlfDouL1YFT21xcVbt7DQ=s0" class="img-fluid" alt=""></p>
+<!---
+| Material | Density (g/cm³) |
+| -------- | --------------- |
+| PLA      | 1.24            |
+| PETG     | 1.27            |
+| ABS      | 1.04            |
+| Nylon    | 1.14            |
+| TPU      | 1.20            |
+| HIPS     | 1.05            |
+| PVA      | 1.23            |
+--->
+<p><strong>Units:</strong> g/cm³</p>
+<h1 id="cost">Cost</h1>
+<p>The cost of one kilogram of filament. This setting has no effect on slicing. It is used to estimate the cost of a print, which is shown in the layer view. If this value is set to 0, then the estimate will not be shown.</p>
+<p><strong>Units:</strong> $/kg</p>
+<h1 id="extruder-temperature">Extruder Temperature</h1>
+<p>The temperature of the hot end. This setting can also be found in the extruder controls. If the hot end is on, changing this setting will have an immediate effect.</p>
+<p>Each type of filament extrudes at a different temperature. See our <a href="https://www.matterhackers.com/3d-printer-filament-compare">Filament Comparison Guide</a> for recommended settings for different materials. It is important to remember that these recommendations are just a starting point, and you may have to experiment to find the best temperature for your particular filament and printer. See this article on <a href="https://www.matterhackers.com/news/how-to-get-the-best-3d-printed-parts-by-understanding-extrusion-settings">adjusting your settings to get the best flow</a>.</p>
+<p>Higher temperatures will improve interlayer adhesion, making the print stronger. The plastic will also be able to flow better, but this will also increase stringing and oozing. If the temperature is too high, then the materials will start to burn and may jam your hot end.</p>
+<p>Lower temperatures will make the plastic more viscous, which can reduce or eliminate stringing and oozing. It can also improve detail slightly. However it will also make the material harder to extrude. Too low and the plastic will not extrude at all. Lower temperatures will also reduce how well the layers bond to each other, making the print weaker and also causing splitting between the layers.</p>
+<p>There are a number of other factors which will affect the proper printing temperature as well.</p>
+<p>Each type of printer is different, and may be slightly better or worse at transferring heat to the filament. Different types of printers may also read different temperatures in the same situation due to different placement of the sensor.</p>
+<p>Even among the same types of material, different spools may require different temperatures because they are different colors or are made by different brands. We have noticed that the lighter colors (especially white) use the most pigment, and so may need to be printed slightly hotter than others.</p>
+<p>You may also need to increase the temperature in high flow situations. For instance, printing exceptionally fast or using a very large nozzle.</p>
+<p><em>Multi Extrusion Printers:</em> The temperatures for each hot end can be set separately using the extruder controls.</p>
+<p><strong>Units:</strong> °C<br>
+<strong>G-Code Replacement Variable:</strong> <code>temperature</code></p>
+<h1 id="bed-temperature">Bed Temperature</h1>
+<p><em>This option is only available if your printer has a heated bed</em></p>
+<p>The temperature of the heated bed. This setting can also be found in the bed controls. If the bed is on, changing this setting will have an immediate effect.</p>
+<p>Heating, along with a proper bed surface, is essential for ensuring that your prints stick to the bed. All plastic undergoes thermal contraction, to varying degrees. This causes prints to shrink, warp, and peel up off of the bed as they cool. In order to prevent this, most printers are equipped with a heated bed in order to keep the print warm until it is finished.</p>
+<p>The ideal bed temperature is different for each type of filament. See our <a href="https://www.matterhackers.com/3d-printer-filament-compare">Filament Comparison Guide</a> for recommended settings for different materials. It is important to remember that these recommendations are just a starting point, and you may have to experiment to find the best temperature for your particular filament and printer. Generally, the bed temperature should be close to the material's glass transition temperature.</p>
+<p>If this setting is set to 0 then bed heating will not be used.</p>
+<p><strong>Units:</strong> °C<br>
+<strong>G-Code Replacement Variable:</strong> <code>bed_temperature</code></p>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

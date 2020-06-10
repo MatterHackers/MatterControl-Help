@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <title>MatterControl Help - Retraction</title>
+        <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
+        <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
+        <script src="/MatterControl-Help/assets/js/highlight.pack.js"></script>   
+        <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/MatterControl-Help/" class="logo">
+                            <span>MatterControl Help</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#retract-length">Retract Length</a></p>
+<p><a href="#extra-length-on-restart">Extra Length On Restart</a></p>
+<p><a href="#time-for-extra-length">Time For Extra Length</a></p>
+<p><a href="#speed">Speed</a></p>
+<p><a href="#z-lift">Z Lift</a></p>
+<p><a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a></p>
+<p><a href="#retract-when-changing-islands">Retract When Changing Islands</a></p>
+<p><a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a></p>
+<p><a href="#length-on-tool-change">Length on Tool Change</a></p>
+<p><a href="#extra-length-after-tool-change">Extra Length After Tool Change</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-objects">Adding Existing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/creating-new-objects">Creating New Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Retraction</h1>
+		</section>
+	<section class="content">
+		<p>Retraction is a technique used to prevent plastic from leaking out of the nozzle when the printer is making a <a href="../speed/speed#travel">travel move</a>. By pulling the filament back slightly, the chamber pressure in the melt zone of the hot end is relieved. This prevents oozing and stringing, however it cannot eliminate it completely. See this article on <a href="https://www.matterhackers.com/articles/retraction-just-say-no-to-oozing">how to tune your retraction settings</a>.</p>
+<p>Retractions are visible in the layer view. Red circles indicate a retraction and blue circles indicate an unretraction. The size of the circle is proportional to the length of the retraction.</p>
+<p><img src="https://lh3.googleusercontent.com/IyuZct3UGe2KMd7PmSorEFRzld7DffeV4SkrCWLd3gr-aMx2MkchH1GN98L-VC-cHoZnSqLVvngdFQzvCBbU6RqKMQ" class="img-fluid" alt=""></p>
+<h1 id="retract-length">Retract Length</h1>
+<p>The distance the filament will be pulled back. The ideal distance varies from one hot end to another. The longer the retraction, the more the oozing will be reduced, but only up to a point. Beyond that you will see diminishing returns and increased risk of jamming. This is because retracting too far will pull molten plastic into the cold zone, where it can solidify.</p>
+<p>Generally, bowden extruder will need more retraction than direct feed extruders due to the backlash in the tube.</p>
+<p><strong>Recommended Baseline:</strong> 3 mm<br>
+<strong>Units:</strong> millimeters (mm)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_length</code></p>
+<h1 id="extra-length-on-restart">Extra Length On Restart</h1>
+<p>After the travel move, the filament will be unretracted (pushed back to the same place it was before). However, during the travel it is still likely that a small amount of plastic will have leaked from the nozzle. This means that the nozzle may not be fully primed when it starts extruding again. This can cause some gaps or unevenness in your print. The Extra Length On Restart option compensates for this by extruding a small amount of extra material in addition to the normal unretract, thus making up for whatever material may have leaked.</p>
+<p>This setting will depend on the material you are printing, since some materials are runnier than others (less viscous) and will leak more.</p>
+<p><strong>Recommended Baseline:</strong><br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="time-for-extra-length">Time For Extra Length</h1>
+<p>During a travel move, the plastic does not leak from the nozzle all at once. It happens over time. There will be more leakage during a long travel move than a short one. Therefor, more extra extrusion will need to be done after a long move in order to reprime the nozzle.</p>
+<p>This setting allows you to control how much extra extrusion is done on restart based on how long the travel move took. This setting is the amount of time it take for the nozzle to fully drain. Any moves that take less than this time will get proportionally less Extra Length On Restart. If zero, the full length will always be used.</p>
+<p><strong>Recommended Baseline:</strong><br>
+<strong>Units:</strong> seconds (s)</p>
+<h1 id="speed">Speed</h1>
+<p>The speed the extruder will move to retract the filament.</p>
+<p>This should be the maximum speed your extruder is capable of. This should be fast so that the pressure is relieved as fast as possible and so that the nozzle does not linger in one spot too long while the retraction is happening. This can leave a blob.</p>
+<p>However, going to fast will cause the motor to skip steps.</p>
+<p><strong>Recommended Baseline:</strong> 35 mm/s<br>
+<strong>Units:</strong> millimeters per seconds (mm/s)<br>
+<strong>G-Code Replacement Variable:</strong> <code>retract_speed</code></p>
+<h1 id="z-lift">Z Lift</h1>
+<p>This function lifts the nozzle during retraction, which ensures that the nozzle will not be dragged across the top of the print during travel moves.</p>
+<p>Generally Z Lift should not be used, however sometimes it may be beneficial to set it to 1 or 2 layer thicknesses (0.2 - 0.4 mm). This reduces the likelihood of the nozzle colliding with any buildups of plastic while traveling, which can cause layer shifting. It will also stop the clunk-clunk-clunk noise as the nozzle crosses over the infill.</p>
+<p><strong>Recommended Baseline:</strong> 0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</h1>
+<p>This is one of several settings that control when retractions will be performed. This setting prevents retractions from being done on short travel moves. It sets the minimum travel distance where a retraction will definitely be performed. However, retractions may still be done for shorter travel moves depending on the conditions. <a href="#retract-when-changing-islands">Retract When Changing Islands</a> takes precedence over this setting.</p>
+<p>Generally you should have <a href="#retract-when-changing-islands">Retract When Changing Islands</a> and <a href="../general/layers-surface#avoid-crossing-perimeters">Avoid Crossing Perimeters</a> turned on. In this case, this setting will mainly only have an effect when moving from one part of the infill to the other. Stringing will not be visible, but retractions are still beneficial here since they will ensure that the nozzle is primed when it starts printing the next infill line.</p>
+<p>This should normally be set to a large distance, since otherwise it may lead to too frequent retraction which can cause jamming.</p>
+<p><strong>Recommended Baseline:</strong> 20 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="retract-when-changing-islands">Retract When Changing Islands</h1>
+<p>Islands are two areas of a layer which are not connected. If this option is on, then a retraction will be performed when the nozzle is traveling from one island to another. This setting takes precedence over <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> but not <a href="#minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</a>.</p>
+<p>Stringing primarily occurs when traveling between islands, so it is recommended to always have this option turned on.</p>
+<p>This picture shows a layer with two islands. The red and blue circles indicate retraction and unretraction happening as the nozzle travels between them.</p>
+<p><img src="https://lh3.googleusercontent.com/E65EfrFDhhe71Tgb9jUNGiaZ--ywuCAiUgFxyEgjoeismEZvsU_JJcdQTmEZm1N1T6dTEwOdD7Sq1HbrVbL1PjEwh_A" class="img-fluid" alt=""></p>
+<p><strong>Recommended Baseline:</strong> On</p>
+<h1 id="minimum-extrusion-requiring-retraction">Minimum Extrusion Requiring Retraction</h1>
+<p>This setting is used to control how frequently retractions are allowed to occur. Performing retractions too frequently can cause underextrusion (due to the nozzle not being fully primed) or jamming. This setting ensures that a certain amount of filament gets extruded before the next retraction is allowed to occur. This setting takes precedence over both <a href="#minimum-travel-requiring-retraction">Minimum Travel Requiring Retraction</a> and <a href="#retract-when-changing-islands">Retract When Changing Islands</a>.</p>
+<p>This setting should be set to the smallest length possible. If you have confidence in your hot end and extruder, then you can set it to 0. However if you notice your printer has trouble keeping when retractions happen frequently, then you should try increasing this setting in increments of 0.01 mm.</p>
+<p><strong>Recommended Baseline:</strong> 0.05 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="length-on-tool-change">Length on Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>This is the distance that the filament will be retracted when switching from one extruder to another. You may want this to be longer than your normal retraction distance so that the filament is completely removed from the melt zone.</p>
+<p><strong>Recommended Baseline:</strong> 6.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+<h1 id="extra-length-after-tool-change">Extra Length After Tool Change</h1>
+<p><em>This option is only available if your printer has multiple extruders</em></p>
+<p>Similar to <a href="#extra-length-on-restart">Extra Length on Restart</a>, this option allows you to extrude extra material after a tool change has occurred. This allows you to compensate for any leakage that may have occurred while the nozzle was inactive. It is recommended to use this option in combination with a <a href="../general/extruder-change">wipe tower or wipe shield</a> to prevent it from depositing a blob on your print.</p>
+<p><strong>Recommended Baseline:</strong> 2.0 mm<br>
+<strong>Units:</strong> millimeters (mm)</p>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
