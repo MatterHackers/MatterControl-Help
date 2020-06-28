@@ -23,7 +23,7 @@ Whis these simple primitives and the included tools you can create anything you 
   - **Dethp:** Set the size in Y
   - **Height:** Set the size in Z
 - Text  
-  ![](https://lh3.googleusercontent.com/XLlyBUeloa3Q1FQF8-fCD0zx036yFCLsvyUKrE9zaV-p1k4Jt4m5QK3W59c8CnwPurZ_RW2xBazi9E3AmMmhkuL_OA)
+  [![](https://lh3.googleusercontent.com/XLlyBUeloa3Q1FQF8-fCD0zx036yFCLsvyUKrE9zaV-p1k4Jt4m5QK3W59c8CnwPurZ_RW2xBazi9E3AmMmhkuL_OA)](text-tool.md)
   - **Name:** Type whatever text you want to show
   - **Point Size:** Set the size of the font. This is acurate when printed to the same size as a 2D printer.
   - **Height:** Set the height you want to have the text reach up to
@@ -80,6 +80,6 @@ Whis these simple primitives and the included tools you can create anything you 
   - **Longitude Sides:** Set the number of faces (or sides) around the part
   - **Latitude Sides:** The number of sides going top to bottom
 - [Image Converter](designing/design-primitives/image-converter.md)  
-  ![Image Converter](https://lh3.googleusercontent.com/85c3ecIUQklR2nRZtT_CM4VUUxeGErNTfPUOMxBMqjcb8pAplPBO0bIA8CAHtLymORPBo4QpvdDyW-9dMPmqVp1Abg)
+  [![Image Converter](https://lh3.googleusercontent.com/85c3ecIUQklR2nRZtT_CM4VUUxeGErNTfPUOMxBMqjcb8pAplPBO0bIA8CAHtLymORPBo4QpvdDyW-9dMPmqVp1Abg)](image-converter.md)
   - Image Converter can help you build complet extrusions from images
   - You can also drag images directly to the bed and use the tools you find in the overflow menu to create all the fetures (and more) of Image Converter.

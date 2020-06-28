@@ -10,7 +10,7 @@ git worktree add output gh-pages
 echo Delete existing content (except for the .git file) in the output worktree
 PAUSE
 xcopy output_ output /s
-cd output
+cd ./output/
 git add --all
 git commit -m "Latest docs"
 rem git push
