@@ -1,6 +1,6 @@
 
 # MatterControl 2.20.6 (June, 10, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNDuwJ_jCAwLEgZVcGxvYWQYgIDQmbSugwsM)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNC13P-aCgwLEgZVcGxvYWQYgIDQ7ZiYiQoM)
 
 Mac Download - Coming Soon
 
@@ -11,6 +11,7 @@ Mac Download - Coming Soon
   - Help support the MatterControl community
   - Access to pro only tools
   - Unlimited cloud storage
+  - Added Threads fature
 - Added  Chinese and Japanese translations
 - Better handling of self intersecting and bad winding in parts
 - Improved bridging detection and handling
