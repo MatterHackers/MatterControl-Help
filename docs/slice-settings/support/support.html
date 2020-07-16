@@ -70,8 +70,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#support-everywhere">Support Everywhere</a></p>
-<p><a href="#support-percent">Support Percent</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#adding-supports">Adding Supports</a></p>
+<p><a href="#analyze-every-layer">Analyze Every Layer</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -216,12 +216,18 @@
 <p>Support structures are designed to be removed once the print is completed.</p>
 <p>Support is required on overhangs more than a certain angle and where <a href="../speed/speed#bridging">bridging</a> is not possible.</p>
 <p>Support structures can be generated automatically, or you can use the design tools to create support structures manually. This allows you to place the support only where you want it.</p>
-<h1 id="support-everywhere">Support Everywhere</h1>
+<h1 id="adding-supports">Adding Supports</h1>
+<p>Supports can be added, then edited by clicking the supports button in the toolbar then the Generate within the drop down. Once supports have been added they can be deleted or moved at any time.</p>
+<p><img src="https://lh3.googleusercontent.com/szS02lAmwIwE46RkNo44UFzMUJGNX67XPIw0eMDtNaZZWcZFF4LWNGURL7Wcgm4UB4Dx3DvX_7BcLyCXTSxIczp-aw" class="img-fluid" alt="Generating Supports"></p>
+<p>It is worth noting tha you can also create ustom geometry and turn int into support by clicking the support button rather than the drop down arrow.</p>
+<h1 id="analyze-every-layer">Analyze Every Layer</h1>
+<p>If you have used supports in an older version of MatterControl and want the behavior of them generating in every place that they might be needed you can enable this is the Slice Settings. Under Support turn on Analyze Every Layer and if there are no manual supports in the scene you will have the old behavior of fully automatic supports in the scene. The details below will give you more information about controling supporst while in this mode.</p>
+<h2 id="support-everywhere">Support Everywhere</h2>
 <p>When this option is off, support structures will only be created where the bottom of the support will be touching the bed. When this option is on, supports will be created everywhere, including places where the bottom of the support is on top of part of the print.</p>
 <p>These pictures show Support Everywhere off and on.</p>
 <p><img src="https://lh3.googleusercontent.com/lsQezUyXcoKvXC9otva7en0n1m0RFYsjfbsX_ZvAycq8hRwwz9MnW_RMD3qQM_key3UD-92lCa9uwiuLByXcJk7sPw=w200" class="img-fluid" alt=""> <img src="https://lh3.googleusercontent.com/U81WpnoO4fFRM7bB3Fq9CxMSTFnQrtUAmmc8v3KkhUC7WNYDD61ljP5bQK5Y210BgaT8Hj8kQUllqvEStbWBmpAY=w200" class="img-fluid" alt=""></p>
 <p><strong>Recommended Baseline:</strong> Off</p>
-<h1 id="support-percent">Support Percent</h1>
+<h2 id="support-percent">Support Percent</h2>
 <p>This controls the amount of support material that will be generated. It is similar to the support angle setting in other slicers.</p>
 <p>The support percent threshold controls how little overlap there can be between lines on one layer and the layer below. If there is not enough overlap, then support is created in that area.</p>
 <p><img src="https://lh3.googleusercontent.com/0oWaiPwhV4FB-QKEZ0G59UzUnw42C8sZHJXPhHpE8UiHO1RzBrBuH-Nw41KZYvUnv7ghz3uskMCqZ_26LbaPOhNw" class="img-fluid" alt=""></p>
