@@ -38,4 +38,7 @@ For your first print we will add Phil-A-Ment (the MatterHackers mascot) to the b
 * You can come back to the help at any time by clicking on the 'MatterControl' menu and selecting 'Help'.  
   ![](https://lh3.googleusercontent.com/QrO213jp2jIfd4O3OrkWjIjkhMyCSMWjtQ-OXK6PWdSkxVy9f_NKbu8-BiyR-tryrXrztcL4yJ4MNSO2i7V7fhT43zI)
 
+# Getting Help With Shotcuts
+
+![](https://lh3.googleusercontent.com/a8VOYBD4JJW97S0tVWPLxzhy5CtRCwi74XC_BVEV4LSn1K9xwCMDO9DVDsjJzmImRxqKkNCCkTFUmWOnMwJ3GtVBKA)
   

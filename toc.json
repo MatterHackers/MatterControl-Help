@@ -3,22 +3,22 @@
   "Path": "docs/index.md",
   "Children": [
     {
-      "Name": "Release Notes",
-      "Path": "docs/release-notes.md",
-      "Children": []
-    },
-    {
       "Name": "Designing",
       "Path": "docs/designing/index.md",
       "Children": [
         {
-          "Name": "Rotate Controls",
-          "Path": "docs/designing/rotate-controls.md",
+          "Name": "Editing Objects",
+          "Path": "docs/designing/editing-objects.md",
           "Children": []
         },
         {
           "Name": "Design Apps",
           "Path": "docs/designing/design-apps/index.md",
+          "Children": []
+        },
+        {
+          "Name": "Rotate Controls",
+          "Path": "docs/designing/rotate-controls.md",
           "Children": []
         },
         {
@@ -44,11 +44,6 @@
           ]
         },
         {
-          "Name": "Creating New Objects",
-          "Path": "docs/designing/creating-new-objects.md",
-          "Children": []
-        },
-        {
           "Name": "Scale Controls",
           "Path": "docs/designing/scale-controls.md",
           "Children": []
@@ -59,8 +54,49 @@
           "Children": []
         },
         {
-          "Name": "Editing Objects",
-          "Path": "docs/designing/editing-objects.md",
+          "Name": "Creating New Objects",
+          "Path": "docs/designing/creating-new-objects.md",
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Name": "Printing",
+      "Path": "docs/printing/index.md",
+      "Children": [
+        {
+          "Name": "Printing Multi-Color STLs",
+          "Path": "docs/printing/multi-color-stls.md",
+          "Children": []
+        },
+        {
+          "Name": "Adding a new Printer",
+          "Path": "docs/printing/adding-new-printer.md",
+          "Children": []
+        },
+        {
+          "Name": "Exporting G-Code",
+          "Path": "docs/printing/exporting-g-code.md",
+          "Children": []
+        },
+        {
+          "Name": "Selecting a Printer",
+          "Path": "docs/printing/selecting-a-printer.md",
+          "Children": []
+        },
+        {
+          "Name": "Loading and Changing Filament",
+          "Path": "docs/printing/loading-and-changing-filament.md",
+          "Children": []
+        },
+        {
+          "Name": "Pausing a Print",
+          "Path": "docs/printing/pausing-a-print.md",
+          "Children": []
+        },
+        {
+          "Name": "Starting a Print",
+          "Path": "docs/printing/starting-a-print.md",
           "Children": []
         }
       ]
@@ -69,6 +105,27 @@
       "Name": "Slice Settings",
       "Path": "docs/slice-settings/index.md",
       "Children": [
+        {
+          "Name": "Adhesion",
+          "Path": "docs/slice-settings/adhesion/index.md",
+          "Children": [
+            {
+              "Name": "Raft",
+              "Path": "docs/slice-settings/adhesion/raft.md",
+              "Children": []
+            },
+            {
+              "Name": "Brim",
+              "Path": "docs/slice-settings/adhesion/brim.md",
+              "Children": []
+            },
+            {
+              "Name": "Skirt",
+              "Path": "docs/slice-settings/adhesion/skirt.md",
+              "Children": []
+            }
+          ]
+        },
         {
           "Name": "Speed",
           "Path": "docs/slice-settings/speed/index.md",
@@ -107,61 +164,19 @@
           ]
         },
         {
-          "Name": "Adhesion",
-          "Path": "docs/slice-settings/adhesion/index.md",
-          "Children": [
-            {
-              "Name": "Brim",
-              "Path": "docs/slice-settings/adhesion/brim.md",
-              "Children": []
-            },
-            {
-              "Name": "Raft",
-              "Path": "docs/slice-settings/adhesion/raft.md",
-              "Children": []
-            },
-            {
-              "Name": "Skirt",
-              "Path": "docs/slice-settings/adhesion/skirt.md",
-              "Children": []
-            }
-          ]
+          "Name": "Importing and Exporting Settings",
+          "Path": "docs/slice-settings/import-and-export.md",
+          "Children": []
         },
         {
-          "Name": "General",
-          "Path": "docs/slice-settings/general/index.md",
-          "Children": [
-            {
-              "Name": "Infill",
-              "Path": "docs/slice-settings/general/infill.md",
-              "Children": []
-            },
-            {
-              "Name": "Layers / Surface",
-              "Path": "docs/slice-settings/general/layers-surface.md",
-              "Children": []
-            },
-            {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
-              "Children": []
-            },
-            {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
-              "Children": []
-            }
-          ]
+          "Name": "Settings FAQ",
+          "Path": "docs/slice-settings/settings-faq.md",
+          "Children": []
         },
         {
           "Name": "Filament",
           "Path": "docs/slice-settings/filament/index.md",
           "Children": [
-            {
-              "Name": "Advanced",
-              "Path": "docs/slice-settings/filament/advanced.md",
-              "Children": []
-            },
             {
               "Name": "Filament",
               "Path": "docs/slice-settings/filament/filament.md",
@@ -173,6 +188,11 @@
               "Children": []
             },
             {
+              "Name": "Advanced",
+              "Path": "docs/slice-settings/filament/advanced.md",
+              "Children": []
+            },
+            {
               "Name": "Fan",
               "Path": "docs/slice-settings/filament/fan.md",
               "Children": []
@@ -180,62 +200,32 @@
           ]
         },
         {
-          "Name": "Importing and Exporting Settings",
-          "Path": "docs/slice-settings/import-and-export.md",
-          "Children": []
-        },
-        {
-          "Name": "Settings FAQ",
-          "Path": "docs/slice-settings/settings-faq.md",
-          "Children": []
+          "Name": "General",
+          "Path": "docs/slice-settings/general/index.md",
+          "Children": [
+            {
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
+              "Children": []
+            },
+            {
+              "Name": "Layers / Surface",
+              "Path": "docs/slice-settings/general/layers-surface.md",
+              "Children": []
+            },
+            {
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
+              "Children": []
+            },
+            {
+              "Name": "Infill",
+              "Path": "docs/slice-settings/general/infill.md",
+              "Children": []
+            }
+          ]
         }
       ]
-    },
-    {
-      "Name": "Printing",
-      "Path": "docs/printing/index.md",
-      "Children": [
-        {
-          "Name": "Starting a Print",
-          "Path": "docs/printing/starting-a-print.md",
-          "Children": []
-        },
-        {
-          "Name": "Adding a new Printer",
-          "Path": "docs/printing/adding-new-printer.md",
-          "Children": []
-        },
-        {
-          "Name": "Loading and Changing Filament",
-          "Path": "docs/printing/loading-and-changing-filament.md",
-          "Children": []
-        },
-        {
-          "Name": "Pausing a Print",
-          "Path": "docs/printing/pausing-a-print.md",
-          "Children": []
-        },
-        {
-          "Name": "Exporting G-Code",
-          "Path": "docs/printing/exporting-g-code.md",
-          "Children": []
-        },
-        {
-          "Name": "Printing Multi-Color STLs",
-          "Path": "docs/printing/multi-color-stls.md",
-          "Children": []
-        },
-        {
-          "Name": "Selecting a Printer",
-          "Path": "docs/printing/selecting-a-printer.md",
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Name": "Frequently asked Questions",
-      "Path": "docs/frequently-asked-questions.md",
-      "Children": []
     },
     {
       "Name": "Printer Controls",
@@ -259,6 +249,16 @@
       "Children": []
     },
     {
+      "Name": "Frequently asked Questions",
+      "Path": "docs/frequently-asked-questions.md",
+      "Children": []
+    },
+    {
+      "Name": "Quick Start",
+      "Path": "docs/quick-start.md",
+      "Children": []
+    },
+    {
       "Name": "What's New",
       "Path": "docs/whats-new.md",
       "Children": []
@@ -269,8 +269,8 @@
       "Children": []
     },
     {
-      "Name": "Quick Start",
-      "Path": "docs/quick-start.md",
+      "Name": "Release Notes",
+      "Path": "docs/release-notes.md",
       "Children": []
     }
   ]
