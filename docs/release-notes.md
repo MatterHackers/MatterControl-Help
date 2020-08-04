@@ -19,7 +19,7 @@ Mac Download - Coming Soon
 - Print History shows printer used and can collect quality data  
 ![History](https://lh3.googleusercontent.com/ijW8Et-CsdlrsAnStclAbBy1U-BRGAECD_skC8z_xqOTtFk_5LVeILgl-oi69RfOiLWB5zFLcqy_J67pdaNLK3f00Q)
 
-  - Pro feature add to export to .csv file
+  - Pro feature added to export to .csv file
 
 
 - UI improvements
