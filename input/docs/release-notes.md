@@ -1,6 +1,39 @@
 ---
 title: Release Notes
 ---
+# MatterControl 2.20.8 (August, 4, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNC94uviCwwLEgZVcGxvYWQYgIDQx_-uqggM)
+
+Mac Download - Coming Soon
+
+## Changes
+
+- Z Offset can be adjusted from progress display  
+ ![Z Offset](https://lh3.googleusercontent.com/KaUGC0WSnR7P0rH4xNaqbvL2D_hskJA3OI6AQ0nJPvRqc5RsZMhz6jRxKwCixKBbN59DL_-HrAE7TMMQpRcm6Ms6yA=w320)
+
+
+- Improved Arrange All  
+ ![Arrange All](https://lh3.googleusercontent.com/D-q-Ulc2rWT6ymOx_5I-PlXGtoY2VaZDC71_62hq0kR0-tbEuabQPK56swRomIEzYZANQlbA3UDI3_xoLDbJw2pBTt8=w420)
+
+- Added Gyroid infill  
+![Gyroid Layers](https://lh3.googleusercontent.com/eqD330J6VC_Uegiq3Ic8KXvI6Syex7X66CbynkcSQKvy2ijhA91yQEFICOzXi-ZpWB00KNUxCuQQJXS804jVX7uSFQ=w320) ![Gyroid Settings](https://lh3.googleusercontent.com/qa1OE9KbLGQl04M7OhWBeCUbDOEiy2OU_jOjMHbYkNS68GxmxRcd34YMsy2blAfR8vY_X5FA3jL5_QtIdw90NpvIw9U=w220)
+
+
+- Print History shows printer used and can collect quality data  
+![History](https://lh3.googleusercontent.com/ijW8Et-CsdlrsAnStclAbBy1U-BRGAECD_skC8z_xqOTtFk_5LVeILgl-oi69RfOiLWB5zFLcqy_J67pdaNLK3f00Q)
+
+  - Pro feature add to export to .csv file
+
+
+- UI improvements
+  - Easier to find and create Share Codes
+  - Easier to enter Share Codes
+  - Cut / Copy / Past available on all text controls
+  - Tabs can shrink when too big for tool bar
+- Bugs
+  - First perimeter on 2nd extruder when only material 2 used
+  - Export x3g does not fail on warning
+  - Settings name not saved on close
 
 # MatterControl 2.20.6 (June, 10, 2020)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgNC13P-aCgwLEgZVcGxvYWQYgIDQ7ZiYiQoM)
