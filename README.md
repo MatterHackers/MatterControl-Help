@@ -1,7 +1,9 @@
 # MatterControl-Help
 
 - [Markdown PDF Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-- [Markdown Cheatsheet](https://www.zenhub.com/guides/markdown-cheatsheet/) 
+- [Markdown Cheatsheet](https://www.zenhub.com/guides/markdown-cheatsheet/)
+- [GitHub.io site for these documents](https://matterhackers.github.io/MatterControl-Help/docs/)
+- [MatterControl Help on MatterHackers.com](https://www.matterhackers.com/mattercontrol/support)
 
 ## Simplest change workflow
 
