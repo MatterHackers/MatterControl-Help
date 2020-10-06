@@ -8,23 +8,23 @@ You can find the complete release notes [here](release-notes.md)
 
 # Latest Update Details
 
-## MatterControl 2.20.9 (September, 4, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDAyMfcCAwLEgZVcGxvYWQYgICw4IPd2QkM)
+## MatterControl 2.20.10 (October, 5, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDkoJKuCAwLEgZVcGxvYWQYgICw7KuIqgsM)
 
 Mac Download - Coming Soon
 
 ## Changes
 
 - Features
-  - Added export as AMF
-  - Added babby stepping for extruder 2 (Dual Extrusion)
-  - Printer settings are scanned for for updates to defaults
+  - Improved design icons
+  - Accelerated Slicing
+  - Icons Printer Parts libraries
+  - Added a simple measure tool
 - UI improvements
-  - Improve discovery of entering share codes
-  - Default optinos for history data notes
-  - Right click settings menu has more options
+  - Better support of high rez devices
+  - Added all supported operations to part right click menu
+  - Add warning for connected to emulator
+  - Add warning for bad leveling data
 - Bugs
-  - Settings override display always shows correct colors
-  - Load / Unload ignore extrusion multiplier
-  - fixed icon color problems
-  - restore small icon rendering
+  - Fixed slicing issue with fill thin gaps
+  - Fixed settings update bug with probe offset
