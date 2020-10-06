@@ -18,7 +18,7 @@ Mac Download - Coming Soon
 - Features
   - Improved design icons
   - Accelerated Slicing
-  - Icons Printer Parts libraries
+  - Icons for Printer Parts libraries
   - Added a simple measure tool
 - UI improvements
   - Better support of high rez devices
