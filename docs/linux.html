@@ -222,9 +222,9 @@
 <p>MatterControl requires the latest version of Mono in order to work. Although Mono is available in Ubuntu, the version provided is usually severely outdated. On Ubuntu 18.04, follow these steps to add the official Xamarin package repository and update to the latest version of Mono.</p>
 <pre><code>$ sudo apt install gnupg ca-certificates
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-$echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+$ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 $ sudo apt update
-
+$ sudo apt install mono-devel
 </code></pre>
 <p>There are also instructions for other distributions on the <a href="https://www.mono-project.com/download/stable/">Mono website</a>.</p>
 <h3 id="serial-port-permissions">Serial Port Permissions</h3>
