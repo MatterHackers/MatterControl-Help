@@ -72,6 +72,7 @@
                     	
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#complete-release-notes"></a><a href="release-notes.md">Complete Release Notes</a></p>
 <p><a href="#latest-update-details">Latest Update Details</a></p>
+<p><a href="#mattercontrol-2.20.11-november-10-2020">MatterControl 2.20.11 (November, 10, 2020)</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -214,31 +215,32 @@
 		<h1 id="complete-release-notes"><a href="release-notes.md">Complete Release Notes</a></h1>
 <p>You can find the complete release notes <a href="release-notes.md">here</a></p>
 <h1 id="latest-update-details">Latest Update Details</h1>
-<h2 id="mattercontrol-2.20.10-october-5-2020">MatterControl 2.20.10 (October, 5, 2020)</h2>
-<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDkoJKuCAwLEgZVcGxvYWQYgICw7KuIqgsM">Windows Download</a></p>
+<h1 id="mattercontrol-2.20.11-november-10-2020">MatterControl 2.20.11 (November, 10, 2020)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCsrdT5CwwLEgZVcGxvYWQYgICwnsOuxAkM">Windows Download</a></p>
 <p>Mac Download - Coming Soon</p>
 <h2 id="changes">Changes</h2>
 <ul>
 <li>Features
 <ul>
-<li>Improved design icons</li>
-<li>Accelerated Slicing</li>
-<li>Icons for Printer Parts libraries</li>
-<li>Added a simple measure tool</li>
+<li>Collecting history data after print finishes</li>
+<li>Added option to run print leveling validation if printer has a probe</li>
+<li>Added import of FFF (Simplify3D) prifiles</li>
 </ul>
 </li>
 <li>UI improvements
 <ul>
-<li>Better support of high rez devices</li>
-<li>Added all supported operations to part right click menu</li>
-<li>Add warning for connected to emulator</li>
-<li>Add warning for bad leveling data</li>
+<li>Working on new GLFW backend to fix Mac and Linux issues (not quite ready yet)</li>
+<li>"Just my Settings' working for Quality and Material editing</li>
+<li>Added a simple measure tool
+<img src="https://lh3.googleusercontent.com/cU3YFcyg1AKj27jItrIrTQkUFFgxib4WibSDO1Q0PST8G8OB1dNHXNDrGl-eVzncbhBdftpQjpjQd4JnTTPyN9bc" class="img-fluid" alt="Measure Tool"></li>
 </ul>
 </li>
 <li>Bugs
 <ul>
-<li>Fixed slicing issue with fill thin gaps</li>
-<li>Fixed settings update bug with probe offset</li>
+<li>Made Gyroid infill fill to edge</li>
+<li>Fixd regression with bridging directions</li>
+<li>Fixed M83 (extrude relative)</li>
+<li>Fixed selection issue when adding scale to part</li>
 </ul>
 </li>
 </ul>
