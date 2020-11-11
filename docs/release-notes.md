@@ -12,7 +12,7 @@ Mac Download - Coming Soon
 - UI improvements
   - Working on new GLFW backend to fix Mac and Linux issues (not quite ready yet)
   - "Just my Settings' working for Quality and Material editing
-  - Added a simple measure tool 
+  - Added a simple measure tool  
 ![Measure Tool](https://lh3.googleusercontent.com/cU3YFcyg1AKj27jItrIrTQkUFFgxib4WibSDO1Q0PST8G8OB1dNHXNDrGl-eVzncbhBdftpQjpjQd4JnTTPyN9bc)
 - Bugs
   - Made Gyroid infill fill to edge
