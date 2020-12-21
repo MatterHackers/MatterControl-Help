@@ -2,9 +2,9 @@
 title: Release Notes
 ---
 # MatterControl 2.20.12 (December, 21, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCBn6bUCgwLEgZVcGxvYWQYgICwq6WDlgkM)
 
-Mac Download - Coming Soon
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgNDOtcqiCAwLEgZVcGxvYWQYgICwq6bs7AoM)
 
 ## Changes
 

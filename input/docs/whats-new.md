@@ -8,23 +8,22 @@ You can find the complete release notes [here](release-notes.md)
 
 # Latest Update Details
 
-## MatterControl 2.20.10 (October, 5, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDkoJKuCAwLEgZVcGxvYWQYgICw7KuIqgsM)
+# MatterControl 2.20.12 (December, 21, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCBn6bUCgwLEgZVcGxvYWQYgICwq6WDlgkM)
 
-Mac Download - Coming Soon
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgNDOtcqiCAwLEgZVcGxvYWQYgICwq6bs7AoM)
 
 ## Changes
 
-- Features
-  - Improved design icons
-  - Accelerated Slicing
-  - Icons for Printer Parts libraries
-  - Added a simple measure tool
-- UI improvements
-  - Better support of high rez devices
-  - Added all supported operations to part right click menu
-  - Add warning for connected to emulator
-  - Add warning for bad leveling data
-- Bugs
-  - Fixed slicing issue with fill thin gaps
-  - Fixed settings update bug with probe offset
+- Features
+  - Mac build working again
+  - Custom printer setup wizard
+  - Set baud rate in manual printer connect window
+- UI improvements
+  - Improved print completion dialog
+  - Implemented GLFW backend
+  - Improved base editing
+- Bugs
+  - Fixed export bug with G92 E0
+  - Circular bed texture
+  - Thin walls fix for single perimeter
