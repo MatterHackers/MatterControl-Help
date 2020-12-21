@@ -1,24 +1,23 @@
-# MatterControl 2.20.11 (November, 10, 2020)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCsrdT5CwwLEgZVcGxvYWQYgICwnsOuxAkM)
+# MatterControl 2.20.12 (December, 21, 2020)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCBn6bUCgwLEgZVcGxvYWQYgICwq6WDlgkM)
 
-Mac Download - Coming Soon
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgNDOtcqiCAwLEgZVcGxvYWQYgICwq6bs7AoM)
 
 ## Changes
 
-- Features
-  - Collecting history data after print finishes
-  - Added option to run print leveling validation if printer has a probe
-  - Added import of FFF (Simplify3D) prifiles
-- UI improvements
-  - Working on new GLFW backend to fix Mac and Linux issues (not quite ready yet)
-  - "Just my Settings' working for Quality and Material editing
-  - Added a simple measure tool  
-![Measure Tool](https://lh3.googleusercontent.com/cU3YFcyg1AKj27jItrIrTQkUFFgxib4WibSDO1Q0PST8G8OB1dNHXNDrGl-eVzncbhBdftpQjpjQd4JnTTPyN9bc)
-- Bugs
-  - Made Gyroid infill fill to edge
-  - Fixd regression with bridging directions
-  - Fixed M83 (extrude relative)
-  - Fixed selection issue when adding scale to part
+- Features
+  - Mac build working again
+  - Custom printer setup wizard
+  - Set baud rate in manual printer connect window
+- UI improvements
+  - Improved print completion dialog
+  - Implemented GLFW backend
+  - Improved base editing
+- Bugs
+  - Fixed export bug with G92 E0
+  - Circular bed texture
+  - Thin walls fix for single perimeter
+
 
 # MatterControl 2.20.10 (October, 5, 2020)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDkoJKuCAwLEgZVcGxvYWQYgICw7KuIqgsM)
@@ -31,6 +30,7 @@ Mac Download - Coming Soon
   - Improved design icons
   - Accelerated Slicing
   - Icons for Printer Parts libraries
+  - Added a simple measure tool
 - UI improvements
   - Better support of high rez devices
   - Added all supported operations to part right click menu
