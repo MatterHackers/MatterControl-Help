@@ -5,18 +5,18 @@
 
 ## Changes
 
-- Features
-  - Mac build working again
-  - Custom printer setup wizard
-  - Set baud rate in manual printer connect window
-- UI improvements
-  - Improved print completion dialog
-  - Implemented GLFW backend
-  - Improved base editing
-- Bugs
-  - Fixed export bug with G92 E0
-  - Circular bed texture
-  - Thin walls fix for single perimeter
+- Features
+  - Mac build working again
+  - Custom printer setup wizard
+  - Set baud rate in manual printer connect window
+- UI improvements
+  - Improved print completion dialog
+  - Implemented GLFW backend
+  - Improved base editing
+- Bugs
+  - Fixed export bug with G92 E0
+  - Circular bed texture
+  - Thin walls fix for single perimeter
 
 
 # MatterControl 2.20.10 (October, 5, 2020)

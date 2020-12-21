@@ -3,8 +3,18 @@
   "Path": "docs/index.md",
   "Children": [
     {
-      "Name": "Quick Start",
-      "Path": "docs/quick-start.md",
+      "Name": "MatterControl on Linux",
+      "Path": "docs/linux.md",
+      "Children": []
+    },
+    {
+      "Name": "Getting More Help",
+      "Path": "docs/get-support.md",
+      "Children": []
+    },
+    {
+      "Name": "Release Notes",
+      "Path": "docs/release-notes.md",
       "Children": []
     },
     {
@@ -17,24 +27,19 @@
       "Path": "docs/designing/index.md",
       "Children": [
         {
-          "Name": "Creating New Objects",
-          "Path": "docs/designing/creating-new-objects.md",
+          "Name": "Adding Existing Objects",
+          "Path": "docs/designing/add-existing-objects.md",
           "Children": []
         },
         {
-          "Name": "Scale Controls",
-          "Path": "docs/designing/scale-controls.md",
+          "Name": "Rotate Controls",
+          "Path": "docs/designing/rotate-controls.md",
           "Children": []
         },
         {
           "Name": "Design Primitives",
           "Path": "docs/designing/design-primitives/index.md",
           "Children": [
-            {
-              "Name": "Braille Tool",
-              "Path": "docs/designing/design-primitives/braille-tool.md",
-              "Children": []
-            },
             {
               "Name": "Image Converter",
               "Path": "docs/designing/design-primitives/image-converter.md",
@@ -45,18 +50,13 @@
               "Name": "Text Tool",
               "Path": "docs/designing/design-primitives/text-tool.md",
               "Children": []
+            },
+            {
+              "Name": "Braille Tool",
+              "Path": "docs/designing/design-primitives/braille-tool.md",
+              "Children": []
             }
           ]
-        },
-        {
-          "Name": "Design Apps",
-          "Path": "docs/designing/design-apps/index.md",
-          "Children": []
-        },
-        {
-          "Name": "Adding Existing Objects",
-          "Path": "docs/designing/add-existing-objects.md",
-          "Children": []
         },
         {
           "Name": "Editing Objects",
@@ -64,8 +64,18 @@
           "Children": []
         },
         {
-          "Name": "Rotate Controls",
-          "Path": "docs/designing/rotate-controls.md",
+          "Name": "Design Apps",
+          "Path": "docs/designing/design-apps/index.md",
+          "Children": []
+        },
+        {
+          "Name": "Creating New Objects",
+          "Path": "docs/designing/creating-new-objects.md",
+          "Children": []
+        },
+        {
+          "Name": "Scale Controls",
+          "Path": "docs/designing/scale-controls.md",
           "Children": []
         }
       ]
@@ -91,18 +101,13 @@
       "Path": "docs/printing/index.md",
       "Children": [
         {
-          "Name": "Adding a new Printer",
-          "Path": "docs/printing/adding-new-printer.md",
-          "Children": []
-        },
-        {
-          "Name": "Printing Multi-Color STLs",
-          "Path": "docs/printing/multi-color-stls.md",
-          "Children": []
-        },
-        {
           "Name": "Pausing a Print",
           "Path": "docs/printing/pausing-a-print.md",
+          "Children": []
+        },
+        {
+          "Name": "Adding a new Printer",
+          "Path": "docs/printing/adding-new-printer.md",
           "Children": []
         },
         {
@@ -121,6 +126,11 @@
           "Children": []
         },
         {
+          "Name": "Printing Multi-Color STLs",
+          "Path": "docs/printing/multi-color-stls.md",
+          "Children": []
+        },
+        {
           "Name": "Starting a Print",
           "Path": "docs/printing/starting-a-print.md",
           "Children": []
@@ -132,9 +142,19 @@
       "Path": "docs/slice-settings/index.md",
       "Children": [
         {
+          "Name": "Settings FAQ",
+          "Path": "docs/slice-settings/settings-faq.md",
+          "Children": []
+        },
+        {
           "Name": "Filament",
           "Path": "docs/slice-settings/filament/index.md",
           "Children": [
+            {
+              "Name": "Advanced",
+              "Path": "docs/slice-settings/filament/advanced.md",
+              "Children": []
+            },
             {
               "Name": "Fan",
               "Path": "docs/slice-settings/filament/fan.md",
@@ -143,11 +163,6 @@
             {
               "Name": "Filament",
               "Path": "docs/slice-settings/filament/filament.md",
-              "Children": []
-            },
-            {
-              "Name": "Advanced",
-              "Path": "docs/slice-settings/filament/advanced.md",
               "Children": []
             },
             {
@@ -162,13 +177,13 @@
           "Path": "docs/slice-settings/general/index.md",
           "Children": [
             {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
               "Children": []
             },
             {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
               "Children": []
             },
             {
@@ -182,27 +197,6 @@
               "Children": []
             }
           ]
-        },
-        {
-          "Name": "Support",
-          "Path": "docs/slice-settings/support/index.md",
-          "Children": [
-            {
-              "Name": "Advanced",
-              "Path": "docs/slice-settings/support/advanced.md",
-              "Children": []
-            },
-            {
-              "Name": "Support",
-              "Path": "docs/slice-settings/support/support.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "Settings FAQ",
-          "Path": "docs/slice-settings/settings-faq.md",
-          "Children": []
         },
         {
           "Name": "Adhesion",
@@ -226,11 +220,6 @@
           ]
         },
         {
-          "Name": "Importing and Exporting Settings",
-          "Path": "docs/slice-settings/import-and-export.md",
-          "Children": []
-        },
-        {
           "Name": "Speed",
           "Path": "docs/slice-settings/speed/index.md",
           "Children": [
@@ -250,6 +239,27 @@
               "Children": []
             }
           ]
+        },
+        {
+          "Name": "Support",
+          "Path": "docs/slice-settings/support/index.md",
+          "Children": [
+            {
+              "Name": "Advanced",
+              "Path": "docs/slice-settings/support/advanced.md",
+              "Children": []
+            },
+            {
+              "Name": "Support",
+              "Path": "docs/slice-settings/support/support.md",
+              "Children": []
+            }
+          ]
+        },
+        {
+          "Name": "Importing and Exporting Settings",
+          "Path": "docs/slice-settings/import-and-export.md",
+          "Children": []
         }
       ]
     },
@@ -259,18 +269,8 @@
       "Children": []
     },
     {
-      "Name": "Getting More Help",
-      "Path": "docs/get-support.md",
-      "Children": []
-    },
-    {
-      "Name": "MatterControl on Linux",
-      "Path": "docs/linux.md",
-      "Children": []
-    },
-    {
-      "Name": "Release Notes",
-      "Path": "docs/release-notes.md",
+      "Name": "Quick Start",
+      "Path": "docs/quick-start.md",
       "Children": []
     }
   ]
