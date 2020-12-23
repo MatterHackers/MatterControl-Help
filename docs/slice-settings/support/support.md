@@ -16,12 +16,12 @@ Supports can be added, then edited by clicking the supports button in the toolba
 
 ![Generating Supports](https://lh3.googleusercontent.com/szS02lAmwIwE46RkNo44UFzMUJGNX67XPIw0eMDtNaZZWcZFF4LWNGURL7Wcgm4UB4Dx3DvX_7BcLyCXTSxIczp-aw)
 
-It is worth noting tha you can also create ustom geometry and turn int into support by clicking the support button rather than the drop down arrow.
+It is worth noting that you can also create custom geometry and turn int into support by clicking the support button rather than the drop down arrow.
 
 Analyze Every Layer
 ===================
 
-If you have used supports in an older version of MatterControl and want the behavior of them generating in every place that they might be needed you can enable this is the Slice Settings. Under Support turn on Analyze Every Layer and if there are no manual supports in the scene you will have the old behavior of fully automatic supports in the scene. The details below will give you more information about controling supporst while in this mode.
+If you have used supports in an older version of MatterControl and want the behavior of them generating in every place that they might be needed you can enable this is the Slice Settings. Under Support turn on Analyze Every Layer and if there are no manual supports in the scene you will have the old behavior of fully automatic supports in the scene. The details below will give you more information about controlling supports while in this mode.
 
 ## Support Everywhere
 

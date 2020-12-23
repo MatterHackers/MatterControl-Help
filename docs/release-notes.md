@@ -32,7 +32,7 @@ Mac Download - Coming Soon
   - Icons for Printer Parts libraries
   - Added a simple measure tool
 - UI improvements
-  - Better support of high rez devices
+  - Better support of high res devices
   - Added all supported operations to part right click menu
   - Add warning for connected to emulator
   - Add warning for bad leveling data
@@ -48,11 +48,11 @@ Mac Download - Coming Soon
 
 - Features
   - Added export as AMF
-  - Added babby stepping for extruder 2 (Dual Extrusion)
+  - Added baby stepping for extruder 2 (Dual Extrusion)
   - Printer settings are scanned for for updates to defaults
 - UI improvements
   - Improve discovery of entering share codes
-  - Default optinos for history data notes
+  - Default options for history data notes
   - Right click settings menu has more options
 - Bugs
   - Settings override display always shows correct colors
@@ -90,7 +90,7 @@ Mac Download - Coming Soon
   - Tabs can shrink when too big for tool bar
 - Bugs
   - First perimeter on 2nd extruder when only material 2 used
-  - Export x3g does not fail on warning
+  - Export X3G does not fail on warning
   - Settings name not saved on close
 
 # MatterControl 2.20.6 (June, 10, 2020)
@@ -103,7 +103,7 @@ Mac Download - Coming Soon
   - Help support the MatterControl community
   - Access to pro only tools
   - Unlimited cloud storage
-  - Added Threads fature
+  - Added Threads feature
 - Added  Chinese and Japanese translations
 - Better handling of self intersecting and bad winding in parts
 - Improved bridging detection and handling
@@ -131,7 +131,7 @@ Mac Download - Coming Soon
 ![Reduce Options](https://lh3.googleusercontent.com/h6opzhbdA352u9JFtIcqPnrnJC4JjcoVehdFstGZHe1gu7qiupQ8KAYrngTORjSyUerGlxhX48sGHLlwF2AoPjG0ifw=w220) ![Reduce Menu](https://lh3.googleusercontent.com/Pw2RYm45dFljKfmAq65378bpwULWxH857_Gz_SB95JLsmQYF3YmhOJ-XFEtWqWcFcK4weNLmz2hnVggk_85jWFDE=w120) 
 * Added Mesh Repair  
  ![Repair Options](https://lh3.googleusercontent.com/C-fT1jQ-z1oOU1uBzWNLCN2IsAGOGAmJdhmUKqQLhC3p9_WdeKFDNKSoTGb4U8RRDdYk2ZRbWJ2FbjfNKzo6ii6v=w220) ![Repair Menu](https://lh3.googleusercontent.com/uQ8uaWvzremfTd7jkSu7OhKURHfvyEAFtbT1_KaTL1wgSrSUOjjQ0tm1a6uROpe6JZwC50HvdB4bJcGq8XqGAUMwmg=w120) 
-* Put in fully automatic support (legacy support) as an opption in additon to new manual support option
+* Put in fully automatic support (legacy support) as an option in addition to new manual support option
 * Added Support for gsSlicer (Experimental new slicing engine)
 * Fixed bugs
 

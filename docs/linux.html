@@ -256,7 +256,7 @@ $ gpasswd -a $USER lock
 <pre><code>SUBSYSTEM=="tty", ATTRS{serial}=="6403237383335190E0F1", GROUP="uucp", MODE="0660", SYMLINK+="tty-taz"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="076b", GROUP="uucp", MODE="0660", SYMLINK+="tty-pulse"
 </code></pre>
-<p>Fill in either the serial number or vender and product IDs based on the information you obtained earlier. Make sure <code>GROUP</code> is set to the same group ownership as the rest of your serial ports. This is usually <code>dialout</code> on Debian or <code>uucp</code> on Arch. You can check by doing <code>ls -l /dev/ttyACM*</code>. Lastly, give your printer a unique name for the <code>SYMLINK</code>. This name must start with <code>tty</code> or it will not show up in the list in MatterControl.</p>
+<p>Fill in either the serial number or vendor and product IDs based on the information you obtained earlier. Make sure <code>GROUP</code> is set to the same group ownership as the rest of your serial ports. This is usually <code>dialout</code> on Debian or <code>uucp</code> on Arch. You can check by doing <code>ls -l /dev/ttyACM*</code>. Lastly, give your printer a unique name for the <code>SYMLINK</code>. This name must start with <code>tty</code> or it will not show up in the list in MatterControl.</p>
 <p>The next time you connect the printer, a symlink will automatically be created that points to the correct serial device. You can now configure the printer in MatterControl to use the symlinked port.</p>
 <h1 id="known-issues">Known Issues</h1>
 <h2 id="upgrading-from-1.7-to-2.x">Upgrading from 1.7 to 2.x</h2>

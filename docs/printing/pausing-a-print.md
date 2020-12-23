@@ -5,7 +5,7 @@ At any time during a print you can click the pause button (pictured below) to ma
 ![Resume Print](https://lh3.googleusercontent.com/9Jm03NgDe3ilCFLgDVcihPIbZyqPjwEc3gBO_0GCaiIubwJrZR_PnBmPusn5E9Oe60IPOtOcgi9846B-dEVRo0XY=w420)
 
 # Resuming a Print
-Onece Poused your printer will need to be Resumed again when you want it to complete the print.
+Once paused your printer will need to be Resumed again when you want it to complete the print.
 
 ![Resume Print](https://lh3.googleusercontent.com/WXODOH4s86Q0dWGW7ktqLOd61k--x3oIxSEY0RiF4eik2jEQ-zqGvNl2tIt8E46oRzI5Svri3MC4O2wAuetNfYYu1A=w420)
 

@@ -84,7 +84,7 @@ SUBSYSTEM=="tty", ATTRS{serial}=="6403237383335190E0F1", GROUP="uucp", MODE="066
 SUBSYSTEM=="tty", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="076b", GROUP="uucp", MODE="0660", SYMLINK+="tty-pulse"
 ```
 
-Fill in either the serial number or vender and product IDs based on the information you obtained earlier. Make sure `GROUP` is set to the same group ownership as the rest of your serial ports. This is usually `dialout` on Debian or `uucp` on Arch. You can check by doing `ls -l /dev/ttyACM*`. Lastly, give your printer a unique name for the `SYMLINK`. This name must start with `tty` or it will not show up in the list in MatterControl.
+Fill in either the serial number or vendor and product IDs based on the information you obtained earlier. Make sure `GROUP` is set to the same group ownership as the rest of your serial ports. This is usually `dialout` on Debian or `uucp` on Arch. You can check by doing `ls -l /dev/ttyACM*`. Lastly, give your printer a unique name for the `SYMLINK`. This name must start with `tty` or it will not show up in the list in MatterControl.
 
 The next time you connect the printer, a symlink will automatically be created that points to the correct serial device. You can now configure the printer in MatterControl to use the symlinked port.
 

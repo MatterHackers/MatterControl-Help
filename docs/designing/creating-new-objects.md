@@ -13,7 +13,7 @@ MatterControl allows you to create and design parts. It include everything you n
   
 ## Grouping and Upgrouping  
 ![](https://www.matterhackers.com/r/8Fq5aa)
-  - Grouping: If you select multiple objects you can group the together. This will allow them to be move an opperated on as if they were a single object
+  - Grouping: If you select multiple objects you can group the together. This will allow them to be move an operated on as if they were a single object
   - Ungrouping: Once objects have been grouped you can upgroup them at any time. This will also attempt to find multiple bodies in a single STL if they are present and separate them into multiple objects.
   
 ## Copying and Deleting  
@@ -22,11 +22,11 @@ MatterControl allows you to create and design parts. It include everything you n
   
 ## Align  
 ![](https://www.matterhackers.com/r/tIyb5N)
-  - This tool allows you to align multiple objects relative to eachother
+  - This tool allows you to align multiple objects relative to each other
  
 ## Lay Flat  
 ![](https://www.matterhackers.com/r/a5kMJP)
-  - This tool allows you to quickely get a selection to be on the bed and as flat as possible. It attempts to make the lowest face of the selected part lay flat on the bed.
+  - This tool allows you to quickly get a selection to be on the bed and as flat as possible. It attempts to make the lowest face of the selected part lay flat on the bed.
   
 ## Support Material  
 ![](https://www.matterhackers.com/r/L7B71o)
