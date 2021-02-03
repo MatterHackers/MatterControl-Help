@@ -17,7 +17,7 @@ You can find the complete release notes [here](release-notes.md)
 - UI improvements
   - Added ctrl-a in library views
   - New color control  
-  ![Color Control](https://lh3.googleusercontent.com/TWb6m7KaboJwMlEO9ilcpSs4sKCW9kUU1jbb2rr6_5MJpgaf1mBfBDu_hilI7ENaEInpiQjNZKO-qV_VDqj14U8wM2BD46-COKUSAA)
+  ![Color Control](https://lh3.googleusercontent.com/ej0HAxqEwc9HYJ_B7xgLQUhlaf9BTV9r-5_2WelGKwPQOiqp5DbyPyL4VCn_UKpWNyony5ToPHtH2EBMz6RiZ7LslWMMNx2oKVrjmHU)
 - Bugs
   - Added try re-connectting to connection error message
   - Changing settings details (simple, intermediate, advanced) does not close settings when floating
