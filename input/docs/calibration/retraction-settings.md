@@ -1,5 +1,5 @@
 ---
-title: Calibration
+title: Retraction Settings
 ---
 
 If you think your printer needs some retraction calibration head over to [MatterHackers.com](https//www.matterhackers.com) and read the article ['Just say no to oozing'.](https://www.matterhackers.com/articles/retraction-just-say-no-to-oozing) It has a number of helpfull tricks and tips that can get your printer running great.

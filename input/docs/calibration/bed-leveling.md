@@ -1,5 +1,5 @@
 ---
-title: Calibration
+title: Bed Leveling
 ---
 
 Print Leveling allows MatterControl to figure out the tilt or angle of the bed. Using this information when printing, MatterControl actively raises and lowers the Z axis to make sure that the printed part matches the tilt bed and will always remain correctly above it. This process ensures that the print remains level regardless of the unevenness of the bed.

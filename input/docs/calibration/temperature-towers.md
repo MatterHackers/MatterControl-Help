@@ -1,5 +1,5 @@
 ---
-title: Calibration
+title: Temperature Towers
 ---
 
 MatterControl now includes support for temperature towers which can be great at helping dial in your filament temperature settings.
