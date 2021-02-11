@@ -31,6 +31,7 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Starting a Print](printing/starting-a-print.md)
 * [Exporting G-Code](printing/exporting-g-code.md)
 * [Slice Settings](slice-settings/index.md)
+* [Calibration](calibration/index.md)
 * [Printing Multi-Extrusion Models](printing/multi-color-stls.md)
 
 ## Printer Controls

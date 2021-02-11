@@ -1,19 +1,21 @@
-﻿<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="description">
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Hotend and Extruder Controls</title>
+        <title>MatterControl Help - Calibration</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -70,9 +72,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#hot-end-controls">Hot End Controls</a></p>
-<hr class="infobar-hidden">
-</div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
@@ -82,12 +82,12 @@
                     <ul class="sidebar-menu">
                         
 
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/calibration">Calibration</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/MatterControl-Help/docs/calibration/bed-leveling">Calibration</a></li>
-                <li><a href="/MatterControl-Help/docs/calibration/temperature-towers">Calibration</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/calibration/temperature-towers">Calibration</a></li>
                 <li><a href="/MatterControl-Help/docs/calibration/retraction-settings">Calibration</a></li>
 
                     </ul>
@@ -118,11 +118,11 @@
                 <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="selected"><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
 
                     </ul>
@@ -203,7 +203,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
 
                     </ul>
                             
@@ -217,19 +217,21 @@
 
 
 		<section class="content-header">
-			<h1>Hotend and Extruder Controls</h1>
+			<h1>Calibration</h1>
 		</section>
 	<section class="content">
-		<h1 id="hot-end-controls">Hot End Controls</h1>
-<p>From the hotend control, you can:</p>
-<ul>
-<li>Select Material</li>
-<li>Set Temperature</li>
-<li>Move Print Head</li>
-<li>Load and Unload Filament</li>
-</ul>
-<p>Hotend and Extruder Controls</p>
-<p><img src="https://lh3.googleusercontent.com/Xk53KLiAr-HkSx-CFPidXLhE5G09zrY1FSNXWAccFtCM4fb5gXK3pTKx_dFQ1jEB-XUx1Xt1F_t2_ykEsa4N35x4yw" class="img-fluid" alt="Hotend Controls"></p>
+		<p>MatterControl now includes support for temperature towers which can be great at helping dial in your filament temperature settings.</p>
+<h2 id="how-to">How To</h2>
+<p>You can find the temperature tower in your Library.</p>
+<p><img src="https://lh3.googleusercontent.com/ZVwJVU_W7l3swllHhdO7UQF1XUdlGbR9qB-PoOmXDe6HIgJZdLQiAyWq1COvWyRDKSHCmkr3jmtVqxWvwXt2Tl-_bYxiJo3BNwlc7N8" class="img-fluid" alt="" /></p>
+<p>There are temperature towers setup for ABS, PLA and PETG, but if you need a custom tower or want to change the temperatures beyond the default you can easily adjust one of the provided towers.</p>
+<p>After dragging it to the bed you can select it and change what temperature it starts at, how much the temperature changes each time and how many times it changes.</p>
+<p><img src="https://lh3.googleusercontent.com/TJqCcBga6-77RKI51kBNHwyFcmlSSsO1WfBLmqlY6oYpnLnFHVFoSY3YE5fsMt2igLV3j8TSzIL4nQmgXM40cVTPcfVFd4HkW5auGw" class="img-fluid" alt="" /></p>
+<p>You can also directly add a temperature change object to your print to create your own temperature towers or effects.</p>
+<p>This is the object to add to the bed to customize your own settings.</p>
+<p><img src="https://lh3.googleusercontent.com/f1R0pqA1lngdyv1iPtt66F45HholU7Udvet9MkRQjSred8hum3PCI8-xw3BwBP3st3A-L1QNd9ePCxAB426XLiVOwg9CAh6cVSzk42s" class="img-fluid" alt="" /></p>
+<p>You can set the height by moving it up and down and the settings in the properties panel.</p>
+<p><img src="https://lh3.googleusercontent.com/RwZmMVD6iyXXr100LD96IEuZZ3PsM9m1-IQEplb13INVJyb7Rpn9OZhST_0poFmE-fSpEQ_9c5HjynJOJ0UphWWk7iLPn1wz6FlgRn2H" class="img-fluid" alt="" /></p>
 
 	</section>
                 
@@ -316,5 +318,5 @@
                 }, 500);
             });
         </script>
-    
-</body></html>
+    </body>
+</html>
