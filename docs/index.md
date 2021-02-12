@@ -34,6 +34,9 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Calibration](calibration/index.md)
 * [Printing Multi-Extrusion Models](printing/multi-color-stls.md)
 
+## Library
+* [Library](library/index.md)
+
 ## Printer Controls
 
 * [Controls Pane](printer-controls/index.md)
