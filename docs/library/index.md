@@ -1,14 +1,13 @@
 
 ## The MatterControl Library
 
-The MatterControl Library is the place where you can find all content on the could and your local computer. Library folders include:
+Within the Library folder you will find a wide range of printable content, things like:
 - Design Apps
-- Local Libary
-- Your computers Download folder
-- Cloud Library
+- Local Library
+- The Downloads folder
+- Your Cloud Library
 - Calibration Parts
-- Parts for you printer
-- More...
+- and more...
 
 ## Extending the Downloads folder
 
@@ -19,13 +18,13 @@ To create a link to a local folder:
 - Edit the file and write the following into it
 ```
 {
-  "type": "local",
-  "path": "C:\\"
+  "type": "local",
+  "path": "C:\\"
 }
 ```
 
-You can also creat a link to a GitHub repository:
-- Add a file named Benchy.library (you can change the name to anyting)
+You can also create a link to a GitHub repository:
+- Add a file named Benchy.library (you can change the name to anything)
 - Edit the file and write the following into it 
 ```
 {
