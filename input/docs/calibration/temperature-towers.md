@@ -22,6 +22,6 @@ This is the object to add to the bed to customize your own settings.
 
 ![](https://lh3.googleusercontent.com/f1R0pqA1lngdyv1iPtt66F45HholU7Udvet9MkRQjSred8hum3PCI8-xw3BwBP3st3A-L1QNd9ePCxAB426XLiVOwg9CAh6cVSzk42s)
 
-You can set the height by moving it up and down and the settings in the properties panel.
+You can set the height by moving it up and down and set the temperature to change to in the properties panel.
 
 ![](https://lh3.googleusercontent.com/RwZmMVD6iyXXr100LD96IEuZZ3PsM9m1-IQEplb13INVJyb7Rpn9OZhST_0poFmE-fSpEQ_9c5HjynJOJ0UphWWk7iLPn1wz6FlgRn2H)
