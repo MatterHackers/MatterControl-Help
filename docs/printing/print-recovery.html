@@ -1,19 +1,21 @@
-﻿<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="description">
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Frequently asked Questions</title>
+        <title>MatterControl Help - Print Recovery</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -70,11 +72,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</a></p>
-<p><a href="#why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</a></p>
-<p><a href="#how-do-i-clear-the-application-data">How do I clear the application data?</a></p>
-<hr class="infobar-hidden">
-</div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
@@ -118,7 +116,7 @@
 
                     </ul>
                 </li>
-                <li class="selected"><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li><a href="/MatterControl-Help/docs/library">Library</a></li>
                 <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
@@ -131,7 +129,7 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -139,7 +137,7 @@
                 <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
-                <li><a href="/MatterControl-Help/docs/printing/print-recovery">Print Recovery</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/printing/print-recovery">Print Recovery</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
                 <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
@@ -208,7 +206,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
 
                     </ul>
                             
@@ -222,43 +220,39 @@
 
 
 		<section class="content-header">
-			<h1>Frequently asked Questions</h1>
+			<h1>Print Recovery</h1>
 		</section>
 	<section class="content">
-		<h1 id="is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</h1>
+		<p>Print Recovery is a sub-category of Printer settings which deal with MatterControl's Print Recovery feature, allowing the user to restart prints that have failed due to power loss.</p>
+<p>You can find the print recovery settings in the Printer Settings under Features (Pictured Below)</p>
+<p><img src="https://lh3.googleusercontent.com/U5VaFPa-3wy6hn3wT80RZl1wCrbMa3bZeyFME3amiUYX59YINvhvs_lsOoHiAjbp-JXKuzYxyevUhuKoX7qHKE5OrFlUeXbMw_M7Y82w=s400" class="img-fluid" alt="Printe Recovery Settings" /></p>
+<h2 id="restrictions">Restrictions</h2>
+<p>This section (Print Recovery) is not shown when Has Hardware Leveling is enabled as G29 procedures could interfere with a partially-completed print.
+Sub-sections</p>
+<h2 id="recover-settings">Recover Settings</h2>
+<p><strong>Enable Recovery</strong> - If enabled, MatterControl will attempt to recover a print in the event of a failure such as broken connection or loss of power.</p>
+<p><strong>Recover Layer Speed</strong> - The speed at which the nozzle will move when recovering a failed print, for one layer.</p>
+<p><strong>XY Homing Position</strong> - Specify the X and Y coordinates where the printer can home the Z axis without interfering with the partially-completed print.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>Print Recovery is an automatic feature that only needs to be enabled for it to function properly. In the event of a power loss or disconnection, MatterControl will remember where the print stopped and offer to resume the print the next time it makes a successful connection to that printer.</p>
+<h2 id="types-of-failures">Types of failures</h2>
+<p>Print Recovery works for the following types of print failures:</p>
 <ul>
-<li><p>This mainly depends on the language your printer speaks. Currently, MatterControl supports two languages for communicating with the printer; G-Code and S3G/X3G. G-Code is the standard language used by RepRaps and most other printers. S3G is a condensed language used by Makerbot and Flashforge. Most consumer 3D printers speak G-Code.</p>
-</li>
-<li><p>In addition, you will need appropriate slice settings for your printer. MatterControl has built in profiles for many printers. A link to the complete list can be found below. If your printer is not on the list, don't worry. You will just need to fill in the settings yourself. Obtain specifications from the manufacturer and input them into MatterControl under <code>Settings &amp; Controls -&gt; Settings -&gt; Printer</code> as well as a few under <code>Settings &amp; Controls -&gt; Settings -&gt; Filament</code>.</p>
-</li>
-<li><p>Some newer G-Code printers are using intermediary boards to run web servers in order to control the prints. These printers, while they do speak G-Code, are not able to be controlled directly by MatterControl. G-Code generated in MatterControl can still be sent to the printer using its web-based interface.</p>
-</li>
-<li><p>LINK: <a href="http://www.mattercontrol.com/#jumpSupportedModels">Known compatible printers list.</a></p>
-</li>
+<li>Power loss</li>
+<li>Sudden disconnection</li>
 </ul>
-<h1 id="why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</h1>
+<h2 id="types-of-printers">Types of printers</h2>
+<p>Z Min and Z Max
+While Print Recovery hypothetically works for any printer, printers that home the Z axis at the top (as opposed to down, at bed level-- often referred to as a &quot;Z Max printer&quot;) are better suited for this feature. The reason for this is that the printer will need to home before restarting the print, and depending on the position of the partially-completed print the nozzle could potentially collide with the part if the printer homes down near the bed (referred to as a &quot;Z Min printer&quot;).</p>
+<p>XY Homing Position allows the user to specify a set of coordinates that would be least potentially hazardous for a Z Min printer to home. It's a good idea to designate a zone for this based on the size of the carriage, and make sure not to place the part within it. You may need to disable Center On Bed to place the part exactly where you want it.</p>
+<h2 id="hardware-leveling">Hardware Leveling</h2>
+<p>Printers that run a hardware leveling procedure at the beginning of every print cannot use Print Recovery as a partially-completed print could (and probably would) interfere with the procedure.</p>
+<h2 id="to-use-print-recovery">To use Print Recovery:</h2>
 <ul>
-<li><p>STL files do not store any information about what units their dimensions are in. MatterControl (and all other 3D printing software) expects the dimensions in STL files to be given in mm. Most CAD software, though, will export STL files with whatever units they were designed in (usually inches). Thus, when you bring your designs into MatterControl they will be the wrong scale.</p>
-</li>
-<li><p>The best solutions is to figure out how to get your design software to export STL files in millimeters. In SolidWorks, for instance, the Save As dialog has an Options button, that allows you to set many parameters for exporting an STL.</p>
-</li>
-<li><p>If you cannot get your design software to do this, though, you can still rescale the part once you have it in MatterControl. View the part in 3D View, then enter Edit mode and choose SCALE from the bar on the right. A drop down menu offers many common conversion factors, or, axis dimension specifications can be entered directly in the appropriate fields.</p>
-</li>
-</ul>
-<h1 id="how-do-i-clear-the-application-data">How do I clear the application data?</h1>
-<ul>
-<li><p>If you are having a problem with MatterControl that is not fixed by re-installing, you may need to delete some of the data that MatterControl saves on your computer. This data will persist, even if MatterControl is uninstalled so remove that folder if you want to completely reset MatterControl to a clean slate. You can also temporarily rename the SQLite database file (MatterControl.db) to see if your settings are the cause of a problem.</p>
-</li>
-<li><p>Windows</p>
-<ul>
-<li>MatterControl keeps the user's library and settings in C:\Users{user}\AppData\Local\MatterControl.</li>
-</ul>
-</li>
-<li><p>Mac/Linux</p>
-<ul>
-<li>The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.</li>
-</ul>
-</li>
+<li>Enable Print Recovery by toggling the Enable Recovery setting on.</li>
+<li>Wait for a print to fail. If necessary, you can manually move the hot nozzle away from the printed part to avoid damage.</li>
+<li>Once connected to the printer again, MatterControl will automatically detect that the last print failed and offer to restart.</li>
+<li>Click the 'Recover Print' button and the printer will home all axes, then resume from where it stopped. The first layer after the restart will print at the Recover Layer Speed.</li>
 </ul>
 
 	</section>
@@ -346,5 +340,5 @@
                 }, 500);
             });
         </script>
-    
-</body></html>
+    </body>
+</html>

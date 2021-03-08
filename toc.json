@@ -8,9 +8,24 @@
       "Children": []
     },
     {
+      "Name": "Getting More Help",
+      "Path": "docs/get-support.md",
+      "Children": []
+    },
+    {
       "Name": "Designing",
       "Path": "docs/designing/index.md",
       "Children": [
+        {
+          "Name": "Pro Tools",
+          "Path": "docs/designing/pro-tools/index.md",
+          "Children": []
+        },
+        {
+          "Name": "Scale Controls",
+          "Path": "docs/designing/scale-controls.md",
+          "Children": []
+        },
         {
           "Name": "Design Primitives",
           "Path": "docs/designing/design-primitives/index.md",
@@ -34,23 +49,13 @@
           ]
         },
         {
-          "Name": "Design Apps",
-          "Path": "docs/designing/design-apps/index.md",
-          "Children": []
-        },
-        {
-          "Name": "Scale Controls",
-          "Path": "docs/designing/scale-controls.md",
-          "Children": []
-        },
-        {
           "Name": "Rotate Controls",
           "Path": "docs/designing/rotate-controls.md",
           "Children": []
         },
         {
-          "Name": "Adding Existing Objects",
-          "Path": "docs/designing/add-existing-objects.md",
+          "Name": "Design Apps",
+          "Path": "docs/designing/design-apps/index.md",
           "Children": []
         },
         {
@@ -62,26 +67,10 @@
           "Name": "Editing Objects",
           "Path": "docs/designing/editing-objects.md",
           "Children": []
-        }
-      ]
-    },
-    {
-      "Name": "Calibration",
-      "Path": "docs/calibration/index.md",
-      "Children": [
-        {
-          "Name": "Temperature Towers",
-          "Path": "docs/calibration/temperature-towers.md",
-          "Children": []
         },
         {
-          "Name": "Bed Leveling",
-          "Path": "docs/calibration/bed-leveling.md",
-          "Children": []
-        },
-        {
-          "Name": "Retraction Settings",
-          "Path": "docs/calibration/retraction-settings.md",
+          "Name": "Adding Existing Objects",
+          "Path": "docs/designing/add-existing-objects.md",
           "Children": []
         }
       ]
@@ -91,18 +80,13 @@
       "Path": "docs/printing/index.md",
       "Children": [
         {
-          "Name": "Starting a Print",
-          "Path": "docs/printing/starting-a-print.md",
+          "Name": "Exporting G-Code",
+          "Path": "docs/printing/exporting-g-code.md",
           "Children": []
         },
         {
-          "Name": "Adding a new Printer",
-          "Path": "docs/printing/adding-new-printer.md",
-          "Children": []
-        },
-        {
-          "Name": "Printing Multi-Color STLs",
-          "Path": "docs/printing/multi-color-stls.md",
+          "Name": "Loading and Changing Filament",
+          "Path": "docs/printing/loading-and-changing-filament.md",
           "Children": []
         },
         {
@@ -116,13 +100,39 @@
           "Children": []
         },
         {
-          "Name": "Exporting G-Code",
-          "Path": "docs/printing/exporting-g-code.md",
+          "Name": "Print Recovery",
+          "Path": "docs/printing/print-recovery.md",
           "Children": []
         },
         {
-          "Name": "Loading and Changing Filament",
-          "Path": "docs/printing/loading-and-changing-filament.md",
+          "Name": "Adding a new Printer",
+          "Path": "docs/printing/adding-new-printer.md",
+          "Children": []
+        },
+        {
+          "Name": "Starting a Print",
+          "Path": "docs/printing/starting-a-print.md",
+          "Children": []
+        },
+        {
+          "Name": "Printing Multi-Color STLs",
+          "Path": "docs/printing/multi-color-stls.md",
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Name": "Printer Controls",
+      "Path": "docs/printer-controls/index.md",
+      "Children": [
+        {
+          "Name": "Macros",
+          "Path": "docs/printer-controls/macros.md",
+          "Children": []
+        },
+        {
+          "Name": "Hotend and Extruder Controls",
+          "Path": "docs/printer-controls/hotend-controls.md",
           "Children": []
         }
       ]
@@ -153,12 +163,38 @@
           ]
         },
         {
+          "Name": "General",
+          "Path": "docs/slice-settings/general/index.md",
+          "Children": [
+            {
+              "Name": "Infill",
+              "Path": "docs/slice-settings/general/infill.md",
+              "Children": []
+            },
+            {
+              "Name": "Layers / Surface",
+              "Path": "docs/slice-settings/general/layers-surface.md",
+              "Children": []
+            },
+            {
+              "Name": "General",
+              "Path": "docs/slice-settings/general/general.md",
+              "Children": []
+            },
+            {
+              "Name": "Extruder Change",
+              "Path": "docs/slice-settings/general/extruder-change.md",
+              "Children": []
+            }
+          ]
+        },
+        {
           "Name": "Filament",
           "Path": "docs/slice-settings/filament/index.md",
           "Children": [
             {
-              "Name": "Fan",
-              "Path": "docs/slice-settings/filament/fan.md",
+              "Name": "Filament",
+              "Path": "docs/slice-settings/filament/filament.md",
               "Children": []
             },
             {
@@ -167,13 +203,44 @@
               "Children": []
             },
             {
-              "Name": "Filament",
-              "Path": "docs/slice-settings/filament/filament.md",
+              "Name": "Advanced",
+              "Path": "docs/slice-settings/filament/advanced.md",
               "Children": []
             },
             {
-              "Name": "Advanced",
-              "Path": "docs/slice-settings/filament/advanced.md",
+              "Name": "Fan",
+              "Path": "docs/slice-settings/filament/fan.md",
+              "Children": []
+            }
+          ]
+        },
+        {
+          "Name": "Settings FAQ",
+          "Path": "docs/slice-settings/settings-faq.md",
+          "Children": []
+        },
+        {
+          "Name": "Importing and Exporting Settings",
+          "Path": "docs/slice-settings/import-and-export.md",
+          "Children": []
+        },
+        {
+          "Name": "Speed",
+          "Path": "docs/slice-settings/speed/index.md",
+          "Children": [
+            {
+              "Name": "SLA Printer Speeds",
+              "Path": "docs/slice-settings/speed/sla-speed.md",
+              "Children": []
+            },
+            {
+              "Name": "Speed",
+              "Path": "docs/slice-settings/speed/speed.md",
+              "Children": []
+            },
+            {
+              "Name": "Cooling",
+              "Path": "docs/slice-settings/speed/cooling.md",
               "Children": []
             }
           ]
@@ -193,90 +260,38 @@
               "Children": []
             }
           ]
-        },
-        {
-          "Name": "Settings FAQ",
-          "Path": "docs/slice-settings/settings-faq.md",
-          "Children": []
-        },
-        {
-          "Name": "General",
-          "Path": "docs/slice-settings/general/index.md",
-          "Children": [
-            {
-              "Name": "General",
-              "Path": "docs/slice-settings/general/general.md",
-              "Children": []
-            },
-            {
-              "Name": "Extruder Change",
-              "Path": "docs/slice-settings/general/extruder-change.md",
-              "Children": []
-            },
-            {
-              "Name": "Infill",
-              "Path": "docs/slice-settings/general/infill.md",
-              "Children": []
-            },
-            {
-              "Name": "Layers / Surface",
-              "Path": "docs/slice-settings/general/layers-surface.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "Speed",
-          "Path": "docs/slice-settings/speed/index.md",
-          "Children": [
-            {
-              "Name": "Speed",
-              "Path": "docs/slice-settings/speed/speed.md",
-              "Children": []
-            },
-            {
-              "Name": "Cooling",
-              "Path": "docs/slice-settings/speed/cooling.md",
-              "Children": []
-            },
-            {
-              "Name": "SLA Printer Speeds",
-              "Path": "docs/slice-settings/speed/sla-speed.md",
-              "Children": []
-            }
-          ]
-        },
-        {
-          "Name": "Importing and Exporting Settings",
-          "Path": "docs/slice-settings/import-and-export.md",
-          "Children": []
         }
       ]
     },
     {
-      "Name": "Printer Controls",
-      "Path": "docs/printer-controls/index.md",
-      "Children": [
-        {
-          "Name": "Macros",
-          "Path": "docs/printer-controls/macros.md",
-          "Children": []
-        },
-        {
-          "Name": "Hotend and Extruder Controls",
-          "Path": "docs/printer-controls/hotend-controls.md",
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Name": "Getting More Help",
-      "Path": "docs/get-support.md",
+      "Name": "Release Notes",
+      "Path": "docs/release-notes.md",
       "Children": []
     },
     {
-      "Name": "MatterControl on Linux",
-      "Path": "docs/linux.md",
+      "Name": "Calibration",
+      "Path": "docs/calibration/index.md",
+      "Children": [
+        {
+          "Name": "Temperature Towers",
+          "Path": "docs/calibration/temperature-towers.md",
+          "Children": []
+        },
+        {
+          "Name": "Bed Leveling",
+          "Path": "docs/calibration/bed-leveling.md",
+          "Children": []
+        },
+        {
+          "Name": "Retraction Settings",
+          "Path": "docs/calibration/retraction-settings.md",
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Name": "Library",
+      "Path": "docs/library/index.md",
       "Children": []
     },
     {
@@ -285,18 +300,13 @@
       "Children": []
     },
     {
+      "Name": "MatterControl on Linux",
+      "Path": "docs/linux.md",
+      "Children": []
+    },
+    {
       "Name": "Quick Start",
       "Path": "docs/quick-start.md",
-      "Children": []
-    },
-    {
-      "Name": "Library",
-      "Path": "docs/library/index.md",
-      "Children": []
-    },
-    {
-      "Name": "Release Notes",
-      "Path": "docs/release-notes.md",
       "Children": []
     }
   ]

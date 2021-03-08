@@ -1,19 +1,21 @@
-﻿<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="description">
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
-        <title>MatterControl Help - Frequently asked Questions</title>
+        <title>MatterControl Help - Pro Tools</title>
         <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
-        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
         <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
         <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
@@ -70,11 +72,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</a></p>
-<p><a href="#why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</a></p>
-<p><a href="#how-do-i-clear-the-application-data">How do I clear the application data?</a></p>
-<hr class="infobar-hidden">
-</div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
@@ -94,7 +92,7 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -112,13 +110,13 @@
                     </ul>
                 </li>
                 <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
-                <li><a href="/MatterControl-Help/docs/designing/pro-tools">Pro Tools</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/designing/pro-tools">Pro Tools</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
                 <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
 
                     </ul>
                 </li>
-                <li class="selected"><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
                 <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
                 <li><a href="/MatterControl-Help/docs/library">Library</a></li>
                 <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
@@ -208,7 +206,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
 
                     </ul>
                             
@@ -222,44 +220,13 @@
 
 
 		<section class="content-header">
-			<h1>Frequently asked Questions</h1>
+			<h1>Pro Tools</h1>
 		</section>
 	<section class="content">
-		<h1 id="is-mattercontrol-compatible-with-my-3d-printer">Is MatterControl compatible with my 3D printer?</h1>
-<ul>
-<li><p>This mainly depends on the language your printer speaks. Currently, MatterControl supports two languages for communicating with the printer; G-Code and S3G/X3G. G-Code is the standard language used by RepRaps and most other printers. S3G is a condensed language used by Makerbot and Flashforge. Most consumer 3D printers speak G-Code.</p>
-</li>
-<li><p>In addition, you will need appropriate slice settings for your printer. MatterControl has built in profiles for many printers. A link to the complete list can be found below. If your printer is not on the list, don't worry. You will just need to fill in the settings yourself. Obtain specifications from the manufacturer and input them into MatterControl under <code>Settings &amp; Controls -&gt; Settings -&gt; Printer</code> as well as a few under <code>Settings &amp; Controls -&gt; Settings -&gt; Filament</code>.</p>
-</li>
-<li><p>Some newer G-Code printers are using intermediary boards to run web servers in order to control the prints. These printers, while they do speak G-Code, are not able to be controlled directly by MatterControl. G-Code generated in MatterControl can still be sent to the printer using its web-based interface.</p>
-</li>
-<li><p>LINK: <a href="http://www.mattercontrol.com/#jumpSupportedModels">Known compatible printers list.</a></p>
-</li>
-</ul>
-<h1 id="why-are-my-objects-the-wrong-scale">Why are my objects the wrong scale?</h1>
-<ul>
-<li><p>STL files do not store any information about what units their dimensions are in. MatterControl (and all other 3D printing software) expects the dimensions in STL files to be given in mm. Most CAD software, though, will export STL files with whatever units they were designed in (usually inches). Thus, when you bring your designs into MatterControl they will be the wrong scale.</p>
-</li>
-<li><p>The best solutions is to figure out how to get your design software to export STL files in millimeters. In SolidWorks, for instance, the Save As dialog has an Options button, that allows you to set many parameters for exporting an STL.</p>
-</li>
-<li><p>If you cannot get your design software to do this, though, you can still rescale the part once you have it in MatterControl. View the part in 3D View, then enter Edit mode and choose SCALE from the bar on the right. A drop down menu offers many common conversion factors, or, axis dimension specifications can be entered directly in the appropriate fields.</p>
-</li>
-</ul>
-<h1 id="how-do-i-clear-the-application-data">How do I clear the application data?</h1>
-<ul>
-<li><p>If you are having a problem with MatterControl that is not fixed by re-installing, you may need to delete some of the data that MatterControl saves on your computer. This data will persist, even if MatterControl is uninstalled so remove that folder if you want to completely reset MatterControl to a clean slate. You can also temporarily rename the SQLite database file (MatterControl.db) to see if your settings are the cause of a problem.</p>
-</li>
-<li><p>Windows</p>
-<ul>
-<li>MatterControl keeps the user's library and settings in C:\Users{user}\AppData\Local\MatterControl.</li>
-</ul>
-</li>
-<li><p>Mac/Linux</p>
-<ul>
-<li>The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.</li>
-</ul>
-</li>
-</ul>
+		<p><a href="https://www.matterhackers.com/store/l/gear-creator/sk/MENZNGL4">Gear Creator</a> and <a href="https://www.matterhackers.com/store/l/threads-creator/sk/MP54KW9N">Threads Creator</a> are included with <a href="https://www.matterhackers.com/store/l/mattercontrol-pro-edition/sk/M5NN90VP">MatterControl Pro</a>.</p>
+<p>You can find them in Pro Tools folder in your library.</p>
+<p><img src="https://lh3.googleusercontent.com/JtoT_UtG-6EK5iuOWIJaGckpIu4bnRRFwYGZlwEl1DFfRwoHCGMn0OS_Z181fe0lVwRP27pkXRuyZvTMyjVfSIqQlcJ7KBhsdXZTdYg" class="img-fluid" alt="Pro Tools Location" /></p>
+<h2 id="read-more-on-matterhackers.com">Read More On <a href="https://www.matterhackers.com/store/l/mattercontrol-pro-edition/sk/M5NN90VP">MatterHackers.com</a></h2>
 
 	</section>
                 
@@ -346,5 +313,5 @@
                 }, 500);
             });
         </script>
-    
-</body></html>
+    </body>
+</html>

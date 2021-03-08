@@ -32,6 +32,7 @@ Welcome to the MatterControl help system. Below you can find quick links to get 
 * [Exporting G-Code](printing/exporting-g-code.md)
 * [Slice Settings](slice-settings/index.md)
 * [Calibration](calibration/index.md)
+* [Print Recovery](printing/print-recovery.md)
 * [Printing Multi-Extrusion Models](printing/multi-color-stls.md)
 
 ## Library
