@@ -8,20 +8,25 @@ You can find the complete release notes [here](release-notes.md)
 
 # Latest Update Details
 
-# MatterControl 2.21.2 (February, 5, 2021)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLCHpunuCwwLEgZVcGxvYWQYgICwr_uutAgM)
+# MatterControl 2.21.4 (March, 23, 2021)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgLDf3NehCwwLEgZVcGxvYWQYgIDwiKGSlggM)
 
-[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgLDbz-iWCQwLEgZVcGxvYWQYgICw74qr3QoM)
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgLCf2Ib9CQwLEgZVcGxvYWQYgIDwiP7tkgkM)
 
 ## Changes
 
 - Features
-  - Made it possible to change material colors
+  - Improved dual extrusion wipe tower (mad hollow, primes in center, random edge starts)
+  - Added plane cut operator
+  - Allow setting extruder for brim
+  - Adding support for conductive probing
+
 - UI improvements
-  - Added ctrl-a in library views
-  - New color control  
-  ![Color Control](https://lh3.googleusercontent.com/ej0HAxqEwc9HYJ_B7xgLQUhlaf9BTV9r-5_2WelGKwPQOiqp5DbyPyL4VCn_UKpWNyony5ToPHtH2EBMz6RiZ7LslWMMNx2oKVrjmHU)
+  - Added export options to main export button  
+  ![Export Options](https://lh3.googleusercontent.com/FdAwQh48iivycVfGzJB8gNAN7tttlrib5lOFij9Ba0U3_SkkOF6_yUb_DPmb0Iq61uP5PZrJbk2INpr_ERB1RgeBF4wjrUVSPEjRRAZn=w310)
+  - Can move printer tabs (right click menu)  
+
 - Bugs
-  - Added try re-connectting to connection error message
-  - Changing settings details (simple, intermediate, advanced) does not close settings when floating
-  - Fixed rendering error on recent items
+  - Made leveling validate cancelable
+  - Fixd crash with Convex Hull (locking when ungrouping)
+  - Fixed error with leveling plane on Extruder 2 with dual
