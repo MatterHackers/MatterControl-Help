@@ -1,6 +1,6 @@
 * [Creating New Objects](creating-new-objects.md)
 * [Adding Existing Objects](add-existing-objects.md)
-* [Editing a Objects](editing-objects.md)
+* [Editing Objects](editing-objects.md)
 * [Design Apps](design-apps/index.md)
   * [Design Primitives](design-primitives/index.md)
   * [Text Tool](design-primitives/text-tool.md)
