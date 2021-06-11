@@ -72,7 +72,7 @@
                     	
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#complete-release-notes"></a><a href="release-notes.md">Complete Release Notes</a></p>
 <p><a href="#latest-update-details">Latest Update Details</a></p>
-<p><a href="#mattercontrol-2.21.5-may-10-2021">MatterControl 2.21.5 (May, 10, 2021)</a></p>
+<p><a href="#mattercontrol-2.21.6-june-15-2021">MatterControl 2.21.6 (June, 15, 2021)</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -228,33 +228,53 @@
 		<h1 id="complete-release-notes"><a href="release-notes.md">Complete Release Notes</a></h1>
 <p>You can find the complete release notes <a href="release-notes.md">here</a></p>
 <h1 id="latest-update-details">Latest Update Details</h1>
-<h1 id="mattercontrol-2.21.5-may-10-2021">MatterControl 2.21.5 (May, 10, 2021)</h1>
-<p><a href="">Windows Download</a></p>
-<p><a href="">Mac Download</a></p>
+<h1 id="mattercontrol-2.21.6-june-15-2021">MatterControl 2.21.6 (June, 15, 2021)</h1>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDElujkCgwLEgZVcGxvYWQYgIDwzNbT6AsM">Windows Download</a></p>
+<p><a href="https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPDkiIOBCwwLEgZVcGxvYWQYgIDwtKbT5wsM">Mac Download</a></p>
 <h2 id="changes">Changes</h2>
 <ul>
 <li><p>Features</p>
 <ul>
-<li>Zoom to mouse cursor (thanks to visdauas for his <a href="https://github.com/MatterHackers/MatterControl/pull/5012">work</a>)<br>
-<img src="https://lh3.googleusercontent.com/xQhvyUeWY3Q9tDGkJ2ZqMdMlgbOR1fvaeODUChIqae2KQ7hV-nd2UdIgI6LsqXwajOBkYihyT9510dwFV7WZT-yI0lusdbVlE5ZOeOY=w350" class="img-fluid" alt="Zoom To Cursor"></li>
-<li>Curve Tool now has angle and improve help<br>
-<img src="https://lh3.googleusercontent.com/5GBDL_rMcGKp7VgnT2vSeUg8McqYwNUVweBatH47WpaanK7mCuSyG9ixCTvQrhKXwy8O8cz8RJw-MNOY00CAVl1Yaa_MDXppWOab2Uo=w350" class="img-fluid" alt="Curve Tool"></li>
-<li>Measure tool shows size<br>
-<img src="https://lh3.googleusercontent.com/CpTp_-DaBuxcymdrZ8d6N2Dd__vIeKdirxXYaNAQg99VFX_BoIvRYk6vfECg0e8qp1vAUtYMW4MXckqU-orVkO7n8Klriyoo37zcfxg" class="img-fluid" alt="Measure Tool"></li>
-<li>New Description Tool<br>
-<img src="https://lh3.googleusercontent.com/RcMVPVZliJiuayIVi0aV57wAk-S5vFi3Ghgmr3F-LnjqGhxz4wCx7zmrhg-yIZ-dYU1glqmo4QPs1V_f3UN0xazKmijWOYi_CbhW5A=w350" class="img-fluid" alt="Description Tool"></li>
-<li>New Edge Controls<br>
-<img src="https://lh3.googleusercontent.com/Ic8DeDnRvqrf_iL_MeN2nIAWdKvlP_0XqL7bJNjqOUeN0byCMDnSvIB9oHq95rPhFudJDFH-hB81w5V3UieuQGOsYmrnjSQlNjflrXlP" class="img-fluid" alt="Edge Controls"></li>
-<li>Improved merge overlapping&nbsp; lines in slicer</li>
-<li>More warning messages for bad settings</li>
-<li>Measure lines always in front</li>
+<li>Added Experimental [Beta] support for variables<br>
+<img src="https://lh3.googleusercontent.com/N42j6qs0BeqEVwJe-GemETGdKX_QLwYJ4OVl13y6INv1CJslyVBaCRdiF4Msd-ERMr8wZEaoTnlDVn8TetoZdYbK199mPLVy-ADTvg" class="img-fluid" alt="">
+<ul>
+<li>A Sheet can be added to the scene and refenced by designs (think Google Sheets or Excel)</li>
+<li>Designs properties can refence cell data
+<ul>
+<li>Add '=' to the start of the line and type in a table cell</li>
+</ul>
+</li>
+<li>Designs can include equations as well as refenences
+<ul>
+<li>Add '=' to the start of the line and type in an equation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Support for Zoom to selection<br>
+<img src="https://lh3.googleusercontent.com/I-KbkRArp1LNSWKvBGNWDQDA84dA0pwJI1iuYgvQfL4Xmmst5GUGMw7Sn04IHg4S3wAvRR0uuZUM6aEPxcFHNRz3-tv9icio-hXSr9g" class="img-fluid" alt="Zoom to Selection"></li>
+<li>Support for Turntable mode (up always stays up)
+<img src="https://lh3.googleusercontent.com/zV2LYJ2jxee-5fdpHyydU-Khe6xSXceIuzqjRPD-cKMKr2hsJdFlTMIJGSTMDzauUDjZTM58T72i6XhgOZRDFhlv0NVIafWVQdq7ow=w300" class="img-fluid" alt="turn table"></li>
+<li>Improved Scale controls<br>
+<img src="https://lh3.googleusercontent.com/vsJlLNlNKXUs6wzo-8vl0S4AHCnBxYoeyaUfi095wKebd8Qq2gKbXTPa3BdoRDLAuwVjccv9PAf-x5n5pK3tq7AQ5cFosLRTlR4-0w" class="img-fluid" alt=""></li>
+<li>Firmware Sounds can be disable in printer settings<br>
+<img src="https://lh3.googleusercontent.com/bR_NoIwkiHiYrqnt51S-R_7TXbxE_UcUTviCe1gDFDzCFISpSmLaNAyClfBG_TiaW6nRhdz-XsdQ2ZAlPF-1nxgZYznNwDv2YoVnkSo" class="img-fluid" alt=""></li>
+</ul>
+</li>
+<li><p>UI&nbsp;improvements</p>
+<ul>
+<li>Added new Scene controls<br>
+<img src="https://lh3.googleusercontent.com/bH075aNWgD014bn8a9Bxk451UWsvWu6sirHe2QuQKveqmm9nwPmM0ZRl0QcuxANfItaeq_KtzlPlatxH1H4jAokgmuHT8SajTqW7eQ" class="img-fluid" alt="Image"></li>
+<li>Icons match the theme more closely</li>
+<li>Added hits to mouse actions</li>
+<li>F2 to rename itmes</li>
 </ul>
 </li>
 <li><p>Bugs</p>
 <ul>
-<li>Parts sheets working again</li>
-<li>Fixed bad moves when path planning supports</li>
-<li>Fixed bad transparency when looking up from the bed</li>
+<li>Slicing regression  with thin features</li>
+<li>Better pathing while outputing support</li>
+<li>Design Apps rebuilds more consistent</li>
 </ul>
 </li>
 </ul>
