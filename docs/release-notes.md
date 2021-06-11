@@ -16,7 +16,7 @@
       - Add '=' to the start of the line and type in an equation
   - Support for Zoom to selection  
   ![Zoom to Selection](https://lh3.googleusercontent.com/I-KbkRArp1LNSWKvBGNWDQDA84dA0pwJI1iuYgvQfL4Xmmst5GUGMw7Sn04IHg4S3wAvRR0uuZUM6aEPxcFHNRz3-tv9icio-hXSr9g)
-  - Support for Turntable mode (up always stays up)
+  - Support for Turntable mode (up always stays up)  
     ![turntable](https://lh3.googleusercontent.com/zV2LYJ2jxee-5fdpHyydU-Khe6xSXceIuzqjRPD-cKMKr2hsJdFlTMIJGSTMDzauUDjZTM58T72i6XhgOZRDFhlv0NVIafWVQdq7ow=w300)
   - Improved Scale controls  
   ![](https://lh3.googleusercontent.com/vsJlLNlNKXUs6wzo-8vl0S4AHCnBxYoeyaUfi095wKebd8Qq2gKbXTPa3BdoRDLAuwVjccv9PAf-x5n5pK3tq7AQ5cFosLRTlR4-0w)
@@ -34,7 +34,7 @@
   - Slicing regression  with thin features
   - Better pathing while outputting support
   - Design Apps rebuilds more consistent
-    
+
   # MatterControl 2.21.5 (May, 10, 2021)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDkwMDeCwwLEgZVcGxvYWQYgIDwhP_WkgkM)
 
