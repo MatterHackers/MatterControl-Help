@@ -2,6 +2,28 @@
 title: Release Notes
 ---
 
+# MatterControl 2.21.12 (December, 1, 2021)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPCqv5fMCQwLEgZVcGxvYWQYgIDwhpjklwgM)
+ 
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPC6uYuhCwwLEgZVcGxvYWQYgIDw6pXrigkM)
+ 
+## Changes
+ 
+- Features
+  - New boolean functions that can handle degenerate geometry  
+  ![](https://lh3.googleusercontent.com/FaxpA9hxYMsC0ap80i3_pyC1jA4ekSBmkomusv4O8KqCkwm4ao41yESk_aJDBdcc97XahmRlmxvQhQvy-5Eaposcy9n5LsBPMtgrjBE)
+  - Improved monotonic path planning  
+  ![](https://lh3.googleusercontent.com/86lUyIGkV38kpFadzz44RgTD7N0Gwgni86h3eSOZOCaQNjutJgq5ryp188Zayjm-SdpdtTvmHnupPJNOwfqI9paYD29x-Rg1UuGw0KPu=w300)
+  - Ensure perimeter winding always outputs in same direction
+  - New Resources tab that shows filament buying options  
+  ![](https://lh3.googleusercontent.com/BfW-npkKWP0wPgci3kqa7bMThqW79ebjHYxSuV70SseZM3485epplvPwdhK2EVlDOaRs3ErFQl-gwWceNk27QeEvGriXvhMpDqlM0L8=w300)
+  - Added [index] support to radial and advanced arrays
+
+- Bug Fixes
+  - Handle bad icon load
+  - Scroll bars on wrong side
+  - Crash when Autopilot added to design tab and bed edited
+
 # MatterControl 2.21.10 (October, 7, 2021)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDK_I7DCgwLEgZVcGxvYWQYgIDw8umB4wkM)
  
@@ -33,7 +55,7 @@ title: Release Notes
   - Added back button support to library
   - Improved [Sheet Editor](https://www.matterhackers.com/support/mattercontrol-variable-support)
  
-- Bugs
+- Bug Fixes
   - Web image cache misses
   - Fixed bug with culling back faces
   - Crash on invalid bounding box
@@ -71,7 +93,7 @@ title: Release Notes
   - Added hints to mouse actions
   - F2 to rename items
  
-- Bugs
+- Bug Fixes
   - Slicing regression  with thin features
   - Better pathing while outputting support
   - Design Apps rebuilds more consistent
@@ -98,7 +120,7 @@ title: Release Notes
   - More warning messages for bad settings
   - Measure lines always in front
 
-- Bugs
+- Bug Fixes
   - Parts sheets working again
   - Fixed bad moves when path planning supports
   - Fixed bad transparency when looking up from the bed
@@ -121,7 +143,7 @@ title: Release Notes
   ![Export Options](https://lh3.googleusercontent.com/FdAwQh48iivycVfGzJB8gNAN7tttlrib5lOFij9Ba0U3_SkkOF6_yUb_DPmb0Iq61uP5PZrJbk2INpr_ERB1RgeBF4wjrUVSPEjRRAZn=w310)
   - Can move printer tabs (right click menu)  
 
-- Bugs
+- Bug Fixes
   - Made leveling validate cancelable
   - Fixd crash with Convex Hull (locking when ungrouping)
   - Fixed error with leveling plane on Extruder 2 with dual
@@ -139,7 +161,7 @@ title: Release Notes
   - Added ctrl-a in library views
   - New color control  
   ![Color Control](https://lh3.googleusercontent.com/ej0HAxqEwc9HYJ_B7xgLQUhlaf9BTV9r-5_2WelGKwPQOiqp5DbyPyL4VCn_UKpWNyony5ToPHtH2EBMz6RiZ7LslWMMNx2oKVrjmHU)
-- Bugs
+- Bug Fixes
   - Added try re-connectting to connection error message
   - Changing settings details (simple, intermediate, advanced) does not close settings when floating
   - Fixed rendering error on recent items
@@ -160,7 +182,7 @@ title: Release Notes
   - Improved print completion dialog
   - Implemented GLFW backend
   - Improved base editing
-- Bugs
+- Bug Fixes
   - Fixed export bug with G92 E0
   - Circular bed texture
   - Thin walls fix for single perimeter
@@ -183,7 +205,7 @@ Mac Download - Coming Soon
   - Added all supported operations to part right click menu
   - Add warning for connected to emulator
   - Add warning for bad leveling data
-- Bugs
+- Bug Fixes
   - Fixed slicing issue with fill thin gaps
   - Fixed settings update bug with probe offset
 
@@ -201,7 +223,7 @@ Mac Download - Coming Soon
   - Improve discovery of entering share codes
   - Default options for history data notes
   - Right click settings menu has more options
-- Bugs
+- Bug Fixes
   - Settings override display always shows correct colors
   - Load / Unload ignore extrusion multiplier
   - fixed icon color problems
@@ -235,7 +257,7 @@ Mac Download - Coming Soon
   - Easier to enter Share Codes
   - Cut / Copy / Past available on all text controls
   - Tabs can shrink when too big for tool bar
-- Bugs
+- Bug Fixes
   - First perimeter on 2nd extruder when only material 2 used
   - Export X3G does not fail on warning
   - Settings name not saved on close
@@ -260,7 +282,7 @@ Mac Download - Coming Soon
   - Layout of properties panel
   - TreeView keyboard navigation
   - Image Converter weighted centering
-- Bugs
+- Bug Fixes
   - Don’t move to origin at start of print
   -	Disable Print button while printing
   -	Heating T1 when only printing support
@@ -280,7 +302,7 @@ Mac Download - Coming Soon
  ![Repair Options](https://lh3.googleusercontent.com/C-fT1jQ-z1oOU1uBzWNLCN2IsAGOGAmJdhmUKqQLhC3p9_WdeKFDNKSoTGb4U8RRDdYk2ZRbWJ2FbjfNKzo6ii6v=w220) ![Repair Menu](https://lh3.googleusercontent.com/uQ8uaWvzremfTd7jkSu7OhKURHfvyEAFtbT1_KaTL1wgSrSUOjjQ0tm1a6uROpe6JZwC50HvdB4bJcGq8XqGAUMwmg=w120) 
 * Put in fully automatic support (legacy support) as an option in addition to new manual support option
 * Added Support for gsSlicer (Experimental new slicing engine)
-* Fixed bugs
+- Bug Fixes
 
 # MatterControl 2.19.10 (September, 27, 2019)
 [Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgJDX6u_ICAwLEgZVcGxvYWQYgIDQsJO5jggM)
@@ -296,7 +318,7 @@ Mac Download - Coming Soon
 * Improved ungrouping of mesh (splitting into multiple meshes)
     * Discard degenerate faces
     * Discard microscopic discrete features
-* Fixed Bugs
+- Bug Fixes
     * Export STL when no printer has been created
     * Export STL on Mac
     * Arrange all when no printer has been created and the bed is empty
