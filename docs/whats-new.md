@@ -3,24 +3,27 @@
  
 You can find the complete release notes [here](release-notes.md)
  
-# MatterControl 2.21.12 (December, 1, 2021)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPCqv5fMCQwLEgZVcGxvYWQYgIDwhpjklwgM)
+# MatterControl 2.22.02 (February, 21, 2022)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDG_MeJCAwLEgZVcGxvYWQYgIDw1tz7pAgM)
  
-[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPC6uYuhCwwLEgZVcGxvYWQYgIDw6pXrigkM)
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPDGgarbCgwLEgZVcGxvYWQYgIDwzs658QgM)
  
 ## Changes
  
 - Features
-  - New boolean functions that can handle degenerate geometry  
-  ![](https://lh3.googleusercontent.com/FaxpA9hxYMsC0ap80i3_pyC1jA4ekSBmkomusv4O8KqCkwm4ao41yESk_aJDBdcc97XahmRlmxvQhQvy-5Eaposcy9n5LsBPMtgrjBE)
-  - Improved monotonic path planning  
-  ![](https://lh3.googleusercontent.com/86lUyIGkV38kpFadzz44RgTD7N0Gwgni86h3eSOZOCaQNjutJgq5ryp188Zayjm-SdpdtTvmHnupPJNOwfqI9paYD29x-Rg1UuGw0KPu=w300)
-  - Ensure perimeter winding always outputs in same direction
-  - New Resources tab that shows filament buying options  
-  ![](https://lh3.googleusercontent.com/BfW-npkKWP0wPgci3kqa7bMThqW79ebjHYxSuV70SseZM3485epplvPwdhK2EVlDOaRs3ErFQl-gwWceNk27QeEvGriXvhMpDqlM0L8=w300)
-  - Added [index] support to radial and advanced arrays
+  - Portable MCX file support. MatterControl now has a portable file format so you can easily create, iterate and share all the incredible designs you make  
+![](https://lh3.googleusercontent.com/MmhKP1i65wro8KxTDJNVgjphxjNsxjIWmZIDLznPggyLpRltR7zqj8e0VkdQtOX7ocvASYM_FvKifJMbxIhOwCdU15xrCSS-BBk3b-A=w400)
+  - Improving first time experience and initial setup  
+![](https://lh3.googleusercontent.com/qQD07lIfS4jYKGbwMUFAMHVQqhyOY_xCG3MyAYCtWHTumwHSu1m2QPkkidv0iS7Y6fPmGbBSJ0HgVk_eY-xE6JvqhE1we7RWoUA0cw=w400)
+  - Added multi-line support to Text Tool  
+![](https://lh3.googleusercontent.com/QPtNWt3R8kRQvYFohLqyW80YuseIChYlKjEO-bin0he7t1ClWOgHwzFqeSfnLHQ6ljKRGDN0QNDghvK1mZ7RyIB_rwSxaFyYSzFAjx2O=w400)
+  - Added Support for loading 3MF files  
+  ![](https://lh3.googleusercontent.com/i1HxZbok34LW3THveawbfIsUht9H06_P79lxufX1sD28WQ4RdXRLHlOvRRlVeTNNYT7Fjv5R45rDL-BlAAH40YPDyHqPzwjrtX84_w=w200)
+  - Added Right-Click options to toolbar (turn on and off tools)  
+  ![](https://lh3.googleusercontent.com/MGAqtI_NV4HgSLf1iTTmONwObtAtHO8aadeUxYtFSiY5Q5olGaVAouJYLZDD1JCFoBkkS058Ovx1woH0JrXLSWHHguy4BmCGeTqq4uap=w200)
+  - Added support for human generated translation
 
 - Bug Fixes
-  - Handle bad icon load
-  - Scroll bars on wrong side
-  - Crash when Autopilot added to design tab and bed edited
+  - Improved Monotonic infill pathing
+  - Better CCW outer loops, helps with [Quantum Filament](https://www.matterhackers.com/store/l/matterhackers-quantum-pla/sk/MS2XWRUN) printing  
+[![](https://lh3.googleusercontent.com/F1TdHl8nGLKg18ZI88MlMTiGO_BBsofLHmAfbbXK7WxkHZB3XqJu7wVbOVxVSvkymWqZKn0OwHeV4qL_DZ5LTq4aByPns6lL93nNs8Wa=w300)](https://www.matterhackers.com/store/l/matterhackers-quantum-pla/sk/MS2XWRUN)
