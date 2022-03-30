@@ -6,22 +6,31 @@ title: What's New
  
 You can find the complete release notes [here](release-notes.md)
  
-# MatterControl 2.22.02 (February, 21, 2022)
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDG_MeJCAwLEgZVcGxvYWQYgIDwzoXNngkM)
- 
-[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyQQsSB1Byb2plY3QYgICAsLyt5gsMCxINUHVibGljUmVsZWFzZRiAgPDq5oz7CgwLEgZVcGxvYWQYgIDwnpXXwQoM)
- 
+# MatterControl 2.22.04 (April, 4, 2022)
+
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDuk763CAwLEgZVcGxvYWQYgIDwwa6QgAsM)
+
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPCerp-XCAwLEgZVcGxvYWQYgIDwwc7mogkM)
+
 ## Changes
- 
+
 - Features
-  - Portable MCX file support. MatterControl now has a portable file format so you can easily create, iterate and share all the incredible designs you make. MCX files can even be uploaded so users can get to the source to make changes.  
-![](https://lh3.googleusercontent.com/MmhKP1i65wro8KxTDJNVgjphxjNsxjIWmZIDLznPggyLpRltR7zqj8e0VkdQtOX7ocvASYM_FvKifJMbxIhOwCdU15xrCSS-BBk3b-A=w400)
-  - Improving first time experience and initial setup. MatterControl printer setup just keeps getting butter, but this new version also includes improved workflows for all you designers out there. Now you can easily create and share designs.  
-![](https://lh3.googleusercontent.com/qQD07lIfS4jYKGbwMUFAMHVQqhyOY_xCG3MyAYCtWHTumwHSu1m2QPkkidv0iS7Y6fPmGbBSJ0HgVk_eY-xE6JvqhE1we7RWoUA0cw=w400)
-  - Added multi-line support to Text Tool. One line of text just wasn't enough. Now you can easily switch to multi-line editing to have complete control.  
-![](https://lh3.googleusercontent.com/QPtNWt3R8kRQvYFohLqyW80YuseIChYlKjEO-bin0he7t1ClWOgHwzFqeSfnLHQ6ljKRGDN0QNDghvK1mZ7RyIB_rwSxaFyYSzFAjx2O=w400)
-  - Added Support for loading 3MF files. 3MF is a great format and becoming more popular. MatterControl can now easily open existing 3MF files.  
-  ![](https://lh3.googleusercontent.com/i1HxZbok34LW3THveawbfIsUht9H06_P79lxufX1sD28WQ4RdXRLHlOvRRlVeTNNYT7Fjv5R45rDL-BlAAH40YPDyHqPzwjrtX84_w=w200)
-  - Added Right-Click options to toolbar (turn on and off tools). This helps you focus on what you want out of MatterControl. Turn off all the design tools if all you want to do is print, or turn them all on for maximum flexibility.  
-  ![](https://lh3.googleusercontent.com/MGAqtI_NV4HgSLf1iTTmONwObtAtHO8aadeUxYtFSiY5Q5olGaVAouJYLZDD1JCFoBkkS058Ovx1woH0JrXLSWHHguy4BmCGeTqq4uap=w200)
-  - Added support for human generated translation. Our fantastic users sometimes submit improvements to our translations and this update helps bring these improvements to everyone.
+  - Orthographic Projection - Thank you to fortsnek9348 who earned the $1,736 bounty for contributing this work.  
+  ![](https://lh3.googleusercontent.com/o9UhPRAxIlV-9m-gfOlGC75UZnKL_ojp2Y8Qkf-UnOZSwi2HwDn00r5SOC7u72CBxu6Z-qQE5zXSbKX3ZovW5bgYsSFk2v0-2zp4oro=w300)
+  - Added a materials Library to MatterControl  
+  ![](https://lh3.googleusercontent.com/7nE7dr-SumfT-5GmGTRTa868eVghJC8jbhImZli0mUzslVfj7DjOuW-QZnk-02__J6YzU-9W4-0TJSw_sJPqBZAMV5i82xkaDIwT-YaQ=w520)
+  - Added a new Color Picker to the color tool. You can now choose the color from other parts.  
+  ![](https://lh3.googleusercontent.com/pHjCF4ONK-GkgUM2cKx-rSb_fhUwv1HiYYKyldXvkVnTLD-qrUBpbqugjfnHEwir6b4US4G1ukbwQqXvG0af2LKxn9O45D9R5DuaNg=w520)
+  - Added equations and cell references to component objects. This allows for creating component objects that can be part of larger components.
+  - Accelerated the processing of Monotonic infill
+  - Improved Z-Calibration Wizard to be more clear
+  - Show thermometer progress on export
+  - Added 'Max Printing Speed' setting. Limits all printing speeds to this value.
+  - Improved error and warning messages.
+
+- Bug Fixes
+  - Improved Monotonic infill pathing
+  - Fixed extra segment in air gap bottom layer
+  - Make sure initial move is at correct height
+  - Validate parts are within the printing bounds considering raft, skirt and brim.
+  - Fixed warning and error icons
