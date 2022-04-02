@@ -8,7 +8,7 @@ MatterControl now includes support for temperature towers which can be great at 
 
 You can find the temperature tower in your Library.
 
-![](https://lh3.googleusercontent.com/ZVwJVU_W7l3swllHhdO7UQF1XUdlGbR9qB-PoOmXDe6HIgJZdLQiAyWq1COvWyRDKSHCmkr3jmtVqxWvwXt2Tl-_bYxiJo3BNwlc7N8)
+![](https://lh3.googleusercontent.com/zZQdsWwqjH2pHsi-6Wm7x3LsSK2NbAkCxF7AsxhySL4kH8bV0RpmjgxVUxPkceAqOyUTMu9klSR7yMDkVocHUxl8_1qKi_nAxhbaHSI)
 
 There are temperature towers setup for ABS, PLA and PETG, but if you need a custom tower or want to change the temperatures beyond the default you can easily adjust one of the provided towers.
 
