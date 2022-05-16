@@ -8,39 +8,54 @@ You can find the complete release notes [here](release-notes.md)
  
 # MatterControl 2.22.04 (April, 4, 2022)
 
-[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPDuk763CAwLEgZVcGxvYWQYgIDwwa6QgAsM)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY6gcMCxINUHVibGljUmVsZWFzZRiAgPCB_7n8CAwLEgZVcGxvYWQYgIDwibe7qAkM)
 
-[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPCerp-XCAwLEgZVcGxvYWQYgIDwwc7mogkM)
+[Mac Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyOwsSB1Byb2plY3QY7AcMCxINUHVibGljUmVsZWFzZRiAgPChxdzVCwwLEgZVcGxvYWQYgIDwiY6TyQkM)
 
-**Orthographic Projection**
+**Support For Holes**
 
-Orthographic Projection is an important part of many CAD workflows and we are very excited to announce that MatterControl now supports this critical mode. Thanks to fortsnek9348 who earned the $1,736 bounty for contributing this work.  There are [more bounties](https://github.com/MatterHackers/MatterControl/labels/bounty) offered and they do not all require programming.  
+MatterControl now supports Holes. Holes are an intuitive and powerful way to think about designing parts. They create  the ability to mark any object in the scene as a negative space. When a hole is combined with another object it will automatically be subtracted.
 
-![](https://lh3.googleusercontent.com/o9UhPRAxIlV-9m-gfOlGC75UZnKL_ojp2Y8Qkf-UnOZSwi2HwDn00r5SOC7u72CBxu6Z-qQE5zXSbKX3ZovW5bgYsSFk2v0-2zp4oro=w220)
+![](https://lh3.googleusercontent.com/RwDyOigSTM7A-ifJMi3RjikPIlTSjze43viyir7HFaRegUtOXo4xpzpSpy7HXGn_ufgAWvIhdBa3eHrWhQ66c2TcEvDDRKQ0cIsLZ7Yp)
 
-**Materials Library**
+*The hole object can be dragged to the scene and combined with other objects to make holes*
 
-With the inclusion of a new materials library you can always find the right material and its settings. Dozens of materials have been tested and added and there are more on the way.
+<br/>
 
-![](https://lh3.googleusercontent.com/7nE7dr-SumfT-5GmGTRTa868eVghJC8jbhImZli0mUzslVfj7DjOuW-QZnk-02__J6YzU-9W4-0TJSw_sJPqBZAMV5i82xkaDIwT-YaQ=w540)
+![](https://lh3.googleusercontent.com/_wDmnlgch8I77GJdCN7yWjJaRJWuygh-yWchzAJVRR-QUeY2cJj6M4euEAFRF5X9EAXutzerngwi_lcmMkV9tzrhggJPwvgtunptWoU)
 
-**Color Picker**
+*Any object can be converted to a hole and it will be subtracted when grouped*
 
-Now it is easier than ever to set the colors of your design to be just the way you want. We have added a new eye dropper tool to the Color Picker. You can now set the color of one part by selecting another part to copy from.  
+<br/>
 
-![](https://lh3.googleusercontent.com/pHjCF4ONK-GkgUM2cKx-rSb_fhUwv1HiYYKyldXvkVnTLD-qrUBpbqugjfnHEwir6b4US4G1ukbwQqXvG0af2LKxn9O45D9R5DuaNg=w540)
+**Fuzzy Surfaces**
+
+Select any part in the scene, right click it and and 'Convert to Fuzzy Region' in the Modify -> Printing menu. With this tool you can now create a fuzzy effect on any surfaces you want.
+
+![](https://lh3.googleusercontent.com/oRKS-C4eofGIfOyQtMRDXRbPXhyzPyeRT_wfxhVkuPH6qXkKaTVvPggFgpvRhJ-JIRP-9oVQIfZtJDJt312-7-RKZKykOjPCeeiImnL5)
+
+*Any object can be converted to a region that defines where fuzzy will be applied*
+
+<br/>
+
+**Part Settings Object (PRO Tool)**
+
+Now with MatterControl PRO you can create settings for a specific part and save them with it. This is tremendously useful when doing commercial printing or adjusting settings that are specific to a single part. Settings are only saved when using MCX files (MatterControls native format).
+
+![](https://lh3.googleusercontent.com/uSLU-McmTWs3UEhpJIjvD7wDo2KOOpqYxBLxBSYe4_ddY4mIIy3LeNnXaJoNeF7l971ZFzM7Y2ywUUg_bC1qyQxvAGPWbsg1jSNCFQ)
+
+*Settings added to the scene are saved with the design*
+
+<br/>
 
 **Additional Improvements**
-  - Added equations and cell references to component objects. This allows for creating component objects that can then be a part of a larger component.
-  - Accelerated the processing of Monotonic infill (as much as 10x faster)
-  - Improved Z-Calibration Wizard to have better instructions based on user testing
-  - Show progress bars on export to gcode
-  - Added 'Max Printing Speed' setting. Limits all printing speeds
-  - Improved error and warning messages
+
+- Boolean operations (combining and subtracting shapes) are dramatically more robust and handle many more conditions
+- We now show the output state of Supports, Wipe Towers and Fuzzy objects in property panel
 
 **Bug Fixes**
-  - Improved Monotonic infill pathing
-  - Fixed extra segments appearing in air gap bottom layer
-  - Make sure initial printing move is at the correct height
-  - Validate that all parts are within the printing bounds considering raft, skirt and brim before starting a print
-  - Fixed warning and error icons
+
+- G-Code generation of long line segments was not applying leveling correctly
+- When switching or adding materials the display did not always update
+- Fixed crash when invalid geometry was added to the scene
+- Repair tools was not honoring 'weld tolerance' correctly
