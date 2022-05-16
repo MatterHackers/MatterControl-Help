@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <title>MatterControl Help - Advanced</title>
+        <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
+        <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
+        <script src="/MatterControl-Help/assets/js/highlight.pack.js"></script>   
+        <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/MatterControl-Help/" class="logo">
+                            <span>MatterControl Help</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#extruder-wipe-temperature">Extruder Wipe Temperature</a></p>
+<p><a href="#bed-remove-part-temperature">Bed Remove Part Temperature</a></p>
+<p><a href="#extrusion-multiplier">Extrusion Multiplier</a></p>
+<p><a href="#first-layer">First Layer</a></p>
+<p><a href="#outside-perimeters">Outside Perimeters</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/calibration">Calibration</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/calibration/bed-leveling">Bed Leveling</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/retraction-settings">Retraction Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/temperature-towers">Temperature Towers</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-objects">Adding Existing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/creating-new-objects">Creating New Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/pro-tools">Pro Tools</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li><a href="/MatterControl-Help/docs/library">Library</a></li>
+                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/print-recovery">Print Recovery</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="selected"><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Advanced</h1>
+		</section>
+	<section class="content">
+		<h1 id="extruder-wipe-temperature">Extruder Wipe Temperature</h1>
+<p>This setting is only for printers which have a nozzle wiping procedure that is done before printing. It is the temperature that the nozzle will be heated to before wiping. The wiping procedure must be scripted in the printer's <a href="../../printer-settings/gcode/gcode#start-gcode">Start G-Code</a>.</p>
+<p><strong>Recommended Baseline:</strong> 145 °C<br>
+<strong>Units:</strong> °C<br>
+<strong>G-Code Replacement Variable:</strong> <code>extruder_wipe_temperature</code></p>
+<h1 id="bed-remove-part-temperature">Bed Remove Part Temperature</h1>
+<p><em>This option is only available if your printer has a heated bed</em></p>
+<p>The temperature to which the bed will heat (or cool) in order to remove the print. This setting is only for printers which are set up to hold the bed at a certain temperature after a print. This must be scripted in the printer's <a href="../../printer-settings/gcode/gcode#end-gcode">End G-Code</a>.</p>
+<p><strong>Recommended Baseline:</strong> 50 °C<br>
+<strong>Units:</strong> °C<br>
+<strong>G-Code Replacement Variable:</strong> <code>bed_remove_part_temperature</code></p>
+<h1 id="extrusion-multiplier">Extrusion Multiplier</h1>
+<p>This setting can be used to purposely extruder more or less material than normal. If you find that your prints are overextruded or underextruded, you can use the extrusion multiplier to correct this. Beware that using this setting should only be considered a stopgap measure, not a final solution. Overextrusion and underextrusion is a sign that some other setting is wrong or there is some problem with the printer. Most likely you should try <a href="https://www.matterhackers.com/articles/how-to-calibrate-your-extruder">calibrating your extruder</a>.</p>
+<p>The extrusion can also be adjusted on-the-fly using the tuning adjustments on the controls page. Beware that the tuning adjustment is a separate setting and will be compounded with this setting.</p>
+<p><strong>Recommended Baseline:</strong> 1.0<br>
+<strong>Units:</strong> decimal</p>
+<h1 id="first-layer">First Layer</h1>
+<p>Controls the width of the lines for the first layer of the print. Increasing this value will cause the lines to be wider and also spaced out farther, so there will be no overextrusion. Using this can help with bed adhesion, since fatter lines will have more surface area to stick to the bed.</p>
+<p><strong>Recommended Baseline:</strong> 100%<br>
+<strong>Units:</strong> millimeters (mm) or percent of nozzle diameter</p>
+<h1 id="outside-perimeters">Outside Perimeters</h1>
+<p>Controls the line width of the outside perimeter loops. Can be useful to fine-adjust actual print size when objects print larger or smaller than specified in the digital model.</p>
+<p><strong>Recommended Baseline:</strong> 100%<br>
+<strong>Units:</strong> millimeters (mm) or percent of nozzle diameter</p>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

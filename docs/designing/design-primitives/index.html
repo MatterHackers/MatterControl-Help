@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <title>MatterControl Help - Design Primitives</title>
+        <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet" />
+        <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
+        <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
+        <script src="/MatterControl-Help/assets/js/highlight.pack.js"></script>   
+        <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/MatterControl-Help/" class="logo">
+                            <span>MatterControl Help</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"></div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/calibration">Calibration</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/calibration/bed-leveling">Bed Leveling</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/retraction-settings">Retraction Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/temperature-towers">Temperature Towers</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-objects">Adding Existing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/creating-new-objects">Creating New Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview active selected">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/pro-tools">Pro Tools</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li><a href="/MatterControl-Help/docs/library">Library</a></li>
+                <li><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/print-recovery">Print Recovery</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What&#x27;s New</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Design Primitives</h1>
+		</section>
+	<section class="content">
+		<p>MatterControl includes all the things you need to create your ideas - out of the box!</p>
+<p><img src="https://user-images.githubusercontent.com/1158332/42188916-c7102220-7e0a-11e8-8d7b-dc1921e304c6.png" class="img-fluid" alt="2018-07-02 10_46_48-start" /></p>
+<p>With these simple primitives and the included tools you can create anything you can imagine.</p>
+<ul>
+<li>Cube<br />
+<img src="https://lh3.googleusercontent.com/aGY-iwwo77dHM61NXPzSkB2IAF9mVyiRtwQqzJ7MB2kHKFbGh-O1mqxTYGr_PBub63jvVcZNFCT_FM7MKf4_RH8b07A" class="img-fluid" alt="" />
+<ul>
+<li><strong>Width:</strong> Set the size in X</li>
+<li><strong>Depth:</strong> Set the size in Y</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+</ul>
+</li>
+<li>Pyramid<br />
+<img src="https://lh3.googleusercontent.com/U3AI6kAX3FMp1MEVn1HTHXzrH1-mKGN6hxQx0p_WRP0ETbj2ckSffbsFX_C1H8jct5pw0P5TFPbYGPbF2hzh1ulv4Q" class="img-fluid" alt="" />
+<ul>
+<li><strong>Width:</strong> Set the size in X</li>
+<li><strong>Depth:</strong> Set the size in Y</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+</ul>
+</li>
+<li>Half Wedge<br />
+<img src="https://lh3.googleusercontent.com/r6-jVvMdeFiG3mH04WTBNRvY5ibWze0WejDxdla43PCkC1aj1NR6oQBrlncOWmOn-xlgZDzUkTgvSFfSpdEA9NST-w" class="img-fluid" alt="" />
+<ul>
+<li><strong>Width:</strong> Set the size in X</li>
+<li><strong>Depth:</strong> Set the size in Y</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+</ul>
+</li>
+<li>Text<br />
+<a href="text-tool.md"><img src="https://lh3.googleusercontent.com/XLlyBUeloa3Q1FQF8-fCD0zx036yFCLsvyUKrE9zaV-p1k4Jt4m5QK3W59c8CnwPurZ_RW2xBazi9E3AmMmhkuL_OA" class="img-fluid" alt="" /></a>
+<ul>
+<li><strong>Name:</strong> Type whatever text you want to show</li>
+<li><strong>Point Size:</strong> Set the size of the font. This is accurate when printed to the same size as a 2D printer.</li>
+<li><strong>Height:</strong> Set the height you want to have the text reach up to</li>
+<li><strong>Font:</strong> Select the font you would like to use</li>
+</ul>
+</li>
+<li>Cylinder<br />
+<img src="https://lh3.googleusercontent.com/Gy_YL8RYVbXwPDHVgkixUC17HN8qOLLOdaVzsNfGD1uFCjlWFD8nWPB56GcCh_Wj7fXQBqCWtuxidMi26dDfxycWnvw" class="img-fluid" alt="" />
+<ul>
+<li><strong>Diameter:</strong> Set the size across the part</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+<li><strong>Advanced:</strong> Opens up advanced settings to control more features
+<ul>
+<li><strong>Starting Angle:</strong> The angle to start revolving the cylinder</li>
+<li><strong>Ending Angle:</strong> The angle to end revolving the cylinder</li>
+<li><strong>Diameter Top:</strong> The size of the top of the cylinder</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cone<br />
+<img src="https://lh3.googleusercontent.com/4sI0U7pg8VQ8XF_3B1g45bMZVri-GfSDdLvra1T4a4nk2gxF1M9gia93YPCkCGEomnUk7OJ3dpZhLiKhfFaVdc46Kg" class="img-fluid" alt="" />
+<ul>
+<li><strong>Diameter:</strong> Set the size across the part</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+</ul>
+</li>
+<li>Half Cylinder<br />
+<img src="https://lh3.googleusercontent.com/fT-7yIMHHdCI0gsT8Lg-iKQZTkoqp83bGWn3r15AP54G3xmhMzjcY_PWbBooH9JGwS7Hl751Y-jAEhYPyY16CsCTPKo" class="img-fluid" alt="" />
+<ul>
+<li><strong>Diameter:</strong> Set the size across the part</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+</ul>
+</li>
+<li>Torus<br />
+<img src="https://lh3.googleusercontent.com/1DumDge1akFN1MtEkRodtAzEbvltv0LnJJyNGs3Dg7mXTlEMf4O8eUzzqjNICYUpPH5VbWoulzVy2QFlr1BjGEbwlS4" class="img-fluid" alt="" />
+<ul>
+<li><strong>Outer Diameter:</strong> Set the size across the part</li>
+<li><strong>Inner Diameter:</strong> Set the size of the inside of the torus</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+<li><strong>Advanced:</strong> Opens up advanced settings to control more features
+<ul>
+<li><strong>Starting Angle:</strong> The angle to start revolving the cylinder</li>
+<li><strong>Ending Angle:</strong> The angle to end revolving the cylinder</li>
+<li><strong>Ring Sides:</strong> The number of sides going around the ring</li>
+<li><strong>Ring Phase Angle:</strong> The angle to start the ring sides</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ring<br />
+<img src="https://lh3.googleusercontent.com/1ASbrlGEXjbdfyQoZ-114b3C49vegubB2-Z21QC0k6Xqfd3kZAM1RuGxfRcdrIYOMICXMoob3WKsUOBeA0SLWxHS" class="img-fluid" alt="" />
+<ul>
+<li><strong>Outer Diameter:</strong> Set the size across the part</li>
+<li><strong>Inner Diameter:</strong> Set the size of the inside of the torus</li>
+<li><strong>Height:</strong> Set the size in Z</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+<li><strong>Advanced:</strong> Opens up advanced settings to control more features
+<ul>
+<li><strong>Starting Angle:</strong> The angle to start revolving the cylinder</li>
+<li><strong>Ending Angle:</strong> The angle to end revolving the cylinder</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sphere<br />
+<img src="https://lh3.googleusercontent.com/G5szbI2VfLCyrWTrFLKfcN1LkUbtiDvvNom0u5ZL_9OsNYqM_mxMzjofLBwlXVsK08r91kMyuxoTyc_4ox8UzDOJ8-8" class="img-fluid" alt="" />
+<ul>
+<li><strong>Diameter:</strong> Set the size across the part</li>
+<li><strong>Sides:</strong> Set the number of faces (or sides) around the part</li>
+<li><strong>Advanced:</strong> Opens up advanced settings to control more features
+<ul>
+<li><strong>Starting Angle:</strong> The angle to start revolving the cylinder</li>
+<li><strong>Ending Angle:</strong> The angle to end revolving the cylinder</li>
+<li><strong>Latitude Sides:</strong> The number of sides going top to bottom</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Half Sphere<br />
+<img src="https://lh3.googleusercontent.com/XIeylvk9sytZfAvOAZfbJaw0BjJocgcGF4ISZ8oo42zoDxbfe1m3jq-prZ7wFTxI-aZvfi3sQNPoP92bWvsbu7AW1eY" class="img-fluid" alt="" />
+<ul>
+<li><strong>Diameter:</strong> Set the size across the part</li>
+<li><strong>Longitude Sides:</strong> Set the number of faces (or sides) around the part</li>
+<li><strong>Latitude Sides:</strong> The number of sides going top to bottom</li>
+</ul>
+</li>
+<li><a href="designing/design-primitives/image-converter.md">Image Converter</a><br />
+<a href="image-converter.md"><img src="https://lh3.googleusercontent.com/85c3ecIUQklR2nRZtT_CM4VUUxeGErNTfPUOMxBMqjcb8pAplPBO0bIA8CAHtLymORPBo4QpvdDyW-9dMPmqVp1Abg" class="img-fluid" alt="Image Converter" /></a>
+<ul>
+<li>Image Converter can help you build complete extrusions from images</li>
+<li>You can also drag images directly to the bed and use the tools you find in the overflow menu to create all the features (and more) of Image Converter.</li>
+</ul>
+</li>
+</ul>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

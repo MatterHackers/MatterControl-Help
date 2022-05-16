@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/MatterControl-Help/assets/img/favicon.ico" type="image/x-icon">
+        <title>MatterControl Help - MatterControl on Linux</title>
+        <link href="/MatterControl-Help/assets/css/highlight.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/MatterControl-Help/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/MatterControl-Help/assets/css/override.css" rel="stylesheet">
+        <script src="/MatterControl-Help/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/bootstrap.min.js"></script>        
+        <script src="/MatterControl-Help/assets/js/app.min.js"></script>         
+        <script src="/MatterControl-Help/assets/js/highlight.pack.js"></script>   
+        <script src="/MatterControl-Help/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/mermaid.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/MatterControl-Help/assets/js/html5shiv.min.js"></script>
+        <script src="/MatterControl-Help/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/MatterControl-Help/" class="logo">
+                            <span>MatterControl Help</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/MatterControl-Help/docs">Docs</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#installation">Installation</a></p>
+<p><a href="#raspberry-pi">Raspberry Pi</a></p>
+<p><a href="#assigning-serial-ports">Assigning Serial Ports</a></p>
+<p><a href="#known-issues">Known Issues</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/calibration">Calibration</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/calibration/bed-leveling">Bed Leveling</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/retraction-settings">Retraction Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/calibration/temperature-towers">Temperature Towers</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing">Designing Overview</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/add-existing-objects">Adding Existing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/creating-new-objects">Creating New Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-apps">Design Apps</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/designing/design-primitives">Design Primitives</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/braille-tool">Braille Tool</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/image-converter">Image Converter</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/design-primitives/text-tool">Text Tool</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/designing/editing-objects">Editing Objects</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/pro-tools">Pro Tools</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/rotate-controls">Rotate Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/designing/scale-controls">Scale Controls</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/frequently-asked-questions">Frequently asked Questions</a></li>
+                <li><a href="/MatterControl-Help/docs/get-support">Getting More Help</a></li>
+                <li><a href="/MatterControl-Help/docs/library">Library</a></li>
+                <li class="selected"><a href="/MatterControl-Help/docs/linux">MatterControl on Linux</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printer-controls">Printer Controls</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printer-controls/hotend-controls">Hotend and Extruder Controls</a></li>
+                <li><a href="/MatterControl-Help/docs/printer-controls/macros">Macros</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/printing">Printing</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/printing/adding-new-printer">Adding a new Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/exporting-g-code">Exporting G-Code</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/loading-and-changing-filament">Loading and Changing Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/pausing-a-print">Pausing a Print</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/print-recovery">Print Recovery</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/multi-color-stls">Printing Multi-Color STLs</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/selecting-a-printer">Selecting a Printer</a></li>
+                <li><a href="/MatterControl-Help/docs/printing/starting-a-print">Starting a Print</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/quick-start">Quick Start</a></li>
+                <li><a href="/MatterControl-Help/docs/release-notes">Release Notes</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings">Slice Settings</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/adhesion">Adhesion</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/brim">Brim</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/raft">Raft</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/adhesion/skirt">Skirt</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/filament">Filament</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/fan">Fan</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/filament">Filament</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/filament/retraction">Retraction</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/general">General</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/extruder-change">Extruder Change</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/general">General</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/infill">Infill</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/general/layers-surface">Layers / Surface</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/import-and-export">Importing and Exporting Settings</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/settings-faq">Settings FAQ</a></li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/speed">Speed</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/cooling">Cooling</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/sla-speed">SLA Printer Speeds</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/speed/speed">Speed</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/MatterControl-Help/docs/slice-settings/support">Support</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/advanced">Advanced</a></li>
+                <li><a href="/MatterControl-Help/docs/slice-settings/support/support">Support</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                </li>
+                <li><a href="/MatterControl-Help/docs/whats-new">What's New</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>MatterControl on Linux</h1>
+		</section>
+	<section class="content">
+		<h1 id="installation">Installation</h1>
+<p>MatterControl is available for Ubuntu/Debian or Arch based distros.</p>
+<h2 id="ubuntu-debian">Ubuntu / Debian</h2>
+<p>MatterControl officially supports Ubuntu Linux and other Debian based distributions, such as Mint. The latest stable release is always available as a .deb package. It is available here or at <a href="mattercontrol.com">MatterControl.com</a>.</p>
+<p><a href="https://mattercontrol.appspot.com/downloads/mattercontrol-linux/release">Download MatterControl for Ubuntu</a></p>
+<h3 id="installing-mono">Installing Mono</h3>
+<p>MatterControl requires the latest version of Mono in order to work. Although Mono is available in Ubuntu, the version provided is usually severely outdated. On Ubuntu 18.04, follow these steps to add the official Xamarin package repository and update to the latest version of Mono.</p>
+<pre><code>$ sudo apt install gnupg ca-certificates
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+$ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+$ sudo apt update
+$ sudo apt install mono-devel
+</code></pre>
+<p>There are also instructions for other distributions on the <a href="https://www.mono-project.com/download/stable/">Mono website</a>.</p>
+<h3 id="serial-port-permissions">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Debian or Fedora based distros, add yourself to the <code>dialout</code> group.</p>
+<pre><code>$ gpasswd -a $USER dialout
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h2 id="arch">Arch</h2>
+<p>An unofficial package is <a href="https://aur.archlinux.org/packages/mattercontrol/">available in the AUR</a>. Install it manually or using your favorite AUR helper.</p>
+<pre><code>$ yay -S mattercontrol
+</code></pre>
+<h3 id="serial-port-permissions-1">Serial Port Permissions</h3>
+<p>In order for MatterControl to access the serial ports, you will need to give your user the appropriate permissions. On Arch you must add yourself to the <code>uucp</code> and <code>lock</code> groups.</p>
+<pre><code>$ gpasswd -a $USER uucp
+$ gpasswd -a $USER lock
+</code></pre>
+<p>You will then need to logout and log back in for the changes to take effect.</p>
+<h1 id="raspberry-pi">Raspberry Pi</h1>
+<p>Because MatterControl is written in C#, it can run on any processor architecture. The regular Linux version of MatterControl will run the Raspberry Pi. However, you must have the <a href="https://www.raspberrypi.org/blog/another-new-raspbian-release/">experimental OpenGL drivers</a> installed and enabled. To do this, run <code>raspi-config</code> and go to Advanced Options &gt; GL Driver.</p>
+<p>If you have the Raspberry Pi touchscreen, remember that you can switch MatterControl into Touchscreen Mode through the application settings.</p>
+<h1 id="assigning-serial-ports">Assigning Serial Ports</h1>
+<p>On Linux, serial port assignments can change whenever a printer is connected or disconnected. MatterControl cannot tell which printer is connected to which serial port. You can setup a udev rule to permanently assign a unique port to your printer.</p>
+<p>Do <code>ls /dev/tty*</code> before and after connecting your printer to find out which port it is assigned to. Printers will show up as either <code>/dev/ttyACM#</code> or <code>/dev/ttyUSB#</code>.</p>
+<p>Use <code>udevadm</code> to get the serial number (UUID) of the USB device. This is a unique 20 digit hexadecimal value.</p>
+<pre><code>$ udevadm info --attribute-walk -n /dev/ttyACM0 | grep "serial"
+</code></pre>
+<p>Some printers will not report a serial number. In this case, you will have to use other attributes to identify it such as the vendor ID (idVendor) and the product ID (idProduct).</p>
+<p>Create a file <code>/etc/udev/rules.d/97-3dprinters.rules</code>. Here is an example with rules for two printers.</p>
+<pre><code>SUBSYSTEM=="tty", ATTRS{serial}=="6403237383335190E0F1", GROUP="uucp", MODE="0660", SYMLINK+="tty-taz"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="076b", GROUP="uucp", MODE="0660", SYMLINK+="tty-pulse"
+</code></pre>
+<p>Fill in either the serial number or vendor and product IDs based on the information you obtained earlier. Make sure <code>GROUP</code> is set to the same group ownership as the rest of your serial ports. This is usually <code>dialout</code> on Debian or <code>uucp</code> on Arch. You can check by doing <code>ls -l /dev/ttyACM*</code>. Lastly, give your printer a unique name for the <code>SYMLINK</code>. This name must start with <code>tty</code> or it will not show up in the list in MatterControl.</p>
+<p>The next time you connect the printer, a symlink will automatically be created that points to the correct serial device. You can now configure the printer in MatterControl to use the symlinked port.</p>
+<h1 id="known-issues">Known Issues</h1>
+<h2 id="upgrading-from-1.7-to-2.x">Upgrading from 1.7 to 2.x</h2>
+<p>There is a problem with 1.7 that will cause the automatic update to fail. It will download the update package, but it will have the wrong file extension. This prevents the package from opening and being installed correctly.</p>
+<p>To get around this, download and install the MatterControl 2.X package manually.</p>
+<h2 id="does-not-start-on-systems-with-low-end-gpus">Does not start on systems with low end GPUs</h2>
+<p>MatterControl uses anti-aliasing features which may not be available on extremely low end GPUs (for instance, virtual machines or embedded systems). In these situations, MatterControl will not be able to start. To launch MatterControl you will need to disable anti-aliasing. Edit the file <code>/usr/lib/mattercontrol/appsettings.json</code> and change <code>FSAASamples</code> from <code>8</code> to <code>0</code>.</p>
+<pre><code>"FSAASamples": 0
+</code></pre>
+<p>Even on systems that support antialiasing, disabling it can greatly improve performance.</p>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
