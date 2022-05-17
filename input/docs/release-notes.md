@@ -16,13 +16,18 @@ MatterControl now supports Holes. Holes are an intuitive and powerful way to thi
 
 *The hole object can be dragged to the scene and combined with other objects to make holes*
 
-<br/>
+
 
 ![](https://lh3.googleusercontent.com/_wDmnlgch8I77GJdCN7yWjJaRJWuygh-yWchzAJVRR-QUeY2cJj6M4euEAFRF5X9EAXutzerngwi_lcmMkV9tzrhggJPwvgtunptWoU)
 
 *Any object can be converted to a hole and it will be subtracted when grouped*
 
-<br/>
+**Transparent Rendering**
+
+You can now set any part to have transparent rendering to help with modeling and placement.
+
+![](https://lh3.googleusercontent.com/OjFLhCkmhgqXGgsKn7kdH13y-5-1AdIzYmllEOyY93ess1WITffgkTikKnhzXCRU2gfMpgEHfkEOumysg67HXXYHqOC-M7MeLX8wbAs6)
+
 
 **Fuzzy Surfaces**
 
@@ -32,7 +37,7 @@ Select any part in the scene, right click it and and 'Convert to Fuzzy Region' i
 
 *Any object can be converted to a region that defines where fuzzy will be applied*
 
-<br/>
+
 
 **Part Settings Object (PRO Tool)**
 
@@ -42,7 +47,7 @@ Now with MatterControl PRO you can create settings for a specific part and save 
 
 *Settings added to the scene are saved with the design*
 
-<br/>
+
 
 **Additional Improvements**
 
