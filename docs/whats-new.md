@@ -24,6 +24,11 @@ MatterControl now supports Holes. Holes are an intuitive and powerful way to thi
 *Any object can be converted to a hole and it will be subtracted when grouped*
 
 
+**Transparent Rendering**
+
+You can now set any part to have transparent rendering to help with modeling and placement.
+
+![](https://lh3.googleusercontent.com/OjFLhCkmhgqXGgsKn7kdH13y-5-1AdIzYmllEOyY93ess1WITffgkTikKnhzXCRU2gfMpgEHfkEOumysg67HXXYHqOC-M7MeLX8wbAs6)
 
 **Fuzzy Surfaces**
 
