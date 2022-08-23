@@ -22,5 +22,5 @@
 - Windows
   - MatterControl keeps the user's library and settings in C:\Users\{user}\AppData\Local\MatterControl.
 
-- Mac/Linux
+- Mac
   - The user's data library and settings are in ~/.local/share/MatterControl. This is a hidden folder in your user's home folder.
